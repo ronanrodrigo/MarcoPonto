@@ -67,6 +67,7 @@
 		3435FF691CC2E7640076AF42 = {
 			isa = PBXGroup;
 			children = (
+				349D9B331CC308460088DE5E /* Core */,
 				3435FF741CC2E7640076AF42 /* MarcoPonto */,
 				349D9B1C1CC2E9710088DE5E /* MarcoPontoUnitTests */,
 				3435FF731CC2E7640076AF42 /* Products */,
@@ -129,8 +130,9 @@
 				349D9B2A1CC2ECD20088DE5E /* FormAppointmentViewController.xib */,
 				349D9B2E1CC2F68B0088DE5E /* SelectDateTableViewCell.xib */,
 			);
-			path = Views;
-			sourceTree = "<group>";
+			name = Views;
+			path = MarcoPonto/Views;
+			sourceTree = SOURCE_ROOT;
 		};
 		349D9B261CC2EBA40088DE5E /* ViewsControllers */ = {
 			isa = PBXGroup;
@@ -142,6 +144,13 @@
 			name = ViewsControllers;
 			path = MarcoPonto/ViewsControllers;
 			sourceTree = SOURCE_ROOT;
+		};
+		349D9B331CC308460088DE5E /* Core */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Core;
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
