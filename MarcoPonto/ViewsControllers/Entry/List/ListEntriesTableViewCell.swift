@@ -20,7 +20,7 @@ class ListEntriesTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        dateFormatter.dateFormat = "dd/MM/YY - EEE"
+        dateFormatter.dateFormat = "dd/MM/YY - EEEE"
         timeFormatter.dateFormat = "HH:mm"
     }
     
