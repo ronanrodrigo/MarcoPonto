@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		340BD7201CC3205300AB860B /* EntryGatewaySpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340BD71F1CC3205300AB860B /* EntryGatewaySpy.swift */; };
+		340BD7231CC3251B00AB860B /* EntryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340BD7221CC3251B00AB860B /* EntryType.swift */; };
+		340BD7241CC3251B00AB860B /* EntryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340BD7221CC3251B00AB860B /* EntryType.swift */; };
 		34336DAB1CC30EFB00ED551C /* EntryGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34336DAA1CC30EFB00ED551C /* EntryGateway.swift */; };
 		34336DAC1CC30EFB00ED551C /* EntryGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34336DAA1CC30EFB00ED551C /* EntryGateway.swift */; };
 		3435FF761CC2E7640076AF42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3435FF751CC2E7640076AF42 /* AppDelegate.swift */; };
@@ -38,6 +40,7 @@
 
 /* Begin PBXFileReference section */
 		340BD71F1CC3205300AB860B /* EntryGatewaySpy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryGatewaySpy.swift; sourceTree = "<group>"; };
+		340BD7221CC3251B00AB860B /* EntryType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryType.swift; sourceTree = "<group>"; };
 		34336DAA1CC30EFB00ED551C /* EntryGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryGateway.swift; sourceTree = "<group>"; };
 		3435FF721CC2E7640076AF42 /* MarcoPonto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarcoPonto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3435FF751CC2E7640076AF42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = MarcoPonto/ApplicationBase/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
@@ -91,6 +94,15 @@
 			);
 			name = Gateways;
 			path = MarcoPontoUnitTests/Fakes/Gateways;
+			sourceTree = SOURCE_ROOT;
+		};
+		340BD7211CC324F300AB860B /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				340BD7221CC3251B00AB860B /* EntryType.swift */,
+			);
+			name = Enums;
+			path = Core/Enums;
 			sourceTree = SOURCE_ROOT;
 		};
 		3435FF691CC2E7640076AF42 = {
@@ -178,6 +190,7 @@
 		349D9B331CC308460088DE5E /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				340BD7211CC324F300AB860B /* Enums */,
 				349D9B3D1CC30B290088DE5E /* Structs */,
 				349D9B351CC30A180088DE5E /* Gateways */,
 				349D9B341CC30A100088DE5E /* Usecases */,
@@ -322,6 +335,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				340BD7231CC3251B00AB860B /* EntryType.swift in Sources */,
 				3435FF761CC2E7640076AF42 /* AppDelegate.swift in Sources */,
 				349D9B2F1CC2F68B0088DE5E /* SelectDateTableViewCell.swift in Sources */,
 				349D9B371CC30A750088DE5E /* SaveEntryUsecase.swift in Sources */,
@@ -337,6 +351,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				340BD7241CC3251B00AB860B /* EntryType.swift in Sources */,
 				34336DAC1CC30EFB00ED551C /* EntryGateway.swift in Sources */,
 				349D9B401CC30B6F0088DE5E /* Appointment.swift in Sources */,
 				349D9B3C1CC30AB40088DE5E /* SaveEntryUsecaseTests.swift in Sources */,

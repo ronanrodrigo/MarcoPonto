@@ -10,21 +10,14 @@ import Foundation
 
 protocol Entry {
     var moment: NSDate { get set }
+    var type: EntryType { get set }
     func isNewEntry() -> Bool
 }
 
 struct EntryStruct: Entry {
     var id: Int?
+    var type: EntryType
     var moment: NSDate
-    
-    init (moment: NSDate) {
-        self.moment = moment
-    }
-    
-    init (id: Int, moment: NSDate) {
-        self.id = id
-        self.moment = moment
-    }
     
     func isNewEntry() -> Bool {
         return id == nil
