@@ -10,4 +10,13 @@ import Foundation
 
 enum EntryType {
     case Input, Output
+    
+    func description() -> String {
+        switch self {
+        case .Input:
+            return "Saída"
+        default:
+            return "Entrada"
+        }
+    }
 }

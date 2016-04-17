@@ -38,6 +38,7 @@ class ListEntriesDataSource: NSObject, UITableViewDataSource, ListEntriesPresent
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier) as? ListEntriesTableViewCell {
+            cell.updateCell(entries[indexPath.row])
             return cell
         } else {
             return ListEntriesTableViewCell()
