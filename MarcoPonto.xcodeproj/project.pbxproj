@@ -7,16 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		340BD7201CC3205300AB860B /* AppointmentGatewaySpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340BD71F1CC3205300AB860B /* AppointmentGatewaySpy.swift */; };
+		34336DAB1CC30EFB00ED551C /* AppointmentGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34336DAA1CC30EFB00ED551C /* AppointmentGateway.swift */; };
+		34336DAC1CC30EFB00ED551C /* AppointmentGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34336DAA1CC30EFB00ED551C /* AppointmentGateway.swift */; };
 		3435FF761CC2E7640076AF42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3435FF751CC2E7640076AF42 /* AppDelegate.swift */; };
 		3435FF7E1CC2E7640076AF42 /* MarcoPonto.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3435FF7C1CC2E7640076AF42 /* MarcoPonto.xcdatamodeld */; };
 		3435FF801CC2E7640076AF42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3435FF7F1CC2E7640076AF42 /* Assets.xcassets */; };
 		3435FF831CC2E7640076AF42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3435FF811CC2E7640076AF42 /* LaunchScreen.storyboard */; };
-		349D9B1E1CC2E9710088DE5E /* MarcoPontoUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349D9B1D1CC2E9710088DE5E /* MarcoPontoUnitTests.swift */; };
 		349D9B2B1CC2ECD20088DE5E /* FormAppointmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349D9B291CC2ECD20088DE5E /* FormAppointmentViewController.swift */; };
 		349D9B2C1CC2ECD20088DE5E /* FormAppointmentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 349D9B2A1CC2ECD20088DE5E /* FormAppointmentViewController.xib */; };
 		349D9B2F1CC2F68B0088DE5E /* SelectDateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349D9B2D1CC2F68B0088DE5E /* SelectDateTableViewCell.swift */; };
 		349D9B301CC2F68B0088DE5E /* SelectDateTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 349D9B2E1CC2F68B0088DE5E /* SelectDateTableViewCell.xib */; };
 		349D9B321CC2F7960088DE5E /* FormAppointmentTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349D9B311CC2F7960088DE5E /* FormAppointmentTableViewDataSource.swift */; };
+		349D9B371CC30A750088DE5E /* SaveAppointmentUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349D9B361CC30A750088DE5E /* SaveAppointmentUsecase.swift */; };
+		349D9B381CC30A750088DE5E /* SaveAppointmentUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349D9B361CC30A750088DE5E /* SaveAppointmentUsecase.swift */; };
+		349D9B3C1CC30AB40088DE5E /* SaveAppointmentUsecaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349D9B3A1CC30AB40088DE5E /* SaveAppointmentUsecaseTests.swift */; };
+		349D9B3F1CC30B6F0088DE5E /* Appointment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349D9B3E1CC30B6F0088DE5E /* Appointment.swift */; };
+		349D9B401CC30B6F0088DE5E /* Appointment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349D9B3E1CC30B6F0088DE5E /* Appointment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		340BD71F1CC3205300AB860B /* AppointmentGatewaySpy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppointmentGatewaySpy.swift; sourceTree = "<group>"; };
+		34336DAA1CC30EFB00ED551C /* AppointmentGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppointmentGateway.swift; sourceTree = "<group>"; };
 		3435FF721CC2E7640076AF42 /* MarcoPonto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarcoPonto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3435FF751CC2E7640076AF42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = MarcoPonto/ApplicationBase/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
 		3435FF7D1CC2E7640076AF42 /* MarcoPonto.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MarcoPonto.xcdatamodel; sourceTree = "<group>"; };
@@ -37,13 +46,15 @@
 		3435FF821CC2E7640076AF42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3435FF841CC2E7640076AF42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = MarcoPonto/ApplicationBase/Info.plist; sourceTree = SOURCE_ROOT; };
 		349D9B1B1CC2E9710088DE5E /* MarcoPontoUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarcoPontoUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		349D9B1D1CC2E9710088DE5E /* MarcoPontoUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarcoPontoUnitTests.swift; sourceTree = "<group>"; };
 		349D9B1F1CC2E9710088DE5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		349D9B291CC2ECD20088DE5E /* FormAppointmentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormAppointmentViewController.swift; sourceTree = "<group>"; };
 		349D9B2A1CC2ECD20088DE5E /* FormAppointmentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FormAppointmentViewController.xib; path = MarcoPonto/Views/FormAppointmentViewController.xib; sourceTree = SOURCE_ROOT; };
 		349D9B2D1CC2F68B0088DE5E /* SelectDateTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SelectDateTableViewCell.swift; path = MarcoPonto/ViewsControllers/SelectDateTableViewCell.swift; sourceTree = SOURCE_ROOT; };
 		349D9B2E1CC2F68B0088DE5E /* SelectDateTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectDateTableViewCell.xib; sourceTree = "<group>"; };
 		349D9B311CC2F7960088DE5E /* FormAppointmentTableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormAppointmentTableViewDataSource.swift; sourceTree = "<group>"; };
+		349D9B361CC30A750088DE5E /* SaveAppointmentUsecase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveAppointmentUsecase.swift; sourceTree = "<group>"; };
+		349D9B3A1CC30AB40088DE5E /* SaveAppointmentUsecaseTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveAppointmentUsecaseTests.swift; sourceTree = "<group>"; };
+		349D9B3E1CC30B6F0088DE5E /* Appointment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Appointment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +75,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		340BD71D1CC31FD900AB860B /* Fakes */ = {
+			isa = PBXGroup;
+			children = (
+				340BD71E1CC3203E00AB860B /* Gateways */,
+			);
+			name = Fakes;
+			path = MarcoPontoUnitTests/Fakes;
+			sourceTree = SOURCE_ROOT;
+		};
+		340BD71E1CC3203E00AB860B /* Gateways */ = {
+			isa = PBXGroup;
+			children = (
+				340BD71F1CC3205300AB860B /* AppointmentGatewaySpy.swift */,
+			);
+			name = Gateways;
+			path = MarcoPontoUnitTests/Fakes/Gateways;
+			sourceTree = SOURCE_ROOT;
+		};
 		3435FF691CC2E7640076AF42 = {
 			isa = PBXGroup;
 			children = (
@@ -118,7 +147,8 @@
 		349D9B1C1CC2E9710088DE5E /* MarcoPontoUnitTests */ = {
 			isa = PBXGroup;
 			children = (
-				349D9B1D1CC2E9710088DE5E /* MarcoPontoUnitTests.swift */,
+				340BD71D1CC31FD900AB860B /* Fakes */,
+				349D9B391CC30AA20088DE5E /* Usecases */,
 				349D9B1F1CC2E9710088DE5E /* Info.plist */,
 			);
 			path = MarcoPontoUnitTests;
@@ -148,9 +178,47 @@
 		349D9B331CC308460088DE5E /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				349D9B3D1CC30B290088DE5E /* Structs */,
+				349D9B351CC30A180088DE5E /* Gateways */,
+				349D9B341CC30A100088DE5E /* Usecases */,
 			);
 			path = Core;
 			sourceTree = "<group>";
+		};
+		349D9B341CC30A100088DE5E /* Usecases */ = {
+			isa = PBXGroup;
+			children = (
+				349D9B361CC30A750088DE5E /* SaveAppointmentUsecase.swift */,
+			);
+			name = Usecases;
+			path = Core/Usecases;
+			sourceTree = SOURCE_ROOT;
+		};
+		349D9B351CC30A180088DE5E /* Gateways */ = {
+			isa = PBXGroup;
+			children = (
+				34336DAA1CC30EFB00ED551C /* AppointmentGateway.swift */,
+			);
+			name = Gateways;
+			path = Core/Gateways;
+			sourceTree = SOURCE_ROOT;
+		};
+		349D9B391CC30AA20088DE5E /* Usecases */ = {
+			isa = PBXGroup;
+			children = (
+				349D9B3A1CC30AB40088DE5E /* SaveAppointmentUsecaseTests.swift */,
+			);
+			path = Usecases;
+			sourceTree = "<group>";
+		};
+		349D9B3D1CC30B290088DE5E /* Structs */ = {
+			isa = PBXGroup;
+			children = (
+				349D9B3E1CC30B6F0088DE5E /* Appointment.swift */,
+			);
+			name = Structs;
+			path = Core/Structs;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -256,8 +324,11 @@
 			files = (
 				3435FF761CC2E7640076AF42 /* AppDelegate.swift in Sources */,
 				349D9B2F1CC2F68B0088DE5E /* SelectDateTableViewCell.swift in Sources */,
+				349D9B371CC30A750088DE5E /* SaveAppointmentUsecase.swift in Sources */,
 				3435FF7E1CC2E7640076AF42 /* MarcoPonto.xcdatamodeld in Sources */,
+				34336DAB1CC30EFB00ED551C /* AppointmentGateway.swift in Sources */,
 				349D9B2B1CC2ECD20088DE5E /* FormAppointmentViewController.swift in Sources */,
+				349D9B3F1CC30B6F0088DE5E /* Appointment.swift in Sources */,
 				349D9B321CC2F7960088DE5E /* FormAppointmentTableViewDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,7 +337,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				349D9B1E1CC2E9710088DE5E /* MarcoPontoUnitTests.swift in Sources */,
+				34336DAC1CC30EFB00ED551C /* AppointmentGateway.swift in Sources */,
+				349D9B401CC30B6F0088DE5E /* Appointment.swift in Sources */,
+				349D9B3C1CC30AB40088DE5E /* SaveAppointmentUsecaseTests.swift in Sources */,
+				349D9B381CC30A750088DE5E /* SaveAppointmentUsecase.swift in Sources */,
+				340BD7201CC3205300AB860B /* AppointmentGatewaySpy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,6 +527,7 @@
 				349D9B241CC2E9710088DE5E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
