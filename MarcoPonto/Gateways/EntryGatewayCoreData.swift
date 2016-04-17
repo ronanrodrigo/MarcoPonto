@@ -41,7 +41,7 @@ class EntryGatewayCoreData: EntryGateway {
         let fetchRequest  = NSFetchRequest(entityName: entityName)
         do {
             let results = try context.executeFetchRequest(fetchRequest)
-            return results as! [EntryModel]
+            return results.map({ $0 as! EntryModel })
         } catch {
             return []
         }
