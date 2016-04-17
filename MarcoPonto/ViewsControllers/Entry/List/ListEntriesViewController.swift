@@ -11,15 +11,19 @@ import UIKit
 class ListEntriesViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
-    let dataSource = ListEntriesDataSource()
+    var dataSource: ListEntriesDataSource!
     let cellNameAndIdentifier = String(ListEntriesTableViewCell)
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    override func viewWillAppear(animated: Bool) {
         configureTableView()
     }
     
     func configureTableView() {
+        dataSource = ListEntriesDataSource()
         tableView.dataSource = dataSource
         tableView.registerNib(UINib(nibName: cellNameAndIdentifier, bundle: nil), forCellReuseIdentifier: cellNameAndIdentifier)
     }
