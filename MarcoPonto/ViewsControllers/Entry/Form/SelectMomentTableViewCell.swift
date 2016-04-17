@@ -11,6 +11,11 @@ import UIKit
 class SelectMomentTableViewCell: UITableViewCell {
 
     @IBOutlet weak var momentSelector: UIDatePicker!
-
     
+    override func awakeFromNib() {
+        separatorInset = UIEdgeInsetsZero
+        preservesSuperviewLayoutMargins = false
+        layoutMargins = UIEdgeInsetsZero
+    }
+
 }

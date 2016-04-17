@@ -24,9 +24,17 @@ class FormEntryViewController: UIViewController {
     }
     
     private func configureTableView() {
-        let identifier = String(SelectMomentTableViewCell)
-        let selectDateTableViewCell = UINib(nibName: identifier, bundle: nil)
-        tableView.registerNib(selectDateTableViewCell, forCellReuseIdentifier: identifier)
+        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.estimatedRowHeight = 250
+
+        let selectMomentIdentifier = String(SelectMomentTableViewCell)
+        let selectDateTableViewCell = UINib(nibName: selectMomentIdentifier, bundle: nil)
+        tableView.registerNib(selectDateTableViewCell, forCellReuseIdentifier: selectMomentIdentifier)
+        
+        let selectTypeIdentifier = String(SelectTypeTableViewCell)
+        let selectTypeTableViewCell = UINib(nibName: selectTypeIdentifier, bundle: nil)
+        tableView.registerNib(selectTypeTableViewCell, forCellReuseIdentifier: selectTypeIdentifier)
+        
         tableView.dataSource = dataSource
     }
 

@@ -42,6 +42,8 @@
 		34E9B3EB1CC35DA40017A083 /* EntryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E9B3E91CC35DA40017A083 /* EntryModel.swift */; };
 		34E9B3ED1CC360060017A083 /* EntryGatewayCoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E9B3EC1CC360060017A083 /* EntryGatewayCoreData.swift */; };
 		34E9B3F01CC3B72E0017A083 /* ListEntriesUsecaseFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E9B3EF1CC3B72E0017A083 /* ListEntriesUsecaseFactory.swift */; };
+		34E9B3F41CC3C5990017A083 /* SelectTypeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34E9B3F21CC3C5990017A083 /* SelectTypeTableViewCell.xib */; };
+		34E9B3F81CC3C66B0017A083 /* SelectTypeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E9B3F71CC3C66B0017A083 /* SelectTypeTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +90,8 @@
 		34E9B3E91CC35DA40017A083 /* EntryModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryModel.swift; sourceTree = "<group>"; };
 		34E9B3EC1CC360060017A083 /* EntryGatewayCoreData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryGatewayCoreData.swift; sourceTree = "<group>"; };
 		34E9B3EF1CC3B72E0017A083 /* ListEntriesUsecaseFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListEntriesUsecaseFactory.swift; sourceTree = "<group>"; };
+		34E9B3F21CC3C5990017A083 /* SelectTypeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectTypeTableViewCell.xib; sourceTree = "<group>"; };
+		34E9B3F71CC3C66B0017A083 /* SelectTypeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SelectTypeTableViewCell.swift; path = Entry/Form/SelectTypeTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +145,7 @@
 			children = (
 				340BD72D1CC33F4700AB860B /* FormEntryViewController.xib */,
 				349D9B2E1CC2F68B0088DE5E /* SelectMomentTableViewCell.xib */,
+				34E9B3F21CC3C5990017A083 /* SelectTypeTableViewCell.xib */,
 			);
 			name = Form;
 			path = MarcoPonto/Views/Entry/Form;
@@ -149,6 +154,7 @@
 		340BD7311CC33F9700AB860B /* Form */ = {
 			isa = PBXGroup;
 			children = (
+				34E9B3F71CC3C66B0017A083 /* SelectTypeTableViewCell.swift */,
 				349D9B2D1CC2F68B0088DE5E /* SelectMomentTableViewCell.swift */,
 				349D9B291CC2ECD20088DE5E /* FormEntryViewController.swift */,
 				349D9B311CC2F7960088DE5E /* FormEntryDataSource.swift */,
@@ -446,6 +452,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				349D9B301CC2F68B0088DE5E /* SelectMomentTableViewCell.xib in Resources */,
+				34E9B3F41CC3C5990017A083 /* SelectTypeTableViewCell.xib in Resources */,
 				340BD72E1CC33F4700AB860B /* FormEntryViewController.xib in Resources */,
 				3435FF831CC2E7640076AF42 /* LaunchScreen.storyboard in Resources */,
 				3435FF801CC2E7640076AF42 /* Assets.xcassets in Resources */,
@@ -480,6 +487,7 @@
 				3435FF7E1CC2E7640076AF42 /* MarcoPonto.xcdatamodeld in Sources */,
 				340BD7441CC3462B00AB860B /* ListEntriesDataSource.swift in Sources */,
 				34336DAB1CC30EFB00ED551C /* EntryGateway.swift in Sources */,
+				34E9B3F81CC3C66B0017A083 /* SelectTypeTableViewCell.swift in Sources */,
 				340BD74B1CC353CD00AB860B /* ListEntriesPresenter.swift in Sources */,
 				34E9B3EA1CC35DA40017A083 /* EntryModel+CoreDataProperties.swift in Sources */,
 				349D9B2B1CC2ECD20088DE5E /* FormEntryViewController.swift in Sources */,

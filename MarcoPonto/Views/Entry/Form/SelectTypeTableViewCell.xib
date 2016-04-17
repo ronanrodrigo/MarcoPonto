@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SelectTypeTableViewCell" rowHeight="250" id="KGk-i7-Jjw" customClass="SelectTypeTableViewCell" customModule="MarcoPonto" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ySY-qs-dJu">
+                        <rect key="frame" x="8" y="8.5" width="304" height="28"/>
+                        <segments>
+                            <segment title="Entrada"/>
+                            <segment title="Saída"/>
+                        </segments>
+                    </segmentedControl>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ySY-qs-dJu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="HPj-ix-yS6"/>
+                    <constraint firstItem="ySY-qs-dJu" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="J2D-7N-5ju"/>
+                    <constraint firstItem="ySY-qs-dJu" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="oep-OZ-VGF"/>
+                    <constraint firstItem="ySY-qs-dJu" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="s1f-ZT-RRF"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="typeSelector" destination="ySY-qs-dJu" id="sya-Es-xCa"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>
