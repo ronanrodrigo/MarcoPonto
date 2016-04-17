@@ -11,4 +11,5 @@ import Foundation
 protocol EntryGateway {
     func create(entry: Entry)
     func update(entry: Entry)
+    func list() -> [Entry]
 }
