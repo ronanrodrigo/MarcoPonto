@@ -19,7 +19,7 @@ class SaveEntryUsecaseTests: XCTestCase {
     }
     
     func testShoudCreateEntry() {
-        let entry = EntryStruct(moment: now)
+        let entry = EntryStruct(id: nil, type: .Input, moment: now)
         
         usecase.save(entry)
         
@@ -28,7 +28,7 @@ class SaveEntryUsecaseTests: XCTestCase {
     }
     
     func testShoudUpdateEntry() {
-        let entry = EntryStruct(id: 1, moment: now)
+        let entry = EntryStruct(id: 1, type: .Input, moment: now)
         
         usecase.save(entry)
         
