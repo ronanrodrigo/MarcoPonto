@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class ListEntriesDataSource: NSObject, UITableViewDataSource {
+class ListEntriesDataSource: NSObject, UITableViewDataSource, ListEntriesPresenter {
     let cellIdentifier = String(ListEntriesTableViewCell)
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -26,5 +26,9 @@ class ListEntriesDataSource: NSObject, UITableViewDataSource {
         } else {
             return ListEntriesTableViewCell()
         }
+    }
+    
+    func list(entries: [Entry]) {
+        self.entries = entries
     }
 }

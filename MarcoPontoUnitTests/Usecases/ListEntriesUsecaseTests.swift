@@ -10,16 +10,19 @@ import XCTest
 
 class ListEntriesUsecaseTests: XCTestCase {
     var gateway: EntryGatewaySpy!
+    var presenter: ListEntriesPresenterSpy!
     var usecase: ListEntriesUsecase!
     
     override func setUp() {
         gateway = EntryGatewaySpy()
-        usecase = ListEntriesUsecase(gateway: gateway)
+        presenter = ListEntriesPresenterSpy()
+        usecase = ListEntriesUsecase(gateway: gateway, presenter: presenter)
     }
     
     func testShouldListEntries() {
         self.usecase.list()
         
         XCTAssertTrue(self.gateway.listSpied)
+        XCTAssertTrue(self.presenter.listSpied)
     }
 }

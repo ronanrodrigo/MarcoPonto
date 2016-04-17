@@ -10,12 +10,15 @@ import Foundation
 
 class ListEntriesUsecase {
     var gateway: EntryGateway
+    var presenter: ListEntriesPresenter
     
-    init(gateway: EntryGateway) {
+    init(gateway: EntryGateway, presenter: ListEntriesPresenter) {
         self.gateway = gateway
+        self.presenter = presenter
     }
     
     func list() {
-        self.gateway.list()
+        let entries = self.gateway.list()
+        presenter.list(entries)
     }
 }
