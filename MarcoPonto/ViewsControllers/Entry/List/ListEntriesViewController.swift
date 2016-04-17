@@ -16,6 +16,10 @@ class ListEntriesViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        configureTableView()
+    }
+    
+    func configureTableView() {
         tableView.dataSource = dataSource
         tableView.registerNib(UINib(nibName: cellNameAndIdentifier, bundle: nil), forCellReuseIdentifier: cellNameAndIdentifier)
     }
