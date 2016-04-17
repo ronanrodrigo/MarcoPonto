@@ -30,8 +30,8 @@
 		3435FF801CC2E7640076AF42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3435FF7F1CC2E7640076AF42 /* Assets.xcassets */; };
 		3435FF831CC2E7640076AF42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3435FF811CC2E7640076AF42 /* LaunchScreen.storyboard */; };
 		349D9B2B1CC2ECD20088DE5E /* FormEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349D9B291CC2ECD20088DE5E /* FormEntryViewController.swift */; };
-		349D9B2F1CC2F68B0088DE5E /* SelectDateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349D9B2D1CC2F68B0088DE5E /* SelectDateTableViewCell.swift */; };
-		349D9B301CC2F68B0088DE5E /* SelectDateTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 349D9B2E1CC2F68B0088DE5E /* SelectDateTableViewCell.xib */; };
+		349D9B2F1CC2F68B0088DE5E /* SelectMomentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349D9B2D1CC2F68B0088DE5E /* SelectMomentTableViewCell.swift */; };
+		349D9B301CC2F68B0088DE5E /* SelectMomentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 349D9B2E1CC2F68B0088DE5E /* SelectMomentTableViewCell.xib */; };
 		349D9B321CC2F7960088DE5E /* FormEntryDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349D9B311CC2F7960088DE5E /* FormEntryDataSource.swift */; };
 		349D9B371CC30A750088DE5E /* SaveEntryUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349D9B361CC30A750088DE5E /* SaveEntryUsecase.swift */; };
 		349D9B381CC30A750088DE5E /* SaveEntryUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349D9B361CC30A750088DE5E /* SaveEntryUsecase.swift */; };
@@ -78,8 +78,8 @@
 		349D9B1B1CC2E9710088DE5E /* MarcoPontoUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarcoPontoUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		349D9B1F1CC2E9710088DE5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		349D9B291CC2ECD20088DE5E /* FormEntryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FormEntryViewController.swift; path = Entry/Form/FormEntryViewController.swift; sourceTree = "<group>"; };
-		349D9B2D1CC2F68B0088DE5E /* SelectDateTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SelectDateTableViewCell.swift; path = Entry/Form/SelectDateTableViewCell.swift; sourceTree = "<group>"; };
-		349D9B2E1CC2F68B0088DE5E /* SelectDateTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectDateTableViewCell.xib; sourceTree = "<group>"; };
+		349D9B2D1CC2F68B0088DE5E /* SelectMomentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SelectMomentTableViewCell.swift; path = Entry/Form/SelectMomentTableViewCell.swift; sourceTree = "<group>"; };
+		349D9B2E1CC2F68B0088DE5E /* SelectMomentTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectMomentTableViewCell.xib; sourceTree = "<group>"; };
 		349D9B311CC2F7960088DE5E /* FormEntryDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FormEntryDataSource.swift; path = Entry/Form/FormEntryDataSource.swift; sourceTree = "<group>"; };
 		349D9B361CC30A750088DE5E /* SaveEntryUsecase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveEntryUsecase.swift; sourceTree = "<group>"; };
 		349D9B3A1CC30AB40088DE5E /* SaveEntryUsecaseTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveEntryUsecaseTests.swift; sourceTree = "<group>"; };
@@ -140,7 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				340BD72D1CC33F4700AB860B /* FormEntryViewController.xib */,
-				349D9B2E1CC2F68B0088DE5E /* SelectDateTableViewCell.xib */,
+				349D9B2E1CC2F68B0088DE5E /* SelectMomentTableViewCell.xib */,
 			);
 			name = Form;
 			path = MarcoPonto/Views/Entry/Form;
@@ -149,7 +149,7 @@
 		340BD7311CC33F9700AB860B /* Form */ = {
 			isa = PBXGroup;
 			children = (
-				349D9B2D1CC2F68B0088DE5E /* SelectDateTableViewCell.swift */,
+				349D9B2D1CC2F68B0088DE5E /* SelectMomentTableViewCell.swift */,
 				349D9B291CC2ECD20088DE5E /* FormEntryViewController.swift */,
 				349D9B311CC2F7960088DE5E /* FormEntryDataSource.swift */,
 			);
@@ -445,7 +445,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				349D9B301CC2F68B0088DE5E /* SelectDateTableViewCell.xib in Resources */,
+				349D9B301CC2F68B0088DE5E /* SelectMomentTableViewCell.xib in Resources */,
 				340BD72E1CC33F4700AB860B /* FormEntryViewController.xib in Resources */,
 				3435FF831CC2E7640076AF42 /* LaunchScreen.storyboard in Resources */,
 				3435FF801CC2E7640076AF42 /* Assets.xcassets in Resources */,
@@ -475,7 +475,7 @@
 				3435FF761CC2E7640076AF42 /* AppDelegate.swift in Sources */,
 				340BD7381CC3409600AB860B /* ListEntriesViewController.swift in Sources */,
 				340BD7261CC33C1D00AB860B /* ListEntriesUsecase.swift in Sources */,
-				349D9B2F1CC2F68B0088DE5E /* SelectDateTableViewCell.swift in Sources */,
+				349D9B2F1CC2F68B0088DE5E /* SelectMomentTableViewCell.swift in Sources */,
 				349D9B371CC30A750088DE5E /* SaveEntryUsecase.swift in Sources */,
 				3435FF7E1CC2E7640076AF42 /* MarcoPonto.xcdatamodeld in Sources */,
 				340BD7441CC3462B00AB860B /* ListEntriesDataSource.swift in Sources */,

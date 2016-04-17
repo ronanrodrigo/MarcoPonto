@@ -24,7 +24,7 @@ class FormEntryViewController: UIViewController {
     }
     
     private func configureTableView() {
-        let identifier = String(SelectDateTableViewCell)
+        let identifier = String(SelectMomentTableViewCell)
         let selectDateTableViewCell = UINib(nibName: identifier, bundle: nil)
         tableView.registerNib(selectDateTableViewCell, forCellReuseIdentifier: identifier)
         tableView.dataSource = dataSource

@@ -7,15 +7,15 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SelectDateTableViewCell" id="KGk-i7-Jjw" customClass="SelectDateTableViewCell" customModule="MarcoPonto" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="122"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SelectMomentTableViewCell" rowHeight="335" id="KGk-i7-Jjw" customClass="SelectMomentTableViewCell" customModule="MarcoPonto" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="250"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="121.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="249.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="zo9-xv-pUK">
-                        <rect key="frame" x="0.0" y="0.5" width="320" height="121.5"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="249.5"/>
                         <date key="date" timeIntervalSinceReferenceDate="482539197.19653702">
                             <!--2016-04-16 22:39:57 +0000-->
                         </date>
@@ -23,16 +23,16 @@
                     </datePicker>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="zo9-xv-pUK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="IVl-1f-dvd"/>
-                    <constraint firstAttribute="bottom" secondItem="zo9-xv-pUK" secondAttribute="bottom" id="KiZ-3e-dsN"/>
-                    <constraint firstAttribute="trailing" secondItem="zo9-xv-pUK" secondAttribute="trailing" id="m5n-xU-RPw"/>
-                    <constraint firstItem="zo9-xv-pUK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="vxb-oJ-0Ji"/>
+                    <constraint firstItem="zo9-xv-pUK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="HKx-Mz-nTA"/>
+                    <constraint firstItem="zo9-xv-pUK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="bar-MY-BDn"/>
+                    <constraint firstAttribute="bottom" secondItem="zo9-xv-pUK" secondAttribute="bottom" id="ksN-QN-rAa"/>
+                    <constraint firstAttribute="trailing" secondItem="zo9-xv-pUK" secondAttribute="trailing" id="qmB-au-0Y3"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="momentSelector" destination="zo9-xv-pUK" id="t4r-VS-trU"/>
             </connections>
-            <point key="canvasLocation" x="402" y="429"/>
+            <point key="canvasLocation" x="402" y="493"/>
         </tableViewCell>
     </objects>
 </document>

@@ -1,5 +1,5 @@
 //
-//  SelectDateTableViewCell.swift
+//  SelectMomentTableViewCell.swift
 //  MarcoPonto
 //
 //  Created by Ronan Rodrigo Nunes on 16/04/16.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SelectDateTableViewCell: UITableViewCell {
+class SelectMomentTableViewCell: UITableViewCell {
 
     @IBOutlet weak var momentSelector: UIDatePicker!
 

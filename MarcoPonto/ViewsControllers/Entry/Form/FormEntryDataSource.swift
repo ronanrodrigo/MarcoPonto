@@ -11,7 +11,7 @@ import UIKit
 
 class FormEntryDataSource:  NSObject, UITableViewDataSource {
 
-    let cellIdentifier = String(SelectDateTableViewCell)
+    let cellIdentifier = String(SelectMomentTableViewCell)
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
@@ -22,10 +22,10 @@ class FormEntryDataSource:  NSObject, UITableViewDataSource {
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        if let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier) as? SelectDateTableViewCell {
+        if let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier) as? SelectMomentTableViewCell {
             return cell
         } else {
-            return SelectDateTableViewCell()
+            return SelectMomentTableViewCell()
         }
     }
     
