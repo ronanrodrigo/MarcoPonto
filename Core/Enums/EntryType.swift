@@ -9,14 +9,14 @@
 import Foundation
 
 enum EntryType: NSNumber {
-    case Input = 1, Output = 2
+    case Input = 0, Output = 1
     
     func description() -> String {
         switch self {
         case .Input:
-            return "Saída"
-        default:
             return "Entrada"
+        default:
+            return "Saída"
         }
     }
 }
