@@ -20,14 +20,8 @@ class ListEntriesTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        dateFormatter.locale = NSLocale(localeIdentifier: "pt_BR")
-        timeFormatter.locale = NSLocale(localeIdentifier: "pt_BR")
-        
-        dateFormatter.dateStyle = .FullStyle
-        dateFormatter.timeStyle = .NoStyle
-        
-        timeFormatter.timeStyle = .MediumStyle
-        timeFormatter.dateStyle = .NoStyle
+        dateFormatter.dateFormat = "dd/MM/YY - EEE"
+        timeFormatter.dateFormat = "HH:mm"
     }
     
     func updateCell(entry: Entry) {
