@@ -44,6 +44,11 @@
 		34E9B3F01CC3B72E0017A083 /* ListEntriesUsecaseFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E9B3EF1CC3B72E0017A083 /* ListEntriesUsecaseFactory.swift */; };
 		34E9B3F41CC3C5990017A083 /* SelectTypeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34E9B3F21CC3C5990017A083 /* SelectTypeTableViewCell.xib */; };
 		34E9B3F81CC3C66B0017A083 /* SelectTypeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E9B3F71CC3C66B0017A083 /* SelectTypeTableViewCell.swift */; };
+		34E9B3FA1CC3D9C80017A083 /* SaveEntryUsecaseFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E9B3F91CC3D9C80017A083 /* SaveEntryUsecaseFactory.swift */; };
+		34E9B3FC1CC3DA1A0017A083 /* EntryGatewayCoreDataFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E9B3FB1CC3DA1A0017A083 /* EntryGatewayCoreDataFactory.swift */; };
+		34E9B3FE1CC3DA880017A083 /* SaveEntryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E9B3FD1CC3DA880017A083 /* SaveEntryPresenter.swift */; };
+		34E9B4001CC3DAD10017A083 /* SaveEntryPresenterSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E9B3FF1CC3DAD10017A083 /* SaveEntryPresenterSpy.swift */; };
+		34E9B4011CC3DAEB0017A083 /* SaveEntryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E9B3FD1CC3DA880017A083 /* SaveEntryPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +97,10 @@
 		34E9B3EF1CC3B72E0017A083 /* ListEntriesUsecaseFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListEntriesUsecaseFactory.swift; sourceTree = "<group>"; };
 		34E9B3F21CC3C5990017A083 /* SelectTypeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectTypeTableViewCell.xib; sourceTree = "<group>"; };
 		34E9B3F71CC3C66B0017A083 /* SelectTypeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SelectTypeTableViewCell.swift; path = Entry/Form/SelectTypeTableViewCell.swift; sourceTree = "<group>"; };
+		34E9B3F91CC3D9C80017A083 /* SaveEntryUsecaseFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveEntryUsecaseFactory.swift; sourceTree = "<group>"; };
+		34E9B3FB1CC3DA1A0017A083 /* EntryGatewayCoreDataFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryGatewayCoreDataFactory.swift; sourceTree = "<group>"; };
+		34E9B3FD1CC3DA880017A083 /* SaveEntryPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveEntryPresenter.swift; sourceTree = "<group>"; };
+		34E9B3FF1CC3DAD10017A083 /* SaveEntryPresenterSpy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveEntryPresenterSpy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,6 +214,7 @@
 			isa = PBXGroup;
 			children = (
 				340BD74A1CC353CD00AB860B /* ListEntriesPresenter.swift */,
+				34E9B3FD1CC3DA880017A083 /* SaveEntryPresenter.swift */,
 			);
 			name = Presenters;
 			path = Core/Presenters;
@@ -214,6 +224,7 @@
 			isa = PBXGroup;
 			children = (
 				340BD74E1CC353F500AB860B /* ListEntriesPresenterSpy.swift */,
+				34E9B3FF1CC3DAD10017A083 /* SaveEntryPresenterSpy.swift */,
 			);
 			name = Presenters;
 			path = MarcoPontoUnitTests/Fakes/Presenters;
@@ -365,6 +376,8 @@
 			isa = PBXGroup;
 			children = (
 				34E9B3EF1CC3B72E0017A083 /* ListEntriesUsecaseFactory.swift */,
+				34E9B3F91CC3D9C80017A083 /* SaveEntryUsecaseFactory.swift */,
+				34E9B3FB1CC3DA1A0017A083 /* EntryGatewayCoreDataFactory.swift */,
 			);
 			name = Factories;
 			path = MarcoPonto/Factories;
@@ -476,6 +489,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				340BD7231CC3251B00AB860B /* EntryType.swift in Sources */,
+				34E9B3FC1CC3DA1A0017A083 /* EntryGatewayCoreDataFactory.swift in Sources */,
 				34E9B3F01CC3B72E0017A083 /* ListEntriesUsecaseFactory.swift in Sources */,
 				340BD72B1CC33D8100AB860B /* NavigationViewController.swift in Sources */,
 				340BD7471CC346D600AB860B /* ListEntriesTableViewCell.swift in Sources */,
@@ -489,8 +503,10 @@
 				34336DAB1CC30EFB00ED551C /* EntryGateway.swift in Sources */,
 				34E9B3F81CC3C66B0017A083 /* SelectTypeTableViewCell.swift in Sources */,
 				340BD74B1CC353CD00AB860B /* ListEntriesPresenter.swift in Sources */,
+				34E9B3FA1CC3D9C80017A083 /* SaveEntryUsecaseFactory.swift in Sources */,
 				34E9B3EA1CC35DA40017A083 /* EntryModel+CoreDataProperties.swift in Sources */,
 				349D9B2B1CC2ECD20088DE5E /* FormEntryViewController.swift in Sources */,
+				34E9B3FE1CC3DA880017A083 /* SaveEntryPresenter.swift in Sources */,
 				349D9B3F1CC30B6F0088DE5E /* Appointment.swift in Sources */,
 				34E9B3EB1CC35DA40017A083 /* EntryModel.swift in Sources */,
 				34E9B3ED1CC360060017A083 /* EntryGatewayCoreData.swift in Sources */,
@@ -502,6 +518,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34E9B4001CC3DAD10017A083 /* SaveEntryPresenterSpy.swift in Sources */,
 				340BD7241CC3251B00AB860B /* EntryType.swift in Sources */,
 				34336DAC1CC30EFB00ED551C /* EntryGateway.swift in Sources */,
 				340BD74C1CC353CD00AB860B /* ListEntriesPresenter.swift in Sources */,
@@ -509,6 +526,7 @@
 				340BD74F1CC353F500AB860B /* ListEntriesPresenterSpy.swift in Sources */,
 				349D9B401CC30B6F0088DE5E /* Appointment.swift in Sources */,
 				349D9B3C1CC30AB40088DE5E /* SaveEntryUsecaseTests.swift in Sources */,
+				34E9B4011CC3DAEB0017A083 /* SaveEntryPresenter.swift in Sources */,
 				349D9B381CC30A750088DE5E /* SaveEntryUsecase.swift in Sources */,
 				340BD7281CC33CA800AB860B /* ListEntriesUsecaseTests.swift in Sources */,
 				340BD7201CC3205300AB860B /* EntryGatewaySpy.swift in Sources */,

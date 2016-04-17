@@ -10,7 +10,6 @@ import Foundation
 
 class ListEntriesUsecaseFactory {
     static func make(presenter presenter: ListEntriesPresenter) -> ListEntriesUsecase {
-        let gateway = EntryGatewayCoreData()
-        return ListEntriesUsecase(gateway: gateway, presenter: presenter)
+        return ListEntriesUsecase(gateway: EntryGatewayCoreDataFactory.make(), presenter: presenter)
     }
 }

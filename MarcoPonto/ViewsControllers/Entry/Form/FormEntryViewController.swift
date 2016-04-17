@@ -13,6 +13,16 @@ class FormEntryViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     let dataSource: FormEntryDataSource = FormEntryDataSource()
+    var saveEntryPresenter: SaveEntryPresenter?
+    
+    init(saveEntryPresenter: SaveEntryPresenter) {
+        self.saveEntryPresenter = saveEntryPresenter
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,6 +46,14 @@ class FormEntryViewController: UIViewController {
         tableView.registerNib(selectTypeTableViewCell, forCellReuseIdentifier: selectTypeIdentifier)
         
         tableView.dataSource = dataSource
+    }
+    
+    func saveEntry() {
+        if let _saveEntryPresenter = saveEntryPresenter {
+            let usecase = SaveEntryUsecaseFactory.make(presenter: _saveEntryPresenter)
+            let entry = dataSource.filledEntry()
+            usecase.save(entry)
+        }
     }
 
 }

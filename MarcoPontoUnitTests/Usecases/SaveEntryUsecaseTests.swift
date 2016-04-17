@@ -11,11 +11,13 @@ import XCTest
 class SaveEntryUsecaseTests: XCTestCase {
     let now: NSDate = NSDate()
     var gateway: EntryGatewaySpy!
+    var presenter: SaveEntryPresenterSpy!
     var usecase: SaveEntryUsecase!
     
     override func setUp() {
         gateway = EntryGatewaySpy()
-        usecase = SaveEntryUsecase(gateway: gateway)
+        presenter = SaveEntryPresenterSpy()
+        usecase = SaveEntryUsecase(gateway: gateway, presenter: presenter)
     }
     
     func testShoudCreateEntry() {
@@ -24,7 +26,8 @@ class SaveEntryUsecaseTests: XCTestCase {
         usecase.save(entry)
         
         XCTAssertTrue(gateway.createSpied)
-        XCTAssertFalse(gateway.updateSpied)
+        XCTAssertTrue(gateway.createSpied)
+        XCTAssertTrue(presenter.didSaveEntrySpied)
     }
     
     func testShoudUpdateEntry() {
@@ -34,6 +37,7 @@ class SaveEntryUsecaseTests: XCTestCase {
         
         XCTAssertTrue(gateway.updateSpied)
         XCTAssertFalse(gateway.createSpied)
+        XCTAssertTrue(presenter.didSaveEntrySpied)
     }
     
 }

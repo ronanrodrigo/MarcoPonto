@@ -10,9 +10,11 @@ import Foundation
 
 class SaveEntryUsecase {
     var gateway: EntryGateway
+    var presenter: SaveEntryPresenter
     
-    init(gateway: EntryGateway) {
+    init(gateway: EntryGateway, presenter: SaveEntryPresenter) {
         self.gateway = gateway
+        self.presenter = presenter
     }
     
     func save(entry: Entry) {
@@ -21,5 +23,7 @@ class SaveEntryUsecase {
         } else {
             gateway.update(entry)
         }
+        
+        self.presenter.didSaveEntry()
     }
 }
