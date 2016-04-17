@@ -1,5 +1,5 @@
 //
-//  AppointmentGatewaySpy.swift
+//  EntryGatewaySpy.swift
 //  MarcoPonto
 //
 //  Created by Ronan Rodrigo Nunes on 16/04/16.
@@ -8,15 +8,15 @@
 
 import Foundation
 
-class AppointmentGatewaySpy: AppointmentGateway {
+class EntryGatewaySpy: EntryGateway {
     var createSpied = false
     var updateSpied = false
     
-    func create(appointment: Appointment) {
+    func create(entry: Entry) {
         createSpied = true
     }
     
-    func update(appointment: Appointment) {
+    func update(entry: Entry) {
         updateSpied = true
     }
 }

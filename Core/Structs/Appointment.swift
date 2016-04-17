@@ -1,5 +1,5 @@
 //
-//  Appointment.swift
+//  Entry.swift
 //  MarcoPonto
 //
 //  Created by Ronan Rodrigo Nunes on 16/04/16.
@@ -8,12 +8,12 @@
 
 import Foundation
 
-protocol Appointment {
+protocol Entry {
     var moment: NSDate { get set }
-    func isNewAppointment() -> Bool
+    func isNewEntry() -> Bool
 }
 
-struct AppointmentStruct: Appointment {
+struct EntryStruct: Entry {
     var id: Int?
     var moment: NSDate
     
@@ -26,7 +26,7 @@ struct AppointmentStruct: Appointment {
         self.moment = moment
     }
     
-    func isNewAppointment() -> Bool {
+    func isNewEntry() -> Bool {
         return id == nil
     }
 }

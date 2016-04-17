@@ -1,5 +1,5 @@
 //
-//  FormAppointmentTableViewDataSource.swift
+//  FormEntryTableViewDataSource.swift
 //  MarcoPonto
 //
 //  Created by Ronan Rodrigo Nunes on 16/04/16.
@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class FormAppointmentTableViewDataSource:  NSObject, UITableViewDataSource {
+class FormEntryTableViewDataSource:  NSObject, UITableViewDataSource {
 
     let identifier = String(SelectDateTableViewCell)
     

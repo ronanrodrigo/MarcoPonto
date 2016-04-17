@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
         let navigationController = UINavigationController()
-        let formViewController = FormAppointmentViewController()
+        let formViewController = FormEntryViewController()
         navigationController.setViewControllers([formViewController], animated: true)
         window = UIWindow(frame: UIScreen.mainScreen().bounds)
         window?.rootViewController = navigationController

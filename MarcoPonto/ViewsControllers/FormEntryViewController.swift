@@ -1,5 +1,5 @@
 //
-//  FormAppointmentViewController.swift
+//  FormEntryViewController.swift
 //  MarcoPonto
 //
 //  Created by Ronan Rodrigo Nunes on 16/04/16.
@@ -8,11 +8,11 @@
 
 import UIKit
 
-class FormAppointmentViewController: UIViewController {
+class FormEntryViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
-    let dataSource: FormAppointmentTableViewDataSource = FormAppointmentTableViewDataSource()
+    let dataSource: FormEntryTableViewDataSource = FormEntryTableViewDataSource()
 
     override func viewDidLoad() {
         super.viewDidLoad()
