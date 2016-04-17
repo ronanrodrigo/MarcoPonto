@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -14,43 +15,37 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="74.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="SYy-Jb-6pv">
-                        <rect key="frame" x="16" y="16" width="288" height="43"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="T28-Lr-m1h">
-                                <rect key="frame" x="0.0" y="0.0" width="180.5" height="43"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25/06/2016" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pu3-ao-V5V">
-                                        <rect key="frame" x="0.0" y="0.0" width="180.5" height="21.5"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="08:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="auj-VB-QLc">
-                                        <rect key="frame" x="0.0" y="21.5" width="180.5" height="21.5"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                            </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Entrada" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z4I-VA-nce">
-                                <rect key="frame" x="180.5" y="0.0" width="107.5" height="43"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25/06/2016" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pu3-ao-V5V">
+                        <rect key="frame" x="8" y="18" width="82" height="19"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="08:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="auj-VB-QLc">
+                        <rect key="frame" x="8" y="39.5" width="35.5" height="17"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Entrada" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z4I-VA-nce" customClass="EntryTypeLabel" customModule="MarcoPonto" customModuleProvider="target">
+                        <rect key="frame" x="252" y="25" width="60" height="25"/>
                         <constraints>
-                            <constraint firstItem="Z4I-VA-nce" firstAttribute="leading" secondItem="T28-Lr-m1h" secondAttribute="trailing" id="kPm-0R-1Ni"/>
+                            <constraint firstAttribute="width" constant="60" id="4Fe-UQ-t7i"/>
+                            <constraint firstAttribute="height" constant="25" id="KUT-y3-cbl"/>
                         </constraints>
-                    </stackView>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="SYy-Jb-6pv" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="AfE-Jw-Wrt"/>
-                    <constraint firstAttribute="bottom" secondItem="SYy-Jb-6pv" secondAttribute="bottom" constant="16" id="GWz-pn-D6Z"/>
-                    <constraint firstAttribute="trailing" secondItem="SYy-Jb-6pv" secondAttribute="trailing" constant="16" id="iBD-ul-Nut"/>
-                    <constraint firstItem="SYy-Jb-6pv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="pMH-5k-bwY"/>
+                    <constraint firstItem="Pu3-ao-V5V" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="37S-X1-2I0"/>
+                    <constraint firstItem="auj-VB-QLc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="fgB-hl-WCA"/>
+                    <constraint firstItem="Z4I-VA-nce" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="l7W-oc-CIX"/>
+                    <constraint firstItem="Z4I-VA-nce" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="oF6-Kt-Jk6"/>
+                    <constraint firstItem="Pu3-ao-V5V" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="rG5-cc-LdG"/>
+                    <constraint firstItem="Pu3-ao-V5V" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="yfl-aL-WTw"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="auj-VB-QLc" secondAttribute="bottom" constant="10" id="yx7-1q-DS6"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>

@@ -49,6 +49,7 @@
 		34E9B3FE1CC3DA880017A083 /* SaveEntryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E9B3FD1CC3DA880017A083 /* SaveEntryPresenter.swift */; };
 		34E9B4001CC3DAD10017A083 /* SaveEntryPresenterSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E9B3FF1CC3DAD10017A083 /* SaveEntryPresenterSpy.swift */; };
 		34E9B4011CC3DAEB0017A083 /* SaveEntryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E9B3FD1CC3DA880017A083 /* SaveEntryPresenter.swift */; };
+		34E9B4031CC419090017A083 /* EntryTypeLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E9B4021CC419090017A083 /* EntryTypeLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +102,7 @@
 		34E9B3FB1CC3DA1A0017A083 /* EntryGatewayCoreDataFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryGatewayCoreDataFactory.swift; sourceTree = "<group>"; };
 		34E9B3FD1CC3DA880017A083 /* SaveEntryPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveEntryPresenter.swift; sourceTree = "<group>"; };
 		34E9B3FF1CC3DAD10017A083 /* SaveEntryPresenterSpy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveEntryPresenterSpy.swift; sourceTree = "<group>"; };
+		34E9B4021CC419090017A083 /* EntryTypeLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryTypeLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,6 +197,7 @@
 				340BD7371CC3409600AB860B /* ListEntriesViewController.swift */,
 				340BD7431CC3462B00AB860B /* ListEntriesDataSource.swift */,
 				340BD7451CC346D600AB860B /* ListEntriesTableViewCell.swift */,
+				34E9B4021CC419090017A083 /* EntryTypeLabel.swift */,
 			);
 			name = List;
 			path = MarcoPonto/ViewsControllers/Entry/List;
@@ -508,6 +511,7 @@
 				34E9B3EA1CC35DA40017A083 /* EntryModel+CoreDataProperties.swift in Sources */,
 				349D9B2B1CC2ECD20088DE5E /* FormEntryViewController.swift in Sources */,
 				34E9B3FE1CC3DA880017A083 /* SaveEntryPresenter.swift in Sources */,
+				34E9B4031CC419090017A083 /* EntryTypeLabel.swift in Sources */,
 				349D9B3F1CC30B6F0088DE5E /* Appointment.swift in Sources */,
 				34E9B3EB1CC35DA40017A083 /* EntryModel.swift in Sources */,
 				34E9B3ED1CC360060017A083 /* EntryGatewayCoreData.swift in Sources */,

@@ -12,7 +12,7 @@ class ListEntriesTableViewCell: UITableViewCell {
 
     @IBOutlet weak var date: UILabel!
     @IBOutlet weak var hour: UILabel!
-    @IBOutlet weak var type: UILabel!
+    @IBOutlet weak var type: EntryTypeLabel!
     
     let dateFormatter = NSDateFormatter()
     let timeFormatter = NSDateFormatter()
@@ -28,5 +28,6 @@ class ListEntriesTableViewCell: UITableViewCell {
         date.text = dateFormatter.stringFromDate(entry.moment)
         hour.text = timeFormatter.stringFromDate(entry.moment)
         type.text = entry.type.description()
+        type.paintBackground(entry.type)
     }
 }
