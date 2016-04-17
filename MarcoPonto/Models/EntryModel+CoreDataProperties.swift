@@ -14,8 +14,9 @@ import CoreData
 
 extension EntryModel {
 
-    @NSManaged var moment_: NSDate?
-    @NSManaged var type_: NSNumber?
-    @NSManaged var image_: NSData?
+    @NSManaged var entryMoment: NSDate?
+    @NSManaged var entryType: NSNumber?
+    @NSManaged var entryImage: NSData?
+    @NSManaged var entryId: NSNumber?
 
 }

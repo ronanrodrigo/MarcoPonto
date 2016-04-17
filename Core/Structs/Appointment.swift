@@ -9,6 +9,7 @@
 import Foundation
 
 protocol Entry {
+    var id: Int? { get set }
     var moment: NSDate { get set }
     var type: EntryType { get set }
     func isNewEntry() -> Bool

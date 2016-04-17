@@ -14,10 +14,12 @@ class EntryGatewayCoreData: EntryGateway {
     var entityName = "EntryModel"
     var app: AppDelegate
     var context: NSManagedObjectContext
+    var nextId: Int = 1
     
     init() {
         app = UIApplication.sharedApplication().delegate as! AppDelegate
         context = app.managedObjectContext
+        nextId = self.getLastId() + 1
     }
     
     func create(entry: Entry) {
@@ -25,6 +27,7 @@ class EntryGatewayCoreData: EntryGateway {
         let entryModel = EntryModel(entity: entity, insertIntoManagedObjectContext: context)
         entryModel.type = entry.type
         entryModel.moment = entry.moment
+        entryModel.id = nextId
         context.insertObject(entryModel)
         
         do {
@@ -45,5 +48,17 @@ class EntryGatewayCoreData: EntryGateway {
         } catch {
             return []
         }
+    }
+    
+    func getLastId() -> Int {
+        let fetchRequest  = NSFetchRequest(entityName: entityName)
+        var lastId = 0
+        do {
+            let results = try context.executeFetchRequest(fetchRequest)
+            if let lastEntry = results.last as? Entry {
+                lastId = lastEntry.id ?? 0
+            }
+        } catch { }
+        return lastId
     }
 }

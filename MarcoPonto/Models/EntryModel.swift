@@ -14,22 +14,30 @@ class EntryModel: NSManagedObject, Entry {
 
     var moment: NSDate {
         get {
-            return self.moment_ ?? NSDate()
+            return entryMoment ?? NSDate()
         } set {
-            self.moment_ = newValue
+            entryMoment = newValue
         }
     }
     
     var type: EntryType {
         get {
-            return EntryType(rawValue: self.type_ ?? 1)!
+            return EntryType(rawValue: entryType ?? 1)!
         } set {
-            self.type_ = newValue.rawValue
+            entryType = newValue.rawValue
+        }
+    }
+    
+    var id: Int? {
+        get {
+            return entryId as Int?
+        } set {
+            entryId = newValue
         }
     }
     
     func isNewEntry() -> Bool {
-        return true
+        return id == nil
     }
     
 }
