@@ -12,7 +12,7 @@ class FormEntryViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
-    let dataSource: FormEntryTableViewDataSource = FormEntryTableViewDataSource()
+    let dataSource: FormEntryDataSource = FormEntryDataSource()
 
     override func viewDidLoad() {
         super.viewDidLoad()
