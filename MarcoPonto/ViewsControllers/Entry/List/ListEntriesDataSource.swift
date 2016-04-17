@@ -9,15 +9,31 @@
 import Foundation
 import UIKit
 
+class EntryGatewayTemp: EntryGateway {
+    func create(entry: Entry) {}
+    func update(entry: Entry) {}
+    func list() -> [Entry] {
+        let entry = EntryStruct(id: 1, type: .Input, moment: NSDate())
+        return [entry,entry,entry]
+    }
+}
+
 class ListEntriesDataSource: NSObject, UITableViewDataSource, ListEntriesPresenter {
     let cellIdentifier = String(ListEntriesTableViewCell)
+    var entries: [Entry] = []
+    
+    override init() {
+        super.init()
+        let usecase = ListEntriesUsecase(gateway: EntryGatewayTemp(), presenter: self)
+        usecase.list()
+    }
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
     }
 
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return entries.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
