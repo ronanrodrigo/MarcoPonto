@@ -10,7 +10,9 @@ import UIKit
 
 class ListEntriesTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var date: UILabel!
+    @IBOutlet weak var hour: UILabel!
+    @IBOutlet weak var type: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()
