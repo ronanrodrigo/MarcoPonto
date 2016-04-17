@@ -13,18 +13,15 @@ import CoreData
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var navigationController: NavigationViewController!
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        
-        let navigationController = UINavigationController()
-        let formViewController = FormEntryViewController()
-        navigationController.setViewControllers([formViewController], animated: true)
+        navigationController = NavigationViewController()
         window = UIWindow(frame: UIScreen.mainScreen().bounds)
-        window?.rootViewController = navigationController
-        window!.backgroundColor = UIColor.whiteColor()
-        window!.makeKeyAndVisible()
-        
+        if let _window = window {
+            _window.rootViewController = navigationController
+            _window.makeKeyAndVisible()
+        }
         return true
     }
 
