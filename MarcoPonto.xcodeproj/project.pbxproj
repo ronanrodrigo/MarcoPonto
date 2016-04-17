@@ -38,6 +38,8 @@
 		349D9B3C1CC30AB40088DE5E /* SaveEntryUsecaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349D9B3A1CC30AB40088DE5E /* SaveEntryUsecaseTests.swift */; };
 		349D9B3F1CC30B6F0088DE5E /* Appointment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349D9B3E1CC30B6F0088DE5E /* Appointment.swift */; };
 		349D9B401CC30B6F0088DE5E /* Appointment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349D9B3E1CC30B6F0088DE5E /* Appointment.swift */; };
+		34E9B3EA1CC35DA40017A083 /* EntryModel+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E9B3E81CC35DA40017A083 /* EntryModel+CoreDataProperties.swift */; };
+		34E9B3EB1CC35DA40017A083 /* EntryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E9B3E91CC35DA40017A083 /* EntryModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +82,8 @@
 		349D9B361CC30A750088DE5E /* SaveEntryUsecase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveEntryUsecase.swift; sourceTree = "<group>"; };
 		349D9B3A1CC30AB40088DE5E /* SaveEntryUsecaseTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveEntryUsecaseTests.swift; sourceTree = "<group>"; };
 		349D9B3E1CC30B6F0088DE5E /* Appointment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Appointment.swift; sourceTree = "<group>"; };
+		34E9B3E81CC35DA40017A083 /* EntryModel+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "EntryModel+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		34E9B3E91CC35DA40017A083 /* EntryModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -227,6 +231,7 @@
 		3435FF741CC2E7640076AF42 /* MarcoPonto */ = {
 			isa = PBXGroup;
 			children = (
+				34E9B3E71CC35AF50017A083 /* Gateways */,
 				349D9B151CC2E82E0088DE5E /* ApplicationBase */,
 				349D9B161CC2E8610088DE5E /* Models */,
 				349D9B251CC2EB9E0088DE5E /* Views */,
@@ -250,6 +255,8 @@
 		349D9B161CC2E8610088DE5E /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				34E9B3E81CC35DA40017A083 /* EntryModel+CoreDataProperties.swift */,
+				34E9B3E91CC35DA40017A083 /* EntryModel.swift */,
 				3435FF7C1CC2E7640076AF42 /* MarcoPonto.xcdatamodeld */,
 			);
 			name = Models;
@@ -332,6 +339,14 @@
 			);
 			name = Structs;
 			path = Core/Structs;
+			sourceTree = SOURCE_ROOT;
+		};
+		34E9B3E71CC35AF50017A083 /* Gateways */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Gateways;
+			path = MarcoPonto/Gateways;
 			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
@@ -450,8 +465,10 @@
 				340BD7441CC3462B00AB860B /* ListEntriesDataSource.swift in Sources */,
 				34336DAB1CC30EFB00ED551C /* EntryGateway.swift in Sources */,
 				340BD74B1CC353CD00AB860B /* ListEntriesPresenter.swift in Sources */,
+				34E9B3EA1CC35DA40017A083 /* EntryModel+CoreDataProperties.swift in Sources */,
 				349D9B2B1CC2ECD20088DE5E /* FormEntryViewController.swift in Sources */,
 				349D9B3F1CC30B6F0088DE5E /* Appointment.swift in Sources */,
+				34E9B3EB1CC35DA40017A083 /* EntryModel.swift in Sources */,
 				349D9B321CC2F7960088DE5E /* FormEntryDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

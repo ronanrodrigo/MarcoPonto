@@ -8,8 +8,8 @@
 
 import Foundation
 
-enum EntryType {
-    case Input, Output
+enum EntryType: NSNumber {
+    case Input = 1, Output = 2
     
     func description() -> String {
         switch self {
