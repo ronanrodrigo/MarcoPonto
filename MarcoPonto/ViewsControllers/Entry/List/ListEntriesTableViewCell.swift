@@ -16,6 +16,7 @@ class ListEntriesTableViewCell: UITableViewCell {
     
     let dateFormatter = NSDateFormatter()
     let timeFormatter = NSDateFormatter()
+    var entry: Entry?
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -29,5 +30,6 @@ class ListEntriesTableViewCell: UITableViewCell {
         hour.text = timeFormatter.stringFromDate(entry.moment)
         type.text = entry.type.description()
         type.paintBackground(entry.type)
+        self.entry = entry
     }
 }

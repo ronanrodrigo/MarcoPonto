@@ -50,6 +50,7 @@
 		34E9B4001CC3DAD10017A083 /* SaveEntryPresenterSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E9B3FF1CC3DAD10017A083 /* SaveEntryPresenterSpy.swift */; };
 		34E9B4011CC3DAEB0017A083 /* SaveEntryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E9B3FD1CC3DA880017A083 /* SaveEntryPresenter.swift */; };
 		34E9B4031CC419090017A083 /* EntryTypeLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E9B4021CC419090017A083 /* EntryTypeLabel.swift */; };
+		34E9B4051CC42C360017A083 /* ListEntriesDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E9B4041CC42C360017A083 /* ListEntriesDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +104,7 @@
 		34E9B3FD1CC3DA880017A083 /* SaveEntryPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveEntryPresenter.swift; sourceTree = "<group>"; };
 		34E9B3FF1CC3DAD10017A083 /* SaveEntryPresenterSpy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveEntryPresenterSpy.swift; sourceTree = "<group>"; };
 		34E9B4021CC419090017A083 /* EntryTypeLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryTypeLabel.swift; sourceTree = "<group>"; };
+		34E9B4041CC42C360017A083 /* ListEntriesDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListEntriesDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,10 +196,11 @@
 		340BD7351CC3404200AB860B /* List */ = {
 			isa = PBXGroup;
 			children = (
-				340BD7371CC3409600AB860B /* ListEntriesViewController.swift */,
-				340BD7431CC3462B00AB860B /* ListEntriesDataSource.swift */,
-				340BD7451CC346D600AB860B /* ListEntriesTableViewCell.swift */,
 				34E9B4021CC419090017A083 /* EntryTypeLabel.swift */,
+				340BD7431CC3462B00AB860B /* ListEntriesDataSource.swift */,
+				34E9B4041CC42C360017A083 /* ListEntriesDelegate.swift */,
+				340BD7451CC346D600AB860B /* ListEntriesTableViewCell.swift */,
+				340BD7371CC3409600AB860B /* ListEntriesViewController.swift */,
 			);
 			name = List;
 			path = MarcoPonto/ViewsControllers/Entry/List;
@@ -503,6 +506,7 @@
 				349D9B2F1CC2F68B0088DE5E /* SelectMomentTableViewCell.swift in Sources */,
 				349D9B371CC30A750088DE5E /* SaveEntryUsecase.swift in Sources */,
 				3435FF7E1CC2E7640076AF42 /* MarcoPonto.xcdatamodeld in Sources */,
+				34E9B4051CC42C360017A083 /* ListEntriesDelegate.swift in Sources */,
 				340BD7441CC3462B00AB860B /* ListEntriesDataSource.swift in Sources */,
 				34336DAB1CC30EFB00ED551C /* EntryGateway.swift in Sources */,
 				34E9B3F81CC3C66B0017A083 /* SelectTypeTableViewCell.swift in Sources */,

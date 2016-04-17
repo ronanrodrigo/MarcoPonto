@@ -11,8 +11,9 @@ import UIKit
 class ListEntriesViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
-    var dataSource: ListEntriesDataSource!
     let cellNameAndIdentifier = String(ListEntriesTableViewCell)
+    var dataSource: ListEntriesDataSource!
+    var delegate: ListEntriesDelegate!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +26,10 @@ class ListEntriesViewController: UIViewController {
     func configureTableView() {
         dataSource = ListEntriesDataSource()
         tableView.dataSource = dataSource
+        
+        delegate = ListEntriesDelegate()
+        tableView.delegate = delegate
+        
         tableView.registerNib(UINib(nibName: cellNameAndIdentifier, bundle: nil), forCellReuseIdentifier: cellNameAndIdentifier)
     }
 
