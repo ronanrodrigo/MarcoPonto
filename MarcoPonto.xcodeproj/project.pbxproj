@@ -40,6 +40,8 @@
 		349D9B401CC30B6F0088DE5E /* Appointment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349D9B3E1CC30B6F0088DE5E /* Appointment.swift */; };
 		34E9B3EA1CC35DA40017A083 /* EntryModel+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E9B3E81CC35DA40017A083 /* EntryModel+CoreDataProperties.swift */; };
 		34E9B3EB1CC35DA40017A083 /* EntryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E9B3E91CC35DA40017A083 /* EntryModel.swift */; };
+		34E9B3ED1CC360060017A083 /* EntryGatewayCoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E9B3EC1CC360060017A083 /* EntryGatewayCoreData.swift */; };
+		34E9B3F01CC3B72E0017A083 /* ListEntriesUsecaseFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E9B3EF1CC3B72E0017A083 /* ListEntriesUsecaseFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +86,8 @@
 		349D9B3E1CC30B6F0088DE5E /* Appointment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Appointment.swift; sourceTree = "<group>"; };
 		34E9B3E81CC35DA40017A083 /* EntryModel+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "EntryModel+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		34E9B3E91CC35DA40017A083 /* EntryModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryModel.swift; sourceTree = "<group>"; };
+		34E9B3EC1CC360060017A083 /* EntryGatewayCoreData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryGatewayCoreData.swift; sourceTree = "<group>"; };
+		34E9B3EF1CC3B72E0017A083 /* ListEntriesUsecaseFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListEntriesUsecaseFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -231,6 +235,7 @@
 		3435FF741CC2E7640076AF42 /* MarcoPonto */ = {
 			isa = PBXGroup;
 			children = (
+				34E9B3EE1CC3B7010017A083 /* Factories */,
 				34E9B3E71CC35AF50017A083 /* Gateways */,
 				349D9B151CC2E82E0088DE5E /* ApplicationBase */,
 				349D9B161CC2E8610088DE5E /* Models */,
@@ -344,9 +349,19 @@
 		34E9B3E71CC35AF50017A083 /* Gateways */ = {
 			isa = PBXGroup;
 			children = (
+				34E9B3EC1CC360060017A083 /* EntryGatewayCoreData.swift */,
 			);
 			name = Gateways;
 			path = MarcoPonto/Gateways;
+			sourceTree = SOURCE_ROOT;
+		};
+		34E9B3EE1CC3B7010017A083 /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				34E9B3EF1CC3B72E0017A083 /* ListEntriesUsecaseFactory.swift */,
+			);
+			name = Factories;
+			path = MarcoPonto/Factories;
 			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
@@ -454,6 +469,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				340BD7231CC3251B00AB860B /* EntryType.swift in Sources */,
+				34E9B3F01CC3B72E0017A083 /* ListEntriesUsecaseFactory.swift in Sources */,
 				340BD72B1CC33D8100AB860B /* NavigationViewController.swift in Sources */,
 				340BD7471CC346D600AB860B /* ListEntriesTableViewCell.swift in Sources */,
 				3435FF761CC2E7640076AF42 /* AppDelegate.swift in Sources */,
@@ -469,6 +485,7 @@
 				349D9B2B1CC2ECD20088DE5E /* FormEntryViewController.swift in Sources */,
 				349D9B3F1CC30B6F0088DE5E /* Appointment.swift in Sources */,
 				34E9B3EB1CC35DA40017A083 /* EntryModel.swift in Sources */,
+				34E9B3ED1CC360060017A083 /* EntryGatewayCoreData.swift in Sources */,
 				349D9B321CC2F7960088DE5E /* FormEntryDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

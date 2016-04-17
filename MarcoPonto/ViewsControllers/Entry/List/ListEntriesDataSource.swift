@@ -9,23 +9,13 @@
 import Foundation
 import UIKit
 
-class EntryGatewayTemp: EntryGateway {
-    func create(entry: Entry) {}
-    func update(entry: Entry) {}
-    func list() -> [Entry] {
-        let entry = EntryStruct(id: 1, type: .Input, moment: NSDate())
-        return [entry,entry,entry]
-    }
-}
-
 class ListEntriesDataSource: NSObject, UITableViewDataSource, ListEntriesPresenter {
     let cellIdentifier = String(ListEntriesTableViewCell)
     var entries: [Entry] = []
     
     override init() {
         super.init()
-        let usecase = ListEntriesUsecase(gateway: EntryGatewayTemp(), presenter: self)
-        usecase.list()
+        ListEntriesUsecaseFactory.make(presenter: self).list()
     }
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
