@@ -18,6 +18,13 @@ class NavigationViewController: UINavigationController {
     func loadListEntriesViewController() {
         let formViewController = ListEntriesViewController()
         formViewController.navigationItem.title = "Pontos batidos"
+        let addButton = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: #selector(loadFormEntryViewController))
+        formViewController.navigationItem.rightBarButtonItem = addButton
         setViewControllers([formViewController], animated: true)
+    }
+    
+    func loadFormEntryViewController() {
+        let formEntryViewController = FormEntryViewController()
+        pushViewController(formEntryViewController, animated: true)
     }
 }
