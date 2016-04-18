@@ -15,10 +15,10 @@ protocol EditTableViewDelegate {
 class ListEntriesViewController: UIViewController, EditTableViewDelegate {
 
     @IBOutlet weak var tableView: UITableView!
-    let cellNameAndIdentifier = String(ListEntriesTableViewCell)
-    var dataSource: ListEntriesDataSource!
-    var delegate: ListEntriesDelegate!
-    var deleteEntryPath: NSIndexPath?
+    private let cellNameAndIdentifier = String(ListEntriesTableViewCell)
+    private var dataSource: ListEntriesDataSource!
+    private var delegate: ListEntriesDelegate!
+    private var deleteEntryPath: NSIndexPath?
     private var navigationDelegate: INavigationDelgate!
     
     init (navigationDelegate: INavigationDelgate) {
