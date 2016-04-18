@@ -56,7 +56,7 @@ class ListEntriesViewController: UIViewController, EditTableViewDelegate {
         dateFormatter.dateFormat = "dd/MM/YY, EEEE, HH:mm"
         
         let alert = UIAlertController(title: "Apagar Ponto", message: "Tem certeza que deseja apagar o ponto batido em \(dateFormatter.stringFromDate(entry.moment))?", preferredStyle: .ActionSheet)
-        let deleteAction = UIAlertAction(title: "Apagar", style: .Destructive, handler: handleDeleteEntry)
+        let deleteAction = UIAlertAction(title: "Sim", style: .Destructive, handler: handleDeleteEntry)
         let cancelAction = UIAlertAction(title: "Cancelar", style: .Cancel, handler: nil)
         
         alert.addAction(deleteAction)
