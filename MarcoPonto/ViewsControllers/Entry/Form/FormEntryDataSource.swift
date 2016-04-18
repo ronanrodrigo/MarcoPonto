@@ -14,8 +14,10 @@ class FormEntryDataSource:  NSObject, UITableViewDataSource {
     let formEntryFields = [String(SelectTypeTableViewCell), String(SelectMomentTableViewCell)]
     var selectTypeTableViewCell: SelectTypeTableViewCell!
     var selectMomentTableViewCell: SelectMomentTableViewCell!
+    var entry: Entry?
     
-    override init() {
+    init(entry: Entry?) {
+        self.entry = entry
     }
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -50,7 +52,7 @@ class FormEntryDataSource:  NSObject, UITableViewDataSource {
     func filledEntry() -> Entry {
         let entryType = EntryType(rawValue: selectTypeTableViewCell.typeSelector.selectedSegmentIndex)!
         let moment = selectMomentTableViewCell.momentSelector.date
-        return EntryStruct(id: nil, type: entryType, moment: moment)
+        return EntryStruct(id: entry?.id, type: entryType, moment: moment)
     }
     
 }
