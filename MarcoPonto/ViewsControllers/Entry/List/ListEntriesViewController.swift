@@ -38,7 +38,7 @@ class ListEntriesViewController: UIViewController, EditTableViewDelegate {
         configureTableView()
     }
     
-    func configureTableView() {
+    private func configureTableView() {
         dataSource = ListEntriesDataSource(editTableViewDelegate: self)
         tableView.dataSource = dataSource
         
@@ -65,7 +65,7 @@ class ListEntriesViewController: UIViewController, EditTableViewDelegate {
         self.presentViewController(alert, animated: true, completion: nil)
     }
     
-    func handleDeleteEntry(alertAction: UIAlertAction!) -> Void {
+    private func handleDeleteEntry(alertAction: UIAlertAction!) -> Void {
         if let indexPath = deleteEntryPath {
             tableView.beginUpdates()
             dataSource.removeEntry(at: indexPath)
@@ -75,7 +75,7 @@ class ListEntriesViewController: UIViewController, EditTableViewDelegate {
         }
     }
     
-    func cancelDelteEntry(alertAction: UIAlertAction!) -> Void {
+    private func cancelDelteEntry(alertAction: UIAlertAction!) -> Void {
         deleteEntryPath = nil
     }
 

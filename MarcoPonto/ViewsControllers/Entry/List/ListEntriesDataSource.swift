@@ -10,9 +10,9 @@ import Foundation
 import UIKit
 
 class ListEntriesDataSource: NSObject, UITableViewDataSource, ListEntriesPresenter {
-    let cellIdentifier = String(ListEntriesTableViewCell)
-    var editTableViewDelegate: EditTableViewDelegate!
-    var entries: [Entry] = []
+    private let cellIdentifier = String(ListEntriesTableViewCell)
+    private var editTableViewDelegate: EditTableViewDelegate!
+    private var entries: [Entry] = []
     
     init(editTableViewDelegate: EditTableViewDelegate) {
         super.init()

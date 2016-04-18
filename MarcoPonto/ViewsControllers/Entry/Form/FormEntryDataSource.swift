@@ -11,10 +11,10 @@ import UIKit
 
 class FormEntryDataSource:  NSObject, UITableViewDataSource {
 
-    let formEntryFields = [String(SelectTypeTableViewCell), String(SelectMomentTableViewCell)]
-    var selectTypeTableViewCell: SelectTypeTableViewCell!
-    var selectMomentTableViewCell: SelectMomentTableViewCell!
-    var entry: Entry?
+    private let formEntryFields = [String(SelectTypeTableViewCell), String(SelectMomentTableViewCell)]
+    private var selectTypeTableViewCell: SelectTypeTableViewCell!
+    private var selectMomentTableViewCell: SelectMomentTableViewCell!
+    private var entry: Entry?
     
     init(entry: Entry?) {
         self.entry = entry

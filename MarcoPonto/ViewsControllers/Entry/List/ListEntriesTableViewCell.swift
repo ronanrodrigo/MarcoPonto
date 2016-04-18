@@ -14,9 +14,9 @@ class ListEntriesTableViewCell: UITableViewCell {
     @IBOutlet weak var hour: UILabel!
     @IBOutlet weak var type: EntryTypeLabel!
     
-    let dateFormatter = NSDateFormatter()
-    let timeFormatter = NSDateFormatter()
-    let gray = UIColor(red: 0.752, green: 0.752, blue: 0.752, alpha: 0.9)
+    private let dateFormatter = NSDateFormatter()
+    private let timeFormatter = NSDateFormatter()
+    private let gray = UIColor(red: 0.752, green: 0.752, blue: 0.752, alpha: 0.9)
     var entry: Entry?
 
     override func awakeFromNib() {

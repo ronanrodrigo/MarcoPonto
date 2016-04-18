@@ -12,8 +12,8 @@ class FormEntryViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
-    var dataSource: FormEntryDataSource?
-    var saveEntryPresenter: SaveEntryPresenter?
+    private var dataSource: FormEntryDataSource?
+    private var saveEntryPresenter: SaveEntryPresenter?
     private var entry: Entry?
     
     init(saveEntryPresenter: SaveEntryPresenter, entry: Entry?) {
