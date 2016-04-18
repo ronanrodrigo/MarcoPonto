@@ -38,6 +38,18 @@ class EntryGatewayCoreData: EntryGateway {
     }
     
     func update(entry: Entry) {
+        let fetchRequest = NSFetchRequest(entityName: entityName)
+        fetchRequest.predicate =  NSPredicate(format: "entryId = %d", entry.id!)
+        do {
+            let results = try context.executeFetchRequest(fetchRequest)
+            if var _entry = results.first as? Entry {
+                _entry.moment = entry.moment
+                _entry.type = entry.type
+                try context.save()
+            }
+        } catch {
+            print("Could not update \(entityName)")
+        }
     }
     
     func list() -> [Entry] {
