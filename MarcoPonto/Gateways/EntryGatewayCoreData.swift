@@ -33,7 +33,7 @@ class EntryGatewayCoreData: EntryGateway {
         do {
             try context.save()
         } catch {
-            print("Could not save recipe")
+            print("Could not create \(entityName)")
         }
     }
     
@@ -53,7 +53,7 @@ class EntryGatewayCoreData: EntryGateway {
     }
     
     func list() -> [Entry] {
-        let fetchRequest  = NSFetchRequest(entityName: entityName)
+        let fetchRequest = NSFetchRequest(entityName: entityName)
         do {
             let results = try context.executeFetchRequest(fetchRequest)
             return results.map({ $0 as! EntryModel })
@@ -70,7 +70,9 @@ class EntryGatewayCoreData: EntryGateway {
             if let lastEntry = results.last as? Entry {
                 lastId = lastEntry.id ?? 0
             }
-        } catch { }
+        } catch {
+            print("Could not get ID of \(entityName)")
+        }
         return lastId
     }
 }
