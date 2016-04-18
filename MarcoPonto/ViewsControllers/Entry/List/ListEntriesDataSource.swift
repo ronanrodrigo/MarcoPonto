@@ -46,6 +46,7 @@ class ListEntriesDataSource: NSObject, UITableViewDataSource, ListEntriesPresent
     }
     
     func removeEntry(at indexPath: NSIndexPath) {
+        EntryGatewayCoreData().delete(entries[indexPath.row])
         entries.removeAtIndex(indexPath.row)
     }
     

@@ -52,6 +52,19 @@ class EntryGatewayCoreData: EntryGateway {
         }
     }
     
+    func delete(entry: Entry) {
+        let fetchRequest = NSFetchRequest(entityName: entityName)
+        fetchRequest.predicate =  NSPredicate(format: "entryId = %d", entry.id!)
+        do {
+            let results = try context.executeFetchRequest(fetchRequest)
+            if let _entry = results.first as? EntryModel {
+                context.deleteObject(_entry)
+            }
+        } catch {
+            print("Could not update \(entityName)")
+        }
+    }
+    
     func list() -> [Entry] {
         let fetchRequest = NSFetchRequest(entityName: entityName)
         do {

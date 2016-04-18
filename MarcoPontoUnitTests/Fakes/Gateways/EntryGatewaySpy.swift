@@ -21,6 +21,10 @@ class EntryGatewaySpy: EntryGateway {
         updateSpied = true
     }
     
+    func delete(entry: Entry) {
+        
+    }
+    
     func list() -> [Entry] {
         listSpied = true
         return []
