@@ -18,4 +18,9 @@ class SelectMomentTableViewCell: UITableViewCell {
         layoutMargins = UIEdgeInsetsZero
     }
 
+    func fillData(moment: NSDate?) {
+        if let _moment = moment {
+            momentSelector.date = _moment
+        }
+    }
 }

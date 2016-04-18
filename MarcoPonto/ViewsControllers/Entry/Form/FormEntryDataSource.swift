@@ -29,23 +29,22 @@ class FormEntryDataSource:  NSObject, UITableViewDataSource {
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let field = formEntryFields[indexPath.row]
         tableView.rowHeight = UITableViewAutomaticDimension
+
+        let field = formEntryFields[indexPath.row]
         switch field {
         case String(SelectTypeTableViewCell):
-            if let cell = tableView.dequeueReusableCellWithIdentifier(field) as? SelectTypeTableViewCell {
-                selectTypeTableViewCell = cell
-                return cell
-            } else {
-                return SelectTypeTableViewCell()
-            }
+            guard let cell = tableView.dequeueReusableCellWithIdentifier(field) as? SelectTypeTableViewCell
+                else { return SelectTypeTableViewCell() }
+            selectTypeTableViewCell = cell
+            selectTypeTableViewCell.fillData(self.entry?.type)
+            return selectTypeTableViewCell
         default:
-            if let cell = tableView.dequeueReusableCellWithIdentifier(field) as? SelectMomentTableViewCell {
-                selectMomentTableViewCell = cell
-                return cell
-            } else {
-                return SelectMomentTableViewCell()
-            }
+            guard let cell = tableView.dequeueReusableCellWithIdentifier(field) as? SelectMomentTableViewCell
+                else { return SelectMomentTableViewCell() }
+            selectMomentTableViewCell = cell
+            selectMomentTableViewCell.fillData(self.entry?.moment)
+            return selectMomentTableViewCell
         }
     }
     

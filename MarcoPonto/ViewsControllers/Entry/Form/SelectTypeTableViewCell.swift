@@ -20,8 +20,12 @@ class SelectTypeTableViewCell: UITableViewCell {
 
     override func setSelected(selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    }
+    
+    func fillData(type: EntryType?) {
+        if let _type = type {
+            typeSelector.selectedSegmentIndex = _type.rawValue.integerValue
+        }
     }
     
 }

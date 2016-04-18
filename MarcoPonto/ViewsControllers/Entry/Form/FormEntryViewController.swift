@@ -14,9 +14,12 @@ class FormEntryViewController: UIViewController {
     
     let dataSource: FormEntryDataSource = FormEntryDataSource()
     var saveEntryPresenter: SaveEntryPresenter?
+    private var entry: Entry?
     
-    init(saveEntryPresenter: SaveEntryPresenter) {
+    init(saveEntryPresenter: SaveEntryPresenter, entry: Entry?) {
         self.saveEntryPresenter = saveEntryPresenter
+        self.entry = entry
+        self.dataSource = FormEntryDataSource(entry: entry)
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -51,8 +54,8 @@ class FormEntryViewController: UIViewController {
     func saveEntry() {
         if let _saveEntryPresenter = saveEntryPresenter {
             let usecase = SaveEntryUsecaseFactory.make(presenter: _saveEntryPresenter)
-            let entry = dataSource.filledEntry()
-            usecase.save(entry)
+            let filledEntry = dataSource.filledEntry()
+            usecase.save(filledEntry)
         }
     }
 
