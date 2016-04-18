@@ -8,12 +8,17 @@
 
 import UIKit
 
-class ListEntriesViewController: UIViewController {
+protocol EditTableViewDelegate {
+    func confirmDelete(entry: Entry, at indexPath: NSIndexPath)
+}
+
+class ListEntriesViewController: UIViewController, EditTableViewDelegate {
 
     @IBOutlet weak var tableView: UITableView!
     let cellNameAndIdentifier = String(ListEntriesTableViewCell)
     var dataSource: ListEntriesDataSource!
     var delegate: ListEntriesDelegate!
+    var deleteEntryPath: NSIndexPath?
     private var navigationDelegate: INavigationDelgate!
     
     init (navigationDelegate: INavigationDelgate) {
@@ -34,13 +39,44 @@ class ListEntriesViewController: UIViewController {
     }
     
     func configureTableView() {
-        dataSource = ListEntriesDataSource()
+        dataSource = ListEntriesDataSource(editTableViewDelegate: self)
         tableView.dataSource = dataSource
         
         delegate = ListEntriesDelegate(navigationDelegate: navigationDelegate)
         tableView.delegate = delegate
         
         tableView.registerNib(UINib(nibName: cellNameAndIdentifier, bundle: nil), forCellReuseIdentifier: cellNameAndIdentifier)
+        tableView.allowsSelectionDuringEditing = false
+    }
+
+    func confirmDelete(entry: Entry, at indexPath: NSIndexPath) {
+        deleteEntryPath = indexPath
+        
+        let dateFormatter = NSDateFormatter()
+        dateFormatter.dateFormat = "dd/MM/YY, EEEE, HH:mm"
+        
+        let alert = UIAlertController(title: "Apagar Ponto", message: "Tem certeza que deseja apagar o ponto batido em \(dateFormatter.stringFromDate(entry.moment))?", preferredStyle: .ActionSheet)
+        let deleteAction = UIAlertAction(title: "Apagar", style: .Destructive, handler: handleDeleteEntry)
+        let cancelAction = UIAlertAction(title: "Cancelar", style: .Cancel, handler: nil)
+        
+        alert.addAction(deleteAction)
+        alert.addAction(cancelAction)
+        
+        self.presentViewController(alert, animated: true, completion: nil)
+    }
+    
+    func handleDeleteEntry(alertAction: UIAlertAction!) -> Void {
+        if let indexPath = deleteEntryPath {
+            tableView.beginUpdates()
+            dataSource.removeEntry(at: indexPath)
+            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
+            deleteEntryPath = nil
+            tableView.endUpdates()
+        }
+    }
+    
+    func cancelDelteEntry(alertAction: UIAlertAction!) -> Void {
+        deleteEntryPath = nil
     }
 
 }

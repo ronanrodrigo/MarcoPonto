@@ -23,4 +23,8 @@ class ListEntriesDelegate: NSObject, UITableViewDelegate {
             navigationDelegate.editEntryFormViewController(_entry)
         }
     }
+    
+    func tableView(tableView: UITableView, editingStyleForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCellEditingStyle {
+        return UITableViewCellEditingStyle.Delete
+    }
 }

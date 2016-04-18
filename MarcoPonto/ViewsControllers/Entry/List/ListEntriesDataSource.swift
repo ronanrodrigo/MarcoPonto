@@ -11,10 +11,12 @@ import UIKit
 
 class ListEntriesDataSource: NSObject, UITableViewDataSource, ListEntriesPresenter {
     let cellIdentifier = String(ListEntriesTableViewCell)
+    var editTableViewDelegate: EditTableViewDelegate!
     var entries: [Entry] = []
     
-    override init() {
+    init(editTableViewDelegate: EditTableViewDelegate) {
         super.init()
+        self.editTableViewDelegate = editTableViewDelegate
         ListEntriesUsecaseFactory.make(presenter: self).list()
     }
     
@@ -33,6 +35,18 @@ class ListEntriesDataSource: NSObject, UITableViewDataSource, ListEntriesPresent
         } else {
             return ListEntriesTableViewCell()
         }
+    }
+    
+    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        if editingStyle == UITableViewCellEditingStyle.Delete {
+            if let _editTableViewDelegate = editTableViewDelegate {
+                _editTableViewDelegate.confirmDelete(entries[indexPath.row], at: indexPath)
+            }
+        }
+    }
+    
+    func removeEntry(at indexPath: NSIndexPath) {
+        entries.removeAtIndex(indexPath.row)
     }
     
     func list(entries: [Entry]) {
