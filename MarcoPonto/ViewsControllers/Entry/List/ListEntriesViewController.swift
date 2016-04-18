@@ -62,7 +62,7 @@ class ListEntriesViewController: UIViewController, EditTableViewDelegate {
         alert.addAction(deleteAction)
         alert.addAction(cancelAction)
         
-        self.presentViewController(alert, animated: true, completion: nil)
+        presentViewController(alert, animated: true, completion: nil)
     }
     
     private func handleDeleteEntry(alertAction: UIAlertAction!) -> Void {
