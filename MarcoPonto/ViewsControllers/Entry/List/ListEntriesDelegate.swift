@@ -10,8 +10,17 @@ import Foundation
 import UIKit
 
 class ListEntriesDelegate: NSObject, UITableViewDelegate {
+    
+    private var navigationDelegate: INavigationDelgate
+    
+    init (navigationDelegate: INavigationDelgate) {
+        self.navigationDelegate = navigationDelegate
+    }
+    
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         let cell = tableView.cellForRowAtIndexPath(indexPath) as! ListEntriesTableViewCell
-        print(cell.entry?.id)
+        if let _entry = cell.entry {
+            navigationDelegate.editEntryFormViewController(_entry)
+        }
     }
 }

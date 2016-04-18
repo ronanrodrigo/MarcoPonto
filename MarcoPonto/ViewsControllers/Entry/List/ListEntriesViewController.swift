@@ -14,6 +14,16 @@ class ListEntriesViewController: UIViewController {
     let cellNameAndIdentifier = String(ListEntriesTableViewCell)
     var dataSource: ListEntriesDataSource!
     var delegate: ListEntriesDelegate!
+    private var navigationDelegate: INavigationDelgate!
+    
+    init (navigationDelegate: INavigationDelgate) {
+        self.navigationDelegate = navigationDelegate
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,7 +37,7 @@ class ListEntriesViewController: UIViewController {
         dataSource = ListEntriesDataSource()
         tableView.dataSource = dataSource
         
-        delegate = ListEntriesDelegate()
+        delegate = ListEntriesDelegate(navigationDelegate: navigationDelegate)
         tableView.delegate = delegate
         
         tableView.registerNib(UINib(nibName: cellNameAndIdentifier, bundle: nil), forCellReuseIdentifier: cellNameAndIdentifier)

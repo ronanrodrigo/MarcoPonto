@@ -8,24 +8,35 @@
 
 import UIKit
 
-class NavigationViewController: UINavigationController, SaveEntryPresenter {
+protocol INavigationDelgate {
+    func editEntryFormViewController(entry: Entry)
+}
+
+class NavigationViewController: UINavigationController, SaveEntryPresenter, INavigationDelgate {
     var listEntriesViewController: ListEntriesViewController!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        listEntriesViewController = ListEntriesViewController()
+        listEntriesViewController = ListEntriesViewController(navigationDelegate: self)
         openListEntriesViewController()
     }
     
     func openListEntriesViewController() {
         listEntriesViewController.navigationItem.title = "Pontos batidos"
-        let addButton = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: #selector(openFormEntryViewController))
+        let addButton = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: #selector(newEntryFormViewController))
         listEntriesViewController.navigationItem.rightBarButtonItem = addButton
         setViewControllers([listEntriesViewController], animated: true)
     }
     
-    func openFormEntryViewController() {
-        let formEntryViewController = FormEntryViewController(saveEntryPresenter: self)
+    func newEntryFormViewController() {
+        let formEntryViewController = FormEntryViewController(saveEntryPresenter: self, entry: nil)
+        let saveButton = UIBarButtonItem(title: "Salvar", style: UIBarButtonItemStyle.Plain, target: formEntryViewController, action: #selector(formEntryViewController.saveEntry))
+        formEntryViewController.navigationItem.rightBarButtonItem = saveButton
+        pushViewController(formEntryViewController, animated: true)
+    }
+    
+    func editEntryFormViewController(entry: Entry) {
+        let formEntryViewController = FormEntryViewController(saveEntryPresenter: self, entry: entry)
         let saveButton = UIBarButtonItem(title: "Salvar", style: UIBarButtonItemStyle.Plain, target: formEntryViewController, action: #selector(formEntryViewController.saveEntry))
         formEntryViewController.navigationItem.rightBarButtonItem = saveButton
         pushViewController(formEntryViewController, animated: true)
