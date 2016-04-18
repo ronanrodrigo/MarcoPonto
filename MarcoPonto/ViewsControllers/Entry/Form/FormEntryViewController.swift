@@ -12,7 +12,7 @@ class FormEntryViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
-    let dataSource: FormEntryDataSource = FormEntryDataSource()
+    var dataSource: FormEntryDataSource?
     var saveEntryPresenter: SaveEntryPresenter?
     private var entry: Entry?
     
@@ -52,9 +52,9 @@ class FormEntryViewController: UIViewController {
     }
     
     func saveEntry() {
-        if let _saveEntryPresenter = saveEntryPresenter {
+        if let _saveEntryPresenter = saveEntryPresenter, let _dataSource = dataSource {
             let usecase = SaveEntryUsecaseFactory.make(presenter: _saveEntryPresenter)
-            let filledEntry = dataSource.filledEntry()
+            let filledEntry = _dataSource.filledEntry()
             usecase.save(filledEntry)
         }
     }
