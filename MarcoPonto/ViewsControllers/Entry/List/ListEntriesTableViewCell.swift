@@ -16,6 +16,7 @@ class ListEntriesTableViewCell: UITableViewCell {
     
     let dateFormatter = NSDateFormatter()
     let timeFormatter = NSDateFormatter()
+    let gray = UIColor(red: 0.752, green: 0.752, blue: 0.752, alpha: 0.9)
     var entry: Entry?
 
     override func awakeFromNib() {
@@ -31,5 +32,10 @@ class ListEntriesTableViewCell: UITableViewCell {
         type.text = entry.type.description()
         type.background(by: entry.type)
         self.entry = entry
+    }
+    
+    override func setHighlighted(highlighted: Bool, animated: Bool) {
+        type.textColor = highlighted ? gray :  UIColor.whiteColor()
+        super.setHighlighted(highlighted, animated: animated)
     }
 }
