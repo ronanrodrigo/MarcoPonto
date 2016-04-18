@@ -16,7 +16,7 @@ class EntryTypeLabel: UILabel {
         textColor = UIColor.whiteColor()
     }
 
-    func paintBackground(type: EntryType) {
+    func background(by type: EntryType) {
         if type == .Output {
             backgroundColor = UIColor(red:0.61, green:0.15, blue:0.69, alpha:1.00)
         } else {

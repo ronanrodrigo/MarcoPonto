@@ -29,7 +29,7 @@ class ListEntriesTableViewCell: UITableViewCell {
         date.text = dateFormatter.stringFromDate(entry.moment)
         hour.text = timeFormatter.stringFromDate(entry.moment)
         type.text = entry.type.description()
-        type.paintBackground(entry.type)
+        type.background(by: entry.type)
         self.entry = entry
     }
 }
