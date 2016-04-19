@@ -1,5 +1,5 @@
 //
-//  ListEntriesDataSource.swift
+//  ListPunchsDataSource.swift
 //  MarcoPonto
 //
 //  Created by Ronan Rodrigo Nunes on 17/04/16.
@@ -10,18 +10,18 @@ import Foundation
 import UIKit
 
 protocol RRNListDataSource: UITableViewDataSource {
-    func removeEntry(at indexPath: NSIndexPath)
+    func removePunch(at indexPath: NSIndexPath)
 }
 
-class ListEntriesDataSource: NSObject, RRNListDataSource, ListEntriesPresenter {
-    private let cellIdentifier = String(ListEntriesTableViewCell)
+class ListPunchsDataSource: NSObject, RRNListDataSource, ListPunchsPresenter {
+    private let cellIdentifier = String(ListPunchsTableViewCell)
     private var editTableViewDelegate: EditTableViewDelegate!
-    private var entries: [Entry] = []
+    private var punchs: [Punch] = []
     
     init(editTableViewDelegate: EditTableViewDelegate) {
         super.init()
         self.editTableViewDelegate = editTableViewDelegate
-        ListEntriesUsecaseFactory.make(presenter: self).list()
+        ListPunchsUsecaseFactory.make(presenter: self).list()
     }
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -29,32 +29,32 @@ class ListEntriesDataSource: NSObject, RRNListDataSource, ListEntriesPresenter {
     }
 
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return entries.count
+        return punchs.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        if let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier) as? ListEntriesTableViewCell {
-            cell.updateCell(entries[indexPath.row])
+        if let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier) as? ListPunchsTableViewCell {
+            cell.updateCell(punchs[indexPath.row])
             return cell
         } else {
-            return ListEntriesTableViewCell()
+            return ListPunchsTableViewCell()
         }
     }
     
     func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         if editingStyle == UITableViewCellEditingStyle.Delete {
             if let _editTableViewDelegate = editTableViewDelegate {
-                _editTableViewDelegate.confirmDelete(entries[indexPath.row], at: indexPath)
+                _editTableViewDelegate.confirmDelete(punchs[indexPath.row], at: indexPath)
             }
         }
     }
     
-    func removeEntry(at indexPath: NSIndexPath) {
-        EntryGatewayCoreData().delete(entries[indexPath.row])
-        entries.removeAtIndex(indexPath.row)
+    func removePunch(at indexPath: NSIndexPath) {
+        PunchGatewayCoreData().delete(punchs[indexPath.row])
+        punchs.removeAtIndex(indexPath.row)
     }
     
-    func list(entries: [Entry]) {
-        self.entries = entries
+    func list(punchs: [Punch]) {
+        self.punchs = punchs
     }
 }

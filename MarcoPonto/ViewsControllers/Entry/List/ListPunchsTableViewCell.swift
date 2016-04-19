@@ -1,5 +1,5 @@
 //
-//  ListEntriesTableViewCell.swift
+//  ListPunchsTableViewCell.swift
 //  MarcoPonto
 //
 //  Created by Ronan Rodrigo Nunes on 17/04/16.
@@ -8,16 +8,16 @@
 
 import UIKit
 
-class ListEntriesTableViewCell: UITableViewCell {
+class ListPunchsTableViewCell: UITableViewCell {
 
     @IBOutlet weak var date: UILabel!
     @IBOutlet weak var hour: UILabel!
-    @IBOutlet weak var type: EntryTypeLabel!
+    @IBOutlet weak var type: PunchTypeLabel!
     
     private let dateFormatter = NSDateFormatter()
     private let timeFormatter = NSDateFormatter()
     private let gray = UIColor(red: 0.752, green: 0.752, blue: 0.752, alpha: 0.9)
-    var entry: Entry?
+    var punch: Punch?
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -26,12 +26,12 @@ class ListEntriesTableViewCell: UITableViewCell {
         timeFormatter.dateFormat = "HH:mm"
     }
     
-    func updateCell(entry: Entry) {
-        date.text = dateFormatter.stringFromDate(entry.moment)
-        hour.text = timeFormatter.stringFromDate(entry.moment)
-        type.text = entry.type.description()
-        type.background(by: entry.type)
-        self.entry = entry
+    func updateCell(punch: Punch) {
+        date.text = dateFormatter.stringFromDate(punch.moment)
+        hour.text = timeFormatter.stringFromDate(punch.moment)
+        type.text = punch.type.description()
+        type.background(by: punch.type)
+        self.punch = punch
     }
     
     override func setHighlighted(highlighted: Bool, animated: Bool) {

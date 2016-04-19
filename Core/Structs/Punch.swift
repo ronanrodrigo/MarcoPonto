@@ -1,5 +1,5 @@
 //
-//  Entry.swift
+//  Punch.swift
 //  MarcoPonto
 //
 //  Created by Ronan Rodrigo Nunes on 16/04/16.
@@ -8,19 +8,19 @@
 
 import Foundation
 
-protocol Entry {
+protocol Punch {
     var id: Int? { get set }
     var moment: NSDate { get set }
-    var type: EntryType { get set }
-    func isNewEntry() -> Bool
+    var type: PunchType { get set }
+    func isNewPunch() -> Bool
 }
 
-struct EntryStruct: Entry {
+struct PunchStruct: Punch {
     var id: Int?
-    var type: EntryType
+    var type: PunchType
     var moment: NSDate
     
-    func isNewEntry() -> Bool {
+    func isNewPunch() -> Bool {
         return id == nil
     }
 }

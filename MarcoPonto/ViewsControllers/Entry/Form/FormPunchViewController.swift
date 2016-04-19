@@ -1,5 +1,5 @@
 //
-//  FormEntryViewController.swift
+//  FormPunchViewController.swift
 //  MarcoPonto
 //
 //  Created by Ronan Rodrigo Nunes on 16/04/16.
@@ -8,18 +8,18 @@
 
 import UIKit
 
-class FormEntryViewController: UIViewController {
+class FormPunchViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
-    private var dataSource: FormEntryDataSource?
-    private var saveEntryPresenter: SaveEntryPresenter?
-    private var entry: Entry?
+    private var dataSource: FormPunchDataSource?
+    private var savePunchPresenter: SavePunchPresenter?
+    private var punch: Punch?
     
-    init(saveEntryPresenter: SaveEntryPresenter, entry: Entry?) {
-        self.saveEntryPresenter = saveEntryPresenter
-        self.entry = entry
-        self.dataSource = FormEntryDataSource(entry: entry)
+    init(savePunchPresenter: SavePunchPresenter, punch: Punch?) {
+        self.savePunchPresenter = savePunchPresenter
+        self.punch = punch
+        self.dataSource = FormPunchDataSource(punch: punch)
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -51,11 +51,11 @@ class FormEntryViewController: UIViewController {
         tableView.dataSource = dataSource
     }
     
-    func saveEntry() {
-        if let _saveEntryPresenter = saveEntryPresenter, let _dataSource = dataSource {
-            let usecase = SaveEntryUsecaseFactory.make(presenter: _saveEntryPresenter)
-            let filledEntry = _dataSource.filledEntry()
-            usecase.save(filledEntry)
+    func savePunch() {
+        if let _savePunchPresenter = savePunchPresenter, let _dataSource = dataSource {
+            let usecase = SavePunchUsecaseFactory.make(presenter: _savePunchPresenter)
+            let filledPunch = _dataSource.filledPunch()
+            usecase.save(filledPunch)
         }
     }
 

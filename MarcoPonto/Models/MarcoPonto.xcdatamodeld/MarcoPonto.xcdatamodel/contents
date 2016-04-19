@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10171" systemVersion="15E65" minimumToolsVersion="Automatic">
-    <entity name="EntryModel" representedClassName=".EntryModel" syncable="YES">
-        <attribute name="entryId" optional="YES" attributeType="Integer 16" defaultValueString="0" indexed="YES" syncable="YES"/>
-        <attribute name="entryImage" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
-        <attribute name="entryMoment" attributeType="Date" syncable="YES"/>
-        <attribute name="entryType" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+    <entity name="PunchModel" representedClassName=".PunchModel" syncable="YES">
+        <attribute name="punchId" optional="YES" attributeType="Integer 16" defaultValueString="0" indexed="YES" syncable="YES"/>
+        <attribute name="punchImage" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
+        <attribute name="punchMoment" attributeType="Date" syncable="YES"/>
+        <attribute name="punchType" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
     </entity>
     <elements>
-        <element name="EntryModel" positionX="-63" positionY="-18" width="128" height="105"/>
+        <element name="PunchModel" positionX="-63" positionY="-18" width="128" height="105"/>
     </elements>
 </model>

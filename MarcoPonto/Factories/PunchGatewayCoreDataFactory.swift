@@ -1,5 +1,5 @@
 //
-//  EntryGatewayCoreDataFactory.swift
+//  PunchGatewayCoreDataFactory.swift
 //  MarcoPonto
 //
 //  Created by Ronan Rodrigo Nunes on 17/04/16.
@@ -8,8 +8,8 @@
 
 import Foundation
 
-class EntryGatewayCoreDataFactory {
-    static func make() -> EntryGatewayCoreData {
-        return EntryGatewayCoreData()
+class PunchGatewayCoreDataFactory {
+    static func make() -> PunchGatewayCoreData {
+        return PunchGatewayCoreData()
     }
 }

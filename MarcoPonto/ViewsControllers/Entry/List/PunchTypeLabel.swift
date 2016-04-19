@@ -1,5 +1,5 @@
 //
-//  EntryTypeLabel.swift
+//  PunchTypeLabel.swift
 //  MarcoPonto
 //
 //  Created by Ronan Rodrigo Nunes on 17/04/16.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class EntryTypeLabel: UILabel {
+class PunchTypeLabel: UILabel {
 
     override func awakeFromNib() {
         layer.cornerRadius = 3.0
@@ -16,7 +16,7 @@ class EntryTypeLabel: UILabel {
         textColor = UIColor.whiteColor()
     }
 
-    func background(by type: EntryType) {
+    func background(by type: PunchType) {
         if type == .Output {
             backgroundColor = UIColor(red:0.61, green:0.15, blue:0.69, alpha:1.00)
         } else {

@@ -1,5 +1,5 @@
 //
-//  EntryTipe.swift
+//  PunchTipe.swift
 //  MarcoPonto
 //
 //  Created by Ronan Rodrigo Nunes on 16/04/16.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum EntryType: NSNumber {
+enum PunchType: NSNumber {
     case Input = 0, Output = 1
     
     func description() -> String {

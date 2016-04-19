@@ -1,5 +1,5 @@
 //
-//  ListEntriesPresenterSpy.swift
+//  ListPunchsPresenterSpy.swift
 //  MarcoPonto
 //
 //  Created by Ronan Rodrigo Nunes on 17/04/16.
@@ -8,10 +8,10 @@
 
 import Foundation
 
-class ListEntriesPresenterSpy: ListEntriesPresenter {
+class ListPunchsPresenterSpy: ListPunchsPresenter {
     var listSpied = false
     
-    func list(entries: [Entry]) {
+    func list(punchs: [Punch]) {
         listSpied = true
     }
 }

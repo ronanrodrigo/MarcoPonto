@@ -15,10 +15,10 @@ class ReportsNavigationController: UINavigationController {
     override func viewDidLoad() {
         super.viewDidLoad()
         totalsViewController = TotalsViewController()
-        openListEntriesViewController()
+        openListPunchsViewController()
     }
     
-    func openListEntriesViewController() {
+    func openListPunchsViewController() {
         totalsViewController.navigationItem.title = "Totais"
         setViewControllers([totalsViewController], animated: true)
     }

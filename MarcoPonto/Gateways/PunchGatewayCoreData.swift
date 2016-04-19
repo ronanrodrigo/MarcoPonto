@@ -1,5 +1,5 @@
 //
-//  EntryGatewayCoreData.swift
+//  PunchGatewayCoreData.swift
 //  MarcoPonto
 //
 //  Created by Ronan Rodrigo Nunes on 17/04/16.
@@ -10,8 +10,8 @@ import Foundation
 import UIKit
 import CoreData
 
-class EntryGatewayCoreData: EntryGateway {
-    var entityName = "EntryModel"
+class PunchGatewayCoreData: PunchGateway {
+    var entityName = String(PunchModel)
     var app: AppDelegate
     var context: NSManagedObjectContext
     var nextId: Int = 1
@@ -22,13 +22,13 @@ class EntryGatewayCoreData: EntryGateway {
         nextId = self.getLastId() + 1
     }
     
-    func create(entry: Entry) {
+    func create(punch: Punch) {
         let entity = NSEntityDescription.entityForName(entityName, inManagedObjectContext: context)!
-        let entryModel = EntryModel(entity: entity, insertIntoManagedObjectContext: context)
-        entryModel.type = entry.type
-        entryModel.moment = entry.moment
-        entryModel.id = nextId
-        context.insertObject(entryModel)
+        let punchModel = PunchModel(entity: entity, insertIntoManagedObjectContext: context)
+        punchModel.type = punch.type
+        punchModel.moment = punch.moment
+        punchModel.id = nextId
+        context.insertObject(punchModel)
         
         do {
             try context.save()
@@ -37,14 +37,14 @@ class EntryGatewayCoreData: EntryGateway {
         }
     }
     
-    func update(entry: Entry) {
+    func update(punch: Punch) {
         let fetchRequest = NSFetchRequest(entityName: entityName)
-        fetchRequest.predicate =  NSPredicate(format: "entryId = %d", entry.id!)
+        fetchRequest.predicate =  NSPredicate(format: "punchId = %d", punch.id!)
         do {
             let results = try context.executeFetchRequest(fetchRequest)
-            if var _entry = results.first as? Entry {
-                _entry.moment = entry.moment
-                _entry.type = entry.type
+            if var _punch = results.first as? Punch {
+                _punch.moment = punch.moment
+                _punch.type = punch.type
                 try context.save()
             }
         } catch {
@@ -52,24 +52,24 @@ class EntryGatewayCoreData: EntryGateway {
         }
     }
     
-    func delete(entry: Entry) {
+    func delete(punch: Punch) {
         let fetchRequest = NSFetchRequest(entityName: entityName)
-        fetchRequest.predicate =  NSPredicate(format: "entryId = %d", entry.id!)
+        fetchRequest.predicate =  NSPredicate(format: "punchId = %d", punch.id!)
         do {
             let results = try context.executeFetchRequest(fetchRequest)
-            if let _entry = results.first as? EntryModel {
-                context.deleteObject(_entry)
+            if let _punch = results.first as? PunchModel {
+                context.deleteObject(_punch)
             }
         } catch {
             print("Could not update \(entityName)")
         }
     }
     
-    func list() -> [Entry] {
+    func list() -> [Punch] {
         let fetchRequest = NSFetchRequest(entityName: entityName)
         do {
             let results = try context.executeFetchRequest(fetchRequest)
-            return results.map({ $0 as! EntryModel })
+            return results.map({ $0 as! PunchModel })
         } catch {
             return []
         }
@@ -80,8 +80,8 @@ class EntryGatewayCoreData: EntryGateway {
         var lastId = 0
         do {
             let results = try context.executeFetchRequest(fetchRequest)
-            if let lastEntry = results.last as? Entry {
-                lastId = lastEntry.id ?? 0
+            if let lastPunch = results.last as? Punch {
+                lastId = lastPunch.id ?? 0
             }
         } catch {
             print("Could not get ID of \(entityName)")

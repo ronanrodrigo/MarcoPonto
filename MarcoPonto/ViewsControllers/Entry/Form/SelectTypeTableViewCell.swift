@@ -22,7 +22,7 @@ class SelectTypeTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
     }
     
-    func fillData(type: EntryType?) {
+    func fillData(type: PunchType?) {
         if let _type = type {
             typeSelector.selectedSegmentIndex = _type.rawValue.integerValue
         }

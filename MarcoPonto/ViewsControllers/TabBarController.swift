@@ -14,15 +14,15 @@ class TabBarController: UITabBarController {
     }
     
     override func viewWillAppear(animated: Bool) {
-        let entriesNavigationController = EntriesNavigationController()
-        let entriesNavigationControllerTabBarItem = UITabBarItem(title: "Pontos", image: UIImage.accessTime, selectedImage: nil)
-        entriesNavigationController.tabBarItem = entriesNavigationControllerTabBarItem
+        let punchsNavigationController = PunchsNavigationController()
+        let punchsNavigationControllerTabBarItem = UITabBarItem(title: "Pontos", image: UIImage.accessTime, selectedImage: nil)
+        punchsNavigationController.tabBarItem = punchsNavigationControllerTabBarItem
         
         let reportsNavigationController = ReportsNavigationController()
         let reportsNavigationControllerTabBarItem = UITabBarItem(title: "Totais", image: UIImage.dateRange, selectedImage: nil)
         reportsNavigationController.tabBarItem = reportsNavigationControllerTabBarItem
         
-        self.viewControllers = [entriesNavigationController, reportsNavigationController]
+        self.viewControllers = [punchsNavigationController, reportsNavigationController]
     }
 
     override func didReceiveMemoryWarning() {

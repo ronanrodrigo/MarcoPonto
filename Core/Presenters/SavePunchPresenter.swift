@@ -1,5 +1,5 @@
 //
-//  ListEntriesPresenter.swift
+//  SavePunchPresenter.swift
 //  MarcoPonto
 //
 //  Created by Ronan Rodrigo Nunes on 17/04/16.
@@ -8,6 +8,6 @@
 
 import Foundation
 
-protocol ListEntriesPresenter {
-    func list(entries: [Entry])
+protocol SavePunchPresenter {
+    func didSavePunch()
 }

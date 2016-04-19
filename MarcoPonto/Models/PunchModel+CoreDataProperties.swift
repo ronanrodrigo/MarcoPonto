@@ -1,8 +1,8 @@
 //
-//  EntryModel+CoreDataProperties.swift
+//  PunchModel+CoreDataProperties.swift
 //  MarcoPonto
 //
-//  Created by Ronan Rodrigo Nunes on 17/04/16.
+//  Created by Ronan Rodrigo Nunes on 19/04/16.
 //  Copyright © 2016 Ronan Rodrigo Nunes. All rights reserved.
 //
 //  Choose "Create NSManagedObject Subclass…" from the Core Data editor menu
@@ -12,11 +12,11 @@
 import Foundation
 import CoreData
 
-extension EntryModel {
+extension PunchModel {
 
-    @NSManaged var entryMoment: NSDate?
-    @NSManaged var entryType: NSNumber?
-    @NSManaged var entryImage: NSData?
-    @NSManaged var entryId: NSNumber?
+    @NSManaged var punchId: NSNumber?
+    @NSManaged var punchImage: NSData?
+    @NSManaged var punchMoment: NSDate?
+    @NSManaged var punchType: NSNumber?
 
 }

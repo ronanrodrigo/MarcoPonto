@@ -1,5 +1,5 @@
 //
-//  EntryGatewaySpy.swift
+//  PunchGatewaySpy.swift
 //  MarcoPonto
 //
 //  Created by Ronan Rodrigo Nunes on 16/04/16.
@@ -8,24 +8,24 @@
 
 import Foundation
 
-class EntryGatewaySpy: EntryGateway {
+class PunchGatewaySpy: PunchGateway {
     var createSpied = false
     var updateSpied = false
     var listSpied = false
     
-    func create(entry: Entry) {
+    func create(punch: Punch) {
         createSpied = true
     }
     
-    func update(entry: Entry) {
+    func update(punch: Punch) {
         updateSpied = true
     }
     
-    func delete(entry: Entry) {
+    func delete(punch: Punch) {
         
     }
     
-    func list() -> [Entry] {
+    func list() -> [Punch] {
         listSpied = true
         return []
     }

@@ -1,5 +1,5 @@
 //
-//  ListEntriesDelegate.swift
+//  ListPunchsDelegate.swift
 //  MarcoPonto
 //
 //  Created by Ronan Rodrigo Nunes on 17/04/16.
@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class ListEntriesDelegate: NSObject, UITableViewDelegate {
+class ListPunchsDelegate: NSObject, UITableViewDelegate {
     
     private var navigationDelegate: INavigationDelgate
     
@@ -18,9 +18,9 @@ class ListEntriesDelegate: NSObject, UITableViewDelegate {
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        let cell = tableView.cellForRowAtIndexPath(indexPath) as! ListEntriesTableViewCell
-        if let _entry = cell.entry {
-            navigationDelegate.editEntryFormViewController(_entry)
+        let cell = tableView.cellForRowAtIndexPath(indexPath) as! ListPunchsTableViewCell
+        if let _punch = cell.punch {
+            navigationDelegate.editPunchFormViewController(_punch)
         }
     }
     

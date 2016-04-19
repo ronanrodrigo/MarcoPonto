@@ -1,5 +1,5 @@
 //
-//  FormEntryTableViewDataSource.swift
+//  FormPunchTableViewDataSource.swift
 //  MarcoPonto
 //
 //  Created by Ronan Rodrigo Nunes on 16/04/16.
@@ -9,15 +9,15 @@
 import Foundation
 import UIKit
 
-class FormEntryDataSource:  NSObject, UITableViewDataSource {
+class FormPunchDataSource:  NSObject, UITableViewDataSource {
 
-    private let formEntryFields = [String(SelectTypeTableViewCell), String(SelectMomentTableViewCell)]
+    private let formPunchFields = [String(SelectTypeTableViewCell), String(SelectMomentTableViewCell)]
     private var selectTypeTableViewCell: SelectTypeTableViewCell!
     private var selectMomentTableViewCell: SelectMomentTableViewCell!
-    private var entry: Entry?
+    private var punch: Punch?
     
-    init(entry: Entry?) {
-        self.entry = entry
+    init(punch: Punch?) {
+        self.punch = punch
     }
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -25,33 +25,33 @@ class FormEntryDataSource:  NSObject, UITableViewDataSource {
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return formEntryFields.count
+        return formPunchFields.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         tableView.rowHeight = UITableViewAutomaticDimension
 
-        let field = formEntryFields[indexPath.row]
+        let field = formPunchFields[indexPath.row]
         switch field {
         case String(SelectTypeTableViewCell):
             guard let cell = tableView.dequeueReusableCellWithIdentifier(field) as? SelectTypeTableViewCell
                 else { return SelectTypeTableViewCell() }
             selectTypeTableViewCell = cell
-            selectTypeTableViewCell.fillData(self.entry?.type)
+            selectTypeTableViewCell.fillData(self.punch?.type)
             return selectTypeTableViewCell
         default:
             guard let cell = tableView.dequeueReusableCellWithIdentifier(field) as? SelectMomentTableViewCell
                 else { return SelectMomentTableViewCell() }
             selectMomentTableViewCell = cell
-            selectMomentTableViewCell.fillData(self.entry?.moment)
+            selectMomentTableViewCell.fillData(self.punch?.moment)
             return selectMomentTableViewCell
         }
     }
     
-    func filledEntry() -> Entry {
-        let entryType = EntryType(rawValue: selectTypeTableViewCell.typeSelector.selectedSegmentIndex)!
+    func filledPunch() -> Punch {
+        let punchType = PunchType(rawValue: selectTypeTableViewCell.typeSelector.selectedSegmentIndex)!
         let moment = selectMomentTableViewCell.momentSelector.date
-        return EntryStruct(id: entry?.id, type: entryType, moment: moment)
+        return PunchStruct(id: punch?.id, type: punchType, moment: moment)
     }
     
 }
