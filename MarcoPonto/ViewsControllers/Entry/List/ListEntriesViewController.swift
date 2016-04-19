@@ -66,13 +66,12 @@ class ListEntriesViewController: UIViewController, EditTableViewDelegate {
     }
     
     private func handleDeleteEntry(alertAction: UIAlertAction!) -> Void {
-        if let indexPath = deleteEntryPath {
-            tableView.beginUpdates()
-            dataSource.removeEntry(at: indexPath)
-            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
-            deleteEntryPath = nil
-            tableView.endUpdates()
-        }
+        guard let indexPath = deleteEntryPath else { return }
+        tableView.beginUpdates()
+        dataSource.removeEntry(at: indexPath)
+        tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
+        deleteEntryPath = nil
+        tableView.endUpdates()
     }
     
     private func cancelDelteEntry(alertAction: UIAlertAction!) -> Void {
