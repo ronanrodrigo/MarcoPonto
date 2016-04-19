@@ -15,7 +15,7 @@ class TabBarController: UITabBarController {
     
     override func viewWillAppear(animated: Bool) {
         let entriesNavigationController = EntriesNavigationController()
-        let entriesNavigationControllerTabBarItem = UITabBarItem(title: "Pontos", image: UIImage(named: "ic_access_time"), tag: 1)
+        let entriesNavigationControllerTabBarItem = UITabBarItem(title: "Pontos", image: UIImage.accessTime, selectedImage: nil)
         entriesNavigationController.tabBarItem = entriesNavigationControllerTabBarItem
         self.viewControllers = [entriesNavigationController]
     }
