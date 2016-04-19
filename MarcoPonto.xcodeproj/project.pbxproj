@@ -202,7 +202,7 @@
 				340BD7361CC3404B00AB860B /* List */,
 			);
 			name = Punch;
-			path = Entry;
+			path = Punch;
 			sourceTree = "<group>";
 		};
 		340BD7351CC3404200AB860B /* List */ = {
