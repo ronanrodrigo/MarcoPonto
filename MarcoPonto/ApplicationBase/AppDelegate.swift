@@ -13,10 +13,10 @@ import CoreData
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    var navigationController: NavigationViewController!
+    var navigationController: NavigationController!
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        navigationController = NavigationViewController()
+        navigationController = NavigationController()
         window = UIWindow(frame: UIScreen.mainScreen().bounds)
         if let _window = window {
             _window.rootViewController = navigationController

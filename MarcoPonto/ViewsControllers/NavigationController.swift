@@ -1,5 +1,5 @@
 //
-//  NavigationViewController.swift
+//  NavigationController.swift
 //  MarcoPonto
 //
 //  Created by Ronan Rodrigo Nunes on 17/04/16.
@@ -12,7 +12,7 @@ protocol INavigationDelgate {
     func editEntryFormViewController(entry: Entry)
 }
 
-class NavigationViewController: UINavigationController, SaveEntryPresenter, INavigationDelgate {
+class NavigationController: UINavigationController, SaveEntryPresenter, INavigationDelgate {
     var listEntriesViewController: ListEntriesViewController!
     
     override func viewDidLoad() {

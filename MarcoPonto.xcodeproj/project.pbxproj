@@ -13,7 +13,7 @@
 		340BD7261CC33C1D00AB860B /* ListEntriesUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340BD7251CC33C1D00AB860B /* ListEntriesUsecase.swift */; };
 		340BD7281CC33CA800AB860B /* ListEntriesUsecaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340BD7271CC33CA800AB860B /* ListEntriesUsecaseTests.swift */; };
 		340BD7291CC33CC000AB860B /* ListEntriesUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340BD7251CC33C1D00AB860B /* ListEntriesUsecase.swift */; };
-		340BD72B1CC33D8100AB860B /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340BD72A1CC33D8100AB860B /* NavigationViewController.swift */; };
+		340BD72B1CC33D8100AB860B /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340BD72A1CC33D8100AB860B /* NavigationController.swift */; };
 		340BD72E1CC33F4700AB860B /* FormEntryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 340BD72D1CC33F4700AB860B /* FormEntryViewController.xib */; };
 		340BD7381CC3409600AB860B /* ListEntriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340BD7371CC3409600AB860B /* ListEntriesViewController.swift */; };
 		340BD73A1CC340DC00AB860B /* ListEntriesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 340BD7391CC340DC00AB860B /* ListEntriesViewController.xib */; };
@@ -68,7 +68,7 @@
 		340BD7221CC3251B00AB860B /* EntryType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryType.swift; sourceTree = "<group>"; };
 		340BD7251CC33C1D00AB860B /* ListEntriesUsecase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListEntriesUsecase.swift; sourceTree = "<group>"; };
 		340BD7271CC33CA800AB860B /* ListEntriesUsecaseTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListEntriesUsecaseTests.swift; sourceTree = "<group>"; };
-		340BD72A1CC33D8100AB860B /* NavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
+		340BD72A1CC33D8100AB860B /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		340BD72D1CC33F4700AB860B /* FormEntryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FormEntryViewController.xib; sourceTree = "<group>"; };
 		340BD7371CC3409600AB860B /* ListEntriesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListEntriesViewController.swift; sourceTree = "<group>"; };
 		340BD7391CC340DC00AB860B /* ListEntriesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListEntriesViewController.xib; sourceTree = "<group>"; };
@@ -314,7 +314,7 @@
 			isa = PBXGroup;
 			children = (
 				340BD7321CC33FAB00AB860B /* Entry */,
-				340BD72A1CC33D8100AB860B /* NavigationViewController.swift */,
+				340BD72A1CC33D8100AB860B /* NavigationController.swift */,
 			);
 			name = ViewsControllers;
 			path = MarcoPonto/ViewsControllers;
@@ -498,7 +498,7 @@
 				340BD7231CC3251B00AB860B /* EntryType.swift in Sources */,
 				34E9B3FC1CC3DA1A0017A083 /* EntryGatewayCoreDataFactory.swift in Sources */,
 				34E9B3F01CC3B72E0017A083 /* ListEntriesUsecaseFactory.swift in Sources */,
-				340BD72B1CC33D8100AB860B /* NavigationViewController.swift in Sources */,
+				340BD72B1CC33D8100AB860B /* NavigationController.swift in Sources */,
 				340BD7471CC346D600AB860B /* ListEntriesTableViewCell.swift in Sources */,
 				3435FF761CC2E7640076AF42 /* AppDelegate.swift in Sources */,
 				340BD7381CC3409600AB860B /* ListEntriesViewController.swift in Sources */,
