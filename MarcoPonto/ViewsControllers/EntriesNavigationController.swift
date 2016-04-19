@@ -12,7 +12,7 @@ protocol INavigationDelgate {
     func editEntryFormViewController(entry: Entry)
 }
 
-class NavigationController: UINavigationController, SaveEntryPresenter, INavigationDelgate {
+class EntriesNavigationController: UINavigationController, SaveEntryPresenter, INavigationDelgate {
     var listEntriesViewController: ListEntriesViewController!
     
     override func viewDidLoad() {
