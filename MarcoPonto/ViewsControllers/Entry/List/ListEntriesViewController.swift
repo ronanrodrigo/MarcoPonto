@@ -16,7 +16,7 @@ class ListEntriesViewController: UIViewController, EditTableViewDelegate {
 
     @IBOutlet weak var tableView: UITableView!
     private let cellNameAndIdentifier = String(ListEntriesTableViewCell)
-    private var dataSource: ListEntriesDataSource!
+    private var dataSource: RRNListDataSource!
     private var delegate: ListEntriesDelegate!
     private var deleteEntryPath: NSIndexPath?
     private var navigationDelegate: INavigationDelgate!

@@ -9,7 +9,11 @@
 import Foundation
 import UIKit
 
-class ListEntriesDataSource: NSObject, UITableViewDataSource, ListEntriesPresenter {
+protocol RRNListDataSource: UITableViewDataSource {
+    func removeEntry(at indexPath: NSIndexPath)
+}
+
+class ListEntriesDataSource: NSObject, RRNListDataSource, ListEntriesPresenter {
     private let cellIdentifier = String(ListEntriesTableViewCell)
     private var editTableViewDelegate: EditTableViewDelegate!
     private var entries: [Entry] = []
