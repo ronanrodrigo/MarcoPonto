@@ -177,10 +177,10 @@
 		340BD7311CC33F9700AB860B /* Form */ = {
 			isa = PBXGroup;
 			children = (
-				34E9B3F71CC3C66B0017A083 /* SelectTypeTableViewCell.swift */,
-				349D9B2D1CC2F68B0088DE5E /* SelectMomentTableViewCell.swift */,
-				349D9B291CC2ECD20088DE5E /* FormPunchViewController.swift */,
 				349D9B311CC2F7960088DE5E /* FormPunchDataSource.swift */,
+				349D9B291CC2ECD20088DE5E /* FormPunchViewController.swift */,
+				349D9B2D1CC2F68B0088DE5E /* SelectMomentTableViewCell.swift */,
+				34E9B3F71CC3C66B0017A083 /* SelectTypeTableViewCell.swift */,
 			);
 			name = Form;
 			sourceTree = "<group>";
@@ -188,9 +188,9 @@
 		340BD7321CC33FAB00AB860B /* Punch */ = {
 			isa = PBXGroup;
 			children = (
-				340BD72A1CC33D8100AB860B /* PunchsNavigationController.swift */,
-				340BD7351CC3404200AB860B /* List */,
 				340BD7311CC33F9700AB860B /* Form */,
+				340BD7351CC3404200AB860B /* List */,
+				340BD72A1CC33D8100AB860B /* PunchsNavigationController.swift */,
 			);
 			name = Punch;
 			sourceTree = "<group>";
@@ -198,8 +198,8 @@
 		340BD7341CC33FB800AB860B /* Punch */ = {
 			isa = PBXGroup;
 			children = (
-				340BD7361CC3404B00AB860B /* List */,
 				340BD72C1CC33EF300AB860B /* Form */,
+				340BD7361CC3404B00AB860B /* List */,
 			);
 			name = Punch;
 			path = Entry;
@@ -208,11 +208,11 @@
 		340BD7351CC3404200AB860B /* List */ = {
 			isa = PBXGroup;
 			children = (
-				34E9B4021CC419090017A083 /* PunchTypeLabel.swift */,
 				340BD7431CC3462B00AB860B /* ListPunchsDataSource.swift */,
 				34E9B4041CC42C360017A083 /* ListPunchsDelegate.swift */,
 				340BD7451CC346D600AB860B /* ListPunchsTableViewCell.swift */,
 				340BD7371CC3409600AB860B /* ListPunchsViewController.swift */,
+				34E9B4021CC419090017A083 /* PunchTypeLabel.swift */,
 			);
 			name = List;
 			path = MarcoPonto/ViewsControllers/Punch/List;
@@ -221,8 +221,8 @@
 		340BD7361CC3404B00AB860B /* List */ = {
 			isa = PBXGroup;
 			children = (
-				340BD7391CC340DC00AB860B /* ListPunchsViewController.xib */,
 				340BD7461CC346D600AB860B /* ListPunchsTableViewCell.xib */,
+				340BD7391CC340DC00AB860B /* ListPunchsViewController.xib */,
 			);
 			name = List;
 			path = MarcoPonto/Views/Punch/List;
@@ -251,8 +251,8 @@
 		341877291CC6E454002A4B59 /* Reports */ = {
 			isa = PBXGroup;
 			children = (
-				3418772B1CC6E4B3002A4B59 /* TotalsViewController.swift */,
 				341877301CC6E552002A4B59 /* ReportsNavigationController.swift */,
+				3418772B1CC6E4B3002A4B59 /* TotalsViewController.swift */,
 			);
 			name = Reports;
 			path = MarcoPonto/ViewsControllers/Reports;
@@ -289,10 +289,10 @@
 		3435FF741CC2E7640076AF42 /* MarcoPonto */ = {
 			isa = PBXGroup;
 			children = (
+				349D9B151CC2E82E0088DE5E /* ApplicationBase */,
 				34BD8F971CC6623B00607BA6 /* Assets */,
 				34E9B3EE1CC3B7010017A083 /* Factories */,
 				34E9B3E71CC35AF50017A083 /* Gateways */,
-				349D9B151CC2E82E0088DE5E /* ApplicationBase */,
 				349D9B161CC2E8610088DE5E /* Models */,
 				349D9B251CC2EB9E0088DE5E /* Views */,
 				349D9B261CC2EBA40088DE5E /* ViewsControllers */,
@@ -303,9 +303,9 @@
 		349D9B151CC2E82E0088DE5E /* ApplicationBase */ = {
 			isa = PBXGroup;
 			children = (
-				3435FF811CC2E7640076AF42 /* LaunchScreen.storyboard */,
 				3435FF751CC2E7640076AF42 /* AppDelegate.swift */,
 				3435FF841CC2E7640076AF42 /* Info.plist */,
+				3435FF811CC2E7640076AF42 /* LaunchScreen.storyboard */,
 			);
 			name = ApplicationBase;
 			path = MarcoPonto/ApplicationBase;
@@ -314,9 +314,9 @@
 		349D9B161CC2E8610088DE5E /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				3472A9EC1CC6F3E100CEF1D1 /* PunchModel+CoreDataProperties.swift */,
-				3472A9ED1CC6F3E100CEF1D1 /* PunchModel.swift */,
 				3435FF7C1CC2E7640076AF42 /* MarcoPonto.xcdatamodeld */,
+				3472A9ED1CC6F3E100CEF1D1 /* PunchModel.swift */,
+				3472A9EC1CC6F3E100CEF1D1 /* PunchModel+CoreDataProperties.swift */,
 			);
 			name = Models;
 			path = MarcoPonto/Models;
@@ -335,8 +335,8 @@
 		349D9B251CC2EB9E0088DE5E /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				3418772A1CC6E460002A4B59 /* Reports */,
 				340BD7341CC33FB800AB860B /* Punch */,
+				3418772A1CC6E460002A4B59 /* Reports */,
 			);
 			name = Views;
 			path = MarcoPonto/Views;
@@ -345,8 +345,8 @@
 		349D9B261CC2EBA40088DE5E /* ViewsControllers */ = {
 			isa = PBXGroup;
 			children = (
-				341877291CC6E454002A4B59 /* Reports */,
 				340BD7321CC33FAB00AB860B /* Punch */,
+				341877291CC6E454002A4B59 /* Reports */,
 				34BD8F951CC5BA3500607BA6 /* TabBarController.swift */,
 			);
 			name = ViewsControllers;
@@ -356,10 +356,10 @@
 		349D9B331CC308460088DE5E /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				340BD7491CC353B000AB860B /* Presenters */,
 				340BD7211CC324F300AB860B /* Enums */,
-				349D9B3D1CC30B290088DE5E /* Structs */,
 				349D9B351CC30A180088DE5E /* Gateways */,
+				340BD7491CC353B000AB860B /* Presenters */,
+				349D9B3D1CC30B290088DE5E /* Structs */,
 				349D9B341CC30A100088DE5E /* Usecases */,
 			);
 			path = Core;
@@ -368,8 +368,8 @@
 		349D9B341CC30A100088DE5E /* Usecases */ = {
 			isa = PBXGroup;
 			children = (
-				349D9B361CC30A750088DE5E /* SavePunchUsecase.swift */,
 				340BD7251CC33C1D00AB860B /* ListPunchsUsecase.swift */,
+				349D9B361CC30A750088DE5E /* SavePunchUsecase.swift */,
 			);
 			name = Usecases;
 			path = Core/Usecases;
@@ -387,8 +387,8 @@
 		349D9B391CC30AA20088DE5E /* Usecases */ = {
 			isa = PBXGroup;
 			children = (
-				349D9B3A1CC30AB40088DE5E /* SavePunchUsecaseTests.swift */,
 				340BD7271CC33CA800AB860B /* ListPunchsUsecaseTests.swift */,
+				349D9B3A1CC30AB40088DE5E /* SavePunchUsecaseTests.swift */,
 			);
 			path = Usecases;
 			sourceTree = "<group>";
@@ -405,8 +405,8 @@
 		34BD8F971CC6623B00607BA6 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				34BD8F981CC6628E00607BA6 /* MaterialIcons+UIImage.swift */,
 				3435FF7F1CC2E7640076AF42 /* Assets.xcassets */,
+				34BD8F981CC6628E00607BA6 /* MaterialIcons+UIImage.swift */,
 			);
 			name = Assets;
 			path = MarcoPonto/Assets;
@@ -425,8 +425,8 @@
 			isa = PBXGroup;
 			children = (
 				34E9B3EF1CC3B72E0017A083 /* ListPunchUsecaseFactory.swift */,
-				34E9B3F91CC3D9C80017A083 /* SavePunchUsecaseFactory.swift */,
 				34E9B3FB1CC3DA1A0017A083 /* PunchGatewayCoreDataFactory.swift */,
+				34E9B3F91CC3D9C80017A083 /* SavePunchUsecaseFactory.swift */,
 			);
 			name = Factories;
 			path = MarcoPonto/Factories;
