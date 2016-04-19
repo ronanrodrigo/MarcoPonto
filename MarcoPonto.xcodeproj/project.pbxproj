@@ -69,7 +69,7 @@
 		340BD7221CC3251B00AB860B /* EntryType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryType.swift; sourceTree = "<group>"; };
 		340BD7251CC33C1D00AB860B /* ListEntriesUsecase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListEntriesUsecase.swift; sourceTree = "<group>"; };
 		340BD7271CC33CA800AB860B /* ListEntriesUsecaseTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListEntriesUsecaseTests.swift; sourceTree = "<group>"; };
-		340BD72A1CC33D8100AB860B /* EntriesNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntriesNavigationController.swift; sourceTree = "<group>"; };
+		340BD72A1CC33D8100AB860B /* EntriesNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EntriesNavigationController.swift; path = Entry/EntriesNavigationController.swift; sourceTree = "<group>"; };
 		340BD72D1CC33F4700AB860B /* FormEntryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FormEntryViewController.xib; sourceTree = "<group>"; };
 		340BD7371CC3409600AB860B /* ListEntriesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListEntriesViewController.swift; sourceTree = "<group>"; };
 		340BD7391CC340DC00AB860B /* ListEntriesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListEntriesViewController.xib; sourceTree = "<group>"; };
@@ -180,6 +180,7 @@
 		340BD7321CC33FAB00AB860B /* Entry */ = {
 			isa = PBXGroup;
 			children = (
+				340BD72A1CC33D8100AB860B /* EntriesNavigationController.swift */,
 				340BD7351CC3404200AB860B /* List */,
 				340BD7311CC33F9700AB860B /* Form */,
 			);
@@ -316,7 +317,6 @@
 			isa = PBXGroup;
 			children = (
 				340BD7321CC33FAB00AB860B /* Entry */,
-				340BD72A1CC33D8100AB860B /* EntriesNavigationController.swift */,
 				34BD8F951CC5BA3500607BA6 /* TabBarController.swift */,
 			);
 			name = ViewsControllers;
