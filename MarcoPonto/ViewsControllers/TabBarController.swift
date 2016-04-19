@@ -17,7 +17,12 @@ class TabBarController: UITabBarController {
         let entriesNavigationController = EntriesNavigationController()
         let entriesNavigationControllerTabBarItem = UITabBarItem(title: "Pontos", image: UIImage.accessTime, selectedImage: nil)
         entriesNavigationController.tabBarItem = entriesNavigationControllerTabBarItem
-        self.viewControllers = [entriesNavigationController]
+        
+        let reportsNavigationController = ReportsNavigationController()
+        let reportsNavigationControllerTabBarItem = UITabBarItem(title: "Totais", image: UIImage.dateRange, selectedImage: nil)
+        reportsNavigationController.tabBarItem = reportsNavigationControllerTabBarItem
+        
+        self.viewControllers = [entriesNavigationController, reportsNavigationController]
     }
 
     override func didReceiveMemoryWarning() {

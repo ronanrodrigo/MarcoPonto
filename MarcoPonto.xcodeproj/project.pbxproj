@@ -23,6 +23,9 @@
 		340BD74B1CC353CD00AB860B /* ListEntriesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340BD74A1CC353CD00AB860B /* ListEntriesPresenter.swift */; };
 		340BD74C1CC353CD00AB860B /* ListEntriesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340BD74A1CC353CD00AB860B /* ListEntriesPresenter.swift */; };
 		340BD74F1CC353F500AB860B /* ListEntriesPresenterSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340BD74E1CC353F500AB860B /* ListEntriesPresenterSpy.swift */; };
+		3418772D1CC6E4B3002A4B59 /* TotalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3418772B1CC6E4B3002A4B59 /* TotalsViewController.swift */; };
+		3418772E1CC6E4B3002A4B59 /* TotalsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3418772C1CC6E4B3002A4B59 /* TotalsViewController.xib */; };
+		341877311CC6E552002A4B59 /* ReportsNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341877301CC6E552002A4B59 /* ReportsNavigationController.swift */; };
 		34336DAB1CC30EFB00ED551C /* EntryGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34336DAA1CC30EFB00ED551C /* EntryGateway.swift */; };
 		34336DAC1CC30EFB00ED551C /* EntryGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34336DAA1CC30EFB00ED551C /* EntryGateway.swift */; };
 		3435FF761CC2E7640076AF42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3435FF751CC2E7640076AF42 /* AppDelegate.swift */; };
@@ -79,6 +82,9 @@
 		340BD7461CC346D600AB860B /* ListEntriesTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListEntriesTableViewCell.xib; sourceTree = "<group>"; };
 		340BD74A1CC353CD00AB860B /* ListEntriesPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListEntriesPresenter.swift; sourceTree = "<group>"; };
 		340BD74E1CC353F500AB860B /* ListEntriesPresenterSpy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListEntriesPresenterSpy.swift; sourceTree = "<group>"; };
+		3418772B1CC6E4B3002A4B59 /* TotalsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TotalsViewController.swift; sourceTree = "<group>"; };
+		3418772C1CC6E4B3002A4B59 /* TotalsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TotalsViewController.xib; sourceTree = "<group>"; };
+		341877301CC6E552002A4B59 /* ReportsNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportsNavigationController.swift; sourceTree = "<group>"; };
 		34336DAA1CC30EFB00ED551C /* EntryGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryGateway.swift; sourceTree = "<group>"; };
 		3435FF721CC2E7640076AF42 /* MarcoPonto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarcoPonto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3435FF751CC2E7640076AF42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -241,6 +247,25 @@
 			path = MarcoPontoUnitTests/Fakes/Presenters;
 			sourceTree = SOURCE_ROOT;
 		};
+		341877291CC6E454002A4B59 /* Reports */ = {
+			isa = PBXGroup;
+			children = (
+				3418772B1CC6E4B3002A4B59 /* TotalsViewController.swift */,
+				341877301CC6E552002A4B59 /* ReportsNavigationController.swift */,
+			);
+			name = Reports;
+			path = MarcoPonto/ViewsControllers/Reports;
+			sourceTree = SOURCE_ROOT;
+		};
+		3418772A1CC6E460002A4B59 /* Reports */ = {
+			isa = PBXGroup;
+			children = (
+				3418772C1CC6E4B3002A4B59 /* TotalsViewController.xib */,
+			);
+			name = Reports;
+			path = MarcoPonto/Views/Reports;
+			sourceTree = SOURCE_ROOT;
+		};
 		3435FF691CC2E7640076AF42 = {
 			isa = PBXGroup;
 			children = (
@@ -309,6 +334,7 @@
 		349D9B251CC2EB9E0088DE5E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				3418772A1CC6E460002A4B59 /* Reports */,
 				340BD7341CC33FB800AB860B /* Entry */,
 			);
 			name = Views;
@@ -318,6 +344,7 @@
 		349D9B261CC2EBA40088DE5E /* ViewsControllers */ = {
 			isa = PBXGroup;
 			children = (
+				341877291CC6E454002A4B59 /* Reports */,
 				340BD7321CC33FAB00AB860B /* Entry */,
 				34BD8F951CC5BA3500607BA6 /* TabBarController.swift */,
 			);
@@ -493,6 +520,7 @@
 				3435FF801CC2E7640076AF42 /* Assets.xcassets in Resources */,
 				340BD73A1CC340DC00AB860B /* ListEntriesViewController.xib in Resources */,
 				340BD7481CC346D600AB860B /* ListEntriesTableViewCell.xib in Resources */,
+				3418772E1CC6E4B3002A4B59 /* TotalsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -521,6 +549,7 @@
 				340BD7381CC3409600AB860B /* ListEntriesViewController.swift in Sources */,
 				340BD7261CC33C1D00AB860B /* ListEntriesUsecase.swift in Sources */,
 				349D9B2F1CC2F68B0088DE5E /* SelectMomentTableViewCell.swift in Sources */,
+				3418772D1CC6E4B3002A4B59 /* TotalsViewController.swift in Sources */,
 				349D9B371CC30A750088DE5E /* SaveEntryUsecase.swift in Sources */,
 				3435FF7E1CC2E7640076AF42 /* MarcoPonto.xcdatamodeld in Sources */,
 				34E9B4051CC42C360017A083 /* ListEntriesDelegate.swift in Sources */,
@@ -534,6 +563,7 @@
 				34E9B3FE1CC3DA880017A083 /* SaveEntryPresenter.swift in Sources */,
 				34E9B4031CC419090017A083 /* EntryTypeLabel.swift in Sources */,
 				349D9B3F1CC30B6F0088DE5E /* Appointment.swift in Sources */,
+				341877311CC6E552002A4B59 /* ReportsNavigationController.swift in Sources */,
 				34E9B3EB1CC35DA40017A083 /* EntryModel.swift in Sources */,
 				34E9B3ED1CC360060017A083 /* EntryGatewayCoreData.swift in Sources */,
 				349D9B321CC2F7960088DE5E /* FormEntryDataSource.swift in Sources */,
