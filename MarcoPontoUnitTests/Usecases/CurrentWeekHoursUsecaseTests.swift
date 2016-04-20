@@ -9,34 +9,6 @@
 import Foundation
 import XCTest
 
-class CurrentWeekHoursPresenterFake: CurrentWeekHoursPresenter {
-    var total = NSTimeInterval()
-
-    func showTotal(total: NSTimeInterval) {
-        self.total = total
-    }
-}
-
-class PunchGatewayFake: PunchGateway {
-    var punchs: [Punch] = []
-    
-    func create(punch: Punch) {
-        punchs.append(punch)
-    }
-    
-    func update(punch: Punch) {
-        
-    }
-    
-    func delete(punch: Punch) {
-        
-    }
-    
-    func list() -> [Punch] {
-        return punchs
-    }
-}
-
 class CurrentWeekHoursUsecaseTests: XCTestCase {
     var gateway: PunchGatewayFake!
     var presenter: CurrentWeekHoursPresenterFake!

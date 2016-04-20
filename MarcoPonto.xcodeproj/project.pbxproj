@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		340404A91CC8214900A4E88E /* PunchGatewayFake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340404A81CC8214900A4E88E /* PunchGatewayFake.swift */; };
+		340404AB1CC8217900A4E88E /* CurrentWeekHoursPresenterFake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340404AA1CC8217900A4E88E /* CurrentWeekHoursPresenterFake.swift */; };
 		340BD7201CC3205300AB860B /* PunchGatewaySpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340BD71F1CC3205300AB860B /* PunchGatewaySpy.swift */; };
 		340BD7231CC3251B00AB860B /* PunchType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340BD7221CC3251B00AB860B /* PunchType.swift */; };
 		340BD7241CC3251B00AB860B /* PunchType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340BD7221CC3251B00AB860B /* PunchType.swift */; };
@@ -74,6 +76,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		340404A81CC8214900A4E88E /* PunchGatewayFake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PunchGatewayFake.swift; sourceTree = "<group>"; };
+		340404AA1CC8217900A4E88E /* CurrentWeekHoursPresenterFake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentWeekHoursPresenterFake.swift; sourceTree = "<group>"; };
 		340BD71F1CC3205300AB860B /* PunchGatewaySpy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PunchGatewaySpy.swift; sourceTree = "<group>"; };
 		340BD7221CC3251B00AB860B /* PunchType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PunchType.swift; sourceTree = "<group>"; };
 		340BD7251CC33C1D00AB860B /* ListPunchsUsecase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPunchsUsecase.swift; sourceTree = "<group>"; };
@@ -157,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				340BD71F1CC3205300AB860B /* PunchGatewaySpy.swift */,
+				340404A81CC8214900A4E88E /* PunchGatewayFake.swift */,
 			);
 			name = Gateways;
 			path = MarcoPontoUnitTests/Fakes/Gateways;
@@ -251,6 +256,7 @@
 			children = (
 				340BD74E1CC353F500AB860B /* ListPunchsPresenterSpy.swift */,
 				34E9B3FF1CC3DAD10017A083 /* SavePunchPresenterSpy.swift */,
+				340404AA1CC8217900A4E88E /* CurrentWeekHoursPresenterFake.swift */,
 			);
 			name = Presenters;
 			path = MarcoPontoUnitTests/Fakes/Presenters;
@@ -592,9 +598,11 @@
 				3472AA0F1CC6FACB00CEF1D1 /* CurrentWeekHoursUsecaseTests.swift in Sources */,
 				34336DAC1CC30EFB00ED551C /* PunchGateway.swift in Sources */,
 				340BD74C1CC353CD00AB860B /* ListPunchsPresenter.swift in Sources */,
+				340404AB1CC8217900A4E88E /* CurrentWeekHoursPresenterFake.swift in Sources */,
 				340BD7291CC33CC000AB860B /* ListPunchsUsecase.swift in Sources */,
 				340BD74F1CC353F500AB860B /* ListPunchsPresenterSpy.swift in Sources */,
 				3472AA101CC6FB2200CEF1D1 /* CurrentWeekHoursUsecase.swift in Sources */,
+				340404A91CC8214900A4E88E /* PunchGatewayFake.swift in Sources */,
 				349D9B401CC30B6F0088DE5E /* Punch.swift in Sources */,
 				349D9B3C1CC30AB40088DE5E /* SavePunchUsecaseTests.swift in Sources */,
 				3472AA131CC6FD8800CEF1D1 /* CurrentWeekHoursPresenter.swift in Sources */,
