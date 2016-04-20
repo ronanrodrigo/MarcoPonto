@@ -56,9 +56,9 @@ class CurrentWeekHoursUsecaseTests: XCTestCase {
     }
 
     func testCalculateTotalBetweenTwoPunchs() {
-        let punchAt8 = createPunchStruct(at: 8, as: .Input)
+        let punchAt8 = createPunchStruct(at: 8, with: .Input)
         gateway.create(punchAt8)
-        let punchAt10 = createPunchStruct(at: 10, as: .Output)
+        let punchAt10 = createPunchStruct(at: 10, with: .Output)
         gateway.create(punchAt10)
         
         usecase.total()
@@ -66,7 +66,7 @@ class CurrentWeekHoursUsecaseTests: XCTestCase {
         XCTAssertEqual(2*seconsInOneHour, presenter.total)
     }
     
-    private func createPunchStruct(at hour: Int, as type: PunchType) -> Punch {
+    private func createPunchStruct(at hour: Int, with type: PunchType) -> Punch {
         dateComponents.hour = hour
         return PunchStruct(id: punchId, type: type, moment: calendar.dateFromComponents(dateComponents)!)
     }
