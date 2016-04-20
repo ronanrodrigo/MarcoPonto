@@ -28,8 +28,8 @@ class CurrentWeekHoursUsecaseTests: XCTestCase {
     }
 
     func testShouldCalculateTotalBetweenTwoPunchs() {
-        gateway.create(punch(at: 8, with: .Input))
-        gateway.create(punch(at: 12, with: .Output))
+        gateway.create(punch(hour: 8, with: .Input))
+        gateway.create(punch(hour: 12, with: .Output))
         
         usecase.total()
         
@@ -38,10 +38,10 @@ class CurrentWeekHoursUsecaseTests: XCTestCase {
     }
     
     func testShouldCalculateTotalBetweenFourPunchs() {
-        gateway.create(punch(at: 8, with: .Input))
-        gateway.create(punch(at: 18, with: .Output))
-        gateway.create(punch(at: 13, with: .Input))
-        gateway.create(punch(at: 12, with: .Output))
+        gateway.create(punch(hour: 8, with: .Input))
+        gateway.create(punch(hour: 18, with: .Output))
+        gateway.create(punch(hour: 13, with: .Input))
+        gateway.create(punch(hour: 12, with: .Output))
 
         usecase.total()
         
@@ -50,9 +50,9 @@ class CurrentWeekHoursUsecaseTests: XCTestCase {
     }
     
     func testShouldNotCalculateHoursWithoutOuputPunch() {
-        gateway.create(punch(at: 8, with: .Input))
-        gateway.create(punch(at: 12, with: .Output))
-        gateway.create(punch(at: 13, with: .Input))
+        gateway.create(punch(hour: 8, with: .Input))
+        gateway.create(punch(hour: 12, with: .Output))
+        gateway.create(punch(hour: 13, with: .Input))
         
         usecase.total()
         
@@ -61,8 +61,8 @@ class CurrentWeekHoursUsecaseTests: XCTestCase {
     }
     
     func testShouldNotCalculatePunchsWhenInputIsGreaterThanOutput() {
-        gateway.create(punch(at: 12, with: .Output))
-        gateway.create(punch(at: 13, with: .Input))
+        gateway.create(punch(hour: 12, with: .Output))
+        gateway.create(punch(hour: 13, with: .Input))
         
         usecase.total()
         
@@ -71,8 +71,8 @@ class CurrentWeekHoursUsecaseTests: XCTestCase {
     }
     
     func testShouldNotCalculatePunchsWhenExistsOnlyInputs() {
-        gateway.create(punch(at: 12, with: .Input))
-        gateway.create(punch(at: 18, with: .Input))
+        gateway.create(punch(hour: 12, with: .Input))
+        gateway.create(punch(hour: 18, with: .Input))
         
         usecase.total()
         
@@ -81,8 +81,8 @@ class CurrentWeekHoursUsecaseTests: XCTestCase {
     }
     
     func testShouldNotCalculatePunchsWhenExistsOnlyOutputs() {
-        gateway.create(punch(at: 12, with: .Output))
-        gateway.create(punch(at: 18, with: .Output))
+        gateway.create(punch(hour: 12, with: .Output))
+        gateway.create(punch(hour: 18, with: .Output))
         
         usecase.total()
         
