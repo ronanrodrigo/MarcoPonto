@@ -90,7 +90,7 @@ class CurrentWeekHoursUsecaseTests: XCTestCase {
         XCTAssertEqual(zeroHours, presenter.total)
     }
     
-    private func punch(at hour: Int, with type: PunchType) -> Punch {
+    private func punch(hour hour: Int, with type: PunchType) -> Punch {
         dateComponents.hour = hour
         return PunchStruct(id: punchId, type: type, moment: calendar.dateFromComponents(dateComponents)!)
     }
