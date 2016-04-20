@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import SwiftDate
 
 class CurrentWeekHoursUsecase {
     var gateway: PunchGateway
@@ -18,8 +19,8 @@ class CurrentWeekHoursUsecase {
     }
     
     func total() {
-        let firstDate = NSDate()
-        let lastDate = NSDate()
+        let firstDate = NSDate().startOf(NSCalendarUnit.WeekOfYear)
+        let lastDate = NSDate().endOf(NSCalendarUnit.WeekOfYear)
         
         let inputPunchs = gateway.list(by: .Input, firstDate: firstDate, lastDate: lastDate)
         let outputPunchs = gateway.list(by: .Output, firstDate: firstDate, lastDate: lastDate)

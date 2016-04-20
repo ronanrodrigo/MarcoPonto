@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import SwiftDate
 
 class PunchGatewayFake: PunchGateway {
     var punchs: [Punch] = []
@@ -25,7 +26,7 @@ class PunchGatewayFake: PunchGateway {
     
     func list(by type: PunchType, firstDate: NSDate, lastDate: NSDate) -> [Punch] {
         return punchs.filter { (punch) -> Bool in
-            punch.type == type
+            punch.type == type && punch.moment >= firstDate && punch.moment <= lastDate
         }
     }
 }

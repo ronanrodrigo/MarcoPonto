@@ -8,6 +8,7 @@
 
 import Foundation
 import XCTest
+import SwiftDate
 
 class CurrentWeekHoursUsecaseTests: XCTestCase {
     var gateway: PunchGatewayFake!
@@ -90,9 +91,29 @@ class CurrentWeekHoursUsecaseTests: XCTestCase {
         XCTAssertEqual(zeroHours, presenter.total)
     }
     
+    func testShouldNotCalculatePunchsOfOtherWeek() {
+        let now = NSDate()
+        gateway.create(punch(hour: 8, with: .Input))
+        gateway.create(punch(hour: 12, with: .Output))
+        gateway.create(punch(hour: 13, day: now.day-8, with: .Input))
+        gateway.create(punch(hour: 18, day: now.day-8, with: .Output))
+        
+        usecase.total()
+        
+        let fourHours = 4 * secondsInOneHour
+        XCTAssertEqual(fourHours, presenter.total)
+    }
+    
     private func punch(hour hour: Int, with type: PunchType) -> Punch {
-        dateComponents.hour = hour
-        return PunchStruct(id: punchId, type: type, moment: calendar.dateFromComponents(dateComponents)!)
+        let now = NSDate()
+        let moment = NSDate(year: now.year, month: now.month, day: now.day, hour: hour, minute: 0)
+        return PunchStruct(id: punchId, type: type, moment: moment)
+    }
+    
+    private func punch(hour hour: Int, day: Int, with type: PunchType) -> Punch {
+        let now = NSDate()
+        let moment = NSDate(year: now.year, month: now.month, day: day, hour: hour, minute: 0)
+        return PunchStruct(id: punchId, type: type, moment: moment)
     }
     
 }
