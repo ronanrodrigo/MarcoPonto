@@ -34,6 +34,11 @@
 		3435FF831CC2E7640076AF42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3435FF811CC2E7640076AF42 /* LaunchScreen.storyboard */; };
 		3472A9EE1CC6F3E100CEF1D1 /* PunchModel+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3472A9EC1CC6F3E100CEF1D1 /* PunchModel+CoreDataProperties.swift */; };
 		3472A9EF1CC6F3E100CEF1D1 /* PunchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3472A9ED1CC6F3E100CEF1D1 /* PunchModel.swift */; };
+		3472AA0D1CC6FA7200CEF1D1 /* CurrentWeekHoursUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3472AA0C1CC6FA7200CEF1D1 /* CurrentWeekHoursUsecase.swift */; };
+		3472AA0F1CC6FACB00CEF1D1 /* CurrentWeekHoursUsecaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3472AA0E1CC6FACB00CEF1D1 /* CurrentWeekHoursUsecaseTests.swift */; };
+		3472AA101CC6FB2200CEF1D1 /* CurrentWeekHoursUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3472AA0C1CC6FA7200CEF1D1 /* CurrentWeekHoursUsecase.swift */; };
+		3472AA121CC6FD8800CEF1D1 /* CurrentWeekHoursPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3472AA111CC6FD8800CEF1D1 /* CurrentWeekHoursPresenter.swift */; };
+		3472AA131CC6FD8800CEF1D1 /* CurrentWeekHoursPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3472AA111CC6FD8800CEF1D1 /* CurrentWeekHoursPresenter.swift */; };
 		349D9B2B1CC2ECD20088DE5E /* FormPunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349D9B291CC2ECD20088DE5E /* FormPunchViewController.swift */; };
 		349D9B2F1CC2F68B0088DE5E /* SelectMomentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349D9B2D1CC2F68B0088DE5E /* SelectMomentTableViewCell.swift */; };
 		349D9B301CC2F68B0088DE5E /* SelectMomentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 349D9B2E1CC2F68B0088DE5E /* SelectMomentTableViewCell.xib */; };
@@ -94,6 +99,9 @@
 		3435FF841CC2E7640076AF42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3472A9EC1CC6F3E100CEF1D1 /* PunchModel+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PunchModel+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		3472A9ED1CC6F3E100CEF1D1 /* PunchModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PunchModel.swift; sourceTree = "<group>"; };
+		3472AA0C1CC6FA7200CEF1D1 /* CurrentWeekHoursUsecase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentWeekHoursUsecase.swift; sourceTree = "<group>"; };
+		3472AA0E1CC6FACB00CEF1D1 /* CurrentWeekHoursUsecaseTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentWeekHoursUsecaseTests.swift; sourceTree = "<group>"; };
+		3472AA111CC6FD8800CEF1D1 /* CurrentWeekHoursPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentWeekHoursPresenter.swift; sourceTree = "<group>"; };
 		349D9B1B1CC2E9710088DE5E /* MarcoPontoUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarcoPontoUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		349D9B1F1CC2E9710088DE5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		349D9B291CC2ECD20088DE5E /* FormPunchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FormPunchViewController.swift; path = Punch/Form/FormPunchViewController.swift; sourceTree = "<group>"; };
@@ -201,7 +209,6 @@
 				340BD72C1CC33EF300AB860B /* Form */,
 				340BD7361CC3404B00AB860B /* List */,
 			);
-			name = Punch;
 			path = Punch;
 			sourceTree = "<group>";
 		};
@@ -233,6 +240,7 @@
 			children = (
 				340BD74A1CC353CD00AB860B /* ListPunchsPresenter.swift */,
 				34E9B3FD1CC3DA880017A083 /* SavePunchPresenter.swift */,
+				3472AA111CC6FD8800CEF1D1 /* CurrentWeekHoursPresenter.swift */,
 			);
 			name = Presenters;
 			path = Core/Presenters;
@@ -370,6 +378,7 @@
 			children = (
 				340BD7251CC33C1D00AB860B /* ListPunchsUsecase.swift */,
 				349D9B361CC30A750088DE5E /* SavePunchUsecase.swift */,
+				3472AA0C1CC6FA7200CEF1D1 /* CurrentWeekHoursUsecase.swift */,
 			);
 			name = Usecases;
 			path = Core/Usecases;
@@ -389,6 +398,7 @@
 			children = (
 				340BD7271CC33CA800AB860B /* ListPunchsUsecaseTests.swift */,
 				349D9B3A1CC30AB40088DE5E /* SavePunchUsecaseTests.swift */,
+				3472AA0E1CC6FACB00CEF1D1 /* CurrentWeekHoursUsecaseTests.swift */,
 			);
 			path = Usecases;
 			sourceTree = "<group>";
@@ -563,11 +573,13 @@
 				34E9B3FE1CC3DA880017A083 /* SavePunchPresenter.swift in Sources */,
 				34E9B4031CC419090017A083 /* PunchTypeLabel.swift in Sources */,
 				349D9B3F1CC30B6F0088DE5E /* Punch.swift in Sources */,
+				3472AA121CC6FD8800CEF1D1 /* CurrentWeekHoursPresenter.swift in Sources */,
 				341877311CC6E552002A4B59 /* ReportsNavigationController.swift in Sources */,
 				3472A9EF1CC6F3E100CEF1D1 /* PunchModel.swift in Sources */,
 				34E9B3ED1CC360060017A083 /* PunchGatewayCoreData.swift in Sources */,
 				3472A9EE1CC6F3E100CEF1D1 /* PunchModel+CoreDataProperties.swift in Sources */,
 				349D9B321CC2F7960088DE5E /* FormPunchDataSource.swift in Sources */,
+				3472AA0D1CC6FA7200CEF1D1 /* CurrentWeekHoursUsecase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -577,12 +589,15 @@
 			files = (
 				34E9B4001CC3DAD10017A083 /* SavePunchPresenterSpy.swift in Sources */,
 				340BD7241CC3251B00AB860B /* PunchType.swift in Sources */,
+				3472AA0F1CC6FACB00CEF1D1 /* CurrentWeekHoursUsecaseTests.swift in Sources */,
 				34336DAC1CC30EFB00ED551C /* PunchGateway.swift in Sources */,
 				340BD74C1CC353CD00AB860B /* ListPunchsPresenter.swift in Sources */,
 				340BD7291CC33CC000AB860B /* ListPunchsUsecase.swift in Sources */,
 				340BD74F1CC353F500AB860B /* ListPunchsPresenterSpy.swift in Sources */,
+				3472AA101CC6FB2200CEF1D1 /* CurrentWeekHoursUsecase.swift in Sources */,
 				349D9B401CC30B6F0088DE5E /* Punch.swift in Sources */,
 				349D9B3C1CC30AB40088DE5E /* SavePunchUsecaseTests.swift in Sources */,
+				3472AA131CC6FD8800CEF1D1 /* CurrentWeekHoursPresenter.swift in Sources */,
 				34E9B4011CC3DAEB0017A083 /* SavePunchPresenter.swift in Sources */,
 				349D9B381CC30A750088DE5E /* SavePunchUsecase.swift in Sources */,
 				340BD7281CC33CA800AB860B /* ListPunchsUsecaseTests.swift in Sources */,
