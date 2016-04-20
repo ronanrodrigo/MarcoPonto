@@ -23,7 +23,7 @@ class PunchGatewayFake: PunchGateway {
         return punchs
     }
     
-    func list(by type: PunchType) -> [Punch] {
+    func list(by type: PunchType, firstDate: NSDate, lastDate: NSDate) -> [Punch] {
         return punchs.filter { (punch) -> Bool in
             punch.type == type
         }

@@ -18,8 +18,11 @@ class CurrentWeekHoursUsecase {
     }
     
     func total() {
-        let inputPunchs = gateway.list(by: .Input)
-        let outputPunchs = gateway.list(by: .Output)
+        let firstDate = NSDate()
+        let lastDate = NSDate()
+        
+        let inputPunchs = gateway.list(by: .Input, firstDate: firstDate, lastDate: lastDate)
+        let outputPunchs = gateway.list(by: .Output, firstDate: firstDate, lastDate: lastDate)
         var totalInterval = 0.0
         
         for (index, inputPunch) in inputPunchs.enumerate() {

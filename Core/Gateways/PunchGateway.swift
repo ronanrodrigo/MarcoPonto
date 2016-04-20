@@ -13,5 +13,5 @@ protocol PunchGateway {
     func update(punch: Punch)
     func delete(punch: Punch)
     func list() -> [Punch]
-    func list(by type: PunchType) -> [Punch]
+    func list(by type: PunchType, firstDate: NSDate, lastDate: NSDate) -> [Punch]
 }
