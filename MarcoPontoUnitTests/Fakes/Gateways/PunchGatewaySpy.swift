@@ -21,11 +21,14 @@ class PunchGatewaySpy: PunchGateway {
         updateSpied = true
     }
     
-    func delete(punch: Punch) {
-        
-    }
+    func delete(punch: Punch) { }
     
     func list() -> [Punch] {
+        listSpied = true
+        return []
+    }
+    
+    func list(by type: PunchType) -> [Punch] {
         listSpied = true
         return []
     }

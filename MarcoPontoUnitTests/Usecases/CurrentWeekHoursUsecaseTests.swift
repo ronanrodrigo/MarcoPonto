@@ -16,7 +16,7 @@ class CurrentWeekHoursUsecaseTests: XCTestCase {
     var calendar: NSCalendar!
     var dateComponents: NSDateComponents!
     let punchId = 1
-    let seconsInOneHour = 3600.0
+    let secondsInOneHour = 3600.0
     
     override func setUp() {
         gateway = PunchGatewayFake()
@@ -27,18 +27,70 @@ class CurrentWeekHoursUsecaseTests: XCTestCase {
         dateComponents = NSDateComponents()
     }
 
-    func testCalculateTotalBetweenTwoPunchs() {
-        let punchAt8 = createPunchStruct(at: 8, with: .Input)
-        gateway.create(punchAt8)
-        let punchAt10 = createPunchStruct(at: 10, with: .Output)
-        gateway.create(punchAt10)
+    func testShouldCalculateTotalBetweenTwoPunchs() {
+        gateway.create(punch(at: 8, with: .Input))
+        gateway.create(punch(at: 12, with: .Output))
         
         usecase.total()
         
-        XCTAssertEqual(2*seconsInOneHour, presenter.total)
+        let fourHours = 4 * secondsInOneHour
+        XCTAssertEqual(fourHours, presenter.total)
     }
     
-    private func createPunchStruct(at hour: Int, with type: PunchType) -> Punch {
+    func testShouldCalculateTotalBetweenFourPunchs() {
+        gateway.create(punch(at: 8, with: .Input))
+        gateway.create(punch(at: 18, with: .Output))
+        gateway.create(punch(at: 13, with: .Input))
+        gateway.create(punch(at: 12, with: .Output))
+
+        usecase.total()
+        
+        let nineHours = 9 * secondsInOneHour
+        XCTAssertEqual(nineHours, presenter.total)
+    }
+    
+    func testShouldNotCalculateHoursWithoutOuputPunch() {
+        gateway.create(punch(at: 8, with: .Input))
+        gateway.create(punch(at: 12, with: .Output))
+        gateway.create(punch(at: 13, with: .Input))
+        
+        usecase.total()
+        
+        let fourHours = 4 * secondsInOneHour
+        XCTAssertEqual(fourHours, presenter.total)
+    }
+    
+    func testShouldNotCalculatePunchsWhenInputIsGreaterThanOutput() {
+        gateway.create(punch(at: 12, with: .Output))
+        gateway.create(punch(at: 13, with: .Input))
+        
+        usecase.total()
+        
+        let zeroHours = 0 * secondsInOneHour
+        XCTAssertEqual(zeroHours, presenter.total)
+    }
+    
+    func testShouldNotCalculatePunchsWhenExistsOnlyInputs() {
+        gateway.create(punch(at: 12, with: .Input))
+        gateway.create(punch(at: 18, with: .Input))
+        
+        usecase.total()
+        
+        let zeroHours = 0 * secondsInOneHour
+        XCTAssertEqual(zeroHours, presenter.total)
+    }
+    
+    func testShouldNotCalculatePunchsWhenExistsOnlyOutputs() {
+        gateway.create(punch(at: 12, with: .Output))
+        gateway.create(punch(at: 18, with: .Output))
+        
+        usecase.total()
+        
+        let zeroHours = 0 * secondsInOneHour
+        XCTAssertEqual(zeroHours, presenter.total)
+    }
+    
+    private func punch(at hour: Int, with type: PunchType) -> Punch {
         dateComponents.hour = hour
         return PunchStruct(id: punchId, type: type, moment: calendar.dateFromComponents(dateComponents)!)
     }

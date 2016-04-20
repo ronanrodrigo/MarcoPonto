@@ -22,4 +22,10 @@ class PunchGatewayFake: PunchGateway {
     func list() -> [Punch] {
         return punchs
     }
+    
+    func list(by type: PunchType) -> [Punch] {
+        return punchs.filter { (punch) -> Bool in
+            punch.type == type
+        }
+    }
 }

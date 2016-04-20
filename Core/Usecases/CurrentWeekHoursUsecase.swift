@@ -18,12 +18,21 @@ class CurrentWeekHoursUsecase {
     }
     
     func total() {
-        let firstMoment = gateway.list()[0].moment
-        let secondMoment = gateway.list()[1].moment
-        let timeInterval = firstMoment.timeIntervalSinceReferenceDate
-        let interval = secondMoment.timeIntervalSinceDate(firstMoment)
+        let inputPunchs = gateway.list(by: .Input)
+        let outputPunchs = gateway.list(by: .Output)
+        var totalInterval = 0.0
+        
+        for (index, inputPunch) in inputPunchs.enumerate() {
+            if index <= outputPunchs.count-1 {
+                let ouputPunch = outputPunchs[index]
+                totalInterval += ouputPunch.moment.timeIntervalSinceDate(inputPunch.moment)
+                if totalInterval < 0 {
+                    totalInterval = 0
+                }
+            }
+        }
 
-        presenter.showTotal(interval)
+        presenter.showTotal(totalInterval)
     }
     
 }

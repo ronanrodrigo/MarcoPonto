@@ -75,6 +75,10 @@ class PunchGatewayCoreData: PunchGateway {
         }
     }
     
+    func list(by type: PunchType) -> [Punch] {
+        return []
+    }
+    
     func getLastId() -> Int {
         let fetchRequest  = NSFetchRequest(entityName: entityName)
         var lastId = 0
