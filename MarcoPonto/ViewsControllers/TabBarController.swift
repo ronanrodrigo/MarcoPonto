@@ -19,7 +19,7 @@ class TabBarController: UITabBarController {
         punchsNavigationController.tabBarItem = punchsNavigationControllerTabBarItem
         
         let reportsNavigationController = ReportsNavigationController()
-        let reportsNavigationControllerTabBarItem = UITabBarItem(title: "Totais", image: UIImage.dateRange, selectedImage: nil)
+        let reportsNavigationControllerTabBarItem = UITabBarItem(title: "Relatório", image: UIImage.dateRange, selectedImage: nil)
         reportsNavigationController.tabBarItem = reportsNavigationControllerTabBarItem
         
         self.viewControllers = [punchsNavigationController, reportsNavigationController]

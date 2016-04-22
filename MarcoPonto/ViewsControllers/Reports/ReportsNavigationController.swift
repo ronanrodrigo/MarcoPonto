@@ -20,7 +20,7 @@ class ReportsNavigationController: UINavigationController {
     }
     
     func openListPunchsViewController() {
-        totalsViewController.navigationItem.title = "Totais"
+        totalsViewController.navigationItem.title = "Relatório"
         setViewControllers([totalsViewController], animated: true)
     }
 }
