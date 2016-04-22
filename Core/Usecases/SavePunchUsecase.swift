@@ -9,8 +9,8 @@
 import Foundation
 
 class SavePunchUsecase {
-    var gateway: PunchGateway
-    var presenter: SavePunchPresenter
+    private var gateway: PunchGateway
+    private var presenter: SavePunchPresenter
     
     init(gateway: PunchGateway, presenter: SavePunchPresenter) {
         self.gateway = gateway
