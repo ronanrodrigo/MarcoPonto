@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		340404A91CC8214900A4E88E /* PunchGatewayFake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340404A81CC8214900A4E88E /* PunchGatewayFake.swift */; };
 		340404AB1CC8217900A4E88E /* CurrentWeekHoursPresenterFake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340404AA1CC8217900A4E88E /* CurrentWeekHoursPresenterFake.swift */; };
-		3405D94A1CCA4A5000616382 /* MarcoPontoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3405D9491CCA4A5000616382 /* MarcoPontoTests.swift */; };
 		340BD7201CC3205300AB860B /* PunchGatewaySpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340BD71F1CC3205300AB860B /* PunchGatewaySpy.swift */; };
 		340BD7231CC3251B00AB860B /* PunchType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340BD7221CC3251B00AB860B /* PunchType.swift */; };
 		340BD7241CC3251B00AB860B /* PunchType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340BD7221CC3251B00AB860B /* PunchType.swift */; };
@@ -69,13 +68,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		3405D94C1CCA4A5000616382 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3435FF6A1CC2E7640076AF42 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3435FF711CC2E7640076AF42;
-			remoteInfo = MarcoPonto;
-		};
 		349D9B201CC2E9710088DE5E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3435FF6A1CC2E7640076AF42 /* Project object */;
@@ -91,9 +83,6 @@
 		247B15F020D817A359DE8140 /* Pods_MarcoPontoUnitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MarcoPontoUnitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		340404A81CC8214900A4E88E /* PunchGatewayFake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PunchGatewayFake.swift; sourceTree = "<group>"; };
 		340404AA1CC8217900A4E88E /* CurrentWeekHoursPresenterFake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentWeekHoursPresenterFake.swift; sourceTree = "<group>"; };
-		3405D9471CCA4A5000616382 /* MarcoPontoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarcoPontoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3405D9491CCA4A5000616382 /* MarcoPontoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarcoPontoTests.swift; sourceTree = "<group>"; };
-		3405D94B1CCA4A5000616382 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		340BD71F1CC3205300AB860B /* PunchGatewaySpy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PunchGatewaySpy.swift; sourceTree = "<group>"; };
 		340BD7221CC3251B00AB860B /* PunchType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PunchType.swift; sourceTree = "<group>"; };
 		340BD7251CC33C1D00AB860B /* ListPunchsUsecase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPunchsUsecase.swift; sourceTree = "<group>"; };
@@ -149,13 +138,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		3405D9441CCA4A5000616382 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		3435FF6F1CC2E7640076AF42 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -175,15 +157,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3405D9481CCA4A5000616382 /* MarcoPontoTests */ = {
-			isa = PBXGroup;
-			children = (
-				3405D9491CCA4A5000616382 /* MarcoPontoTests.swift */,
-				3405D94B1CCA4A5000616382 /* Info.plist */,
-			);
-			path = MarcoPontoTests;
-			sourceTree = "<group>";
-		};
 		340BD71D1CC31FD900AB860B /* Fakes */ = {
 			isa = PBXGroup;
 			children = (
@@ -321,7 +294,6 @@
 				349D9B331CC308460088DE5E /* Core */,
 				349D9B1C1CC2E9710088DE5E /* CoreTests */,
 				3435FF741CC2E7640076AF42 /* MarcoPonto */,
-				3405D9481CCA4A5000616382 /* MarcoPontoTests */,
 				FA066A260DC1EAA1892ACC01 /* Frameworks */,
 				C279F0865B4122F19805AD26 /* Pods */,
 				3435FF731CC2E7640076AF42 /* Products */,
@@ -333,7 +305,6 @@
 			children = (
 				3435FF721CC2E7640076AF42 /* MarcoPonto.app */,
 				349D9B1B1CC2E9710088DE5E /* CoreTests.xctest */,
-				3405D9471CCA4A5000616382 /* MarcoPontoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -509,24 +480,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3405D9461CCA4A5000616382 /* MarcoPontoTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3405D94E1CCA4A5000616382 /* Build configuration list for PBXNativeTarget "MarcoPontoTests" */;
-			buildPhases = (
-				3405D9431CCA4A5000616382 /* Sources */,
-				3405D9441CCA4A5000616382 /* Frameworks */,
-				3405D9451CCA4A5000616382 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				3405D94D1CCA4A5000616382 /* PBXTargetDependency */,
-			);
-			name = MarcoPontoTests;
-			productName = MarcoPontoTests;
-			productReference = 3405D9471CCA4A5000616382 /* MarcoPontoTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		3435FF711CC2E7640076AF42 /* MarcoPonto */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3435FF921CC2E7650076AF42 /* Build configuration list for PBXNativeTarget "MarcoPonto" */;
@@ -578,10 +531,6 @@
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Ronan Rodrigo Nunes";
 				TargetAttributes = {
-					3405D9461CCA4A5000616382 = {
-						CreatedOnToolsVersion = 7.3;
-						TestTargetID = 3435FF711CC2E7640076AF42;
-					};
 					3435FF711CC2E7640076AF42 = {
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = 2729VXDM4D;
@@ -605,20 +554,12 @@
 			projectRoot = "";
 			targets = (
 				3435FF711CC2E7640076AF42 /* MarcoPonto */,
-				3405D9461CCA4A5000616382 /* MarcoPontoTests */,
 				349D9B1A1CC2E9710088DE5E /* CoreTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		3405D9451CCA4A5000616382 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		3435FF701CC2E7640076AF42 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -737,14 +678,6 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		3405D9431CCA4A5000616382 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3405D94A1CCA4A5000616382 /* MarcoPontoTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		3435FF6E1CC2E7640076AF42 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -810,11 +743,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		3405D94D1CCA4A5000616382 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 3435FF711CC2E7640076AF42 /* MarcoPonto */;
-			targetProxy = 3405D94C1CCA4A5000616382 /* PBXContainerItemProxy */;
-		};
 		349D9B211CC2E9710088DE5E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 3435FF711CC2E7640076AF42 /* MarcoPonto */;
@@ -835,32 +763,6 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		3405D94F1CCA4A5000616382 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = MarcoPontoTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = br.com.meuspedidos.MarcoPontoTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MarcoPonto.app/MarcoPonto";
-			};
-			name = Debug;
-		};
-		3405D9501CCA4A5000616382 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = MarcoPontoTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = br.com.meuspedidos.MarcoPontoTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MarcoPonto.app/MarcoPonto";
-			};
-			name = Release;
-		};
 		3435FF901CC2E7650076AF42 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1001,14 +903,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3405D94E1CCA4A5000616382 /* Build configuration list for PBXNativeTarget "MarcoPontoTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3405D94F1CCA4A5000616382 /* Debug */,
-				3405D9501CCA4A5000616382 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
 		3435FF6D1CC2E7640076AF42 /* Build configuration list for PBXProject "MarcoPonto" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
