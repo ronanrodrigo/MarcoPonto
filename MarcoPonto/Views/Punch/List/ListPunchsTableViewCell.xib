@@ -16,19 +16,19 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25/06/2016" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pu3-ao-V5V">
-                        <rect key="frame" x="8" y="18" width="82" height="19"/>
+                        <rect key="frame" x="15" y="18" width="82" height="19"/>
                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="08:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="auj-VB-QLc">
-                        <rect key="frame" x="8" y="39" width="36" height="17"/>
+                        <rect key="frame" x="15" y="39" width="36" height="17"/>
                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Entrada" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z4I-VA-nce" customClass="PunchTypeLabel" customModule="MarcoPonto" customModuleProvider="target">
-                        <rect key="frame" x="252" y="25" width="60" height="25"/>
+                        <rect key="frame" x="245" y="25" width="60" height="25"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="60" id="4Fe-UQ-t7i"/>
                             <constraint firstAttribute="height" constant="25" id="KUT-y3-cbl"/>
@@ -40,13 +40,18 @@
                 </subviews>
                 <constraints>
                     <constraint firstItem="Pu3-ao-V5V" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="37S-X1-2I0"/>
-                    <constraint firstItem="auj-VB-QLc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="fgB-hl-WCA"/>
+                    <constraint firstAttribute="trailing" secondItem="Z4I-VA-nce" secondAttribute="trailing" constant="15" id="Q9x-5Z-s8p"/>
+                    <constraint firstItem="auj-VB-QLc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="fgB-hl-WCA"/>
                     <constraint firstItem="Z4I-VA-nce" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="l7W-oc-CIX"/>
-                    <constraint firstItem="Z4I-VA-nce" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="oF6-Kt-Jk6"/>
-                    <constraint firstItem="Pu3-ao-V5V" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="rG5-cc-LdG"/>
+                    <constraint firstItem="Pu3-ao-V5V" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="rG5-cc-LdG"/>
                     <constraint firstItem="Pu3-ao-V5V" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="yfl-aL-WTw"/>
                     <constraint firstAttribute="bottomMargin" secondItem="auj-VB-QLc" secondAttribute="bottom" constant="10" id="yx7-1q-DS6"/>
                 </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="37S-X1-2I0"/>
+                    </mask>
+                </variation>
             </tableViewCellContentView>
             <connections>
                 <outlet property="date" destination="Pu3-ao-V5V" id="vMF-MD-GzR"/>

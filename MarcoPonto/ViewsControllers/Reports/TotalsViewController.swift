@@ -8,19 +8,22 @@
 
 import UIKit
 
-class TotalsViewController: UIViewController, CurrentWeekHoursPresenter {
+class TotalsViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
-
+    private var dataSource: TotalsDataSource!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
-    override func viewDidAppear(animated: Bool) {
-        CurrentWeekHoursUsecaseFactory.make(self).total()
+    override func viewWillAppear(animated: Bool) {
+        configureTableView()
     }
-
-    func showTotal(total: NSTimeInterval) {
+    
+    private func configureTableView() {
+        dataSource = TotalsDataSource()
+        tableView.dataSource = dataSource
     }
 
 }

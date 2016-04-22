@@ -16,6 +16,7 @@ class ReportsNavigationController: UINavigationController {
         super.viewDidLoad()
         totalsViewController = TotalsViewController()
         openListPunchsViewController()
+        navigationBar.translucent = false
     }
     
     func openListPunchsViewController() {

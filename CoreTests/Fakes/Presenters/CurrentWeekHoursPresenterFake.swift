@@ -9,9 +9,10 @@
 import Foundation
 
 class CurrentWeekHoursPresenterFake: CurrentWeekHoursPresenter {
-    var total = NSTimeInterval()
+    var workHourGroup: WorkHourGroup?
     
-    func showTotal(total: NSTimeInterval) {
-        self.total = total
+    func showTotal(workHourGroup: WorkHourGroup) {
+        self.workHourGroup = workHourGroup
     }
+
 }

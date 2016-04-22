@@ -19,6 +19,7 @@ class PunchsNavigationController: UINavigationController, SavePunchPresenter, IN
         super.viewDidLoad()
         listPunchsViewController = ListPunchsViewController(navigationDelegate: self)
         openListPunchsViewController()
+        navigationBar.translucent = false
     }
     
     func openListPunchsViewController() {

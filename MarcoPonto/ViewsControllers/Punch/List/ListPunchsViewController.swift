@@ -30,10 +30,6 @@ class ListPunchsViewController: UIViewController, EditTableViewDelegate {
         super.init(coder: aDecoder)
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-    
     override func viewWillAppear(animated: Bool) {
         configureTableView()
     }

@@ -23,19 +23,22 @@ class CurrentWeekHoursUsecase {
     func total() {
         let inputPunchs = gateway.list(by: .Input, between: firstDate, and: lastDate)
         let outputPunchs = gateway.list(by: .Output, between: firstDate, and: lastDate)
-        var totalInterval = 0.0
+        var totalInterval: NSTimeInterval = 0.0
         
         for (index, inputPunch) in inputPunchs.enumerate() {
             if existPunch(at: index, on: outputPunchs) {
                 let ouputPunch = outputPunchs[index]
                 totalInterval += ouputPunch.moment.timeIntervalSinceDate(inputPunch.moment)
                 if isOutputPunchGreatherThanInputPunch(totalInterval) {
-                    totalInterval = 0
+                    totalInterval = 0.0
                 }
             }
         }
-
-        presenter.showTotal(totalInterval)
+        
+        let workHourStruct = WorkHourStruct(title: "Total", value: totalInterval.toString()!)
+        let workHoursReportStruct = WorkHourGroupStruct(title: "Semanal atual", workHours: [workHourStruct])
+        
+        presenter.showTotal(workHoursReportStruct)
     }
     
     private func existPunch(at index: Int, on punchs: [Punch]) -> Bool {

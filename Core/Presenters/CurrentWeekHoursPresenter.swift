@@ -9,5 +9,5 @@
 import Foundation
 
 protocol CurrentWeekHoursPresenter {
-    func showTotal(total: NSTimeInterval)
+    func showTotal(workHourGroup: WorkHourGroup)
 }
