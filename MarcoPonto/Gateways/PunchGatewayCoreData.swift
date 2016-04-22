@@ -9,24 +9,29 @@
 import Foundation
 import UIKit
 import CoreData
+import SwiftDate
 
 class PunchGatewayCoreData: PunchGateway {
     var entityName = String(PunchModel)
     var app: AppDelegate
     var context: NSManagedObjectContext
     var nextId: Int = 1
+    var momentSortDescriptor: NSSortDescriptor
+    var typeSortDescriptor: NSSortDescriptor
     
     init(appDelegate: AppDelegate) {
         app = appDelegate
         context = app.managedObjectContext
-        nextId = self.getLastId() + 1
+        momentSortDescriptor = NSSortDescriptor(key: "punchMoment", ascending: true)
+        typeSortDescriptor = NSSortDescriptor(key: "punchType", ascending: true)
+        nextId = getLastId() + 1
     }
     
     func create(punch: Punch) {
         let entity = NSEntityDescription.entityForName(entityName, inManagedObjectContext: context)!
         let punchModel = PunchModel(entity: entity, insertIntoManagedObjectContext: context)
         punchModel.type = punch.type
-        punchModel.moment = punch.moment
+        punchModel.moment = NSDate(fromDate: punch.moment, second: 0, nanosecond: 0)
         punchModel.id = nextId
         context.insertObject(punchModel)
         
@@ -43,7 +48,7 @@ class PunchGatewayCoreData: PunchGateway {
         do {
             let results = try context.executeFetchRequest(fetchRequest)
             if var _punch = results.first as? Punch {
-                _punch.moment = punch.moment
+                _punch.moment = NSDate(fromDate: punch.moment, second: 0, nanosecond: 0)
                 _punch.type = punch.type
                 try context.save()
             }
@@ -67,6 +72,7 @@ class PunchGatewayCoreData: PunchGateway {
     
     func list() -> [Punch] {
         let fetchRequest = NSFetchRequest(entityName: entityName)
+        fetchRequest.sortDescriptors = [momentSortDescriptor, typeSortDescriptor]
         do {
             let results = try context.executeFetchRequest(fetchRequest)
             return results.map({ $0 as! PunchModel })
@@ -77,7 +83,7 @@ class PunchGatewayCoreData: PunchGateway {
     
     func list(by type: PunchType, between firstDate: NSDate, and lastDate: NSDate) -> [Punch] {
         let fetchRequest = NSFetchRequest(entityName: entityName)
-        fetchRequest.predicate =  NSPredicate(format: "moment >= %@ and moment <= %@", firstDate, lastDate)
+        fetchRequest.predicate =  NSPredicate(format: "punchType = %@ AND punchMoment >= %@ AND punchMoment <= %@", type.rawValue, firstDate, lastDate)
         do {
             let results = try context.executeFetchRequest(fetchRequest)
             return results.map({ $0 as! PunchModel })
