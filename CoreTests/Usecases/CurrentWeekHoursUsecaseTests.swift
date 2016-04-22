@@ -1,5 +1,5 @@
 //
-//  WeekHoursUsecaseTests.swift
+//  WeekWorkedHoursUsecaseTests.swift
 //  MarcoPonto
 //
 //  Created by Ronan Rodrigo Nunes on 19/04/16.
@@ -10,19 +10,21 @@ import Foundation
 import XCTest
 import SwiftDate
 
-class CurrentWeekHoursUsecaseTests: XCTestCase {
+class WeekWorkedHoursUsecaseTests: XCTestCase {
     var gateway: PunchGatewayFake!
-    var presenter: CurrentWeekHoursPresenterFake!
-    var usecase: CurrentWeekHoursUsecase!
+    var presenter: WeekWorkedHoursPresenterFake!
+    var usecase: WeekWorkedHoursUsecase!
     var calendar: NSCalendar!
     var dateComponents: NSDateComponents!
     let punchId = 1
     let secondsInOneHour = 3600.0
+    let currentWeekHours = 0
+    let pastWeekHours = 1
     
     override func setUp() {
         gateway = PunchGatewayFake()
-        presenter = CurrentWeekHoursPresenterFake()
-        usecase = CurrentWeekHoursUsecase(gateway: gateway, presenter: presenter)
+        presenter = WeekWorkedHoursPresenterFake()
+        usecase = WeekWorkedHoursUsecase(gateway: gateway, presenter: presenter)
         
         calendar = NSCalendar(calendarIdentifier: NSCalendarIdentifierGregorian)!
         dateComponents = NSDateComponents()
@@ -35,7 +37,7 @@ class CurrentWeekHoursUsecaseTests: XCTestCase {
         usecase.total()
         
         let fourHours = "4h"
-        XCTAssertEqual(fourHours, presenter.workHourGroup?.workHours.first?.value)
+        XCTAssertEqual(fourHours, presenter.workHourGroups[currentWeekHours].workHours.first?.value)
     }
     
     func testShouldCalculateTotalBetweenFourPunchs() {
@@ -47,7 +49,7 @@ class CurrentWeekHoursUsecaseTests: XCTestCase {
         usecase.total()
         
         let nineHours = "9h"
-        XCTAssertEqual(nineHours, presenter.workHourGroup?.workHours.first?.value)
+        XCTAssertEqual(nineHours, presenter.workHourGroups[currentWeekHours].workHours.first?.value)
     }
     
     func testShouldNotCalculateHoursWithoutOuputPunch() {
@@ -58,7 +60,7 @@ class CurrentWeekHoursUsecaseTests: XCTestCase {
         usecase.total()
         
         let fourHours = "4h"
-        XCTAssertEqual(fourHours, presenter.workHourGroup?.workHours.first?.value)
+        XCTAssertEqual(fourHours, presenter.workHourGroups[currentWeekHours].workHours.first?.value)
     }
     
     func testShouldNotCalculatePunchsWhenInputIsGreaterThanOutput() {
@@ -67,7 +69,7 @@ class CurrentWeekHoursUsecaseTests: XCTestCase {
         
         usecase.total()
         
-        XCTAssertEqual("0s", presenter.workHourGroup?.workHours.first?.value)
+        XCTAssertEqual("0s", presenter.workHourGroups[currentWeekHours].workHours.first?.value)
     }
     
     func testShouldNotCalculatePunchsWhenExistsOnlyInputs() {
@@ -76,7 +78,7 @@ class CurrentWeekHoursUsecaseTests: XCTestCase {
         
         usecase.total()
         
-        XCTAssertEqual("0s", presenter.workHourGroup?.workHours.first?.value)
+        XCTAssertEqual("0s", presenter.workHourGroups[currentWeekHours].workHours.first?.value)
     }
     
     func testShouldNotCalculatePunchsWhenExistsOnlyOutputs() {
@@ -85,7 +87,7 @@ class CurrentWeekHoursUsecaseTests: XCTestCase {
         
         usecase.total()
         
-        XCTAssertEqual("0s", presenter.workHourGroup?.workHours.first?.value)
+        XCTAssertEqual("0s", presenter.workHourGroups[currentWeekHours].workHours.first?.value)
     }
     
     func testShouldNotCalculatePunchsOfOtherWeek() {
@@ -98,7 +100,7 @@ class CurrentWeekHoursUsecaseTests: XCTestCase {
         usecase.total()
         
         let fourHours = "4h"
-        XCTAssertEqual(fourHours, presenter.workHourGroup?.workHours.first?.value)
+        XCTAssertEqual(fourHours, presenter.workHourGroups[currentWeekHours].workHours.first?.value)
     }
     
     private func punch(hour hour: Int, with type: PunchType) -> Punch {

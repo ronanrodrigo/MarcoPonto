@@ -8,6 +8,6 @@
 
 import Foundation
 
-protocol CurrentWeekHoursPresenter {
+protocol WeekWorkedHoursPresenter {
     func showTotal(workHourGroup: WorkHourGroup)
 }
