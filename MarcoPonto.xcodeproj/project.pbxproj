@@ -319,12 +319,12 @@
 			isa = PBXGroup;
 			children = (
 				349D9B331CC308460088DE5E /* Core */,
-				3435FF741CC2E7640076AF42 /* MarcoPonto */,
 				349D9B1C1CC2E9710088DE5E /* CoreTests */,
+				3435FF741CC2E7640076AF42 /* MarcoPonto */,
 				3405D9481CCA4A5000616382 /* MarcoPontoTests */,
-				3435FF731CC2E7640076AF42 /* Products */,
-				C279F0865B4122F19805AD26 /* Pods */,
 				FA066A260DC1EAA1892ACC01 /* Frameworks */,
+				C279F0865B4122F19805AD26 /* Pods */,
+				3435FF731CC2E7640076AF42 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
