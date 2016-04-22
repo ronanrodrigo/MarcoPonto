@@ -7,6 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TotalsViewController" customModule="MarcoPonto" customModuleProvider="target">
             <connections>
+                <outlet property="tableView" destination="ohm-SG-ZYG" id="bgT-Ns-Pv0"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -15,18 +16,18 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cgd-UM-DSJ">
-                    <rect key="frame" x="279" y="289" width="42" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="ohm-SG-ZYG">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                </tableView>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="cgd-UM-DSJ" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="evJ-v0-DKT"/>
-                <constraint firstItem="cgd-UM-DSJ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="l2h-XS-7X3"/>
+                <constraint firstAttribute="bottom" secondItem="ohm-SG-ZYG" secondAttribute="bottom" id="AAY-z3-jRm"/>
+                <constraint firstAttribute="trailing" secondItem="ohm-SG-ZYG" secondAttribute="trailing" id="H8v-vh-cre"/>
+                <constraint firstItem="ohm-SG-ZYG" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Ylt-Yl-eh1"/>
+                <constraint firstItem="ohm-SG-ZYG" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="hSY-6n-0lF"/>
             </constraints>
+            <nil key="simulatedTopBarMetrics"/>
         </view>
     </objects>
 </document>
