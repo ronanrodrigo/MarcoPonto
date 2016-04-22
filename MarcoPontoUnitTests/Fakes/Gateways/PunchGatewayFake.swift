@@ -24,7 +24,7 @@ class PunchGatewayFake: PunchGateway {
         return punchs
     }
     
-    func list(by type: PunchType, firstDate: NSDate, lastDate: NSDate) -> [Punch] {
+    func list(by type: PunchType, between firstDate: NSDate, and lastDate: NSDate) -> [Punch] {
         return punchs.filter { (punch) -> Bool in
             punch.type == type && punch.moment >= firstDate && punch.moment <= lastDate
         }

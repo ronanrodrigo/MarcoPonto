@@ -22,8 +22,8 @@ class CurrentWeekHoursUsecase {
         let firstDate = NSDate().startOf(NSCalendarUnit.WeekOfYear)
         let lastDate = NSDate().endOf(NSCalendarUnit.WeekOfYear)
         
-        let inputPunchs = gateway.list(by: .Input, firstDate: firstDate, lastDate: lastDate)
-        let outputPunchs = gateway.list(by: .Output, firstDate: firstDate, lastDate: lastDate)
+        let inputPunchs = gateway.list(by: .Input, between: firstDate, and: lastDate)
+        let outputPunchs = gateway.list(by: .Output, between: firstDate, and: lastDate)
         var totalInterval = 0.0
         
         for (index, inputPunch) in inputPunchs.enumerate() {

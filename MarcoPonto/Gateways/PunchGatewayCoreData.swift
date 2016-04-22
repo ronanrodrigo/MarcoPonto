@@ -75,7 +75,7 @@ class PunchGatewayCoreData: PunchGateway {
         }
     }
     
-    func list(by type: PunchType, firstDate: NSDate, lastDate: NSDate) -> [Punch] {
+    func list(by type: PunchType, between firstDate: NSDate, and lastDate: NSDate) -> [Punch] {
         return []
     }
     
