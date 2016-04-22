@@ -43,8 +43,18 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "349D9B1A1CC2E9710088DE5E"
-               BuildableName = "MarcoPontoUnitTests.xctest"
-               BlueprintName = "MarcoPontoUnitTests"
+               BuildableName = "CoreTests.xctest"
+               BlueprintName = "CoreTests"
+               ReferencedContainer = "container:MarcoPonto.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "3405D9461CCA4A5000616382"
+               BuildableName = "MarcoPontoTests.xctest"
+               BlueprintName = "MarcoPontoTests"
                ReferencedContainer = "container:MarcoPonto.xcodeproj">
             </BuildableReference>
          </TestableReference>

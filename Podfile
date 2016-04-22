@@ -1,11 +1,18 @@
 platform :ios, '8.0'
 use_frameworks!
 
+def shared_pods
+  pod "SwiftDate"
+end
+
 target 'MarcoPonto' do
-  pod "SwiftDate"
+  shared_pods
 end
 
-target 'MarcoPontoUnitTests' do
-  pod "SwiftDate"
+target 'CoreTests' do
+  shared_pods
 end
 
+target 'MarcoPontoTests' do
+  shared_pods
+end
