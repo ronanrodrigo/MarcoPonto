@@ -8,18 +8,17 @@
 
 import UIKit
 
-class TotalsViewController: UIViewController {
+class TotalsViewController: UIViewController, CurrentWeekHoursPresenter {
 
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
+    override func viewDidAppear(animated: Bool) {
+        CurrentWeekHoursUsecaseFactory.make(self).total()
+    }
 
+    func showTotal(total: NSTimeInterval) {
     }
 
 }
