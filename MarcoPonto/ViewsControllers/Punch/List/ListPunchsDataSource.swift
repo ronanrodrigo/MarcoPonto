@@ -50,7 +50,7 @@ class ListPunchsDataSource: NSObject, RRNListDataSource, ListPunchsPresenter {
     }
     
     func removePunch(at indexPath: NSIndexPath) {
-        PunchGatewayCoreData().delete(punchs[indexPath.row])
+        PunchGatewayCoreDataFactory.make().delete(punchs[indexPath.row])
         punchs.removeAtIndex(indexPath.row)
     }
     

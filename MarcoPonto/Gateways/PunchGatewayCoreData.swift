@@ -16,8 +16,8 @@ class PunchGatewayCoreData: PunchGateway {
     var context: NSManagedObjectContext
     var nextId: Int = 1
     
-    init() {
-        app = UIApplication.sharedApplication().delegate as! AppDelegate
+    init(appDelegate: AppDelegate) {
+        app = appDelegate
         context = app.managedObjectContext
         nextId = self.getLastId() + 1
     }
