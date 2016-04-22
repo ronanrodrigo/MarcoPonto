@@ -76,7 +76,14 @@ class PunchGatewayCoreData: PunchGateway {
     }
     
     func list(by type: PunchType, between firstDate: NSDate, and lastDate: NSDate) -> [Punch] {
-        return []
+        let fetchRequest = NSFetchRequest(entityName: entityName)
+        fetchRequest.predicate =  NSPredicate(format: "moment >= %@ and moment <= %@", firstDate, lastDate)
+        do {
+            let results = try context.executeFetchRequest(fetchRequest)
+            return results.map({ $0 as! PunchModel })
+        } catch {
+            return []
+        }
     }
     
     func getLastId() -> Int {

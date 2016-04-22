@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		340404A91CC8214900A4E88E /* PunchGatewayFake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340404A81CC8214900A4E88E /* PunchGatewayFake.swift */; };
 		340404AB1CC8217900A4E88E /* CurrentWeekHoursPresenterFake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340404AA1CC8217900A4E88E /* CurrentWeekHoursPresenterFake.swift */; };
+		3405D9881CCA51E700616382 /* CurrentWeekHoursUsecaseFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3405D9871CCA51E700616382 /* CurrentWeekHoursUsecaseFactory.swift */; };
 		340BD7201CC3205300AB860B /* PunchGatewaySpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340BD71F1CC3205300AB860B /* PunchGatewaySpy.swift */; };
 		340BD7231CC3251B00AB860B /* PunchType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340BD7221CC3251B00AB860B /* PunchType.swift */; };
 		340BD7241CC3251B00AB860B /* PunchType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340BD7221CC3251B00AB860B /* PunchType.swift */; };
@@ -83,6 +84,7 @@
 		247B15F020D817A359DE8140 /* Pods_MarcoPontoUnitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MarcoPontoUnitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		340404A81CC8214900A4E88E /* PunchGatewayFake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PunchGatewayFake.swift; sourceTree = "<group>"; };
 		340404AA1CC8217900A4E88E /* CurrentWeekHoursPresenterFake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentWeekHoursPresenterFake.swift; sourceTree = "<group>"; };
+		3405D9871CCA51E700616382 /* CurrentWeekHoursUsecaseFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentWeekHoursUsecaseFactory.swift; sourceTree = "<group>"; };
 		340BD71F1CC3205300AB860B /* PunchGatewaySpy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PunchGatewaySpy.swift; sourceTree = "<group>"; };
 		340BD7221CC3251B00AB860B /* PunchType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PunchType.swift; sourceTree = "<group>"; };
 		340BD7251CC33C1D00AB860B /* ListPunchsUsecase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPunchsUsecase.swift; sourceTree = "<group>"; };
@@ -452,6 +454,7 @@
 				34E9B3EF1CC3B72E0017A083 /* ListPunchUsecaseFactory.swift */,
 				34E9B3FB1CC3DA1A0017A083 /* PunchGatewayCoreDataFactory.swift */,
 				34E9B3F91CC3D9C80017A083 /* SavePunchUsecaseFactory.swift */,
+				3405D9871CCA51E700616382 /* CurrentWeekHoursUsecaseFactory.swift */,
 			);
 			name = Factories;
 			path = MarcoPonto/Factories;
@@ -682,6 +685,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3405D9881CCA51E700616382 /* CurrentWeekHoursUsecaseFactory.swift in Sources */,
 				340BD7231CC3251B00AB860B /* PunchType.swift in Sources */,
 				34BD8F961CC5BA3500607BA6 /* TabBarController.swift in Sources */,
 				34E9B3FC1CC3DA1A0017A083 /* PunchGatewayCoreDataFactory.swift in Sources */,
