@@ -12,7 +12,3 @@ end
 target 'CoreTests' do
   shared_pods
 end
-
-target 'MarcoPontoTests' do
-  shared_pods
-end
