@@ -32,8 +32,8 @@
 		3435FF7E1CC2E7640076AF42 /* MarcoPonto.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3435FF7C1CC2E7640076AF42 /* MarcoPonto.xcdatamodeld */; };
 		3435FF801CC2E7640076AF42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3435FF7F1CC2E7640076AF42 /* Assets.xcassets */; };
 		3435FF831CC2E7640076AF42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3435FF811CC2E7640076AF42 /* LaunchScreen.storyboard */; };
-		345B117B1CD2BD2A00269580 /* NSTimeInterval+ToString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345B117A1CD2BD2A00269580 /* NSTimeInterval+ToString.swift */; };
-		345B117C1CD2BD2A00269580 /* NSTimeInterval+ToString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345B117A1CD2BD2A00269580 /* NSTimeInterval+ToString.swift */; };
+		345B117B1CD2BD2A00269580 /* NSTimeInterval+ToTimeString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345B117A1CD2BD2A00269580 /* NSTimeInterval+ToTimeString.swift */; };
+		345B117C1CD2BD2A00269580 /* NSTimeInterval+ToTimeString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345B117A1CD2BD2A00269580 /* NSTimeInterval+ToTimeString.swift */; };
 		3472A9EE1CC6F3E100CEF1D1 /* PunchModel+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3472A9EC1CC6F3E100CEF1D1 /* PunchModel+CoreDataProperties.swift */; };
 		3472A9EF1CC6F3E100CEF1D1 /* PunchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3472A9ED1CC6F3E100CEF1D1 /* PunchModel.swift */; };
 		3472AA0D1CC6FA7200CEF1D1 /* WeekWorkedHoursUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3472AA0C1CC6FA7200CEF1D1 /* WeekWorkedHoursUsecase.swift */; };
@@ -109,7 +109,7 @@
 		3435FF7F1CC2E7640076AF42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3435FF821CC2E7640076AF42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3435FF841CC2E7640076AF42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		345B117A1CD2BD2A00269580 /* NSTimeInterval+ToString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSTimeInterval+ToString.swift"; sourceTree = "<group>"; };
+		345B117A1CD2BD2A00269580 /* NSTimeInterval+ToTimeString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSTimeInterval+ToTimeString.swift"; sourceTree = "<group>"; };
 		3472A9EC1CC6F3E100CEF1D1 /* PunchModel+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PunchModel+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		3472A9ED1CC6F3E100CEF1D1 /* PunchModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PunchModel.swift; sourceTree = "<group>"; };
 		3472AA0C1CC6FA7200CEF1D1 /* WeekWorkedHoursUsecase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeekWorkedHoursUsecase.swift; sourceTree = "<group>"; };
@@ -438,7 +438,7 @@
 		4B7A527E0F071593BB52B02A /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				345B117A1CD2BD2A00269580 /* NSTimeInterval+ToString.swift */,
+				345B117A1CD2BD2A00269580 /* NSTimeInterval+ToTimeString.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -783,7 +783,7 @@
 				341877311CC6E552002A4B59 /* ReportsNavigationController.swift in Sources */,
 				3472A9EF1CC6F3E100CEF1D1 /* PunchModel.swift in Sources */,
 				34E9B3ED1CC360060017A083 /* PunchGatewayCoreData.swift in Sources */,
-				345B117B1CD2BD2A00269580 /* NSTimeInterval+ToString.swift in Sources */,
+				345B117B1CD2BD2A00269580 /* NSTimeInterval+ToTimeString.swift in Sources */,
 				3472A9EE1CC6F3E100CEF1D1 /* PunchModel+CoreDataProperties.swift in Sources */,
 				349D9B321CC2F7960088DE5E /* FormPunchDataSource.swift in Sources */,
 				3472AA0D1CC6FA7200CEF1D1 /* WeekWorkedHoursUsecase.swift in Sources */,
@@ -798,7 +798,7 @@
 			files = (
 				34E9B4001CC3DAD10017A083 /* SavePunchPresenterSpy.swift in Sources */,
 				340BD7241CC3251B00AB860B /* PunchType.swift in Sources */,
-				345B117C1CD2BD2A00269580 /* NSTimeInterval+ToString.swift in Sources */,
+				345B117C1CD2BD2A00269580 /* NSTimeInterval+ToTimeString.swift in Sources */,
 				34336DAC1CC30EFB00ED551C /* PunchGateway.swift in Sources */,
 				340BD74C1CC353CD00AB860B /* ListPunchsPresenter.swift in Sources */,
 				340404AB1CC8217900A4E88E /* CurrentWeekHoursPresenterFake.swift in Sources */,
