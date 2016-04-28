@@ -27,6 +27,6 @@ class WorkedHoursUsecase {
         let inputPunchs = gateway.list(by: .Input, between: firstDate, and: lastDate)
         let outputPunchs = gateway.list(by: .Output, between: firstDate, and: lastDate)
         let totalInterval = WorkedHoursEntity(inputPunchs: inputPunchs, outputPunchs: outputPunchs).calculate()
-        return totalInterval()
+        return totalInterval
     }
 }

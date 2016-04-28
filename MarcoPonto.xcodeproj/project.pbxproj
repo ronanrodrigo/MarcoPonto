@@ -32,6 +32,8 @@
 		3435FF7E1CC2E7640076AF42 /* MarcoPonto.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3435FF7C1CC2E7640076AF42 /* MarcoPonto.xcdatamodeld */; };
 		3435FF801CC2E7640076AF42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3435FF7F1CC2E7640076AF42 /* Assets.xcassets */; };
 		3435FF831CC2E7640076AF42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3435FF811CC2E7640076AF42 /* LaunchScreen.storyboard */; };
+		345B117B1CD2BD2A00269580 /* NSTimeInterval+ToString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345B117A1CD2BD2A00269580 /* NSTimeInterval+ToString.swift */; };
+		345B117C1CD2BD2A00269580 /* NSTimeInterval+ToString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345B117A1CD2BD2A00269580 /* NSTimeInterval+ToString.swift */; };
 		3472A9EE1CC6F3E100CEF1D1 /* PunchModel+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3472A9EC1CC6F3E100CEF1D1 /* PunchModel+CoreDataProperties.swift */; };
 		3472A9EF1CC6F3E100CEF1D1 /* PunchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3472A9ED1CC6F3E100CEF1D1 /* PunchModel.swift */; };
 		3472AA0D1CC6FA7200CEF1D1 /* WeekWorkedHoursUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3472AA0C1CC6FA7200CEF1D1 /* WeekWorkedHoursUsecase.swift */; };
@@ -60,7 +62,6 @@
 		34E9B4011CC3DAEB0017A083 /* SavePunchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E9B3FD1CC3DA880017A083 /* SavePunchPresenter.swift */; };
 		34E9B4031CC419090017A083 /* PunchTypeLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E9B4021CC419090017A083 /* PunchTypeLabel.swift */; };
 		34E9B4051CC42C360017A083 /* ListPunchsDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E9B4041CC42C360017A083 /* ListPunchsDelegate.swift */; };
-		4B7A500009E6C312B7FB94AE /* WorkedHoursEntityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A57EBD8B976D75F8B1432 /* WorkedHoursEntityTests.swift */; };
 		4B7A508D3CB01762270B27B3 /* HoursWorkedEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A5DA7422D3856D217B284 /* HoursWorkedEntity.swift */; };
 		4B7A50CF32F8270FB109CE5A /* WorkedHoursEntityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A57EBD8B976D75F8B1432 /* WorkedHoursEntityTests.swift */; };
 		4B7A51761AFE51EF9211C877 /* FormPunchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B7A54C26B2939F7ECFE71B2 /* FormPunchViewController.xib */; };
@@ -108,6 +109,7 @@
 		3435FF7F1CC2E7640076AF42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3435FF821CC2E7640076AF42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3435FF841CC2E7640076AF42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		345B117A1CD2BD2A00269580 /* NSTimeInterval+ToString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSTimeInterval+ToString.swift"; sourceTree = "<group>"; };
 		3472A9EC1CC6F3E100CEF1D1 /* PunchModel+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PunchModel+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		3472A9ED1CC6F3E100CEF1D1 /* PunchModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PunchModel.swift; sourceTree = "<group>"; };
 		3472AA0C1CC6FA7200CEF1D1 /* WeekWorkedHoursUsecase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeekWorkedHoursUsecase.swift; sourceTree = "<group>"; };
@@ -349,6 +351,7 @@
 				349D9B3D1CC30B290088DE5E /* Structs */,
 				349D9B341CC30A100088DE5E /* Usecases */,
 				4B7A59AAFA4848159E9B7E01 /* Entities */,
+				4B7A527E0F071593BB52B02A /* Extensions */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -432,6 +435,14 @@
 			path = Punch;
 			sourceTree = "<group>";
 		};
+		4B7A527E0F071593BB52B02A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				345B117A1CD2BD2A00269580 /* NSTimeInterval+ToString.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		4B7A54EE51A3523833AAA396 /* Form */ = {
 			isa = PBXGroup;
 			children = (
@@ -512,12 +523,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3435FF921CC2E7650076AF42 /* Build configuration list for PBXNativeTarget "MarcoPonto" */;
 			buildPhases = (
-				8B9278F5C8551EE313688846 /* 📦 Check Pods Manifest.lock */,
+				8B9278F5C8551EE313688846 /* uD83DuDCE6 Check Pods Manifest.lock */,
 				3435FF6E1CC2E7640076AF42 /* Sources */,
 				3435FF6F1CC2E7640076AF42 /* Frameworks */,
 				3435FF701CC2E7640076AF42 /* Resources */,
-				0ADA01CF5601B71329B1DA18 /* 📦 Embed Pods Frameworks */,
-				1831955320E526753BF22D63 /* 📦 Copy Pods Resources */,
+				0ADA01CF5601B71329B1DA18 /* uD83DuDCE6 Embed Pods Frameworks */,
+				1831955320E526753BF22D63 /* uD83DuDCE6 Copy Pods Resources */,
 				1FA26502E076D124ADF4DF53 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
@@ -533,12 +544,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 349D9B221CC2E9710088DE5E /* Build configuration list for PBXNativeTarget "CoreTests" */;
 			buildPhases = (
-				A38833E8FC3E8B39C5F0DEA7 /* 📦 Check Pods Manifest.lock */,
+				A38833E8FC3E8B39C5F0DEA7 /* uD83DuDCE6 Check Pods Manifest.lock */,
 				349D9B171CC2E9710088DE5E /* Sources */,
 				349D9B181CC2E9710088DE5E /* Frameworks */,
 				349D9B191CC2E9710088DE5E /* Resources */,
-				707EF95D82E3CFECCA734BEE /* 📦 Embed Pods Frameworks */,
-				A40FEAD3A6C43A4F4B52F0E6 /* 📦 Copy Pods Resources */,
+				707EF95D82E3CFECCA734BEE /* uD83DuDCE6 Embed Pods Frameworks */,
+				A40FEAD3A6C43A4F4B52F0E6 /* uD83DuDCE6 Copy Pods Resources */,
 				C8FC8BD6266E8F10FAFE025A /* Embed Pods Frameworks */,
 			);
 			buildRules = (
@@ -615,14 +626,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0ADA01CF5601B71329B1DA18 /* 📦 Embed Pods Frameworks */ = {
+		0ADA01CF5601B71329B1DA18 /* uD83DuDCE6 Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "\uD83D\uDCE6 Embed Pods Frameworks";
+			name = "uD83DuDCE6 Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -630,14 +641,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MarcoPonto/Pods-MarcoPonto-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		1831955320E526753BF22D63 /* 📦 Copy Pods Resources */ = {
+		1831955320E526753BF22D63 /* uD83DuDCE6 Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "\uD83D\uDCE6 Copy Pods Resources";
+			name = "uD83DuDCE6 Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -660,14 +671,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MarcoPonto/Pods-MarcoPonto-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		707EF95D82E3CFECCA734BEE /* 📦 Embed Pods Frameworks */ = {
+		707EF95D82E3CFECCA734BEE /* uD83DuDCE6 Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "\uD83D\uDCE6 Embed Pods Frameworks";
+			name = "uD83DuDCE6 Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -675,14 +686,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CoreTests/Pods-CoreTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		8B9278F5C8551EE313688846 /* 📦 Check Pods Manifest.lock */ = {
+		8B9278F5C8551EE313688846 /* uD83DuDCE6 Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "\uD83D\uDCE6 Check Pods Manifest.lock";
+			name = "uD83DuDCE6 Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -690,14 +701,14 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		A38833E8FC3E8B39C5F0DEA7 /* 📦 Check Pods Manifest.lock */ = {
+		A38833E8FC3E8B39C5F0DEA7 /* uD83DuDCE6 Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "\uD83D\uDCE6 Check Pods Manifest.lock";
+			name = "uD83DuDCE6 Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -705,14 +716,14 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		A40FEAD3A6C43A4F4B52F0E6 /* 📦 Copy Pods Resources */ = {
+		A40FEAD3A6C43A4F4B52F0E6 /* uD83DuDCE6 Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "\uD83D\uDCE6 Copy Pods Resources";
+			name = "uD83DuDCE6 Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -772,12 +783,12 @@
 				341877311CC6E552002A4B59 /* ReportsNavigationController.swift in Sources */,
 				3472A9EF1CC6F3E100CEF1D1 /* PunchModel.swift in Sources */,
 				34E9B3ED1CC360060017A083 /* PunchGatewayCoreData.swift in Sources */,
+				345B117B1CD2BD2A00269580 /* NSTimeInterval+ToString.swift in Sources */,
 				3472A9EE1CC6F3E100CEF1D1 /* PunchModel+CoreDataProperties.swift in Sources */,
 				349D9B321CC2F7960088DE5E /* FormPunchDataSource.swift in Sources */,
 				3472AA0D1CC6FA7200CEF1D1 /* WeekWorkedHoursUsecase.swift in Sources */,
 				3405D98D1CCA74F600616382 /* TotalsDataSource.swift in Sources */,
 				4B7A508D3CB01762270B27B3 /* HoursWorkedEntity.swift in Sources */,
-				4B7A500009E6C312B7FB94AE /* WorkedHoursEntityTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -787,6 +798,7 @@
 			files = (
 				34E9B4001CC3DAD10017A083 /* SavePunchPresenterSpy.swift in Sources */,
 				340BD7241CC3251B00AB860B /* PunchType.swift in Sources */,
+				345B117C1CD2BD2A00269580 /* NSTimeInterval+ToString.swift in Sources */,
 				34336DAC1CC30EFB00ED551C /* PunchGateway.swift in Sources */,
 				340BD74C1CC353CD00AB860B /* ListPunchsPresenter.swift in Sources */,
 				340404AB1CC8217900A4E88E /* CurrentWeekHoursPresenterFake.swift in Sources */,

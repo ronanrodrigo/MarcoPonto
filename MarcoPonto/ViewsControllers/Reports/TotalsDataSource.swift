@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 class TotalsDataSource: NSObject, UITableViewDataSource, WeekWorkedHoursPresenter {
-    var workHourGroups: [WorkHourGroup] = []
+    var workHours: [WorkHour] = []
     var cellIdentifier: String = "WorkHoursReports"
     
     override init() {
@@ -19,31 +19,30 @@ class TotalsDataSource: NSObject, UITableViewDataSource, WeekWorkedHoursPresente
     }
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return workHourGroups.count
+        return workHours.count
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return workHourGroups[section].workHours.count
+        return 1
     }
     
     func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        let workHoursReport = workHourGroups[section]
+        let workHoursReport = workHours[section]
         return workHoursReport.title
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: UITableViewCellStyle.Value1, reuseIdentifier: cellIdentifier)
         
-        let workHourGroup = workHourGroups[indexPath.section]
-        let workHour = workHourGroup.workHours[indexPath.row]
+        let workHour = workHours[indexPath.row]
         cell.textLabel?.text = workHour.title
-        cell.detailTextLabel?.text = workHour.value
+        cell.detailTextLabel?.text = workHour.total.toString()
         cell.userInteractionEnabled = false
         
         return cell
     }
     
-    func showTotal(workHoursReport: WorkHourGroup) {
-        workHourGroups.append(workHoursReport)
+    func showTotal(workHour: WorkHour) {
+        workHours.append(workHour)
     }
 }

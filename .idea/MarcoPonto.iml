@@ -6,8 +6,8 @@
       <sourceFolder url="file://$MODULE_DIR$/CoreTests/Fakes/Gateways/PunchGatewayFake.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CoreTests/Fakes/Gateways/PunchGatewaySpy.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CoreTests/Fakes/Presenters/ListPunchsPresenterSpy.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/CoreTests/Fakes/Presenters/SavePunchPresenterSpy.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CoreTests/Fakes/Presenters/CurrentWeekHoursPresenterFake.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/CoreTests/Fakes/Presenters/SavePunchPresenterSpy.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CoreTests/Info.plist" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CoreTests/Usecases/SavePunchUsecaseTests.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CoreTests/Usecases/ListPunchsUsecaseTests.swift" isTestSource="false" />
@@ -52,25 +52,25 @@
       <sourceFolder url="file://$MODULE_DIR$/MarcoPonto/ViewsControllers/Punch/List/PunchTypeLabel.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/MarcoPonto/Factories/ListPunchUsecaseFactory.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/MarcoPonto/Factories/SavePunchUsecaseFactory.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/MarcoPonto/Factories/CurrentWeekHoursUsecaseFactory.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/MarcoPonto/Factories/PunchGatewayCoreDataFactory.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/MarcoPonto/Factories/CurrentWeekHoursUsecaseFactory.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/MarcoPonto/Assets/Assets.xcassets" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/MarcoPonto/Assets/MaterialIcons+UIImage.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/SwiftDate/Sources/SwiftDate/Additions.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/SwiftDate/Sources/SwiftDate/Region.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/SwiftDate/Sources/SwiftDate/DateInRegion+Equations.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/SwiftDate/Sources/SwiftDate/DateInRegion+Operations.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/SwiftDate/Sources/SwiftDate/NSTimeZone+SwiftDate.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/SwiftDate/Sources/SwiftDate/NSLocale+SwiftDate.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/SwiftDate/Sources/SwiftDate/Dictionary+SwiftDate.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/SwiftDate/Sources/SwiftDate/NSDateComponents+SwiftDate.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/SwiftDate/Sources/SwiftDate/NSDateInterval.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/SwiftDate/Sources/SwiftDate/DateInRegion+Components.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/SwiftDate/Sources/SwiftDate/DateInRegion+Operations.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/SwiftDate/Sources/SwiftDate/NSDateComponents+SwiftDate.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/SwiftDate/Sources/SwiftDate/DateInRegion+Equations.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/SwiftDate/Sources/SwiftDate/NSLocale+SwiftDate.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/SwiftDate/Sources/SwiftDate/DateInRegion+NSDatePort.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/SwiftDate/Sources/SwiftDate/Dictionary+SwiftDate.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/SwiftDate/Sources/SwiftDate/NSDateFormatter+SwiftDate.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/SwiftDate/Sources/SwiftDate/NSDateInterval.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/SwiftDate/Sources/SwiftDate/Additions.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/SwiftDate/Sources/SwiftDate/DateInRegion+Formatter.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/SwiftDate/Sources/SwiftDate/DateInRegion.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/SwiftDate/Sources/SwiftDate/NSCalendar+SwiftDate.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/SwiftDate/Sources/SwiftDate/DateInRegion+Formatter.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/SwiftDate/Sources/SwiftDate/NSDateFormatter+SwiftDate.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/SwiftDate/Sources/SwiftDate/Region.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/SwiftDate/Sources/SwiftDate/NSTimeInterval+SwiftDate.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/SwiftDate/Sources/SwiftDate/DateInRegion+StartEnd.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/SwiftDate/Sources/SwiftDate/DateInRegion+Comparisons.swift" isTestSource="false" />
@@ -84,12 +84,12 @@
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-CoreTests/Pods-CoreTests-acknowledgements.plist" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-CoreTests/Pods-CoreTests-dummy.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-CoreTests/Pods-CoreTests.modulemap" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-CoreTests/Pods-CoreTests-resources.sh" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-CoreTests/Pods-CoreTests-frameworks.sh" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-CoreTests/Info.plist" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-CoreTests/Pods-CoreTests.release.xcconfig" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-CoreTests/Pods-CoreTests.debug.xcconfig" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-CoreTests/Pods-CoreTests-acknowledgements.markdown" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-CoreTests/Pods-CoreTests-resources.sh" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-CoreTests/Pods-CoreTests-umbrella.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-MarcoPonto/Pods-MarcoPonto-acknowledgements.markdown" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-MarcoPonto/Pods-MarcoPonto.release.xcconfig" isTestSource="false" />
@@ -102,6 +102,10 @@
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-MarcoPonto/Pods-MarcoPonto-dummy.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-MarcoPonto/Pods-MarcoPonto-frameworks.sh" isTestSource="false" />
     </content>
+    <content url="file://$USER_HOME$/Library/Caches/AppCode2016.1/DerivedData/MarcoPonto-eiznvikmlytuckdbbpqmttnvlgdy/Build/Intermediates/MarcoPonto.build/Debug-iphoneos/CoreTests.build/DerivedSources" />
+    <content url="file://$USER_HOME$/Library/Caches/AppCode2016.1/DerivedData/MarcoPonto-eiznvikmlytuckdbbpqmttnvlgdy/Build/Intermediates/MarcoPonto.build/Debug-iphoneos/MarcoPonto.build/DerivedSources" />
+    <content url="file://$USER_HOME$/Library/Caches/AppCode2016.1/DerivedData/MarcoPonto-eiznvikmlytuckdbbpqmttnvlgdy/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-MarcoPonto.build/DerivedSources" />
+    <content url="file://$USER_HOME$/Library/Caches/AppCode2016.1/DerivedData/MarcoPonto-eiznvikmlytuckdbbpqmttnvlgdy/Build/Intermediates/Pods.build/Debug-iphoneos/SwiftDate.build/DerivedSources" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module-library">
       <library name="Header Search Paths">
