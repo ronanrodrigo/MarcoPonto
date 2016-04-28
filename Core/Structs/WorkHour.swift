@@ -10,10 +10,10 @@ import Foundation
 
 protocol WorkHour {
     var title: String { get set }
-    var value: String { get set }
+    var total: NSTimeInterval { get set }
 }
 
 struct WorkHourStruct: WorkHour {
     var title: String
-    var value: String
+    var total: NSTimeInterval
 }
