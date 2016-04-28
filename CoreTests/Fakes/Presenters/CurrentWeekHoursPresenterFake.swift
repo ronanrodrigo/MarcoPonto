@@ -9,9 +9,9 @@
 import Foundation
 
 class WeekWorkedHoursPresenterFake: WeekWorkedHoursPresenter {
-    var workHourGroups: [WorkHourGroup] = []
+    var workHours: [WorkHour] = []
     
-    func showTotal(workHourGroup: WorkHourGroup) {
-        workHourGroups.append(workHourGroup)
+    func showTotal(workHour: WorkHour) {
+        workHours.append(workHour)
     }
 }

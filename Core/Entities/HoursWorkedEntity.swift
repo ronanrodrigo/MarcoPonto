@@ -5,7 +5,7 @@
 
 import Foundation
 
-class HoursWorkedEntity {
+class WorkedHoursEntity {
     private let inputPunchs: [Punch]
     private let outputPunchs: [Punch]
 

@@ -2,22 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a81a04c0-4e12-4c9d-88d0-6733cb4c8988" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Core/Usecases/WeekWorkedHoursUsecase.swift" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Core/Usecases/CurrentWeekHoursUsecase.swift" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MarcoPonto.xcodeproj/xcuserdata/Ronan.xcuserdatad/xcschemes/MarcoPonto.xcscheme" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MarcoPonto/Views/Punch/Form/FormPunchViewController.xib" afterPath="$PROJECT_DIR$/MarcoPonto/ViewsControllers/Views/Punch/Form/FormPunchViewController.xib" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MarcoPonto/Views/Punch/Form/SelectMomentTableViewCell.xib" afterPath="$PROJECT_DIR$/MarcoPonto/ViewsControllers/Views/Punch/Form/SelectMomentTableViewCell.xib" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MarcoPonto/Views/Punch/Form/SelectTypeTableViewCell.xib" afterPath="$PROJECT_DIR$/MarcoPonto/ViewsControllers/Views/Punch/Form/SelectTypeTableViewCell.xib" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MarcoPonto/Views/Punch/List/ListPunchsTableViewCell.xib" afterPath="$PROJECT_DIR$/MarcoPonto/ViewsControllers/Views/Punch/List/ListPunchsTableViewCell.xib" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MarcoPonto/Views/Punch/List/ListPunchsViewController.xib" afterPath="$PROJECT_DIR$/MarcoPonto/ViewsControllers/Views/Punch/List/ListPunchsViewController.xib" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MarcoPonto/Views/Reports/TotalsViewController.xib" afterPath="$PROJECT_DIR$/MarcoPonto/ViewsControllers/Views/Reports/TotalsViewController.xib" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/MarcoPonto.iml" afterPath="$PROJECT_DIR$/.idea/MarcoPonto.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Core/Presenters/CurrentWeekHoursPresenter.swift" afterPath="$PROJECT_DIR$/Core/Presenters/CurrentWeekHoursPresenter.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Core/Usecases/WeekWorkedHoursUsecase.swift" afterPath="$PROJECT_DIR$/Core/Usecases/WeekWorkedHoursUsecase.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CoreTests/Entities/WorkedHoursEntityTests.swift" afterPath="$PROJECT_DIR$/CoreTests/Entities/WorkedHoursEntityTests.swift" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CoreTests/Fakes/Presenters/CurrentWeekHoursPresenterFake.swift" afterPath="$PROJECT_DIR$/CoreTests/Fakes/Presenters/CurrentWeekHoursPresenterFake.swift" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CoreTests/Usecases/CurrentWeekHoursUsecaseTests.swift" afterPath="$PROJECT_DIR$/CoreTests/Usecases/CurrentWeekHoursUsecaseTests.swift" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MarcoPonto.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/MarcoPonto.xcodeproj/project.pbxproj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MarcoPonto.xcodeproj/xcuserdata/Ronan.xcuserdatad/xcschemes/xcschememanagement.plist" afterPath="$PROJECT_DIR$/MarcoPonto.xcodeproj/xcuserdata/Ronan.xcuserdatad/xcschemes/xcschememanagement.plist" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MarcoPonto/Factories/CurrentWeekHoursUsecaseFactory.swift" afterPath="$PROJECT_DIR$/MarcoPonto/Factories/CurrentWeekHoursUsecaseFactory.swift" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MarcoPonto/ViewsControllers/Reports/TotalsDataSource.swift" afterPath="$PROJECT_DIR$/MarcoPonto/ViewsControllers/Reports/TotalsDataSource.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MarcoPonto/ViewsControllers/Views/Punch/Form/FormPunchViewController.xib" afterPath="$PROJECT_DIR$/MarcoPonto/ViewsControllers/Views/Punch/Form/FormPunchViewController.xib" />
     </list>
     <ignored path="MarcoPonto.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,51 +31,57 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="WeekWorkedHoursUsecase.swift" pinned="false" current-in-tab="true">
+      <file leaf-file-name="WeekWorkedHoursUsecase.swift" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Core/Usecases/WeekWorkedHoursUsecase.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="22" column="44" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
+            <state relative-caret-position="676">
+              <caret line="27" column="28" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="45" />
+              <folding>
+                <marker date="1461879624000" expanded="false" signature="165:199" placeholder="import ..." />
+                <marker date="1461879624000" expanded="true" signature="226:1068" placeholder="{...}" />
+                <marker date="1461879624000" expanded="true" signature="392:465" placeholder="{...}" />
+                <marker date="1461879624000" expanded="true" signature="488:643" placeholder="{...}" />
+                <marker date="1461879624000" expanded="true" signature="744:1066" placeholder="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ListPunchsUsecaseTests.swift" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CoreTests/Usecases/ListPunchsUsecaseTests.swift">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="182">
+              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TotalsDataSource.swift" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MarcoPonto/ViewsControllers/Reports/TotalsDataSource.swift">
+      <file leaf-file-name="WorkedHoursEntityTests.swift" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/CoreTests/Entities/WorkedHoursEntityTests.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
-              <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+            <state relative-caret-position="234">
+              <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CurrentWeekHoursUsecaseTests.swift" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CoreTests/Usecases/CurrentWeekHoursUsecaseTests.swift">
+      <file leaf-file-name="PunchGatewayFake.swift" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CoreTests/Fakes/Gateways/PunchGatewayFake.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="413">
-              <caret line="102" column="55" selection-start-line="102" selection-start-column="55" selection-end-line="102" selection-end-column="55" />
+            <state relative-caret-position="286">
+              <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CurrentWeekHoursPresenterFake.swift" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CoreTests/Fakes/Presenters/CurrentWeekHoursPresenterFake.swift">
+      <file leaf-file-name="HoursWorkedEntity.swift" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Core/Entities/HoursWorkedEntity.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TotalsViewController.swift" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MarcoPonto/ViewsControllers/Reports/TotalsViewController.swift">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="286">
+              <caret line="11" column="53" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="53" />
               <folding />
             </state>
           </provider>
@@ -96,13 +95,16 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/CoreTests/Fakes/Gateways/PunchGatewayFake.swift" />
         <option value="$PROJECT_DIR$/Core/Entities/CalculateHoursWorked.swift" />
         <option value="$PROJECT_DIR$/Core/Usecases/CurrentWeekHoursUsecase.swift" />
         <option value="$PROJECT_DIR$/Core/Presenters/CurrentWeekHoursPresenter.swift" />
         <option value="$PROJECT_DIR$/CoreTests/Fakes/Presenters/CurrentWeekHoursPresenterFake.swift" />
         <option value="$PROJECT_DIR$/CoreTests/Usecases/CurrentWeekHoursUsecaseTests.swift" />
+        <option value="$PROJECT_DIR$/Core/Entities/HoursWorkedEntity.swift" />
         <option value="$PROJECT_DIR$/Core/Usecases/WeekWorkedHoursUsecase.swift" />
+        <option value="$PROJECT_DIR$/CoreTests/Usecases/WeekWorkedHoursUsecaseTests.swift" />
+        <option value="$PROJECT_DIR$/CoreTests/Fakes/Gateways/PunchGatewayFake.swift" />
+        <option value="$PROJECT_DIR$/CoreTests/Entities/WorkedHoursEntityTests.swift" />
       </list>
     </option>
   </component>
@@ -217,6 +219,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Cidr.FilesView" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -224,28 +227,6 @@
               <option name="myItemId" />
               <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Pods" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Pods" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Frameworks" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="iOS" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -255,92 +236,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="MarcoPonto" />
               <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MarcoPonto" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MarcoPonto" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ViewsControllers" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MarcoPonto" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MarcoPonto" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ViewsControllers" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Reports" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MarcoPonto" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MarcoPonto" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MarcoPonto" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CoreTests" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MarcoPonto" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CoreTests" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Usecases" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -359,12 +254,11 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Cidr.FilesView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.appearance" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Font" />
     <property name="settings.editor.splitter.proportion" value="0.24204436" />
     <property name="OBJC.PRESERVED_TARGET_SELECTION" value="MarcoPonto,,,CoreTests" />
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
@@ -448,14 +342,14 @@
       </EXTENSION>
       <method />
     </configuration>
-    <configuration default="false" name="Pods-MarcoPontoUnitTests" type="AppleRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Pods" TARGET_NAME="Pods-MarcoPontoUnitTests" CONFIG_NAME="Debug" SCHEME_NAME="Pods-MarcoPontoUnitTests" RUN_TARGET_PROJECT_NAME="MarcoPonto" RUN_TARGET_NAME="MarcoPonto" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
+    <configuration default="false" name="SwiftDate" type="AppleRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Pods" TARGET_NAME="SwiftDate" CONFIG_NAME="Debug" SCHEME_NAME="SwiftDate" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
       <envs />
       <EXTENSION ID="org.jetbrains.appcode.reveal.RevealRunConfigurationExtension">
         <REVEAL_SETTINGS autoInject="false" autoInstall="true" askToEnableAutoInstall="true" />
       </EXTENSION>
       <method />
     </configuration>
-    <configuration default="false" name="SwiftDate" type="AppleRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Pods" TARGET_NAME="SwiftDate" CONFIG_NAME="Debug" SCHEME_NAME="SwiftDate" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
+    <configuration default="false" name="Pods-CoreTests" type="AppleRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Pods" TARGET_NAME="Pods-CoreTests" CONFIG_NAME="Debug" SCHEME_NAME="Pods-CoreTests" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
       <envs />
       <EXTENSION ID="org.jetbrains.appcode.reveal.RevealRunConfigurationExtension">
         <REVEAL_SETTINGS autoInject="false" autoInstall="true" askToEnableAutoInstall="true" />
@@ -465,9 +359,9 @@
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Application.MarcoPonto" />
       <item index="1" class="java.lang.String" itemvalue="Application.Pods-MarcoPonto" />
-      <item index="2" class="java.lang.String" itemvalue="Application.Pods-MarcoPontoUnitTests" />
-      <item index="3" class="java.lang.String" itemvalue="Application.SwiftDate" />
-      <item index="4" class="java.lang.String" itemvalue="XCTest/Kiwi.CoreTests" />
+      <item index="2" class="java.lang.String" itemvalue="Application.SwiftDate" />
+      <item index="3" class="java.lang.String" itemvalue="XCTest/Kiwi.CoreTests" />
+      <item index="4" class="java.lang.String" itemvalue="Application.Pods-CoreTests" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
@@ -514,27 +408,27 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1053" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18378094" sideWeight="0.49518073" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928064" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928064" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18220116" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928064" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16736111" sideWeight="0.5048193" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928064" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928064" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5335821" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -555,11 +449,164 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Core/Usecases/WeekWorkedHoursUsecase.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="702">
+          <caret line="28" column="28" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="45" />
+          <folding>
+            <marker date="1461879624000" expanded="false" signature="165:199" placeholder="import ..." />
+            <marker date="1461879624000" expanded="true" signature="226:1068" placeholder="{...}" />
+            <marker date="1461879624000" expanded="true" signature="392:465" placeholder="{...}" />
+            <marker date="1461879624000" expanded="true" signature="488:643" placeholder="{...}" />
+            <marker date="1461879624000" expanded="true" signature="744:1066" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CoreTests/Usecases/ListPunchsUsecaseTests.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CoreTests/Entities/WorkedHoursEntityTests.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CoreTests/Fakes/Gateways/PunchGatewayFake.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Core/Entities/HoursWorkedEntity.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="11" column="53" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Core/Usecases/WeekWorkedHoursUsecase.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="702">
+          <caret line="28" column="45" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="45" />
+          <folding>
+            <marker date="1461879624000" expanded="false" signature="165:199" placeholder="import ..." />
+            <marker date="1461879624000" expanded="true" signature="226:1068" placeholder="{...}" />
+            <marker date="1461879624000" expanded="true" signature="392:465" placeholder="{...}" />
+            <marker date="1461879624000" expanded="true" signature="488:643" placeholder="{...}" />
+            <marker date="1461879624000" expanded="true" signature="744:1066" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CoreTests/Usecases/ListPunchsUsecaseTests.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="10" column="42" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CoreTests/Entities/WorkedHoursEntityTests.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Core/Usecases/WeekWorkedHoursUsecase.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1461879624000" expanded="false" signature="165:199" placeholder="import ..." />
+            <marker date="1461879624000" expanded="true" signature="226:1068" placeholder="{...}" />
+            <marker date="1461879624000" expanded="true" signature="392:465" placeholder="{...}" />
+            <marker date="1461879624000" expanded="true" signature="488:643" placeholder="{...}" />
+            <marker date="1461879624000" expanded="true" signature="744:1066" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Core/Entities/HoursWorkedEntity.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MarcoPonto/ViewsControllers/Reports/TotalsDataSource.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CoreTests/Fakes/Presenters/CurrentWeekHoursPresenterFake.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MarcoPonto/ViewsControllers/Reports/TotalsViewController.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Core/Usecases/WeekWorkedHoursUsecase.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1461879624000" expanded="false" signature="165:199" placeholder="import ..." />
+            <marker date="1461879624000" expanded="true" signature="226:1068" placeholder="{...}" />
+            <marker date="1461879624000" expanded="true" signature="392:465" placeholder="{...}" />
+            <marker date="1461879624000" expanded="true" signature="488:643" placeholder="{...}" />
+            <marker date="1461879624000" expanded="true" signature="744:1066" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MarcoPonto/ViewsControllers/Reports/TotalsDataSource.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CoreTests/Fakes/Presenters/CurrentWeekHoursPresenterFake.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MarcoPonto/ViewsControllers/Reports/TotalsViewController.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Core/Enums/PunchType.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="416">
           <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -567,7 +614,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -575,7 +621,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -583,7 +628,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -596,7 +640,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="364">
           <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -604,7 +647,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -612,7 +654,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
           <caret line="10" column="12" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -620,15 +661,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1173">
           <caret line="23" column="42" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CoreTests/Fakes/Gateways/PunchGatewayFake.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -636,15 +668,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Core/Entities/HoursWorkedEntity.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -652,7 +675,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
           <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CoreTests/Usecases/CurrentWeekHoursUsecaseTests.swift" />
+    <entry file="file://$PROJECT_DIR$/MarcoPonto/ViewsControllers/Reports/TotalsDataSource.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CoreTests/Fakes/Presenters/CurrentWeekHoursPresenterFake.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -660,38 +697,59 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CoreTests/Fakes/Presenters/CurrentWeekHoursPresenterFake.swift">
+    <entry file="file://$PROJECT_DIR$/CoreTests/Usecases/WeekWorkedHoursUsecaseTests.swift" />
+    <entry file="file://$PROJECT_DIR$/CoreTests/Fakes/Gateways/PunchGatewaySpy.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CoreTests/Usecases/CurrentWeekHoursUsecaseTests.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="102" column="55" selection-start-line="102" selection-start-column="55" selection-end-line="102" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MarcoPonto/ViewsControllers/Reports/TotalsDataSource.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Core/Usecases/WeekWorkedHoursUsecase.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="22" column="44" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
+        <state relative-caret-position="676">
+          <caret line="27" column="28" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="45" />
+          <folding>
+            <marker date="1461879624000" expanded="false" signature="165:199" placeholder="import ..." />
+            <marker date="1461879624000" expanded="true" signature="226:1068" placeholder="{...}" />
+            <marker date="1461879624000" expanded="true" signature="392:465" placeholder="{...}" />
+            <marker date="1461879624000" expanded="true" signature="488:643" placeholder="{...}" />
+            <marker date="1461879624000" expanded="true" signature="744:1066" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CoreTests/Usecases/ListPunchsUsecaseTests.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Core/Entities/HoursWorkedEntity.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="11" column="53" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CoreTests/Fakes/Gateways/PunchGatewayFake.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CoreTests/Entities/WorkedHoursEntityTests.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
           <folding />
         </state>
       </provider>

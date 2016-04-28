@@ -1,5 +1,5 @@
 //
-//  WeekWorkedHoursUsecase.swift
+//  WorkedHoursUsecase.swift
 //  MarcoPonto
 //
 //  Created by Ronan Rodrigo Nunes on 19/04/16.
@@ -9,7 +9,7 @@
 import Foundation
 import SwiftDate
 
-class WeekWorkedHoursUsecase {
+class WorkedHoursUsecase {
     private var gateway: PunchGateway
     private var presenter: WeekWorkedHoursPresenter
     
@@ -19,27 +19,14 @@ class WeekWorkedHoursUsecase {
     }
     
     func total() {
-        presenter.showTotal(currentWeekHours())
-        presenter.showTotal(pastWeekHours())
+        let total = totalHours(between: NSDate(), and: NSDate())
+        let currentWeekHours = WorkHourStruct(title: "Semana atual", total: total)
     }
-
-    private func currentWeekHours() -> WorkHourGroupStruct {
-        let currentWeekHours = weekHours()
-        return WorkHourGroupStruct(title: "Semana atual", workHours: [currentWeekHours])
-    }
-
-    private func pastWeekHours() -> WorkHourGroupStruct {
-        let pastWeek = NSDate() - 1.weeks
-        let pastWeekHours = weekHours(pastWeek)
-        return WorkHourGroupStruct(title: "Semana passada", workHours: [pastWeekHours])
-    }
-
-    private func weekHours(reference: NSDate = NSDate()) -> WorkHourStruct {
-        let firstDate = reference.startOf(NSCalendarUnit.WeekOfYear)
-        let lastDate = reference.endOf(NSCalendarUnit.WeekOfYear)
+    
+    private func totalHours(between firstDate: NSDate, and lastDate: NSDate) -> NSTimeInterval {
         let inputPunchs = gateway.list(by: .Input, between: firstDate, and: lastDate)
         let outputPunchs = gateway.list(by: .Output, between: firstDate, and: lastDate)
-        let totalInterval = HoursWorkedEntity(inputPunchs: inputPunchs, outputPunchs: outputPunchs).calculate()
-        return WorkHourStruct(title: "Total", value: totalInterval.toString()!)
+        let totalInterval = WorkedHoursEntity(inputPunchs: inputPunchs, outputPunchs: outputPunchs).calculate()
+        return totalInterval
     }
 }

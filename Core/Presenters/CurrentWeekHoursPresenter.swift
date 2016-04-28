@@ -9,5 +9,5 @@
 import Foundation
 
 protocol WeekWorkedHoursPresenter {
-    func showTotal(workHourGroup: WorkHourGroup)
+    func showTotal(workHourGroup: WorkHour)
 }

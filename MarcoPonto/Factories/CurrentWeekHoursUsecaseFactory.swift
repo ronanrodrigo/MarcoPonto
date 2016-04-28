@@ -9,8 +9,8 @@
 import Foundation
 
 class CurrentWeekHoursUsecaseFactory {
-    static func make(presenter: WeekWorkedHoursPresenter) -> WeekWorkedHoursUsecase {
+    static func make(presenter: WeekWorkedHoursPresenter) -> WorkedHoursUsecase {
         let gateway = PunchGatewayCoreDataFactory.make()
-        return WeekWorkedHoursUsecase(gateway: gateway, presenter: presenter)
+        return WorkedHoursUsecase(gateway: gateway, presenter: presenter)
     }
 }
