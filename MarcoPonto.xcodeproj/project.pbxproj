@@ -68,6 +68,7 @@
 		4B7A51761AFE51EF9211C877 /* FormPunchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B7A54C26B2939F7ECFE71B2 /* FormPunchViewController.xib */; };
 		4B7A532ACFCC5B48106CE51E /* ListPunchsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B7A5CAA1E540DD091D0E91E /* ListPunchsTableViewCell.xib */; };
 		4B7A53E55C0AEAFF67B8F7D6 /* HoursWorkedEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A5DA7422D3856D217B284 /* HoursWorkedEntity.swift */; };
+		4B7A555411801172B356AE62 /* PunchTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A547C14EAB607619EF59D /* PunchTypeTests.swift */; };
 		4B7A5985BF6003BB6C46E01A /* TotalsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B7A581DCA5399934C5D8F40 /* TotalsViewController.xib */; };
 		4B7A59FD587D2F8827D2AA64 /* SelectTypeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B7A56FDBC391BDD47B73BEA /* SelectTypeTableViewCell.xib */; };
 		4B7A5B0AA5D4A3B27F0B9142 /* ListPunchsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B7A521BCF886584E14BC9C7 /* ListPunchsViewController.xib */; };
@@ -138,6 +139,7 @@
 		34E9B4041CC42C360017A083 /* ListPunchsDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPunchsDelegate.swift; sourceTree = "<group>"; };
 		3F6BF200DB5D0ED269B14BDA /* Pods_MarcoPonto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MarcoPonto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B7A521BCF886584E14BC9C7 /* ListPunchsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListPunchsViewController.xib; sourceTree = "<group>"; };
+		4B7A547C14EAB607619EF59D /* PunchTypeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PunchTypeTests.swift; sourceTree = "<group>"; };
 		4B7A54C26B2939F7ECFE71B2 /* FormPunchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FormPunchViewController.xib; sourceTree = "<group>"; };
 		4B7A56FDBC391BDD47B73BEA /* SelectTypeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectTypeTableViewCell.xib; sourceTree = "<group>"; };
 		4B7A57EBD8B976D75F8B1432 /* WorkedHoursEntityTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkedHoursEntityTests.swift; sourceTree = "<group>"; };
@@ -329,6 +331,7 @@
 				340BD71D1CC31FD900AB860B /* Fakes */,
 				349D9B391CC30AA20088DE5E /* Usecases */,
 				349D9B1F1CC2E9710088DE5E /* Info.plist */,
+				4B7A52D3CADA9E4C874E9039 /* Enums */,
 			);
 			path = CoreTests;
 			sourceTree = "<group>";
@@ -444,6 +447,14 @@
 				345B117A1CD2BD2A00269580 /* NSTimeInterval+ToTimeString.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4B7A52D3CADA9E4C874E9039 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				4B7A547C14EAB607619EF59D /* PunchTypeTests.swift */,
+			);
+			path = Enums;
 			sourceTree = "<group>";
 		};
 		4B7A54EE51A3523833AAA396 /* Form */ = {
@@ -820,6 +831,7 @@
 				4B7A53E55C0AEAFF67B8F7D6 /* HoursWorkedEntity.swift in Sources */,
 				4B7A50CF32F8270FB109CE5A /* WorkedHoursEntityTests.swift in Sources */,
 				343A0C5F1CD3854800D547EA /* WorkedHoursUsecaseTests.swift in Sources */,
+				4B7A555411801172B356AE62 /* PunchTypeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
