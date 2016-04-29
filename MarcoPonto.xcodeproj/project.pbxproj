@@ -32,6 +32,7 @@
 		3435FF7E1CC2E7640076AF42 /* MarcoPonto.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3435FF7C1CC2E7640076AF42 /* MarcoPonto.xcdatamodeld */; };
 		3435FF801CC2E7640076AF42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3435FF7F1CC2E7640076AF42 /* Assets.xcassets */; };
 		3435FF831CC2E7640076AF42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3435FF811CC2E7640076AF42 /* LaunchScreen.storyboard */; };
+		343A0C5F1CD3854800D547EA /* WorkedHoursUsecaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343A0C5E1CD3854800D547EA /* WorkedHoursUsecaseTests.swift */; };
 		345B117B1CD2BD2A00269580 /* NSTimeInterval+ToTimeString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345B117A1CD2BD2A00269580 /* NSTimeInterval+ToTimeString.swift */; };
 		345B117C1CD2BD2A00269580 /* NSTimeInterval+ToTimeString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345B117A1CD2BD2A00269580 /* NSTimeInterval+ToTimeString.swift */; };
 		3472A9EE1CC6F3E100CEF1D1 /* PunchModel+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3472A9EC1CC6F3E100CEF1D1 /* PunchModel+CoreDataProperties.swift */; };
@@ -109,6 +110,7 @@
 		3435FF7F1CC2E7640076AF42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3435FF821CC2E7640076AF42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3435FF841CC2E7640076AF42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		343A0C5E1CD3854800D547EA /* WorkedHoursUsecaseTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkedHoursUsecaseTests.swift; sourceTree = "<group>"; };
 		345B117A1CD2BD2A00269580 /* NSTimeInterval+ToTimeString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSTimeInterval+ToTimeString.swift"; sourceTree = "<group>"; };
 		3472A9EC1CC6F3E100CEF1D1 /* PunchModel+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PunchModel+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		3472A9ED1CC6F3E100CEF1D1 /* PunchModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PunchModel.swift; sourceTree = "<group>"; };
@@ -381,6 +383,7 @@
 			children = (
 				340BD7271CC33CA800AB860B /* ListPunchsUsecaseTests.swift */,
 				349D9B3A1CC30AB40088DE5E /* SavePunchUsecaseTests.swift */,
+				343A0C5E1CD3854800D547EA /* WorkedHoursUsecaseTests.swift */,
 			);
 			path = Usecases;
 			sourceTree = "<group>";
@@ -816,6 +819,7 @@
 				340BD7201CC3205300AB860B /* PunchGatewaySpy.swift in Sources */,
 				4B7A53E55C0AEAFF67B8F7D6 /* HoursWorkedEntity.swift in Sources */,
 				4B7A50CF32F8270FB109CE5A /* WorkedHoursEntityTests.swift in Sources */,
+				343A0C5F1CD3854800D547EA /* WorkedHoursUsecaseTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
