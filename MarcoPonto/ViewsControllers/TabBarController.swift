@@ -4,16 +4,22 @@ class TabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    
+
     override func viewWillAppear(animated: Bool) {
         let punchsNavigationController = PunchsNavigationController()
-        let punchsNavigationControllerTabBarItem = UITabBarItem(title: "Pontos", image: UIImage.accessTime, selectedImage: nil)
+        let punchsNavigationControllerTabBarItem = UITabBarItem(
+            title: "Pontos",
+            image: UIImage.accessTime,
+            selectedImage: nil)
         punchsNavigationController.tabBarItem = punchsNavigationControllerTabBarItem
-        
+
         let reportsNavigationController = ReportsNavigationController()
-        let reportsNavigationControllerTabBarItem = UITabBarItem(title: "Relatório", image: UIImage.dateRange, selectedImage: nil)
+        let reportsNavigationControllerTabBarItem = UITabBarItem(
+            title: "Relatório",
+            image: UIImage.dateRange,
+            selectedImage: nil)
         reportsNavigationController.tabBarItem = reportsNavigationControllerTabBarItem
-        
+
         self.viewControllers = [punchsNavigationController, reportsNavigationController]
     }
 

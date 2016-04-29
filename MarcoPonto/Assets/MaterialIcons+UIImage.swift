@@ -13,7 +13,7 @@ extension UIImage {
     static var accessTime: UIImage {
         get { return UIImage(named: "ic_access_time")! }
     }
-    
+
     static var dateRange: UIImage {
         get { return UIImage(named: "ic_date_range")! }
     }

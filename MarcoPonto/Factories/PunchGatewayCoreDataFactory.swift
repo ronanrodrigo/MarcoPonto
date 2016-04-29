@@ -4,7 +4,11 @@ import CoreData
 
 class PunchGatewayCoreDataFactory {
     static func make() -> PunchGatewayCoreData {
-        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
-        return PunchGatewayCoreData(appDelegate: appDelegate)
+        if let appDelegate = UIApplication.sharedApplication().delegate as? AppDelegate {
+            return PunchGatewayCoreData(appDelegate: appDelegate)
+        } else {
+            return PunchGatewayCoreData(appDelegate: AppDelegate())
+        }
+
     }
 }

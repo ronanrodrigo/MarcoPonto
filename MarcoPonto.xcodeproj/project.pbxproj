@@ -551,6 +551,7 @@
 				0ADA01CF5601B71329B1DA18 /* uD83DuDCE6 Embed Pods Frameworks */,
 				1831955320E526753BF22D63 /* uD83DuDCE6 Copy Pods Resources */,
 				1FA26502E076D124ADF4DF53 /* Embed Pods Frameworks */,
+				34965A921CD3A9B600901A28 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -691,6 +692,19 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MarcoPonto/Pods-MarcoPonto-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		34965A921CD3A9B600901A28 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
 		};
 		707EF95D82E3CFECCA734BEE /* uD83DuDCE6 Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;

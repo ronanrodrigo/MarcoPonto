@@ -6,12 +6,13 @@ class WorkedHoursUsecaseTests: XCTestCase {
     var presenter: WorkedHoursPresenterFake!
     var gateway: PunchGatewaySpy!
     var dateRangeGateway: DateRangeGatewayFake!
-    
+
     override func setUp() {
         gateway = PunchGatewaySpy()
         dateRangeGateway = DateRangeGatewayFake()
         presenter = WorkedHoursPresenterFake()
-        usecase = WorkedHoursUsecase(gateway: gateway, dateRangeGateway: dateRangeGateway, presenter: presenter)
+        usecase = WorkedHoursUsecase(
+            gateway: gateway, dateRangeGateway: dateRangeGateway, presenter: presenter)
     }
 
     func testShouldHaveCompleteWokedHoursReport() {

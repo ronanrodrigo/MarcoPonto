@@ -9,13 +9,13 @@ class ListPunchsDataSource: NSObject, RRNListDataSource, ListPunchsPresenter {
     private let cellIdentifier = String(ListPunchsTableViewCell)
     private var editTableViewDelegate: EditTableViewDelegate!
     private var punchs: [Punch] = []
-    
+
     init(editTableViewDelegate: EditTableViewDelegate) {
         super.init()
         self.editTableViewDelegate = editTableViewDelegate
         ListPunchsUsecaseFactory.make(presenter: self).list()
     }
-    
+
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
     }
@@ -23,7 +23,7 @@ class ListPunchsDataSource: NSObject, RRNListDataSource, ListPunchsPresenter {
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return punchs.count
     }
-    
+
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier) as? ListPunchsTableViewCell {
             cell.updateCell(punchs[indexPath.row])
@@ -32,7 +32,7 @@ class ListPunchsDataSource: NSObject, RRNListDataSource, ListPunchsPresenter {
             return ListPunchsTableViewCell()
         }
     }
-    
+
     func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         if editingStyle == UITableViewCellEditingStyle.Delete {
             if let _editTableViewDelegate = editTableViewDelegate {
@@ -40,12 +40,12 @@ class ListPunchsDataSource: NSObject, RRNListDataSource, ListPunchsPresenter {
             }
         }
     }
-    
+
     func removePunch(at indexPath: NSIndexPath) {
         PunchGatewayCoreDataFactory.make().delete(punchs[indexPath.row])
         punchs.removeAtIndex(indexPath.row)
     }
-    
+
     func list(punchs: [Punch]) {
         self.punchs = punchs
     }

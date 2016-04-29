@@ -1,25 +1,25 @@
 import Foundation
 import UIKit
 
-class FormPunchDataSource:  NSObject, UITableViewDataSource {
+class FormPunchDataSource: NSObject, UITableViewDataSource {
 
     private let formPunchFields = [String(SelectTypeTableViewCell), String(SelectMomentTableViewCell)]
     private var selectTypeTableViewCell: SelectTypeTableViewCell!
     private var selectMomentTableViewCell: SelectMomentTableViewCell!
     private var punch: Punch?
-    
+
     init(punch: Punch?) {
         self.punch = punch
     }
-    
+
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
     }
-    
+
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return formPunchFields.count
     }
-    
+
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         tableView.rowHeight = UITableViewAutomaticDimension
 
@@ -39,11 +39,11 @@ class FormPunchDataSource:  NSObject, UITableViewDataSource {
             return selectMomentTableViewCell
         }
     }
-    
+
     func filledPunch() -> Punch {
         let punchType = PunchType(rawValue: selectTypeTableViewCell.typeSelector.selectedSegmentIndex)!
         let moment = selectMomentTableViewCell.momentSelector.date
-        return PunchStruct(id: punch?.id, type: punchType, moment: moment)
+        return PunchStruct(identifier: punch?.identifier, type: punchType, moment: moment)
     }
-    
+
 }

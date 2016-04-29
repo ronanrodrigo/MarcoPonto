@@ -11,7 +11,7 @@ class PunchModel: NSManagedObject, Punch {
             punchMoment = newValue
         }
     }
-    
+
     var type: PunchType {
         get {
             return PunchType(rawValue: punchType ?? 1)!
@@ -19,17 +19,17 @@ class PunchModel: NSManagedObject, Punch {
             punchType = newValue.rawValue
         }
     }
-    
-    var id: Int? {
+
+    var identifier: Int? {
         get {
             return punchId as Int?
         } set {
             punchId = newValue
         }
     }
-    
+
     func isNewPunch() -> Bool {
-        return id == nil
+        return identifier == nil
     }
 
 }

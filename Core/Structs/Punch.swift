@@ -2,18 +2,18 @@
 import Foundation
 
 protocol Punch {
-    var id: Int? { get set }
+    var identifier: Int? { get set }
     var moment: NSDate { get set }
     var type: PunchType { get set }
     func isNewPunch() -> Bool
 }
 
 struct PunchStruct: Punch {
-    var id: Int?
+    var identifier: Int?
     var type: PunchType
     var moment: NSDate
-    
+
     func isNewPunch() -> Bool {
-        return id == nil
+        return identifier == nil
     }
 }
