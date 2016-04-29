@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class TotalsDataSource: NSObject, UITableViewDataSource, WeekWorkedHoursPresenter {
+class TotalsDataSource: NSObject, UITableViewDataSource, WorkedHoursPresenter {
     var workHours: [WorkHour] = []
     var cellIdentifier: String = "WorkHoursReports"
     
