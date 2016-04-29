@@ -64,3 +64,4 @@ fastlane/report.xml
 fastlane/screenshots
 
 *.coverage.txt
+.idea
