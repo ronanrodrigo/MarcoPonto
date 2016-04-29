@@ -33,7 +33,8 @@ class ListPunchsDataSource: NSObject, RRNListDataSource, ListPunchsPresenter {
         }
     }
 
-    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle,
+                   forRowAtIndexPath indexPath: NSIndexPath) {
         if editingStyle == UITableViewCellEditingStyle.Delete {
             if let _editTableViewDelegate = editTableViewDelegate {
                 _editTableViewDelegate.confirmDelete(punchs[indexPath.row], at: indexPath)

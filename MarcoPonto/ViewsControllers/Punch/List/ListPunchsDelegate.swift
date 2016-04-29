@@ -17,11 +17,13 @@ class ListPunchsDelegate: NSObject, UITableViewDelegate {
         }
     }
 
-    func tableView(tableView: UITableView, editingStyleForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCellEditingStyle {
+    func tableView(tableView: UITableView, editingStyleForRowAtIndexPath indexPath: NSIndexPath)
+        -> UITableViewCellEditingStyle {
         return UITableViewCellEditingStyle.Delete
     }
 
-    func tableView(tableView: UITableView, titleForDeleteConfirmationButtonForRowAtIndexPath indexPath: NSIndexPath) -> String? {
+    func tableView(tableView: UITableView, titleForDeleteConfirmationButtonForRowAtIndexPath indexPath: NSIndexPath)
+        -> String? {
         return "Apagar"
     }
 }

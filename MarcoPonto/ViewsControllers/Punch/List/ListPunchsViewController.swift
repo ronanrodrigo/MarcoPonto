@@ -33,7 +33,8 @@ class ListPunchsViewController: UIViewController, EditTableViewDelegate {
         delegate = ListPunchsDelegate(navigationDelegate: navigationDelegate)
         tableView.delegate = delegate
 
-        tableView.registerNib(UINib(nibName: cellNameAndIdentifier, bundle: nil), forCellReuseIdentifier: cellNameAndIdentifier)
+        tableView.registerNib(
+            UINib(nibName: cellNameAndIdentifier, bundle: nil), forCellReuseIdentifier: cellNameAndIdentifier)
         tableView.allowsSelectionDuringEditing = false
     }
 
@@ -43,7 +44,10 @@ class ListPunchsViewController: UIViewController, EditTableViewDelegate {
         let dateFormatter = NSDateFormatter()
         dateFormatter.dateFormat = "dd/MM/YY, EEEE, HH:mm"
 
-        let alert = UIAlertController(title: "Apagar Ponto", message: "Tem certeza que deseja apagar o ponto batido em \(dateFormatter.stringFromDate(punch.moment))?", preferredStyle: .ActionSheet)
+        let alert = UIAlertController(
+            title: "Apagar Ponto",
+            message: "Tem certeza que deseja apagar o ponto batido em \(dateFormatter.stringFromDate(punch.moment))?",
+            preferredStyle: .ActionSheet)
         let deleteAction = UIAlertAction(title: "Sim", style: .Destructive, handler: handleDeletePunch)
         let cancelAction = UIAlertAction(title: "Cancelar", style: .Cancel, handler: nil)
 
