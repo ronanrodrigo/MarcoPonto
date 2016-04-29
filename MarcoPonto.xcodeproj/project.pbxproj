@@ -66,13 +66,16 @@
 		4B7A508D3CB01762270B27B3 /* HoursWorkedEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A5DA7422D3856D217B284 /* HoursWorkedEntity.swift */; };
 		4B7A50CF32F8270FB109CE5A /* WorkedHoursEntityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A57EBD8B976D75F8B1432 /* WorkedHoursEntityTests.swift */; };
 		4B7A51761AFE51EF9211C877 /* FormPunchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B7A54C26B2939F7ECFE71B2 /* FormPunchViewController.xib */; };
+		4B7A526AE5ECE9E47D943529 /* DateRangeGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A51868F7898D50F2E69C2 /* DateRangeGateway.swift */; };
 		4B7A532ACFCC5B48106CE51E /* ListPunchsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B7A5CAA1E540DD091D0E91E /* ListPunchsTableViewCell.xib */; };
 		4B7A53E55C0AEAFF67B8F7D6 /* HoursWorkedEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A5DA7422D3856D217B284 /* HoursWorkedEntity.swift */; };
 		4B7A555411801172B356AE62 /* PunchTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A547C14EAB607619EF59D /* PunchTypeTests.swift */; };
 		4B7A5985BF6003BB6C46E01A /* TotalsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B7A581DCA5399934C5D8F40 /* TotalsViewController.xib */; };
 		4B7A59FD587D2F8827D2AA64 /* SelectTypeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B7A56FDBC391BDD47B73BEA /* SelectTypeTableViewCell.xib */; };
 		4B7A5B0AA5D4A3B27F0B9142 /* ListPunchsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B7A521BCF886584E14BC9C7 /* ListPunchsViewController.xib */; };
+		4B7A5C4215A8B33338C064FC /* DateRangeGatewayFake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A5DCB986171E38BB5734B /* DateRangeGatewayFake.swift */; };
 		4B7A5E906F1DC11565C8E938 /* SelectMomentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B7A5C3920C3D4812223D3F0 /* SelectMomentTableViewCell.xib */; };
+		4B7A5EAF2C7CD85E9E54EC7B /* DateRangeGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A51868F7898D50F2E69C2 /* DateRangeGateway.swift */; };
 		8B57485EC708ABF62A90F3EC /* Pods_MarcoPonto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F6BF200DB5D0ED269B14BDA /* Pods_MarcoPonto.framework */; };
 		C2F32B26AFCE5F699EB70FA8 /* Pods_CoreTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A46860476D2BC2CF3EFB722B /* Pods_CoreTests.framework */; };
 /* End PBXBuildFile section */
@@ -138,6 +141,7 @@
 		34E9B4021CC419090017A083 /* PunchTypeLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PunchTypeLabel.swift; sourceTree = "<group>"; };
 		34E9B4041CC42C360017A083 /* ListPunchsDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPunchsDelegate.swift; sourceTree = "<group>"; };
 		3F6BF200DB5D0ED269B14BDA /* Pods_MarcoPonto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MarcoPonto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B7A51868F7898D50F2E69C2 /* DateRangeGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateRangeGateway.swift; sourceTree = "<group>"; };
 		4B7A521BCF886584E14BC9C7 /* ListPunchsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListPunchsViewController.xib; sourceTree = "<group>"; };
 		4B7A547C14EAB607619EF59D /* PunchTypeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PunchTypeTests.swift; sourceTree = "<group>"; };
 		4B7A54C26B2939F7ECFE71B2 /* FormPunchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FormPunchViewController.xib; sourceTree = "<group>"; };
@@ -147,6 +151,7 @@
 		4B7A5C3920C3D4812223D3F0 /* SelectMomentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectMomentTableViewCell.xib; sourceTree = "<group>"; };
 		4B7A5CAA1E540DD091D0E91E /* ListPunchsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListPunchsTableViewCell.xib; sourceTree = "<group>"; };
 		4B7A5DA7422D3856D217B284 /* HoursWorkedEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HoursWorkedEntity.swift; sourceTree = "<group>"; };
+		4B7A5DCB986171E38BB5734B /* DateRangeGatewayFake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateRangeGatewayFake.swift; sourceTree = "<group>"; };
 		8E41B6E072F70629B191C557 /* Pods-CoreTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoreTests/Pods-CoreTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A46860476D2BC2CF3EFB722B /* Pods_CoreTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoreTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5218B507B795854DF51D794 /* Pods-MarcoPonto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarcoPonto.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MarcoPonto/Pods-MarcoPonto.debug.xcconfig"; sourceTree = "<group>"; };
@@ -188,6 +193,7 @@
 			children = (
 				340BD71F1CC3205300AB860B /* PunchGatewaySpy.swift */,
 				340404A81CC8214900A4E88E /* PunchGatewayFake.swift */,
+				4B7A5DCB986171E38BB5734B /* DateRangeGatewayFake.swift */,
 			);
 			path = Gateways;
 			sourceTree = "<group>";
@@ -376,6 +382,7 @@
 			isa = PBXGroup;
 			children = (
 				34336DAA1CC30EFB00ED551C /* PunchGateway.swift */,
+				4B7A51868F7898D50F2E69C2 /* DateRangeGateway.swift */,
 			);
 			name = Gateways;
 			path = Core/Gateways;
@@ -803,6 +810,7 @@
 				3472AA0D1CC6FA7200CEF1D1 /* WorkedHoursUsecase.swift in Sources */,
 				3405D98D1CCA74F600616382 /* TotalsDataSource.swift in Sources */,
 				4B7A508D3CB01762270B27B3 /* HoursWorkedEntity.swift in Sources */,
+				4B7A526AE5ECE9E47D943529 /* DateRangeGateway.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -832,6 +840,8 @@
 				4B7A50CF32F8270FB109CE5A /* WorkedHoursEntityTests.swift in Sources */,
 				343A0C5F1CD3854800D547EA /* WorkedHoursUsecaseTests.swift in Sources */,
 				4B7A555411801172B356AE62 /* PunchTypeTests.swift in Sources */,
+				4B7A5EAF2C7CD85E9E54EC7B /* DateRangeGateway.swift in Sources */,
+				4B7A5C4215A8B33338C064FC /* DateRangeGatewayFake.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
