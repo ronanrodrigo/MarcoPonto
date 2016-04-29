@@ -23,10 +23,10 @@ class WorkedHoursUsecase {
         let currentWeekWorkHours = WorkHourStruct(title: "Semana atual", total: currentWeekTotalHours)
         presenter.showTotal(currentWeekWorkHours)
 
-        let pasttMonth = dateRangeGateway.pastMonth()
-        let pasttMonthTotalHours = calculateHours(between: pasttMonth.firstDate, and: pasttMonth.lastDate)
-        let pasttMonthWorkHours = WorkHourStruct(title: "Mês passado", total: pasttMonthTotalHours)
-        presenter.showTotal(pasttMonthWorkHours)
+        let pastMonth = dateRangeGateway.pastMonth()
+        let pastMonthTotalHours = calculateHours(between: pastMonth.firstDate, and: pastMonth.lastDate)
+        let pastMonthWorkHours = WorkHourStruct(title: "Mês passado", total: pastMonthTotalHours)
+        presenter.showTotal(pastMonthWorkHours)
 
         let currentMonth = dateRangeGateway.currentMonth()
         let currentMonthTotalHours = calculateHours(between: currentMonth.firstDate, and: currentMonth.lastDate)
