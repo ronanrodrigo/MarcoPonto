@@ -36,7 +36,7 @@ class TotalsDataSource: NSObject, UITableViewDataSource, WorkedHoursPresenter {
         
         let workHour = workHours[indexPath.row]
         cell.textLabel?.text = workHour.title
-        cell.detailTextLabel?.text = workHour.total.toString()
+        cell.detailTextLabel?.text = workHour.total.toTimeString()
         cell.userInteractionEnabled = false
         
         return cell
