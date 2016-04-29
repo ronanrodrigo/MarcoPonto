@@ -1,5 +1,5 @@
 //
-//  WeekHoursPresenter.swift
+//  WorkedHoursPresenter.swift
 //  MarcoPonto
 //
 //  Created by Ronan Rodrigo Nunes on 19/04/16.
@@ -8,6 +8,6 @@
 
 import Foundation
 
-protocol WeekWorkedHoursPresenter {
+protocol WorkedHoursPresenter {
     func showTotal(workHourGroup: WorkHour)
 }

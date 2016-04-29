@@ -1,5 +1,5 @@
 //
-//  WeekWorkedHoursPresenterFake.swift
+//  WorkedHoursPresenterFake.swift
 //  MarcoPonto
 //
 //  Created by Ronan Rodrigo Nunes on 20/04/16.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-class WeekWorkedHoursPresenterFake: WeekWorkedHoursPresenter {
+class WorkedHoursPresenterFake: WorkedHoursPresenter {
     var workHours: [WorkHour] = []
     
     func showTotal(workHour: WorkHour) {
