@@ -11,43 +11,38 @@ import SwiftDate
 
 class WorkedHoursUsecase {
     private var gateway: PunchGateway
+    private var dateRangeGateway: DateRangeGateway
     private var presenter: WorkedHoursPresenter
     
-    init(gateway: PunchGateway, presenter: WorkedHoursPresenter) {
+    init(gateway: PunchGateway, dateRangeGateway: DateRangeGateway, presenter: WorkedHoursPresenter) {
         self.gateway = gateway
+        self.dateRangeGateway = dateRangeGateway
         self.presenter = presenter
     }
     
     func total() {
-        let today = NSDate(refDate: NSDate(), hour: 0, minute: 0, second: 0)
-
-        let pastWeekFirstDate = (today-1.weeks).startOf(NSCalendarUnit.WeekOfYear)
-        let pastWeekLastDate = (today-1.weeks).endOf(NSCalendarUnit.WeekOfYear)
-        let pastWeekTotalHours = calculateHours(between: pastWeekFirstDate, and: pastWeekLastDate)
+        let pastWeek = dateRangeGateway.pastWeek()
+        let pastWeekTotalHours = calculateHours(between: pastWeek.firstDate, and: pastWeek.lastDate)
         let pastWeekWorkWorkHours = WorkHourStruct(title: "Semana passada", total: pastWeekTotalHours)
         presenter.showTotal(pastWeekWorkWorkHours)
 
-        let currentWeekFirstDate = today.startOf(NSCalendarUnit.WeekOfYear)
-        let currentWeekLastDate = today.endOf(NSCalendarUnit.WeekOfYear)
-        let currentWeekTotalHours = calculateHours(between: currentWeekFirstDate, and: currentWeekLastDate)
+        let currentWeek = dateRangeGateway.currentWeek()
+        let currentWeekTotalHours = calculateHours(between: currentWeek.firstDate, and: currentWeek.lastDate)
         let currentWeekWorkHours = WorkHourStruct(title: "Semana atual", total: currentWeekTotalHours)
         presenter.showTotal(currentWeekWorkHours)
 
-        let pasttMonthFirstDate = (today-1.months).startOf(NSCalendarUnit.Month)
-        let pasttMonthLastDate = (today-1.months).endOf(NSCalendarUnit.Month)
-        let pasttMonthTotalHours = calculateHours(between: pasttMonthFirstDate, and: pasttMonthLastDate)
+        let pasttMonth = dateRangeGateway.pastMonth()
+        let pasttMonthTotalHours = calculateHours(between: pasttMonth.firstDate, and: pasttMonth.lastDate)
         let pasttMonthWorkHours = WorkHourStruct(title: "Mês passado", total: pasttMonthTotalHours)
         presenter.showTotal(pasttMonthWorkHours)
 
-        let currentMonthFirstDate = today.startOf(NSCalendarUnit.Month)
-        let currentMonthLastDate = today.endOf(NSCalendarUnit.Month)
-        let currentMonthTotalHours = calculateHours(between: currentMonthFirstDate, and: currentMonthLastDate)
+        let currentMonth = dateRangeGateway.currentMonth()
+        let currentMonthTotalHours = calculateHours(between: currentMonth.firstDate, and: currentMonth.lastDate)
         let currentMonthWorkHours = WorkHourStruct(title: "Mês atual", total: currentMonthTotalHours)
         presenter.showTotal(currentMonthWorkHours)
 
-        let fromBeginningFirstDate = today.startOf(NSCalendarUnit.Era)
-        let fromBeginningLastDate = today+1.days
-        let fromBeginningTotalHours = calculateHours(between: fromBeginningFirstDate, and: fromBeginningLastDate)
+        let fromBeginning = dateRangeGateway.fromBeginning()
+        let fromBeginningTotalHours = calculateHours(between: fromBeginning.firstDate, and: fromBeginning.lastDate)
         let fromBeginningWorkHours = WorkHourStruct(title: "Total", total: fromBeginningTotalHours)
         presenter.showTotal(fromBeginningWorkHours)
     }
