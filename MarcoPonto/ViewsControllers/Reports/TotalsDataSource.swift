@@ -34,8 +34,8 @@ class TotalsDataSource: NSObject, UITableViewDataSource, WorkedHoursPresenter {
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: UITableViewCellStyle.Value1, reuseIdentifier: cellIdentifier)
         
-        let workHour = workHours[indexPath.row]
         cell.textLabel?.text = workHour.title
+        let workHour = workHours[indexPath.section]
         cell.detailTextLabel?.text = workHour.total.toTimeString()
         cell.userInteractionEnabled = false
         
