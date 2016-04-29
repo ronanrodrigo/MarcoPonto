@@ -325,10 +325,10 @@
 		349D9B1C1CC2E9710088DE5E /* CoreTests */ = {
 			isa = PBXGroup;
 			children = (
+				4B7A572C94203D3410D6A1A0 /* Entities */,
 				340BD71D1CC31FD900AB860B /* Fakes */,
 				349D9B391CC30AA20088DE5E /* Usecases */,
 				349D9B1F1CC2E9710088DE5E /* Info.plist */,
-				4B7A572C94203D3410D6A1A0 /* Entities */,
 			);
 			path = CoreTests;
 			sourceTree = "<group>";
