@@ -24,7 +24,7 @@ class PunchGatewayCoreData: PunchGateway {
         let punchModel = PunchModel(entity: entity, insertIntoManagedObjectContext: context)
         punchModel.type = punch.type
         punchModel.moment = NSDate(fromDate: punch.moment, second: 0, nanosecond: 0)
-        punchModel.identifier = nextId
+        punchModel.id = nextId
         context.insertObject(punchModel)
 
         do {

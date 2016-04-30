@@ -20,7 +20,7 @@ class PunchModel: NSManagedObject, Punch {
         }
     }
 
-    var identifier: Int? {
+    var id: Int? {
         get {
             return punchId as Int?
         } set {
@@ -29,7 +29,7 @@ class PunchModel: NSManagedObject, Punch {
     }
 
     func isNewPunch() -> Bool {
-        return identifier == nil
+        return id == nil
     }
 
 }
