@@ -36,7 +36,7 @@ class PunchGatewayCoreData: PunchGateway {
 
     func update(punch: Punch) {
         let fetchRequest = NSFetchRequest(entityName: entityName)
-        fetchRequest.predicate =  NSPredicate(format: "punchId = %d", punch.identifier!)
+        fetchRequest.predicate =  NSPredicate(format: "punchId = %d", punch.id!)
         do {
             let results = try context.executeFetchRequest(fetchRequest)
             if var _punch = results.first as? Punch {
@@ -51,7 +51,7 @@ class PunchGatewayCoreData: PunchGateway {
 
     func delete(punch: Punch) {
         let fetchRequest = NSFetchRequest(entityName: entityName)
-        fetchRequest.predicate =  NSPredicate(format: "punchId = %d", punch.identifier!)
+        fetchRequest.predicate =  NSPredicate(format: "punchId = %d", punch.id!)
         do {
             let results = try context.executeFetchRequest(fetchRequest)
             if let _punch = results.first as? PunchModel {
@@ -102,7 +102,7 @@ class PunchGatewayCoreData: PunchGateway {
         do {
             let results = try context.executeFetchRequest(fetchRequest)
             if let lastPunch = results.last as? Punch {
-                lastId = lastPunch.identifier ?? 0
+                lastId = lastPunch.id ?? 0
             }
         } catch {
             print("Could not get ID of \(entityName)")

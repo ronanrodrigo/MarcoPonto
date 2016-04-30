@@ -43,7 +43,7 @@ class FormPunchDataSource: NSObject, UITableViewDataSource {
     func filledPunch() -> Punch {
         let punchType = PunchType(rawValue: selectTypeTableViewCell.typeSelector.selectedSegmentIndex)!
         let moment = selectMomentTableViewCell.momentSelector.date
-        return PunchStruct(identifier: punch?.identifier, type: punchType, moment: moment)
+        return PunchStruct(id: punch?.id, type: punchType, moment: moment)
     }
 
 }

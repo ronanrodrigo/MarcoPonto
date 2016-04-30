@@ -13,7 +13,7 @@ class SavePunchUsecaseTests: XCTestCase {
     }
 
     func testShoudCreatePunch() {
-        let punch = PunchStruct(identifier: nil, type: .Input, moment: now)
+        let punch = PunchStruct(id: nil, type: .Input, moment: now)
 
         usecase.save(punch)
 
@@ -23,7 +23,7 @@ class SavePunchUsecaseTests: XCTestCase {
     }
 
     func testShoudUpdatePunch() {
-        let punch = PunchStruct(identifier: 1, type: .Input, moment: now)
+        let punch = PunchStruct(id: 1, type: .Input, moment: now)
 
         usecase.save(punch)
 
