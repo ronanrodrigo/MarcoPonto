@@ -44,7 +44,7 @@ class FormPunchViewController: UIViewController {
     }
 
     func savePunch() {
-        if let _savePunchPresenter = savePunchPresenter, let _dataSource = dataSource {
+        if let _savePunchPresenter = savePunchPresenter, _dataSource = dataSource {
             let usecase = SavePunchUsecaseFactory.make(presenter: _savePunchPresenter)
             let filledPunch = _dataSource.filledPunch()
             usecase.save(filledPunch)
