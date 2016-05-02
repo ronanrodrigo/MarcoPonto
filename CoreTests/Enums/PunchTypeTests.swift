@@ -4,10 +4,10 @@ import XCTest
 class PunchTypeTests: XCTestCase {
 
     func testShouldBeAnOutputStringWhenIsOutputType() {
-        XCTAssertEqual("Saída", PunchType.Output.description())
+        XCTAssertEqual("Saída", PunchType.Output.title)
     }
 
     func testShouldBeAnInputStringWhenIsInputType() {
-        XCTAssertEqual("Entrada", PunchType.Input.description())
+        XCTAssertEqual("Entrada", PunchType.Input.title)
     }
 }

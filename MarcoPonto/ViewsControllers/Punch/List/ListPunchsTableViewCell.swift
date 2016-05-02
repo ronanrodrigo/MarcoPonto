@@ -21,7 +21,7 @@ class ListPunchsTableViewCell: UITableViewCell {
     func updateCell(punch: Punch) {
         date.text = dateFormatter.stringFromDate(punch.moment)
         hour.text = timeFormatter.stringFromDate(punch.moment)
-        type.text = punch.type.description()
+        type.text = punch.type.title
         type.background(by: punch.type)
         self.punch = punch
     }
