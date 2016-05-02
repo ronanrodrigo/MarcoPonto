@@ -62,7 +62,7 @@ class WorkedHoursUsecase {
     private func calculateHours(between firstDate: NSDate, and lastDate: NSDate) -> NSTimeInterval {
         let inputPunchs = gateway.list(by: .Input, between: firstDate, and: lastDate)
         let outputPunchs = gateway.list(by: .Output, between: firstDate, and: lastDate)
-        let totalInterval = WorkedHoursEntity(
+        let totalInterval = CalculateWorkedHoursEntity(
             inputPunchs: inputPunchs,
             outputPunchs: outputPunchs).calculate()
         return totalInterval

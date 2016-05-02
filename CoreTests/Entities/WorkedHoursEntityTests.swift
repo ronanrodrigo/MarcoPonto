@@ -2,7 +2,7 @@ import XCTest
 import SwiftDate
 
 class WorkedHoursEntityTests: XCTestCase {
-    var entity: WorkedHoursEntity!
+    var entity: CalculateWorkedHoursEntity!
     var inputPunchs: [Punch]!
     var outputPunchs: [Punch]!
     let today = NSDate()
@@ -15,7 +15,7 @@ class WorkedHoursEntityTests: XCTestCase {
     func testShouldCalculateTimeIntervalBetwenDateTimesInPunchLists() {
         inputPunchs = [PunchStruct(id: nil, type: .Input, moment: yesterday)]
         outputPunchs = [PunchStruct(id: nil, type: .Output, moment: today)]
-        entity = WorkedHoursEntity(inputPunchs: inputPunchs, outputPunchs: outputPunchs)
+        entity = CalculateWorkedHoursEntity(inputPunchs: inputPunchs, outputPunchs: outputPunchs)
 
         let totalTimeInterval = entity.calculate()
 
@@ -26,7 +26,7 @@ class WorkedHoursEntityTests: XCTestCase {
         inputPunchs = [PunchStruct(id: nil, type: .Input, moment: yesterday),
                        PunchStruct(id: nil, type: .Input, moment: yesterday+1.hours)]
         outputPunchs = [PunchStruct(id: nil, type: .Output, moment: today)]
-        entity = WorkedHoursEntity(inputPunchs: inputPunchs, outputPunchs: outputPunchs)
+        entity = CalculateWorkedHoursEntity(inputPunchs: inputPunchs, outputPunchs: outputPunchs)
 
         let totalTimeInterval = entity.calculate()
 
@@ -37,7 +37,7 @@ class WorkedHoursEntityTests: XCTestCase {
         inputPunchs = [PunchStruct(id: nil, type: .Input, moment: yesterday)]
         outputPunchs = [PunchStruct(id: nil, type: .Output, moment: today),
                         PunchStruct(id: nil, type: .Output, moment: today+1.hours)]
-        entity = WorkedHoursEntity(inputPunchs: inputPunchs, outputPunchs: outputPunchs)
+        entity = CalculateWorkedHoursEntity(inputPunchs: inputPunchs, outputPunchs: outputPunchs)
 
         let totalTimeInterval = entity.calculate()
 
@@ -47,7 +47,7 @@ class WorkedHoursEntityTests: XCTestCase {
     func testShouldNotCalculateWhenOutputPunchIsLowerThanInputPunch() {
         inputPunchs = [PunchStruct(id: nil, type: .Input, moment: today)]
         outputPunchs = [PunchStruct(id: nil, type: .Output, moment: yesterday)]
-        entity = WorkedHoursEntity(inputPunchs: inputPunchs, outputPunchs: outputPunchs)
+        entity = CalculateWorkedHoursEntity(inputPunchs: inputPunchs, outputPunchs: outputPunchs)
 
         let totalTimeInterval = entity.calculate()
 
