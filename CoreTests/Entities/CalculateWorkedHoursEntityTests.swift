@@ -1,7 +1,7 @@
 import XCTest
 import SwiftDate
 
-class WorkedHoursEntityTests: XCTestCase {
+class CalculateWorkedHoursEntityTests: XCTestCase {
     var entity: CalculateWorkedHoursEntity!
     var inputPunchs: [Punch]!
     var outputPunchs: [Punch]!

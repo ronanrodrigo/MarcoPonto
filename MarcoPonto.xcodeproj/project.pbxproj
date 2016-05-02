@@ -68,7 +68,7 @@
 		34F8E3601CD61CD500B5F32A /* MandatoryWorkloadGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F8E35F1CD61CD500B5F32A /* MandatoryWorkloadGateway.swift */; };
 		34F8E3611CD61CD500B5F32A /* MandatoryWorkloadGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F8E35F1CD61CD500B5F32A /* MandatoryWorkloadGateway.swift */; };
 		4B7A508D3CB01762270B27B3 /* CalculateWorkedHoursEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A5DA7422D3856D217B284 /* CalculateWorkedHoursEntity.swift */; };
-		4B7A50CF32F8270FB109CE5A /* WorkedHoursEntityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A57EBD8B976D75F8B1432 /* WorkedHoursEntityTests.swift */; };
+		4B7A50CF32F8270FB109CE5A /* CalculateWorkedHoursEntityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A57EBD8B976D75F8B1432 /* CalculateWorkedHoursEntityTests.swift */; };
 		4B7A51761AFE51EF9211C877 /* FormPunchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B7A54C26B2939F7ECFE71B2 /* FormPunchViewController.xib */; };
 		4B7A5215E77F0868716C2E5A /* MandatoryWorkloadGatewayHoursTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A56987B6CBE1D50D38311 /* MandatoryWorkloadGatewayHoursTests.swift */; };
 		4B7A526AE5ECE9E47D943529 /* DateRangeGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A51868F7898D50F2E69C2 /* DateRangeGateway.swift */; };
@@ -156,7 +156,7 @@
 		4B7A54C26B2939F7ECFE71B2 /* FormPunchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FormPunchViewController.xib; sourceTree = "<group>"; };
 		4B7A56987B6CBE1D50D38311 /* MandatoryWorkloadGatewayHoursTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MandatoryWorkloadGatewayHoursTests.swift; sourceTree = "<group>"; };
 		4B7A56FDBC391BDD47B73BEA /* SelectTypeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectTypeTableViewCell.xib; sourceTree = "<group>"; };
-		4B7A57EBD8B976D75F8B1432 /* WorkedHoursEntityTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkedHoursEntityTests.swift; sourceTree = "<group>"; };
+		4B7A57EBD8B976D75F8B1432 /* CalculateWorkedHoursEntityTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculateWorkedHoursEntityTests.swift; sourceTree = "<group>"; };
 		4B7A581DCA5399934C5D8F40 /* TotalsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TotalsViewController.xib; sourceTree = "<group>"; };
 		4B7A5C3920C3D4812223D3F0 /* SelectMomentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectMomentTableViewCell.xib; sourceTree = "<group>"; };
 		4B7A5CAA1E540DD091D0E91E /* ListPunchsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListPunchsTableViewCell.xib; sourceTree = "<group>"; };
@@ -499,7 +499,7 @@
 		4B7A572C94203D3410D6A1A0 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
-				4B7A57EBD8B976D75F8B1432 /* WorkedHoursEntityTests.swift */,
+				4B7A57EBD8B976D75F8B1432 /* CalculateWorkedHoursEntityTests.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -971,7 +971,7 @@
 				34CA48DA1CCA8C800050E759 /* WorkHour.swift in Sources */,
 				340BD7201CC3205300AB860B /* PunchGatewaySpy.swift in Sources */,
 				4B7A53E55C0AEAFF67B8F7D6 /* CalculateWorkedHoursEntity.swift in Sources */,
-				4B7A50CF32F8270FB109CE5A /* WorkedHoursEntityTests.swift in Sources */,
+				4B7A50CF32F8270FB109CE5A /* CalculateWorkedHoursEntityTests.swift in Sources */,
 				343A0C5F1CD3854800D547EA /* WorkedHoursUsecaseTests.swift in Sources */,
 				4B7A555411801172B356AE62 /* PunchTypeTests.swift in Sources */,
 				34A70E831CD6230F009B43EA /* Double+ToSeconds.swift in Sources */,
