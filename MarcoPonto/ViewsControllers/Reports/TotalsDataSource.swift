@@ -3,7 +3,7 @@ import UIKit
 
 class TotalsDataSource: NSObject, UITableViewDataSource, WorkedHoursPresenter {
     var workHours: [WorkHour] = []
-    var cellIdentifier: String = "WorkHoursReports"
+    var cellIdentifier: String = "WorkHoursReportsCell"
 
     override init() {
         super.init()
