@@ -18,7 +18,7 @@ class WorkedHoursUsecase {
             between: pastWeek.firstDate,
             and: pastWeek.lastDate)
         let pastWeekWorkWorkHours = WorkHourStruct(
-            title: "Semana passada",
+            type: .PastWeek,
             total: pastWeekTotalHours)
         presenter.showTotal(pastWeekWorkWorkHours)
 
@@ -27,7 +27,7 @@ class WorkedHoursUsecase {
             between: currentWeek.firstDate,
             and: currentWeek.lastDate)
         let currentWeekWorkHours = WorkHourStruct(
-            title: "Semana atual",
+            type: .CurrentWeek,
             total: currentWeekTotalHours)
         presenter.showTotal(currentWeekWorkHours)
 
@@ -36,7 +36,7 @@ class WorkedHoursUsecase {
             between: pastMonth.firstDate,
             and: pastMonth.lastDate)
         let pastMonthWorkHours = WorkHourStruct(
-            title: "Mês passado",
+            type: .PastMonth,
             total: pastMonthTotalHours)
         presenter.showTotal(pastMonthWorkHours)
 
@@ -45,7 +45,7 @@ class WorkedHoursUsecase {
             between: currentMonth.firstDate,
             and: currentMonth.lastDate)
         let currentMonthWorkHours = WorkHourStruct(
-            title: "Mês atual",
+            type: .CurrentMonth,
             total: currentMonthTotalHours)
         presenter.showTotal(currentMonthWorkHours)
 
@@ -54,7 +54,7 @@ class WorkedHoursUsecase {
             between: fromBeginning.firstDate,
             and: fromBeginning.lastDate)
         let fromBeginningWorkHours = WorkHourStruct(
-            title: "Total",
+            type: .All,
             total: fromBeginningTotalHours)
         presenter.showTotal(fromBeginningWorkHours)
     }

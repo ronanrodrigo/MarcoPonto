@@ -1,11 +1,11 @@
 import Foundation
 
 protocol WorkHour {
-    var title: String { get set }
+    var type: WorkHourType { get set }
     var total: NSTimeInterval { get set }
 }
 
 struct WorkHourStruct: WorkHour {
-    var title: String
+    var type: WorkHourType
     var total: NSTimeInterval
 }

@@ -1,7 +1,7 @@
 import Foundation
 
-enum WorkHoursType {
-    case PastWeek, CurrentWeek, PastMonth, CurrentMonth, Total
+enum WorkHourType {
+    case PastWeek, CurrentWeek, PastMonth, CurrentMonth, All
 
     var title: String {
         get {
@@ -10,7 +10,7 @@ enum WorkHoursType {
                 case .CurrentWeek: return "Semana atual"
                 case .PastMonth: return "Mês passado"
                 case .CurrentMonth: return "Mês atual"
-                case .Total: return "Tudo"
+                case .All: return "Tudo"
             }
         }
     }

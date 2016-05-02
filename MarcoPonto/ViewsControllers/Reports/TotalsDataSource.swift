@@ -20,7 +20,7 @@ class TotalsDataSource: NSObject, UITableViewDataSource, WorkedHoursPresenter {
 
     func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         let workHoursReport = workHours[section]
-        return workHoursReport.title
+        return workHoursReport.type.title
     }
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
