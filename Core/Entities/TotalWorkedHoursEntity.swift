@@ -1,6 +1,6 @@
 import Foundation
 
-class CalculateWorkedHoursEntity {
+class TotalWorkedHoursEntity {
     private let inputPunchs: [Punch]
     private let outputPunchs: [Punch]
 

@@ -67,7 +67,7 @@
 		34E9B4051CC42C360017A083 /* ListPunchsDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E9B4041CC42C360017A083 /* ListPunchsDelegate.swift */; };
 		34F8E3601CD61CD500B5F32A /* MandatoryWorkloadGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F8E35F1CD61CD500B5F32A /* MandatoryWorkloadGateway.swift */; };
 		34F8E3611CD61CD500B5F32A /* MandatoryWorkloadGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F8E35F1CD61CD500B5F32A /* MandatoryWorkloadGateway.swift */; };
-		4B7A508D3CB01762270B27B3 /* CalculateWorkedHoursEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A5DA7422D3856D217B284 /* CalculateWorkedHoursEntity.swift */; };
+		4B7A508D3CB01762270B27B3 /* TotalWorkedHoursEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A5DA7422D3856D217B284 /* TotalWorkedHoursEntity.swift */; };
 		4B7A50CF32F8270FB109CE5A /* CalculateWorkedHoursEntityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A57EBD8B976D75F8B1432 /* CalculateWorkedHoursEntityTests.swift */; };
 		4B7A517165A35D5336A75C88 /* WorkHoursType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A5EA8EBD5D78C4445DF30 /* WorkHoursType.swift */; };
 		4B7A51761AFE51EF9211C877 /* FormPunchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B7A54C26B2939F7ECFE71B2 /* FormPunchViewController.xib */; };
@@ -75,7 +75,7 @@
 		4B7A526AE5ECE9E47D943529 /* DateRangeGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A51868F7898D50F2E69C2 /* DateRangeGateway.swift */; };
 		4B7A52E182F224293B171FD1 /* WorkHoursType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A5EA8EBD5D78C4445DF30 /* WorkHoursType.swift */; };
 		4B7A532ACFCC5B48106CE51E /* ListPunchsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B7A5CAA1E540DD091D0E91E /* ListPunchsTableViewCell.xib */; };
-		4B7A53E55C0AEAFF67B8F7D6 /* CalculateWorkedHoursEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A5DA7422D3856D217B284 /* CalculateWorkedHoursEntity.swift */; };
+		4B7A53E55C0AEAFF67B8F7D6 /* TotalWorkedHoursEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A5DA7422D3856D217B284 /* TotalWorkedHoursEntity.swift */; };
 		4B7A555411801172B356AE62 /* PunchTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A547C14EAB607619EF59D /* PunchTypeTests.swift */; };
 		4B7A5985BF6003BB6C46E01A /* TotalsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B7A581DCA5399934C5D8F40 /* TotalsViewController.xib */; };
 		4B7A59FD587D2F8827D2AA64 /* SelectTypeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B7A56FDBC391BDD47B73BEA /* SelectTypeTableViewCell.xib */; };
@@ -162,7 +162,7 @@
 		4B7A581DCA5399934C5D8F40 /* TotalsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TotalsViewController.xib; sourceTree = "<group>"; };
 		4B7A5C3920C3D4812223D3F0 /* SelectMomentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectMomentTableViewCell.xib; sourceTree = "<group>"; };
 		4B7A5CAA1E540DD091D0E91E /* ListPunchsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListPunchsTableViewCell.xib; sourceTree = "<group>"; };
-		4B7A5DA7422D3856D217B284 /* CalculateWorkedHoursEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculateWorkedHoursEntity.swift; sourceTree = "<group>"; };
+		4B7A5DA7422D3856D217B284 /* TotalWorkedHoursEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TotalWorkedHoursEntity.swift; sourceTree = "<group>"; };
 		4B7A5DCB986171E38BB5734B /* DateRangeGatewayFake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateRangeGatewayFake.swift; sourceTree = "<group>"; };
 		4B7A5EA8EBD5D78C4445DF30 /* WorkHoursType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkHoursType.swift; sourceTree = "<group>"; };
 		AE5D5A835C3635E533552D99 /* Pods_CoreTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoreTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -519,7 +519,7 @@
 		4B7A59AAFA4848159E9B7E01 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
-				4B7A5DA7422D3856D217B284 /* CalculateWorkedHoursEntity.swift */,
+				4B7A5DA7422D3856D217B284 /* TotalWorkedHoursEntity.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -944,7 +944,7 @@
 				349D9B321CC2F7960088DE5E /* FormPunchDataSource.swift in Sources */,
 				3472AA0D1CC6FA7200CEF1D1 /* WorkedHoursUsecase.swift in Sources */,
 				3405D98D1CCA74F600616382 /* TotalsDataSource.swift in Sources */,
-				4B7A508D3CB01762270B27B3 /* CalculateWorkedHoursEntity.swift in Sources */,
+				4B7A508D3CB01762270B27B3 /* TotalWorkedHoursEntity.swift in Sources */,
 				4B7A526AE5ECE9E47D943529 /* DateRangeGateway.swift in Sources */,
 				4B7A517165A35D5336A75C88 /* WorkHoursType.swift in Sources */,
 			);
@@ -973,7 +973,7 @@
 				340BD7281CC33CA800AB860B /* ListPunchsUsecaseTests.swift in Sources */,
 				34CA48DA1CCA8C800050E759 /* WorkHour.swift in Sources */,
 				340BD7201CC3205300AB860B /* PunchGatewaySpy.swift in Sources */,
-				4B7A53E55C0AEAFF67B8F7D6 /* CalculateWorkedHoursEntity.swift in Sources */,
+				4B7A53E55C0AEAFF67B8F7D6 /* TotalWorkedHoursEntity.swift in Sources */,
 				4B7A50CF32F8270FB109CE5A /* CalculateWorkedHoursEntityTests.swift in Sources */,
 				343A0C5F1CD3854800D547EA /* WorkedHoursUsecaseTests.swift in Sources */,
 				4B7A555411801172B356AE62 /* PunchTypeTests.swift in Sources */,
