@@ -11,14 +11,11 @@ class WorkedHoursUsecase {
     }
 
     func workedHours() {
-        var workHours: [WorkHour] = []
-        for type in WorkHourType.types {
-            workHours.append(calculateHours(type))
-        }
+        let workHours = WorkHourType.types.map({ calculateHours($0) })
         presenter.showTotal(workHours)
     }
 
-    private func calculateHours(type: WorkHourType) -> WorkHourStruct {
+    private func calculateHours(type: WorkHourType) -> WorkHour {
         let inputPunchs = gateway.list(by: .Input, between: type.dateRange.firstDate, and: type.dateRange.lastDate)
         let outputPunchs = gateway.list(by: .Output, between: type.dateRange.firstDate, and: type.dateRange.lastDate)
         let total = TotalWorkedHoursEntity(inputPunchs: inputPunchs, outputPunchs: outputPunchs).calculate()
