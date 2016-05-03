@@ -7,7 +7,7 @@ class TotalsDataSource: NSObject, UITableViewDataSource, WorkedHoursPresenter {
 
     override init() {
         super.init()
-        CurrentWeekHoursUsecaseFactory.make(self).total()
+        CurrentWeekHoursUsecaseFactory.make(self).workedHours()
     }
 
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {

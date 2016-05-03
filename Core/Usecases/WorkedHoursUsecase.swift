@@ -10,7 +10,7 @@ class WorkedHoursUsecase {
         self.presenter = presenter
     }
 
-    func total() {
+    func workedHours() {
         var workHours: [WorkHour] = []
         for type in WorkHourType.types {
             workHours.append(calculateHours(type))

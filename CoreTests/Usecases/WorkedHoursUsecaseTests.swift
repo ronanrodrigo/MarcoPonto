@@ -13,7 +13,7 @@ class WorkedHoursUsecaseTests: XCTestCase {
     }
 
     func testShouldHaveCompleteWokedHoursReport() {
-        usecase.total()
+        usecase.workedHours()
 
         XCTAssertEqual(5, presenter.workHours.count)
         XCTAssertEqual(10, gateway.listSpieds.count)
