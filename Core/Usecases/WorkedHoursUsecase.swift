@@ -52,12 +52,9 @@ class WorkedHoursUsecase {
     private func calculateHours(between firstDate: NSDate, and lastDate: NSDate, type: WorkHourType) -> WorkHourStruct {
         let inputPunchs = gateway.list(by: .Input, between: firstDate, and: lastDate)
         let outputPunchs = gateway.list(by: .Output, between: firstDate, and: lastDate)
-        let total = TotalWorkedHoursEntity(
-            inputPunchs: inputPunchs,
-            outputPunchs: outputPunchs).calculate()
-        let balance = TotalWorkedHoursEntity(
-            inputPunchs: inputPunchs,
-            outputPunchs: outputPunchs).calculate()
+        let total = TotalWorkedHoursEntity(inputPunchs: inputPunchs, outputPunchs: outputPunchs).calculate()
+        let mandatoryHours = 0.0
+        let balance = BalanceWorkedHoursEntity(totalHours: total, mandatoryHours: mandatoryHours).calculate()
 
         return WorkHourStruct(type: type, total: total, balance: balance)
     }

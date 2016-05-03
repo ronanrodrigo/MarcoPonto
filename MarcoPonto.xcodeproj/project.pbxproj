@@ -28,6 +28,7 @@
 		341877311CC6E552002A4B59 /* ReportsNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341877301CC6E552002A4B59 /* ReportsNavigationController.swift */; };
 		34336DAB1CC30EFB00ED551C /* PunchGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34336DAA1CC30EFB00ED551C /* PunchGateway.swift */; };
 		34336DAC1CC30EFB00ED551C /* PunchGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34336DAA1CC30EFB00ED551C /* PunchGateway.swift */; };
+		3433E3D91CD93E470021AE0C /* BalanceWorkedHoursEntityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3433E3D81CD93E470021AE0C /* BalanceWorkedHoursEntityTests.swift */; };
 		3435FF761CC2E7640076AF42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3435FF751CC2E7640076AF42 /* AppDelegate.swift */; };
 		3435FF7E1CC2E7640076AF42 /* MarcoPonto.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3435FF7C1CC2E7640076AF42 /* MarcoPonto.xcdatamodeld */; };
 		3435FF801CC2E7640076AF42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3435FF7F1CC2E7640076AF42 /* Assets.xcassets */; };
@@ -53,6 +54,7 @@
 		34A70E831CD6230F009B43EA /* Double+ToSeconds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A70E811CD6230F009B43EA /* Double+ToSeconds.swift */; };
 		34BD8F961CC5BA3500607BA6 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BD8F951CC5BA3500607BA6 /* TabBarController.swift */; };
 		34BD8F991CC6628E00607BA6 /* MaterialIcons+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BD8F981CC6628E00607BA6 /* MaterialIcons+UIImage.swift */; };
+		34BE9B8E1CD80EEC000351E4 /* WorkHourTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BE9B8D1CD80EEC000351E4 /* WorkHourTypeTests.swift */; };
 		34CA48D91CCA8C7E0050E759 /* WorkHour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CA48D81CCA8C7E0050E759 /* WorkHour.swift */; };
 		34CA48DA1CCA8C800050E759 /* WorkHour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CA48D81CCA8C7E0050E759 /* WorkHour.swift */; };
 		34E9B3ED1CC360060017A083 /* PunchGatewayCoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E9B3EC1CC360060017A083 /* PunchGatewayCoreData.swift */; };
@@ -69,18 +71,20 @@
 		34F8E3611CD61CD500B5F32A /* MandatoryWorkloadGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F8E35F1CD61CD500B5F32A /* MandatoryWorkloadGateway.swift */; };
 		4B7A508D3CB01762270B27B3 /* TotalWorkedHoursEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A5DA7422D3856D217B284 /* TotalWorkedHoursEntity.swift */; };
 		4B7A50CF32F8270FB109CE5A /* CalculateWorkedHoursEntityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A57EBD8B976D75F8B1432 /* CalculateWorkedHoursEntityTests.swift */; };
-		4B7A517165A35D5336A75C88 /* WorkHoursType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A5EA8EBD5D78C4445DF30 /* WorkHoursType.swift */; };
+		4B7A517165A35D5336A75C88 /* WorkHourType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A5EA8EBD5D78C4445DF30 /* WorkHourType.swift */; };
 		4B7A51761AFE51EF9211C877 /* FormPunchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B7A54C26B2939F7ECFE71B2 /* FormPunchViewController.xib */; };
 		4B7A5215E77F0868716C2E5A /* MandatoryWorkloadGatewayHoursTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A56987B6CBE1D50D38311 /* MandatoryWorkloadGatewayHoursTests.swift */; };
 		4B7A526AE5ECE9E47D943529 /* DateRangeGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A51868F7898D50F2E69C2 /* DateRangeGateway.swift */; };
-		4B7A52E182F224293B171FD1 /* WorkHoursType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A5EA8EBD5D78C4445DF30 /* WorkHoursType.swift */; };
+		4B7A52E182F224293B171FD1 /* WorkHourType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A5EA8EBD5D78C4445DF30 /* WorkHourType.swift */; };
 		4B7A532ACFCC5B48106CE51E /* ListPunchsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B7A5CAA1E540DD091D0E91E /* ListPunchsTableViewCell.xib */; };
 		4B7A53E55C0AEAFF67B8F7D6 /* TotalWorkedHoursEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A5DA7422D3856D217B284 /* TotalWorkedHoursEntity.swift */; };
 		4B7A555411801172B356AE62 /* PunchTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A547C14EAB607619EF59D /* PunchTypeTests.swift */; };
+		4B7A5628E5D9AD612F56584A /* BalanceWorkedHoursEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A595A43C197E738516F33 /* BalanceWorkedHoursEntity.swift */; };
 		4B7A5985BF6003BB6C46E01A /* TotalsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B7A581DCA5399934C5D8F40 /* TotalsViewController.xib */; };
 		4B7A59FD587D2F8827D2AA64 /* SelectTypeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B7A56FDBC391BDD47B73BEA /* SelectTypeTableViewCell.xib */; };
 		4B7A5B0AA5D4A3B27F0B9142 /* ListPunchsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B7A521BCF886584E14BC9C7 /* ListPunchsViewController.xib */; };
 		4B7A5C4215A8B33338C064FC /* DateRangeGatewayFake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A5DCB986171E38BB5734B /* DateRangeGatewayFake.swift */; };
+		4B7A5CD98513CF18EB579B08 /* BalanceWorkedHoursEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A595A43C197E738516F33 /* BalanceWorkedHoursEntity.swift */; };
 		4B7A5E906F1DC11565C8E938 /* SelectMomentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B7A5C3920C3D4812223D3F0 /* SelectMomentTableViewCell.xib */; };
 		4B7A5EAF2C7CD85E9E54EC7B /* DateRangeGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A51868F7898D50F2E69C2 /* DateRangeGateway.swift */; };
 		94EE2B59230B614019D5F61F /* Pods_CoreTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE5D5A835C3635E533552D99 /* Pods_CoreTests.framework */; };
@@ -118,6 +122,7 @@
 		3418772B1CC6E4B3002A4B59 /* TotalsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TotalsViewController.swift; sourceTree = "<group>"; };
 		341877301CC6E552002A4B59 /* ReportsNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportsNavigationController.swift; sourceTree = "<group>"; };
 		34336DAA1CC30EFB00ED551C /* PunchGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PunchGateway.swift; sourceTree = "<group>"; };
+		3433E3D81CD93E470021AE0C /* BalanceWorkedHoursEntityTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BalanceWorkedHoursEntityTests.swift; sourceTree = "<group>"; };
 		3435FF721CC2E7640076AF42 /* MarcoPonto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarcoPonto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3435FF751CC2E7640076AF42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3435FF7D1CC2E7640076AF42 /* MarcoPonto.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MarcoPonto.xcdatamodel; sourceTree = "<group>"; };
@@ -141,6 +146,7 @@
 		34A70E811CD6230F009B43EA /* Double+ToSeconds.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Double+ToSeconds.swift"; sourceTree = "<group>"; };
 		34BD8F951CC5BA3500607BA6 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		34BD8F981CC6628E00607BA6 /* MaterialIcons+UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MaterialIcons+UIImage.swift"; sourceTree = "<group>"; };
+		34BE9B8D1CD80EEC000351E4 /* WorkHourTypeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkHourTypeTests.swift; sourceTree = "<group>"; };
 		34CA48D81CCA8C7E0050E759 /* WorkHour.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkHour.swift; sourceTree = "<group>"; };
 		34E9B3EC1CC360060017A083 /* PunchGatewayCoreData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PunchGatewayCoreData.swift; sourceTree = "<group>"; };
 		34E9B3EF1CC3B72E0017A083 /* ListPunchUsecaseFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPunchUsecaseFactory.swift; sourceTree = "<group>"; };
@@ -160,11 +166,12 @@
 		4B7A56FDBC391BDD47B73BEA /* SelectTypeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectTypeTableViewCell.xib; sourceTree = "<group>"; };
 		4B7A57EBD8B976D75F8B1432 /* CalculateWorkedHoursEntityTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculateWorkedHoursEntityTests.swift; sourceTree = "<group>"; };
 		4B7A581DCA5399934C5D8F40 /* TotalsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TotalsViewController.xib; sourceTree = "<group>"; };
+		4B7A595A43C197E738516F33 /* BalanceWorkedHoursEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BalanceWorkedHoursEntity.swift; sourceTree = "<group>"; };
 		4B7A5C3920C3D4812223D3F0 /* SelectMomentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectMomentTableViewCell.xib; sourceTree = "<group>"; };
 		4B7A5CAA1E540DD091D0E91E /* ListPunchsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListPunchsTableViewCell.xib; sourceTree = "<group>"; };
 		4B7A5DA7422D3856D217B284 /* TotalWorkedHoursEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TotalWorkedHoursEntity.swift; sourceTree = "<group>"; };
 		4B7A5DCB986171E38BB5734B /* DateRangeGatewayFake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateRangeGatewayFake.swift; sourceTree = "<group>"; };
-		4B7A5EA8EBD5D78C4445DF30 /* WorkHoursType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkHoursType.swift; sourceTree = "<group>"; };
+		4B7A5EA8EBD5D78C4445DF30 /* WorkHourType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkHourType.swift; sourceTree = "<group>"; };
 		AE5D5A835C3635E533552D99 /* Pods_CoreTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoreTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B404067F6950D261E4859CBF /* Pods_MarcoPonto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MarcoPonto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7880345D4048C052B5280C1 /* Pods-MarcoPonto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarcoPonto.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MarcoPonto/Pods-MarcoPonto.debug.xcconfig"; sourceTree = "<group>"; };
@@ -224,7 +231,7 @@
 			isa = PBXGroup;
 			children = (
 				340BD7221CC3251B00AB860B /* PunchType.swift */,
-				4B7A5EA8EBD5D78C4445DF30 /* WorkHoursType.swift */,
+				4B7A5EA8EBD5D78C4445DF30 /* WorkHourType.swift */,
 			);
 			name = Enums;
 			path = Core/Enums;
@@ -357,11 +364,11 @@
 			isa = PBXGroup;
 			children = (
 				4B7A572C94203D3410D6A1A0 /* Entities */,
+				4B7A52D3CADA9E4C874E9039 /* Enums */,
 				340BD71D1CC31FD900AB860B /* Fakes */,
+				4B7A587AA93174A4C11DDC27 /* Gateways */,
 				349D9B391CC30AA20088DE5E /* Usecases */,
 				349D9B1F1CC2E9710088DE5E /* Info.plist */,
-				4B7A52D3CADA9E4C874E9039 /* Enums */,
-				4B7A587AA93174A4C11DDC27 /* Gateways */,
 			);
 			path = CoreTests;
 			sourceTree = "<group>";
@@ -486,6 +493,7 @@
 			isa = PBXGroup;
 			children = (
 				4B7A547C14EAB607619EF59D /* PunchTypeTests.swift */,
+				34BE9B8D1CD80EEC000351E4 /* WorkHourTypeTests.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -504,6 +512,7 @@
 			isa = PBXGroup;
 			children = (
 				4B7A57EBD8B976D75F8B1432 /* CalculateWorkedHoursEntityTests.swift */,
+				3433E3D81CD93E470021AE0C /* BalanceWorkedHoursEntityTests.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -520,6 +529,7 @@
 			isa = PBXGroup;
 			children = (
 				4B7A5DA7422D3856D217B284 /* TotalWorkedHoursEntity.swift */,
+				4B7A595A43C197E738516F33 /* BalanceWorkedHoursEntity.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -946,7 +956,8 @@
 				3405D98D1CCA74F600616382 /* TotalsDataSource.swift in Sources */,
 				4B7A508D3CB01762270B27B3 /* TotalWorkedHoursEntity.swift in Sources */,
 				4B7A526AE5ECE9E47D943529 /* DateRangeGateway.swift in Sources */,
-				4B7A517165A35D5336A75C88 /* WorkHoursType.swift in Sources */,
+				4B7A517165A35D5336A75C88 /* WorkHourType.swift in Sources */,
+				4B7A5CD98513CF18EB579B08 /* BalanceWorkedHoursEntity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -966,6 +977,7 @@
 				3472AA101CC6FB2200CEF1D1 /* WorkedHoursUsecase.swift in Sources */,
 				340404A91CC8214900A4E88E /* PunchGatewayFake.swift in Sources */,
 				349D9B401CC30B6F0088DE5E /* Punch.swift in Sources */,
+				34BE9B8E1CD80EEC000351E4 /* WorkHourTypeTests.swift in Sources */,
 				349D9B3C1CC30AB40088DE5E /* SavePunchUsecaseTests.swift in Sources */,
 				3472AA131CC6FD8800CEF1D1 /* WorkedHoursPresenter.swift in Sources */,
 				34E9B4011CC3DAEB0017A083 /* SavePunchPresenter.swift in Sources */,
@@ -978,10 +990,12 @@
 				343A0C5F1CD3854800D547EA /* WorkedHoursUsecaseTests.swift in Sources */,
 				4B7A555411801172B356AE62 /* PunchTypeTests.swift in Sources */,
 				34A70E831CD6230F009B43EA /* Double+ToSeconds.swift in Sources */,
+				3433E3D91CD93E470021AE0C /* BalanceWorkedHoursEntityTests.swift in Sources */,
 				4B7A5EAF2C7CD85E9E54EC7B /* DateRangeGateway.swift in Sources */,
 				4B7A5C4215A8B33338C064FC /* DateRangeGatewayFake.swift in Sources */,
 				4B7A5215E77F0868716C2E5A /* MandatoryWorkloadGatewayHoursTests.swift in Sources */,
-				4B7A52E182F224293B171FD1 /* WorkHoursType.swift in Sources */,
+				4B7A52E182F224293B171FD1 /* WorkHourType.swift in Sources */,
+				4B7A5628E5D9AD612F56584A /* BalanceWorkedHoursEntity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
