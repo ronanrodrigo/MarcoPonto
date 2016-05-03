@@ -73,11 +73,11 @@ class PunchGatewayCoreData: PunchGateway {
         }
     }
 
-    func list(by type: PunchType, between firstDate: NSDate, and lastDate: NSDate) -> [Punch] {
+    func list(type: PunchType, dateRange: (firstDate: NSDate, lastDate: NSDate)) -> [Punch] {
         let fetchRequest = NSFetchRequest(entityName: entityName)
         fetchRequest.predicate =  NSPredicate(
             format: "punchType = %@ AND punchMoment >= %@ AND punchMoment <= %@",
-            type.rawValue, firstDate, lastDate)
+            type.rawValue, dateRange.firstDate, dateRange.lastDate)
         do {
             let results = try context.executeFetchRequest(fetchRequest)
             return punchList(results)

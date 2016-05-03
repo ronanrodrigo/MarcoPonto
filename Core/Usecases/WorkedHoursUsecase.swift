@@ -16,8 +16,8 @@ class WorkedHoursUsecase {
     }
 
     private func calculateHours(type: WorkHourType) -> WorkHour {
-        let inputPunchs = gateway.list(by: .Input, between: type.dateRange.firstDate, and: type.dateRange.lastDate)
-        let outputPunchs = gateway.list(by: .Output, between: type.dateRange.firstDate, and: type.dateRange.lastDate)
+        let inputPunchs = gateway.list(.Input, dateRange: type.dateRange)
+        let outputPunchs = gateway.list(.Output, dateRange: type.dateRange)
         let total = TotalWorkedHoursEntity(inputPunchs: inputPunchs, outputPunchs: outputPunchs).calculate()
         let mandatoryHours = 0.0
         let balance = BalanceWorkedHoursEntity(totalHours: total, mandatoryHours: mandatoryHours).calculate()

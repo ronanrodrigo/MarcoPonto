@@ -16,9 +16,9 @@ class PunchGatewayFake: PunchGateway {
         return punchs
     }
 
-    func list(by type: PunchType, between firstDate: NSDate, and lastDate: NSDate) -> [Punch] {
+    func list(type: PunchType, dateRange: (firstDate: NSDate, lastDate: NSDate)) -> [Punch] {
         return punchs.filter { (punch) -> Bool in
-            punch.type == type && punch.moment >= firstDate && punch.moment <= lastDate
+            punch.type == type && punch.moment >= dateRange.firstDate && punch.moment <= dateRange.lastDate
         }
     }
 }

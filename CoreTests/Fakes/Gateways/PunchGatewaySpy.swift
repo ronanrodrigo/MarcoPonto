@@ -22,7 +22,7 @@ class PunchGatewaySpy: PunchGateway {
         return []
     }
 
-    func list(by type: PunchType, between firstDate: NSDate, and lastDate: NSDate) -> [Punch] {
+    func list(type: PunchType, dateRange: (firstDate: NSDate, lastDate: NSDate)) -> [Punch] {
         listSpied = true
         listSpieds.append(listSpied)
         return []
