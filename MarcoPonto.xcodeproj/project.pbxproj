@@ -69,24 +69,24 @@
 		34E9B4051CC42C360017A083 /* ListPunchsDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E9B4041CC42C360017A083 /* ListPunchsDelegate.swift */; };
 		34F8E3601CD61CD500B5F32A /* MandatoryWorkloadGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F8E35F1CD61CD500B5F32A /* MandatoryWorkloadGateway.swift */; };
 		34F8E3611CD61CD500B5F32A /* MandatoryWorkloadGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F8E35F1CD61CD500B5F32A /* MandatoryWorkloadGateway.swift */; };
+		4B7A5056004ABD5670EC6818 /* NSDate+DateRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A5E04B350C648146E3249 /* NSDate+DateRange.swift */; };
 		4B7A508D3CB01762270B27B3 /* TotalWorkedHoursEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A5DA7422D3856D217B284 /* TotalWorkedHoursEntity.swift */; };
 		4B7A50CF32F8270FB109CE5A /* CalculateWorkedHoursEntityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A57EBD8B976D75F8B1432 /* CalculateWorkedHoursEntityTests.swift */; };
 		4B7A517165A35D5336A75C88 /* WorkHourType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A5EA8EBD5D78C4445DF30 /* WorkHourType.swift */; };
 		4B7A51761AFE51EF9211C877 /* FormPunchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B7A54C26B2939F7ECFE71B2 /* FormPunchViewController.xib */; };
 		4B7A5215E77F0868716C2E5A /* MandatoryWorkloadGatewayHoursTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A56987B6CBE1D50D38311 /* MandatoryWorkloadGatewayHoursTests.swift */; };
-		4B7A526AE5ECE9E47D943529 /* DateRangeGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A51868F7898D50F2E69C2 /* DateRangeGateway.swift */; };
 		4B7A52E182F224293B171FD1 /* WorkHourType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A5EA8EBD5D78C4445DF30 /* WorkHourType.swift */; };
 		4B7A532ACFCC5B48106CE51E /* ListPunchsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B7A5CAA1E540DD091D0E91E /* ListPunchsTableViewCell.xib */; };
 		4B7A53E55C0AEAFF67B8F7D6 /* TotalWorkedHoursEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A5DA7422D3856D217B284 /* TotalWorkedHoursEntity.swift */; };
 		4B7A555411801172B356AE62 /* PunchTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A547C14EAB607619EF59D /* PunchTypeTests.swift */; };
 		4B7A5628E5D9AD612F56584A /* BalanceWorkedHoursEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A595A43C197E738516F33 /* BalanceWorkedHoursEntity.swift */; };
+		4B7A56A57256755F361176AD /* NSDate+DateRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A5E04B350C648146E3249 /* NSDate+DateRange.swift */; };
 		4B7A5985BF6003BB6C46E01A /* TotalsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B7A581DCA5399934C5D8F40 /* TotalsViewController.xib */; };
 		4B7A59FD587D2F8827D2AA64 /* SelectTypeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B7A56FDBC391BDD47B73BEA /* SelectTypeTableViewCell.xib */; };
 		4B7A5B0AA5D4A3B27F0B9142 /* ListPunchsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B7A521BCF886584E14BC9C7 /* ListPunchsViewController.xib */; };
 		4B7A5C4215A8B33338C064FC /* DateRangeGatewayFake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A5DCB986171E38BB5734B /* DateRangeGatewayFake.swift */; };
 		4B7A5CD98513CF18EB579B08 /* BalanceWorkedHoursEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A595A43C197E738516F33 /* BalanceWorkedHoursEntity.swift */; };
 		4B7A5E906F1DC11565C8E938 /* SelectMomentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B7A5C3920C3D4812223D3F0 /* SelectMomentTableViewCell.xib */; };
-		4B7A5EAF2C7CD85E9E54EC7B /* DateRangeGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A51868F7898D50F2E69C2 /* DateRangeGateway.swift */; };
 		94EE2B59230B614019D5F61F /* Pods_CoreTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE5D5A835C3635E533552D99 /* Pods_CoreTests.framework */; };
 		F29B217ACAA116014CCD0CBE /* Pods_MarcoPonto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B404067F6950D261E4859CBF /* Pods_MarcoPonto.framework */; };
 /* End PBXBuildFile section */
@@ -158,7 +158,6 @@
 		34E9B4021CC419090017A083 /* PunchTypeLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PunchTypeLabel.swift; sourceTree = "<group>"; };
 		34E9B4041CC42C360017A083 /* ListPunchsDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPunchsDelegate.swift; sourceTree = "<group>"; };
 		34F8E35F1CD61CD500B5F32A /* MandatoryWorkloadGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MandatoryWorkloadGateway.swift; sourceTree = "<group>"; };
-		4B7A51868F7898D50F2E69C2 /* DateRangeGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateRangeGateway.swift; sourceTree = "<group>"; };
 		4B7A521BCF886584E14BC9C7 /* ListPunchsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListPunchsViewController.xib; sourceTree = "<group>"; };
 		4B7A547C14EAB607619EF59D /* PunchTypeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PunchTypeTests.swift; sourceTree = "<group>"; };
 		4B7A54C26B2939F7ECFE71B2 /* FormPunchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FormPunchViewController.xib; sourceTree = "<group>"; };
@@ -171,6 +170,7 @@
 		4B7A5CAA1E540DD091D0E91E /* ListPunchsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListPunchsTableViewCell.xib; sourceTree = "<group>"; };
 		4B7A5DA7422D3856D217B284 /* TotalWorkedHoursEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TotalWorkedHoursEntity.swift; sourceTree = "<group>"; };
 		4B7A5DCB986171E38BB5734B /* DateRangeGatewayFake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateRangeGatewayFake.swift; sourceTree = "<group>"; };
+		4B7A5E04B350C648146E3249 /* NSDate+DateRange.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+DateRange.swift"; sourceTree = "<group>"; };
 		4B7A5EA8EBD5D78C4445DF30 /* WorkHourType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkHourType.swift; sourceTree = "<group>"; };
 		AE5D5A835C3635E533552D99 /* Pods_CoreTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoreTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B404067F6950D261E4859CBF /* Pods_MarcoPonto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MarcoPonto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -413,7 +413,6 @@
 			isa = PBXGroup;
 			children = (
 				34336DAA1CC30EFB00ED551C /* PunchGateway.swift */,
-				4B7A51868F7898D50F2E69C2 /* DateRangeGateway.swift */,
 				34F8E35F1CD61CD500B5F32A /* MandatoryWorkloadGateway.swift */,
 			);
 			name = Gateways;
@@ -485,6 +484,7 @@
 			children = (
 				345B117A1CD2BD2A00269580 /* NSTimeInterval+ToTimeString.swift */,
 				34A70E811CD6230F009B43EA /* Double+ToSeconds.swift */,
+				4B7A5E04B350C648146E3249 /* NSDate+DateRange.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -955,9 +955,9 @@
 				3472AA0D1CC6FA7200CEF1D1 /* WorkedHoursUsecase.swift in Sources */,
 				3405D98D1CCA74F600616382 /* TotalsDataSource.swift in Sources */,
 				4B7A508D3CB01762270B27B3 /* TotalWorkedHoursEntity.swift in Sources */,
-				4B7A526AE5ECE9E47D943529 /* DateRangeGateway.swift in Sources */,
 				4B7A517165A35D5336A75C88 /* WorkHourType.swift in Sources */,
 				4B7A5CD98513CF18EB579B08 /* BalanceWorkedHoursEntity.swift in Sources */,
+				4B7A5056004ABD5670EC6818 /* NSDate+DateRange.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -991,11 +991,11 @@
 				4B7A555411801172B356AE62 /* PunchTypeTests.swift in Sources */,
 				34A70E831CD6230F009B43EA /* Double+ToSeconds.swift in Sources */,
 				3433E3D91CD93E470021AE0C /* BalanceWorkedHoursEntityTests.swift in Sources */,
-				4B7A5EAF2C7CD85E9E54EC7B /* DateRangeGateway.swift in Sources */,
 				4B7A5C4215A8B33338C064FC /* DateRangeGatewayFake.swift in Sources */,
 				4B7A5215E77F0868716C2E5A /* MandatoryWorkloadGatewayHoursTests.swift in Sources */,
 				4B7A52E182F224293B171FD1 /* WorkHourType.swift in Sources */,
 				4B7A5628E5D9AD612F56584A /* BalanceWorkedHoursEntity.swift in Sources */,
+				4B7A56A57256755F361176AD /* NSDate+DateRange.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
