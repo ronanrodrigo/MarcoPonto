@@ -18,35 +18,37 @@ class WorkedHoursUsecase {
             between: pastWeek.firstDate,
             and: pastWeek.lastDate,
             type: .PastWeek)
-        presenter.showTotal(pastWeekWorkHours)
+        var workHours: [WorkHour] = [pastWeekWorkHours]
 
         let currentWeek = dateRangeGateway.currentWeek()
         let currentWeekWorkHours = calculateHours(
             between: currentWeek.firstDate,
             and: currentWeek.lastDate,
             type: .CurrentWeek)
-        presenter.showTotal(currentWeekWorkHours)
+        workHours.append(currentWeekWorkHours)
 
         let pastMonth = dateRangeGateway.pastMonth()
         let pastMonthWorkHours = calculateHours(
             between: pastMonth.firstDate,
             and: pastMonth.lastDate,
             type: .PastMonth)
-        presenter.showTotal(pastMonthWorkHours)
+        workHours.append(pastMonthWorkHours)
 
         let currentMonth = dateRangeGateway.currentMonth()
         let currentMonthWorkHours = calculateHours(
             between: currentMonth.firstDate,
             and: currentMonth.lastDate,
             type: .CurrentMonth)
-        presenter.showTotal(currentMonthWorkHours)
+        workHours.append(currentMonthWorkHours)
 
         let fromBeginning = dateRangeGateway.fromBeginning()
         let fromBeginningWorkHours = calculateHours(
             between: fromBeginning.firstDate,
             and: fromBeginning.lastDate,
             type: .All)
-        presenter.showTotal(fromBeginningWorkHours)
+        workHours.append(fromBeginningWorkHours)
+
+        presenter.showTotal(workHours)
     }
 
     private func calculateHours(between firstDate: NSDate, and lastDate: NSDate, type: WorkHourType) -> WorkHourStruct {

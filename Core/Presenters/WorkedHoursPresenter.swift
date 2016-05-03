@@ -1,5 +1,5 @@
 import Foundation
 
 protocol WorkedHoursPresenter {
-    func showTotal(workHourGroup: WorkHour)
+    func showTotal(workHours: [WorkHour])
 }

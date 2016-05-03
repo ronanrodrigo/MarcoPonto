@@ -34,7 +34,7 @@ class TotalsDataSource: NSObject, UITableViewDataSource, WorkedHoursPresenter {
         return cell
     }
 
-    func showTotal(workHour: WorkHour) {
-        workHours.append(workHour)
+    func showTotal(workHours: [WorkHour]) {
+        self.workHours = workHours
     }
 }

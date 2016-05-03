@@ -3,7 +3,7 @@ import Foundation
 class WorkedHoursPresenterFake: WorkedHoursPresenter {
     var workHours: [WorkHour] = []
 
-    func showTotal(workHour: WorkHour) {
-        workHours.append(workHour)
+    func showTotal(workHours: [WorkHour]) {
+        self.workHours = workHours
     }
 }
