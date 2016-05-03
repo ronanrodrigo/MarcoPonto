@@ -1,14 +1,7 @@
 import Foundation
 import SwiftDate
 
-protocol MandatoryWorkloadGateway {
-    var dailyHours: NSTimeInterval { get }
-    func weeklyHours() -> NSTimeInterval
-    func monthlyHours(referenceDate: NSDate) -> NSTimeInterval
-    func fromBeginningHours(beginningDate: NSDate) -> NSTimeInterval
-}
-
-class MandatoryWorkloadGatewayHours: MandatoryWorkloadGateway {
+class MandatoryWorkloadEntity {
     let weekWorkDays = 5.0
     var now: NSDate
     var dailyHours: NSTimeInterval = 8.0.hoursToSeconds()

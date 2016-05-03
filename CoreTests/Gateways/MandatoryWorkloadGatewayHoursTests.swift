@@ -2,13 +2,13 @@ import Foundation
 import SwiftDate
 import XCTest
 
-class MandatoryWorkloadGatewayHoursTests: XCTestCase {
-    var gateway: MandatoryWorkloadGateway!
+class MandatoryWorkloadEntityHoursTests: XCTestCase {
+    var gateway: MandatoryWorkloadEntity!
     var now: NSDate!
 
     override func setUp() {
         now = NSDate(year: 2016, month: 6, day: 1, hour: 0, minute: 0)
-        gateway = MandatoryWorkloadGatewayHours(now: now)
+        gateway = MandatoryWorkloadEntity(now: now)
     }
 
     func testShouldReturnTotalHoursInAnWeek() {
