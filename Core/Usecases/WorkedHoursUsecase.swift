@@ -11,27 +11,16 @@ class WorkedHoursUsecase {
     }
 
     func total() {
-        let pastWeekWorkHours = calculateHours(NSDate.pastWeek, type: .PastWeek)
-        var workHours: [WorkHour] = [pastWeekWorkHours]
-
-        let currentWeekWorkHours = calculateHours(NSDate.currentWeek, type: .CurrentWeek)
-        workHours.append(currentWeekWorkHours)
-
-        let pastMonthWorkHours = calculateHours(NSDate.pastMonth, type: .PastMonth)
-        workHours.append(pastMonthWorkHours)
-
-        let currentMonthWorkHours = calculateHours(NSDate.currentMonth, type: .CurrentMonth)
-        workHours.append(currentMonthWorkHours)
-
-        let fromBeginningWorkHours = calculateHours(NSDate.fromBeginning, type: .All)
-        workHours.append(fromBeginningWorkHours)
-
+        var workHours: [WorkHour] = []
+        for type in WorkHourType.types {
+            workHours.append(calculateHours(type))
+        }
         presenter.showTotal(workHours)
     }
 
-    private func calculateHours(dates: (firstDate: NSDate, lastDate: NSDate), type: WorkHourType) -> WorkHourStruct {
-        let inputPunchs = gateway.list(by: .Input, between: dates.firstDate, and: dates.lastDate)
-        let outputPunchs = gateway.list(by: .Output, between: dates.firstDate, and: dates.lastDate)
+    private func calculateHours(type: WorkHourType) -> WorkHourStruct {
+        let inputPunchs = gateway.list(by: .Input, between: type.dateRange.firstDate, and: type.dateRange.lastDate)
+        let outputPunchs = gateway.list(by: .Output, between: type.dateRange.firstDate, and: type.dateRange.lastDate)
         let total = TotalWorkedHoursEntity(inputPunchs: inputPunchs, outputPunchs: outputPunchs).calculate()
         let mandatoryHours = 0.0
         let balance = BalanceWorkedHoursEntity(totalHours: total, mandatoryHours: mandatoryHours).calculate()
