@@ -1,13 +1,8 @@
 import Foundation
 
-class WorkedHoursUsecase {
-    private var gateway: PunchGateway
-    private var presenter: WorkedHoursPresenter
-
-    init(gateway: PunchGateway, presenter: WorkedHoursPresenter) {
-        self.gateway = gateway
-        self.presenter = presenter
-    }
+struct WorkedHoursUsecase {
+    var gateway: PunchGateway
+    var presenter: WorkedHoursPresenter
 
     func workedHours() {
         let workHours = WorkHourType.types.map({ calculateHours($0) })
