@@ -1,4 +1,5 @@
 import Foundation
+import MarcoPontoCore
 
 class SavePunchUsecaseFactory {
     static func make(presenter presenter: SavePunchPresenter) -> SavePunchUsecase {

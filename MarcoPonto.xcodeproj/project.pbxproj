@@ -7,91 +7,55 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		340404A91CC8214900A4E88E /* PunchGatewayFake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340404A81CC8214900A4E88E /* PunchGatewayFake.swift */; };
-		340404AB1CC8217900A4E88E /* WorkedHoursPresenterFake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340404AA1CC8217900A4E88E /* WorkedHoursPresenterFake.swift */; };
 		3405D9881CCA51E700616382 /* CurrentWeekHoursUsecaseFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3405D9871CCA51E700616382 /* CurrentWeekHoursUsecaseFactory.swift */; };
 		3405D98D1CCA74F600616382 /* TotalsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3405D98C1CCA74F600616382 /* TotalsDataSource.swift */; };
-		340BD7201CC3205300AB860B /* PunchGatewaySpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340BD71F1CC3205300AB860B /* PunchGatewaySpy.swift */; };
-		340BD7231CC3251B00AB860B /* PunchType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340BD7221CC3251B00AB860B /* PunchType.swift */; };
-		340BD7241CC3251B00AB860B /* PunchType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340BD7221CC3251B00AB860B /* PunchType.swift */; };
-		340BD7261CC33C1D00AB860B /* ListPunchsUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340BD7251CC33C1D00AB860B /* ListPunchsUsecase.swift */; };
-		340BD7281CC33CA800AB860B /* ListPunchsUsecaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340BD7271CC33CA800AB860B /* ListPunchsUsecaseTests.swift */; };
-		340BD7291CC33CC000AB860B /* ListPunchsUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340BD7251CC33C1D00AB860B /* ListPunchsUsecase.swift */; };
 		340BD72B1CC33D8100AB860B /* PunchsNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340BD72A1CC33D8100AB860B /* PunchsNavigationController.swift */; };
 		340BD7381CC3409600AB860B /* ListPunchsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340BD7371CC3409600AB860B /* ListPunchsViewController.swift */; };
 		340BD7441CC3462B00AB860B /* ListPunchsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340BD7431CC3462B00AB860B /* ListPunchsDataSource.swift */; };
 		340BD7471CC346D600AB860B /* ListPunchsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340BD7451CC346D600AB860B /* ListPunchsTableViewCell.swift */; };
-		340BD74B1CC353CD00AB860B /* ListPunchsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340BD74A1CC353CD00AB860B /* ListPunchsPresenter.swift */; };
-		340BD74C1CC353CD00AB860B /* ListPunchsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340BD74A1CC353CD00AB860B /* ListPunchsPresenter.swift */; };
-		340BD74F1CC353F500AB860B /* ListPunchsPresenterSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340BD74E1CC353F500AB860B /* ListPunchsPresenterSpy.swift */; };
 		3418772D1CC6E4B3002A4B59 /* TotalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3418772B1CC6E4B3002A4B59 /* TotalsViewController.swift */; };
 		341877311CC6E552002A4B59 /* ReportsNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341877301CC6E552002A4B59 /* ReportsNavigationController.swift */; };
-		34336DAB1CC30EFB00ED551C /* PunchGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34336DAA1CC30EFB00ED551C /* PunchGateway.swift */; };
-		34336DAC1CC30EFB00ED551C /* PunchGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34336DAA1CC30EFB00ED551C /* PunchGateway.swift */; };
-		3433E3D91CD93E470021AE0C /* BalanceWorkedHoursEntityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3433E3D81CD93E470021AE0C /* BalanceWorkedHoursEntityTests.swift */; };
 		3435FF761CC2E7640076AF42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3435FF751CC2E7640076AF42 /* AppDelegate.swift */; };
 		3435FF7E1CC2E7640076AF42 /* MarcoPonto.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3435FF7C1CC2E7640076AF42 /* MarcoPonto.xcdatamodeld */; };
 		3435FF801CC2E7640076AF42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3435FF7F1CC2E7640076AF42 /* Assets.xcassets */; };
 		3435FF831CC2E7640076AF42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3435FF811CC2E7640076AF42 /* LaunchScreen.storyboard */; };
-		343A0C5F1CD3854800D547EA /* WorkedHoursUsecaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343A0C5E1CD3854800D547EA /* WorkedHoursUsecaseTests.swift */; };
-		345B117B1CD2BD2A00269580 /* NSTimeInterval+ToTimeString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345B117A1CD2BD2A00269580 /* NSTimeInterval+ToTimeString.swift */; };
-		345B117C1CD2BD2A00269580 /* NSTimeInterval+ToTimeString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345B117A1CD2BD2A00269580 /* NSTimeInterval+ToTimeString.swift */; };
 		3472A9EE1CC6F3E100CEF1D1 /* PunchModel+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3472A9EC1CC6F3E100CEF1D1 /* PunchModel+CoreDataProperties.swift */; };
 		3472A9EF1CC6F3E100CEF1D1 /* PunchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3472A9ED1CC6F3E100CEF1D1 /* PunchModel.swift */; };
-		3472AA0D1CC6FA7200CEF1D1 /* WorkedHoursUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3472AA0C1CC6FA7200CEF1D1 /* WorkedHoursUsecase.swift */; };
-		3472AA101CC6FB2200CEF1D1 /* WorkedHoursUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3472AA0C1CC6FA7200CEF1D1 /* WorkedHoursUsecase.swift */; };
-		3472AA121CC6FD8800CEF1D1 /* WorkedHoursPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3472AA111CC6FD8800CEF1D1 /* WorkedHoursPresenter.swift */; };
-		3472AA131CC6FD8800CEF1D1 /* WorkedHoursPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3472AA111CC6FD8800CEF1D1 /* WorkedHoursPresenter.swift */; };
 		349D9B2B1CC2ECD20088DE5E /* FormPunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349D9B291CC2ECD20088DE5E /* FormPunchViewController.swift */; };
 		349D9B2F1CC2F68B0088DE5E /* SelectMomentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349D9B2D1CC2F68B0088DE5E /* SelectMomentTableViewCell.swift */; };
 		349D9B321CC2F7960088DE5E /* FormPunchDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349D9B311CC2F7960088DE5E /* FormPunchDataSource.swift */; };
-		349D9B371CC30A750088DE5E /* SavePunchUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349D9B361CC30A750088DE5E /* SavePunchUsecase.swift */; };
-		349D9B381CC30A750088DE5E /* SavePunchUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349D9B361CC30A750088DE5E /* SavePunchUsecase.swift */; };
-		349D9B3C1CC30AB40088DE5E /* SavePunchUsecaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349D9B3A1CC30AB40088DE5E /* SavePunchUsecaseTests.swift */; };
-		349D9B3F1CC30B6F0088DE5E /* Punch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349D9B3E1CC30B6F0088DE5E /* Punch.swift */; };
-		349D9B401CC30B6F0088DE5E /* Punch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349D9B3E1CC30B6F0088DE5E /* Punch.swift */; };
-		34A70E821CD6230F009B43EA /* Double+ToSeconds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A70E811CD6230F009B43EA /* Double+ToSeconds.swift */; };
-		34A70E831CD6230F009B43EA /* Double+ToSeconds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A70E811CD6230F009B43EA /* Double+ToSeconds.swift */; };
 		34BD8F961CC5BA3500607BA6 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BD8F951CC5BA3500607BA6 /* TabBarController.swift */; };
 		34BD8F991CC6628E00607BA6 /* MaterialIcons+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BD8F981CC6628E00607BA6 /* MaterialIcons+UIImage.swift */; };
-		34BE9B8E1CD80EEC000351E4 /* WorkHourTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BE9B8D1CD80EEC000351E4 /* WorkHourTypeTests.swift */; };
-		34CA48D91CCA8C7E0050E759 /* WorkHour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CA48D81CCA8C7E0050E759 /* WorkHour.swift */; };
-		34CA48DA1CCA8C800050E759 /* WorkHour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CA48D81CCA8C7E0050E759 /* WorkHour.swift */; };
+		34D19FEB1CDA6C780046B7CF /* MarcoPontoCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34D19FD51CDA66F10046B7CF /* MarcoPontoCore.framework */; };
+		34D19FF31CDA6CBA0046B7CF /* PunchGatewayCoreDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D19FF21CDA6CBA0046B7CF /* PunchGatewayCoreDataTests.swift */; };
+		34D19FFF1CDA6D440046B7CF /* MarcoPonto.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3435FF7C1CC2E7640076AF42 /* MarcoPonto.xcdatamodeld */; };
+		34D1A0001CDA6D460046B7CF /* PunchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3472A9ED1CC6F3E100CEF1D1 /* PunchModel.swift */; };
+		34D1A0011CDA6D480046B7CF /* PunchModel+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3472A9EC1CC6F3E100CEF1D1 /* PunchModel+CoreDataProperties.swift */; };
+		34D1A0111CDA6DDB0046B7CF /* FormPunchDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349D9B311CC2F7960088DE5E /* FormPunchDataSource.swift */; };
+		34D1A0131CDA6DDB0046B7CF /* SelectMomentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349D9B2D1CC2F68B0088DE5E /* SelectMomentTableViewCell.swift */; };
+		34D1A0141CDA6DDB0046B7CF /* SelectTypeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E9B3F71CC3C66B0017A083 /* SelectTypeTableViewCell.swift */; };
+		34D1A0171CDA6DDB0046B7CF /* ListPunchsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340BD7451CC346D600AB860B /* ListPunchsTableViewCell.swift */; };
+		34D1A0191CDA6DDB0046B7CF /* PunchTypeLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E9B4021CC419090017A083 /* PunchTypeLabel.swift */; };
+		34D1A01F1CDA6E040046B7CF /* MaterialIcons+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BD8F981CC6628E00607BA6 /* MaterialIcons+UIImage.swift */; };
 		34E9B3ED1CC360060017A083 /* PunchGatewayCoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E9B3EC1CC360060017A083 /* PunchGatewayCoreData.swift */; };
 		34E9B3F01CC3B72E0017A083 /* ListPunchUsecaseFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E9B3EF1CC3B72E0017A083 /* ListPunchUsecaseFactory.swift */; };
 		34E9B3F81CC3C66B0017A083 /* SelectTypeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E9B3F71CC3C66B0017A083 /* SelectTypeTableViewCell.swift */; };
 		34E9B3FA1CC3D9C80017A083 /* SavePunchUsecaseFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E9B3F91CC3D9C80017A083 /* SavePunchUsecaseFactory.swift */; };
 		34E9B3FC1CC3DA1A0017A083 /* PunchGatewayCoreDataFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E9B3FB1CC3DA1A0017A083 /* PunchGatewayCoreDataFactory.swift */; };
-		34E9B3FE1CC3DA880017A083 /* SavePunchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E9B3FD1CC3DA880017A083 /* SavePunchPresenter.swift */; };
-		34E9B4001CC3DAD10017A083 /* SavePunchPresenterSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E9B3FF1CC3DAD10017A083 /* SavePunchPresenterSpy.swift */; };
-		34E9B4011CC3DAEB0017A083 /* SavePunchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E9B3FD1CC3DA880017A083 /* SavePunchPresenter.swift */; };
 		34E9B4031CC419090017A083 /* PunchTypeLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E9B4021CC419090017A083 /* PunchTypeLabel.swift */; };
 		34E9B4051CC42C360017A083 /* ListPunchsDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E9B4041CC42C360017A083 /* ListPunchsDelegate.swift */; };
-		4B7A5056004ABD5670EC6818 /* NSDate+DateRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A5E04B350C648146E3249 /* NSDate+DateRange.swift */; };
-		4B7A508D3CB01762270B27B3 /* TotalWorkedHoursEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A5DA7422D3856D217B284 /* TotalWorkedHoursEntity.swift */; };
-		4B7A50CF32F8270FB109CE5A /* CalculateWorkedHoursEntityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A57EBD8B976D75F8B1432 /* CalculateWorkedHoursEntityTests.swift */; };
-		4B7A517165A35D5336A75C88 /* WorkHourType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A5EA8EBD5D78C4445DF30 /* WorkHourType.swift */; };
+		3CDBCFE4A769342314DD71CA /* Pods_MarcoPontoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42C60CEDBCB3A8BB610CB521 /* Pods_MarcoPontoTests.framework */; };
 		4B7A51761AFE51EF9211C877 /* FormPunchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B7A54C26B2939F7ECFE71B2 /* FormPunchViewController.xib */; };
-		4B7A5215E77F0868716C2E5A /* MandatoryWorkloadEntityHoursTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A56987B6CBE1D50D38311 /* MandatoryWorkloadEntityHoursTests.swift */; };
-		4B7A52E182F224293B171FD1 /* WorkHourType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A5EA8EBD5D78C4445DF30 /* WorkHourType.swift */; };
 		4B7A532ACFCC5B48106CE51E /* ListPunchsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B7A5CAA1E540DD091D0E91E /* ListPunchsTableViewCell.xib */; };
-		4B7A53E55C0AEAFF67B8F7D6 /* TotalWorkedHoursEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A5DA7422D3856D217B284 /* TotalWorkedHoursEntity.swift */; };
-		4B7A555411801172B356AE62 /* PunchTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A547C14EAB607619EF59D /* PunchTypeTests.swift */; };
-		4B7A5628E5D9AD612F56584A /* BalanceWorkedHoursEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A595A43C197E738516F33 /* BalanceWorkedHoursEntity.swift */; };
-		4B7A56A57256755F361176AD /* NSDate+DateRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A5E04B350C648146E3249 /* NSDate+DateRange.swift */; };
-		4B7A56BC5221CB40260C6070 /* MandatoryWorkloadEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A57CD3585092DA29C7757 /* MandatoryWorkloadEntity.swift */; };
 		4B7A5985BF6003BB6C46E01A /* TotalsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B7A581DCA5399934C5D8F40 /* TotalsViewController.xib */; };
-		4B7A59F5D4F415A8979BC527 /* MandatoryWorkloadEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A57CD3585092DA29C7757 /* MandatoryWorkloadEntity.swift */; };
 		4B7A59FD587D2F8827D2AA64 /* SelectTypeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B7A56FDBC391BDD47B73BEA /* SelectTypeTableViewCell.xib */; };
 		4B7A5B0AA5D4A3B27F0B9142 /* ListPunchsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B7A521BCF886584E14BC9C7 /* ListPunchsViewController.xib */; };
-		4B7A5CD98513CF18EB579B08 /* BalanceWorkedHoursEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A595A43C197E738516F33 /* BalanceWorkedHoursEntity.swift */; };
 		4B7A5E906F1DC11565C8E938 /* SelectMomentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B7A5C3920C3D4812223D3F0 /* SelectMomentTableViewCell.xib */; };
-		94EE2B59230B614019D5F61F /* Pods_CoreTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE5D5A835C3635E533552D99 /* Pods_CoreTests.framework */; };
 		F29B217ACAA116014CCD0CBE /* Pods_MarcoPonto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B404067F6950D261E4859CBF /* Pods_MarcoPonto.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		349D9B201CC2E9710088DE5E /* PBXContainerItemProxy */ = {
+		34D19FF51CDA6CBA0046B7CF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3435FF6A1CC2E7640076AF42 /* Project object */;
 			proxyType = 1;
@@ -104,75 +68,51 @@
 		0CD9B753DE20D277AB40E730 /* Pods-CoreTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoreTests/Pods-CoreTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2BC5BAD68A4694E8665D1997 /* Pods-MarcoPonto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarcoPonto.release.xcconfig"; path = "Pods/Target Support Files/Pods-MarcoPonto/Pods-MarcoPonto.release.xcconfig"; sourceTree = "<group>"; };
 		2EAFEBAAC1641E6E1F5C1135 /* Pods-CoreTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoreTests/Pods-CoreTests.release.xcconfig"; sourceTree = "<group>"; };
-		340404A81CC8214900A4E88E /* PunchGatewayFake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PunchGatewayFake.swift; sourceTree = "<group>"; };
-		340404AA1CC8217900A4E88E /* WorkedHoursPresenterFake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkedHoursPresenterFake.swift; sourceTree = "<group>"; };
 		3405D9871CCA51E700616382 /* CurrentWeekHoursUsecaseFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentWeekHoursUsecaseFactory.swift; sourceTree = "<group>"; };
 		3405D98C1CCA74F600616382 /* TotalsDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TotalsDataSource.swift; sourceTree = "<group>"; };
-		340BD71F1CC3205300AB860B /* PunchGatewaySpy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PunchGatewaySpy.swift; sourceTree = "<group>"; };
-		340BD7221CC3251B00AB860B /* PunchType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PunchType.swift; sourceTree = "<group>"; };
-		340BD7251CC33C1D00AB860B /* ListPunchsUsecase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPunchsUsecase.swift; sourceTree = "<group>"; };
-		340BD7271CC33CA800AB860B /* ListPunchsUsecaseTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPunchsUsecaseTests.swift; sourceTree = "<group>"; };
 		340BD72A1CC33D8100AB860B /* PunchsNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PunchsNavigationController.swift; path = Punch/PunchsNavigationController.swift; sourceTree = "<group>"; };
 		340BD7371CC3409600AB860B /* ListPunchsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPunchsViewController.swift; sourceTree = "<group>"; };
 		340BD7431CC3462B00AB860B /* ListPunchsDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPunchsDataSource.swift; sourceTree = "<group>"; };
 		340BD7451CC346D600AB860B /* ListPunchsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPunchsTableViewCell.swift; sourceTree = "<group>"; };
-		340BD74A1CC353CD00AB860B /* ListPunchsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPunchsPresenter.swift; sourceTree = "<group>"; };
-		340BD74E1CC353F500AB860B /* ListPunchsPresenterSpy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPunchsPresenterSpy.swift; sourceTree = "<group>"; };
 		3418772B1CC6E4B3002A4B59 /* TotalsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TotalsViewController.swift; sourceTree = "<group>"; };
 		341877301CC6E552002A4B59 /* ReportsNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportsNavigationController.swift; sourceTree = "<group>"; };
-		34336DAA1CC30EFB00ED551C /* PunchGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PunchGateway.swift; sourceTree = "<group>"; };
-		3433E3D81CD93E470021AE0C /* BalanceWorkedHoursEntityTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BalanceWorkedHoursEntityTests.swift; sourceTree = "<group>"; };
 		3435FF721CC2E7640076AF42 /* MarcoPonto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarcoPonto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3435FF751CC2E7640076AF42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3435FF7D1CC2E7640076AF42 /* MarcoPonto.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MarcoPonto.xcdatamodel; sourceTree = "<group>"; };
 		3435FF7F1CC2E7640076AF42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3435FF821CC2E7640076AF42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3435FF841CC2E7640076AF42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		343A0C5E1CD3854800D547EA /* WorkedHoursUsecaseTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkedHoursUsecaseTests.swift; sourceTree = "<group>"; };
-		345B117A1CD2BD2A00269580 /* NSTimeInterval+ToTimeString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSTimeInterval+ToTimeString.swift"; sourceTree = "<group>"; };
 		3472A9EC1CC6F3E100CEF1D1 /* PunchModel+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PunchModel+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		3472A9ED1CC6F3E100CEF1D1 /* PunchModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PunchModel.swift; sourceTree = "<group>"; };
-		3472AA0C1CC6FA7200CEF1D1 /* WorkedHoursUsecase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkedHoursUsecase.swift; sourceTree = "<group>"; };
-		3472AA111CC6FD8800CEF1D1 /* WorkedHoursPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkedHoursPresenter.swift; sourceTree = "<group>"; };
-		349D9B1B1CC2E9710088DE5E /* CoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		349D9B1F1CC2E9710088DE5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		349D9B291CC2ECD20088DE5E /* FormPunchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FormPunchViewController.swift; path = Punch/Form/FormPunchViewController.swift; sourceTree = "<group>"; };
 		349D9B2D1CC2F68B0088DE5E /* SelectMomentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SelectMomentTableViewCell.swift; path = Punch/Form/SelectMomentTableViewCell.swift; sourceTree = "<group>"; };
 		349D9B311CC2F7960088DE5E /* FormPunchDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FormPunchDataSource.swift; path = Punch/Form/FormPunchDataSource.swift; sourceTree = "<group>"; };
-		349D9B361CC30A750088DE5E /* SavePunchUsecase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavePunchUsecase.swift; sourceTree = "<group>"; };
-		349D9B3A1CC30AB40088DE5E /* SavePunchUsecaseTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavePunchUsecaseTests.swift; sourceTree = "<group>"; };
-		349D9B3E1CC30B6F0088DE5E /* Punch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Punch.swift; sourceTree = "<group>"; };
-		34A70E811CD6230F009B43EA /* Double+ToSeconds.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Double+ToSeconds.swift"; sourceTree = "<group>"; };
 		34BD8F951CC5BA3500607BA6 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		34BD8F981CC6628E00607BA6 /* MaterialIcons+UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MaterialIcons+UIImage.swift"; sourceTree = "<group>"; };
-		34BE9B8D1CD80EEC000351E4 /* WorkHourTypeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkHourTypeTests.swift; sourceTree = "<group>"; };
-		34CA48D81CCA8C7E0050E759 /* WorkHour.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkHour.swift; sourceTree = "<group>"; };
+		34D19F3E1CDA653D0046B7CF /* MarcoPontoCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MarcoPontoCore.framework; path = "../../Library/Developer/Xcode/DerivedData/MarcoPonto-eiznvikmlytuckdbbpqmttnvlgdy/Build/Products/Debug-iphonesimulator/MarcoPontoCore.framework"; sourceTree = "<group>"; };
+		34D19FD51CDA66F10046B7CF /* MarcoPontoCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MarcoPontoCore.framework; path = "../../Library/Developer/Xcode/DerivedData/MarcoPonto-eiznvikmlytuckdbbpqmttnvlgdy/Build/Products/Debug-iphoneos/MarcoPontoCore.framework"; sourceTree = "<group>"; };
+		34D19FF01CDA6CBA0046B7CF /* MarcoPontoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarcoPontoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		34D19FF21CDA6CBA0046B7CF /* PunchGatewayCoreDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PunchGatewayCoreDataTests.swift; sourceTree = "<group>"; };
+		34D19FF41CDA6CBA0046B7CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		34E9B3EC1CC360060017A083 /* PunchGatewayCoreData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PunchGatewayCoreData.swift; sourceTree = "<group>"; };
 		34E9B3EF1CC3B72E0017A083 /* ListPunchUsecaseFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPunchUsecaseFactory.swift; sourceTree = "<group>"; };
 		34E9B3F71CC3C66B0017A083 /* SelectTypeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SelectTypeTableViewCell.swift; path = Punch/Form/SelectTypeTableViewCell.swift; sourceTree = "<group>"; };
 		34E9B3F91CC3D9C80017A083 /* SavePunchUsecaseFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavePunchUsecaseFactory.swift; sourceTree = "<group>"; };
 		34E9B3FB1CC3DA1A0017A083 /* PunchGatewayCoreDataFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PunchGatewayCoreDataFactory.swift; sourceTree = "<group>"; };
-		34E9B3FD1CC3DA880017A083 /* SavePunchPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavePunchPresenter.swift; sourceTree = "<group>"; };
-		34E9B3FF1CC3DAD10017A083 /* SavePunchPresenterSpy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavePunchPresenterSpy.swift; sourceTree = "<group>"; };
 		34E9B4021CC419090017A083 /* PunchTypeLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PunchTypeLabel.swift; sourceTree = "<group>"; };
 		34E9B4041CC42C360017A083 /* ListPunchsDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPunchsDelegate.swift; sourceTree = "<group>"; };
+		42C60CEDBCB3A8BB610CB521 /* Pods_MarcoPontoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MarcoPontoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B7A521BCF886584E14BC9C7 /* ListPunchsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListPunchsViewController.xib; sourceTree = "<group>"; };
-		4B7A547C14EAB607619EF59D /* PunchTypeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PunchTypeTests.swift; sourceTree = "<group>"; };
 		4B7A54C26B2939F7ECFE71B2 /* FormPunchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FormPunchViewController.xib; sourceTree = "<group>"; };
-		4B7A56987B6CBE1D50D38311 /* MandatoryWorkloadEntityHoursTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MandatoryWorkloadEntityHoursTests.swift; path = ../Gateways/MandatoryWorkloadEntityHoursTests.swift; sourceTree = "<group>"; };
 		4B7A56FDBC391BDD47B73BEA /* SelectTypeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectTypeTableViewCell.xib; sourceTree = "<group>"; };
-		4B7A57CD3585092DA29C7757 /* MandatoryWorkloadEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MandatoryWorkloadEntity.swift; sourceTree = "<group>"; };
-		4B7A57EBD8B976D75F8B1432 /* CalculateWorkedHoursEntityTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculateWorkedHoursEntityTests.swift; sourceTree = "<group>"; };
 		4B7A581DCA5399934C5D8F40 /* TotalsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TotalsViewController.xib; sourceTree = "<group>"; };
-		4B7A595A43C197E738516F33 /* BalanceWorkedHoursEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BalanceWorkedHoursEntity.swift; sourceTree = "<group>"; };
 		4B7A5C3920C3D4812223D3F0 /* SelectMomentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectMomentTableViewCell.xib; sourceTree = "<group>"; };
 		4B7A5CAA1E540DD091D0E91E /* ListPunchsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListPunchsTableViewCell.xib; sourceTree = "<group>"; };
-		4B7A5DA7422D3856D217B284 /* TotalWorkedHoursEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TotalWorkedHoursEntity.swift; sourceTree = "<group>"; };
-		4B7A5E04B350C648146E3249 /* NSDate+DateRange.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+DateRange.swift"; sourceTree = "<group>"; };
-		4B7A5EA8EBD5D78C4445DF30 /* WorkHourType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkHourType.swift; sourceTree = "<group>"; };
+		4C2122291BCE37225881FFDB /* Pods-MarcoPontoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarcoPontoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MarcoPontoTests/Pods-MarcoPontoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		AE5D5A835C3635E533552D99 /* Pods_CoreTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoreTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B404067F6950D261E4859CBF /* Pods_MarcoPonto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MarcoPonto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7880345D4048C052B5280C1 /* Pods-MarcoPonto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarcoPonto.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MarcoPonto/Pods-MarcoPonto.debug.xcconfig"; sourceTree = "<group>"; };
+		F7DA404762FD932DD27BF1D8 /* Pods-MarcoPontoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarcoPontoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MarcoPontoTests/Pods-MarcoPontoTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,15 +120,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34D19FEB1CDA6C780046B7CF /* MarcoPontoCore.framework in Frameworks */,
 				F29B217ACAA116014CCD0CBE /* Pods_MarcoPonto.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		349D9B181CC2E9710088DE5E /* Frameworks */ = {
+		34D19FED1CDA6CBA0046B7CF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94EE2B59230B614019D5F61F /* Pods_CoreTests.framework in Frameworks */,
+				3CDBCFE4A769342314DD71CA /* Pods_MarcoPontoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,37 +143,11 @@
 				2EAFEBAAC1641E6E1F5C1135 /* Pods-CoreTests.release.xcconfig */,
 				C7880345D4048C052B5280C1 /* Pods-MarcoPonto.debug.xcconfig */,
 				2BC5BAD68A4694E8665D1997 /* Pods-MarcoPonto.release.xcconfig */,
+				4C2122291BCE37225881FFDB /* Pods-MarcoPontoTests.debug.xcconfig */,
+				F7DA404762FD932DD27BF1D8 /* Pods-MarcoPontoTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
-		};
-		340BD71D1CC31FD900AB860B /* Fakes */ = {
-			isa = PBXGroup;
-			children = (
-				340BD74D1CC353DC00AB860B /* Presenters */,
-				340BD71E1CC3203E00AB860B /* Gateways */,
-			);
-			path = Fakes;
-			sourceTree = "<group>";
-		};
-		340BD71E1CC3203E00AB860B /* Gateways */ = {
-			isa = PBXGroup;
-			children = (
-				340BD71F1CC3205300AB860B /* PunchGatewaySpy.swift */,
-				340404A81CC8214900A4E88E /* PunchGatewayFake.swift */,
-			);
-			path = Gateways;
-			sourceTree = "<group>";
-		};
-		340BD7211CC324F300AB860B /* Enums */ = {
-			isa = PBXGroup;
-			children = (
-				340BD7221CC3251B00AB860B /* PunchType.swift */,
-				4B7A5EA8EBD5D78C4445DF30 /* WorkHourType.swift */,
-			);
-			name = Enums;
-			path = Core/Enums;
-			sourceTree = SOURCE_ROOT;
 		};
 		340BD7311CC33F9700AB860B /* Form */ = {
 			isa = PBXGroup;
@@ -268,27 +183,6 @@
 			path = MarcoPonto/ViewsControllers/Punch/List;
 			sourceTree = SOURCE_ROOT;
 		};
-		340BD7491CC353B000AB860B /* Presenters */ = {
-			isa = PBXGroup;
-			children = (
-				340BD74A1CC353CD00AB860B /* ListPunchsPresenter.swift */,
-				34E9B3FD1CC3DA880017A083 /* SavePunchPresenter.swift */,
-				3472AA111CC6FD8800CEF1D1 /* WorkedHoursPresenter.swift */,
-			);
-			name = Presenters;
-			path = Core/Presenters;
-			sourceTree = SOURCE_ROOT;
-		};
-		340BD74D1CC353DC00AB860B /* Presenters */ = {
-			isa = PBXGroup;
-			children = (
-				340BD74E1CC353F500AB860B /* ListPunchsPresenterSpy.swift */,
-				34E9B3FF1CC3DAD10017A083 /* SavePunchPresenterSpy.swift */,
-				340404AA1CC8217900A4E88E /* WorkedHoursPresenterFake.swift */,
-			);
-			path = Presenters;
-			sourceTree = "<group>";
-		};
 		341877291CC6E454002A4B59 /* Reports */ = {
 			isa = PBXGroup;
 			children = (
@@ -303,9 +197,8 @@
 		3435FF691CC2E7640076AF42 = {
 			isa = PBXGroup;
 			children = (
-				349D9B331CC308460088DE5E /* Core */,
-				349D9B1C1CC2E9710088DE5E /* CoreTests */,
 				3435FF741CC2E7640076AF42 /* MarcoPonto */,
+				34D19FF11CDA6CBA0046B7CF /* MarcoPontoTests */,
 				3435FF731CC2E7640076AF42 /* Products */,
 				2F52E00B7E9E787D1D18BECA /* Pods */,
 				93DB51290E3CD3B719837D29 /* Frameworks */,
@@ -316,7 +209,7 @@
 			isa = PBXGroup;
 			children = (
 				3435FF721CC2E7640076AF42 /* MarcoPonto.app */,
-				349D9B1B1CC2E9710088DE5E /* CoreTests.xctest */,
+				34D19FF01CDA6CBA0046B7CF /* MarcoPontoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -357,18 +250,6 @@
 			path = MarcoPonto/Models;
 			sourceTree = SOURCE_ROOT;
 		};
-		349D9B1C1CC2E9710088DE5E /* CoreTests */ = {
-			isa = PBXGroup;
-			children = (
-				4B7A572C94203D3410D6A1A0 /* Entities */,
-				4B7A52D3CADA9E4C874E9039 /* Enums */,
-				340BD71D1CC31FD900AB860B /* Fakes */,
-				349D9B391CC30AA20088DE5E /* Usecases */,
-				349D9B1F1CC2E9710088DE5E /* Info.plist */,
-			);
-			path = CoreTests;
-			sourceTree = "<group>";
-		};
 		349D9B261CC2EBA40088DE5E /* ViewsControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -380,60 +261,6 @@
 			path = MarcoPonto/ViewsControllers;
 			sourceTree = SOURCE_ROOT;
 		};
-		349D9B331CC308460088DE5E /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				340BD7211CC324F300AB860B /* Enums */,
-				349D9B351CC30A180088DE5E /* Gateways */,
-				340BD7491CC353B000AB860B /* Presenters */,
-				349D9B3D1CC30B290088DE5E /* Structs */,
-				349D9B341CC30A100088DE5E /* Usecases */,
-				4B7A59AAFA4848159E9B7E01 /* Entities */,
-				4B7A527E0F071593BB52B02A /* Extensions */,
-			);
-			path = Core;
-			sourceTree = "<group>";
-		};
-		349D9B341CC30A100088DE5E /* Usecases */ = {
-			isa = PBXGroup;
-			children = (
-				340BD7251CC33C1D00AB860B /* ListPunchsUsecase.swift */,
-				349D9B361CC30A750088DE5E /* SavePunchUsecase.swift */,
-				3472AA0C1CC6FA7200CEF1D1 /* WorkedHoursUsecase.swift */,
-			);
-			name = Usecases;
-			path = Core/Usecases;
-			sourceTree = SOURCE_ROOT;
-		};
-		349D9B351CC30A180088DE5E /* Gateways */ = {
-			isa = PBXGroup;
-			children = (
-				34336DAA1CC30EFB00ED551C /* PunchGateway.swift */,
-			);
-			name = Gateways;
-			path = Core/Gateways;
-			sourceTree = SOURCE_ROOT;
-		};
-		349D9B391CC30AA20088DE5E /* Usecases */ = {
-			isa = PBXGroup;
-			children = (
-				340BD7271CC33CA800AB860B /* ListPunchsUsecaseTests.swift */,
-				349D9B3A1CC30AB40088DE5E /* SavePunchUsecaseTests.swift */,
-				343A0C5E1CD3854800D547EA /* WorkedHoursUsecaseTests.swift */,
-			);
-			path = Usecases;
-			sourceTree = "<group>";
-		};
-		349D9B3D1CC30B290088DE5E /* Structs */ = {
-			isa = PBXGroup;
-			children = (
-				349D9B3E1CC30B6F0088DE5E /* Punch.swift */,
-				34CA48D81CCA8C7E0050E759 /* WorkHour.swift */,
-			);
-			name = Structs;
-			path = Core/Structs;
-			sourceTree = SOURCE_ROOT;
-		};
 		34BD8F971CC6623B00607BA6 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
@@ -443,6 +270,23 @@
 			name = Assets;
 			path = MarcoPonto/Assets;
 			sourceTree = SOURCE_ROOT;
+		};
+		34D19FF11CDA6CBA0046B7CF /* MarcoPontoTests */ = {
+			isa = PBXGroup;
+			children = (
+				34D1A0211CDA96B30046B7CF /* Gateways */,
+				34D19FF41CDA6CBA0046B7CF /* Info.plist */,
+			);
+			path = MarcoPontoTests;
+			sourceTree = "<group>";
+		};
+		34D1A0211CDA96B30046B7CF /* Gateways */ = {
+			isa = PBXGroup;
+			children = (
+				34D19FF21CDA6CBA0046B7CF /* PunchGatewayCoreDataTests.swift */,
+			);
+			path = Gateways;
+			sourceTree = "<group>";
 		};
 		34E9B3E71CC35AF50017A083 /* Gateways */ = {
 			isa = PBXGroup;
@@ -474,25 +318,6 @@
 			path = Punch;
 			sourceTree = "<group>";
 		};
-		4B7A527E0F071593BB52B02A /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				345B117A1CD2BD2A00269580 /* NSTimeInterval+ToTimeString.swift */,
-				34A70E811CD6230F009B43EA /* Double+ToSeconds.swift */,
-				4B7A5E04B350C648146E3249 /* NSDate+DateRange.swift */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
-		4B7A52D3CADA9E4C874E9039 /* Enums */ = {
-			isa = PBXGroup;
-			children = (
-				4B7A547C14EAB607619EF59D /* PunchTypeTests.swift */,
-				34BE9B8D1CD80EEC000351E4 /* WorkHourTypeTests.swift */,
-			);
-			path = Enums;
-			sourceTree = "<group>";
-		};
 		4B7A54EE51A3523833AAA396 /* Form */ = {
 			isa = PBXGroup;
 			children = (
@@ -501,26 +326,6 @@
 				4B7A56FDBC391BDD47B73BEA /* SelectTypeTableViewCell.xib */,
 			);
 			path = Form;
-			sourceTree = "<group>";
-		};
-		4B7A572C94203D3410D6A1A0 /* Entities */ = {
-			isa = PBXGroup;
-			children = (
-				4B7A56987B6CBE1D50D38311 /* MandatoryWorkloadEntityHoursTests.swift */,
-				4B7A57EBD8B976D75F8B1432 /* CalculateWorkedHoursEntityTests.swift */,
-				3433E3D81CD93E470021AE0C /* BalanceWorkedHoursEntityTests.swift */,
-			);
-			path = Entities;
-			sourceTree = "<group>";
-		};
-		4B7A59AAFA4848159E9B7E01 /* Entities */ = {
-			isa = PBXGroup;
-			children = (
-				4B7A5DA7422D3856D217B284 /* TotalWorkedHoursEntity.swift */,
-				4B7A595A43C197E738516F33 /* BalanceWorkedHoursEntity.swift */,
-				4B7A57CD3585092DA29C7757 /* MandatoryWorkloadEntity.swift */,
-			);
-			path = Entities;
 			sourceTree = "<group>";
 		};
 		4B7A5B8DEA18DE867FAC3FA2 /* Reports */ = {
@@ -553,8 +358,11 @@
 		93DB51290E3CD3B719837D29 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				34D19FD51CDA66F10046B7CF /* MarcoPontoCore.framework */,
+				34D19F3E1CDA653D0046B7CF /* MarcoPontoCore.framework */,
 				AE5D5A835C3635E533552D99 /* Pods_CoreTests.framework */,
 				B404067F6950D261E4859CBF /* Pods_MarcoPonto.framework */,
+				42C60CEDBCB3A8BB610CB521 /* Pods_MarcoPontoTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -587,29 +395,25 @@
 			productReference = 3435FF721CC2E7640076AF42 /* MarcoPonto.app */;
 			productType = "com.apple.product-type.application";
 		};
-		349D9B1A1CC2E9710088DE5E /* CoreTests */ = {
+		34D19FEF1CDA6CBA0046B7CF /* MarcoPontoTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 349D9B221CC2E9710088DE5E /* Build configuration list for PBXNativeTarget "CoreTests" */;
+			buildConfigurationList = 34D19FF71CDA6CBA0046B7CF /* Build configuration list for PBXNativeTarget "MarcoPontoTests" */;
 			buildPhases = (
-				898518D5712F7EE084CFA3A1 /* uD83DuDCE6 Check Pods Manifest.lock */,
-				A38833E8FC3E8B39C5F0DEA7 /* uD83DuDCE6 Check Pods Manifest.lock */,
-				349D9B171CC2E9710088DE5E /* Sources */,
-				349D9B181CC2E9710088DE5E /* Frameworks */,
-				349D9B191CC2E9710088DE5E /* Resources */,
-				707EF95D82E3CFECCA734BEE /* uD83DuDCE6 Embed Pods Frameworks */,
-				A40FEAD3A6C43A4F4B52F0E6 /* uD83DuDCE6 Copy Pods Resources */,
-				B0D2A25CC1C94B8BFF64474D /* uD83DuDCE6 Embed Pods Frameworks */,
-				D396DA220AC7CB273FEFF651 /* uD83DuDCE6 Copy Pods Resources */,
-				8AEC058069732BE232D95848 /* Embed Pods Frameworks */,
+				0032F4DB4A628EF24670A1CB /* Check Pods Manifest.lock */,
+				34D19FEC1CDA6CBA0046B7CF /* Sources */,
+				34D19FED1CDA6CBA0046B7CF /* Frameworks */,
+				34D19FEE1CDA6CBA0046B7CF /* Resources */,
+				AF267814EB426A303CF0377F /* Embed Pods Frameworks */,
+				D926A99DCC505CD0AFC4896D /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				349D9B211CC2E9710088DE5E /* PBXTargetDependency */,
+				34D19FF61CDA6CBA0046B7CF /* PBXTargetDependency */,
 			);
-			name = CoreTests;
-			productName = MarcoPontoUnitTests;
-			productReference = 349D9B1B1CC2E9710088DE5E /* CoreTests.xctest */;
+			name = MarcoPontoTests;
+			productName = MarcoPontoTests;
+			productReference = 34D19FF01CDA6CBA0046B7CF /* MarcoPontoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -626,8 +430,9 @@
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = 2729VXDM4D;
 					};
-					349D9B1A1CC2E9710088DE5E = {
+					34D19FEF1CDA6CBA0046B7CF = {
 						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 3435FF711CC2E7640076AF42;
 					};
 				};
 			};
@@ -645,7 +450,7 @@
 			projectRoot = "";
 			targets = (
 				3435FF711CC2E7640076AF42 /* MarcoPonto */,
-				349D9B1A1CC2E9710088DE5E /* CoreTests */,
+				34D19FEF1CDA6CBA0046B7CF /* MarcoPontoTests */,
 			);
 		};
 /* End PBXProject section */
@@ -666,7 +471,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		349D9B191CC2E9710088DE5E /* Resources */ = {
+		34D19FEE1CDA6CBA0046B7CF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -676,6 +481,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0032F4DB4A628EF24670A1CB /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		0ADA01CF5601B71329B1DA18 /* uD83DuDCE6 Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -749,51 +569,6 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MarcoPonto/Pods-MarcoPonto-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		707EF95D82E3CFECCA734BEE /* uD83DuDCE6 Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "uD83DuDCE6 Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CoreTests/Pods-CoreTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		898518D5712F7EE084CFA3A1 /* uD83DuDCE6 Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "uD83DuDCE6 Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		8AEC058069732BE232D95848 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CoreTests/Pods-CoreTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		8B458856D942F2A4AF5584CC /* uD83DuDCE6 Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -824,49 +599,19 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		A38833E8FC3E8B39C5F0DEA7 /* uD83DuDCE6 Check Pods Manifest.lock */ = {
+		AF267814EB426A303CF0377F /* Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "uD83DuDCE6 Check Pods Manifest.lock";
+			name = "Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		A40FEAD3A6C43A4F4B52F0E6 /* uD83DuDCE6 Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "uD83DuDCE6 Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CoreTests/Pods-CoreTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B0D2A25CC1C94B8BFF64474D /* uD83DuDCE6 Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "uD83DuDCE6 Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CoreTests/Pods-CoreTests-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MarcoPontoTests/Pods-MarcoPontoTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D1646CE997112B75210ED8CC /* uD83DuDCE6 Embed Pods Frameworks */ = {
@@ -884,19 +629,19 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MarcoPonto/Pods-MarcoPonto-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D396DA220AC7CB273FEFF651 /* uD83DuDCE6 Copy Pods Resources */ = {
+		D926A99DCC505CD0AFC4896D /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "uD83DuDCE6 Copy Pods Resources";
+			name = "Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CoreTests/Pods-CoreTests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MarcoPontoTests/Pods-MarcoPontoTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -907,7 +652,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3405D9881CCA51E700616382 /* CurrentWeekHoursUsecaseFactory.swift in Sources */,
-				340BD7231CC3251B00AB860B /* PunchType.swift in Sources */,
 				34BD8F961CC5BA3500607BA6 /* TabBarController.swift in Sources */,
 				34E9B3FC1CC3DA1A0017A083 /* PunchGatewayCoreDataFactory.swift in Sources */,
 				34E9B3F01CC3B72E0017A083 /* ListPunchUsecaseFactory.swift in Sources */,
@@ -916,84 +660,48 @@
 				34BD8F991CC6628E00607BA6 /* MaterialIcons+UIImage.swift in Sources */,
 				3435FF761CC2E7640076AF42 /* AppDelegate.swift in Sources */,
 				340BD7381CC3409600AB860B /* ListPunchsViewController.swift in Sources */,
-				34CA48D91CCA8C7E0050E759 /* WorkHour.swift in Sources */,
-				340BD7261CC33C1D00AB860B /* ListPunchsUsecase.swift in Sources */,
 				349D9B2F1CC2F68B0088DE5E /* SelectMomentTableViewCell.swift in Sources */,
 				3418772D1CC6E4B3002A4B59 /* TotalsViewController.swift in Sources */,
-				349D9B371CC30A750088DE5E /* SavePunchUsecase.swift in Sources */,
 				3435FF7E1CC2E7640076AF42 /* MarcoPonto.xcdatamodeld in Sources */,
 				34E9B4051CC42C360017A083 /* ListPunchsDelegate.swift in Sources */,
 				340BD7441CC3462B00AB860B /* ListPunchsDataSource.swift in Sources */,
-				34336DAB1CC30EFB00ED551C /* PunchGateway.swift in Sources */,
 				34E9B3F81CC3C66B0017A083 /* SelectTypeTableViewCell.swift in Sources */,
-				340BD74B1CC353CD00AB860B /* ListPunchsPresenter.swift in Sources */,
 				34E9B3FA1CC3D9C80017A083 /* SavePunchUsecaseFactory.swift in Sources */,
 				349D9B2B1CC2ECD20088DE5E /* FormPunchViewController.swift in Sources */,
-				34E9B3FE1CC3DA880017A083 /* SavePunchPresenter.swift in Sources */,
 				34E9B4031CC419090017A083 /* PunchTypeLabel.swift in Sources */,
-				34A70E821CD6230F009B43EA /* Double+ToSeconds.swift in Sources */,
-				349D9B3F1CC30B6F0088DE5E /* Punch.swift in Sources */,
-				3472AA121CC6FD8800CEF1D1 /* WorkedHoursPresenter.swift in Sources */,
 				341877311CC6E552002A4B59 /* ReportsNavigationController.swift in Sources */,
 				3472A9EF1CC6F3E100CEF1D1 /* PunchModel.swift in Sources */,
 				34E9B3ED1CC360060017A083 /* PunchGatewayCoreData.swift in Sources */,
-				345B117B1CD2BD2A00269580 /* NSTimeInterval+ToTimeString.swift in Sources */,
 				3472A9EE1CC6F3E100CEF1D1 /* PunchModel+CoreDataProperties.swift in Sources */,
 				349D9B321CC2F7960088DE5E /* FormPunchDataSource.swift in Sources */,
-				3472AA0D1CC6FA7200CEF1D1 /* WorkedHoursUsecase.swift in Sources */,
 				3405D98D1CCA74F600616382 /* TotalsDataSource.swift in Sources */,
-				4B7A508D3CB01762270B27B3 /* TotalWorkedHoursEntity.swift in Sources */,
-				4B7A517165A35D5336A75C88 /* WorkHourType.swift in Sources */,
-				4B7A5CD98513CF18EB579B08 /* BalanceWorkedHoursEntity.swift in Sources */,
-				4B7A5056004ABD5670EC6818 /* NSDate+DateRange.swift in Sources */,
-				4B7A56BC5221CB40260C6070 /* MandatoryWorkloadEntity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		349D9B171CC2E9710088DE5E /* Sources */ = {
+		34D19FEC1CDA6CBA0046B7CF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				34E9B4001CC3DAD10017A083 /* SavePunchPresenterSpy.swift in Sources */,
-				340BD7241CC3251B00AB860B /* PunchType.swift in Sources */,
-				345B117C1CD2BD2A00269580 /* NSTimeInterval+ToTimeString.swift in Sources */,
-				34336DAC1CC30EFB00ED551C /* PunchGateway.swift in Sources */,
-				340BD74C1CC353CD00AB860B /* ListPunchsPresenter.swift in Sources */,
-				340404AB1CC8217900A4E88E /* WorkedHoursPresenterFake.swift in Sources */,
-				340BD7291CC33CC000AB860B /* ListPunchsUsecase.swift in Sources */,
-				340BD74F1CC353F500AB860B /* ListPunchsPresenterSpy.swift in Sources */,
-				3472AA101CC6FB2200CEF1D1 /* WorkedHoursUsecase.swift in Sources */,
-				340404A91CC8214900A4E88E /* PunchGatewayFake.swift in Sources */,
-				349D9B401CC30B6F0088DE5E /* Punch.swift in Sources */,
-				34BE9B8E1CD80EEC000351E4 /* WorkHourTypeTests.swift in Sources */,
-				349D9B3C1CC30AB40088DE5E /* SavePunchUsecaseTests.swift in Sources */,
-				3472AA131CC6FD8800CEF1D1 /* WorkedHoursPresenter.swift in Sources */,
-				34E9B4011CC3DAEB0017A083 /* SavePunchPresenter.swift in Sources */,
-				349D9B381CC30A750088DE5E /* SavePunchUsecase.swift in Sources */,
-				340BD7281CC33CA800AB860B /* ListPunchsUsecaseTests.swift in Sources */,
-				34CA48DA1CCA8C800050E759 /* WorkHour.swift in Sources */,
-				340BD7201CC3205300AB860B /* PunchGatewaySpy.swift in Sources */,
-				4B7A53E55C0AEAFF67B8F7D6 /* TotalWorkedHoursEntity.swift in Sources */,
-				4B7A50CF32F8270FB109CE5A /* CalculateWorkedHoursEntityTests.swift in Sources */,
-				343A0C5F1CD3854800D547EA /* WorkedHoursUsecaseTests.swift in Sources */,
-				4B7A555411801172B356AE62 /* PunchTypeTests.swift in Sources */,
-				34A70E831CD6230F009B43EA /* Double+ToSeconds.swift in Sources */,
-				3433E3D91CD93E470021AE0C /* BalanceWorkedHoursEntityTests.swift in Sources */,
-				4B7A5215E77F0868716C2E5A /* MandatoryWorkloadEntityHoursTests.swift in Sources */,
-				4B7A52E182F224293B171FD1 /* WorkHourType.swift in Sources */,
-				4B7A5628E5D9AD612F56584A /* BalanceWorkedHoursEntity.swift in Sources */,
-				4B7A56A57256755F361176AD /* NSDate+DateRange.swift in Sources */,
-				4B7A59F5D4F415A8979BC527 /* MandatoryWorkloadEntity.swift in Sources */,
+				34D19FF31CDA6CBA0046B7CF /* PunchGatewayCoreDataTests.swift in Sources */,
+				34D1A0001CDA6D460046B7CF /* PunchModel.swift in Sources */,
+				34D19FFF1CDA6D440046B7CF /* MarcoPonto.xcdatamodeld in Sources */,
+				34D1A0171CDA6DDB0046B7CF /* ListPunchsTableViewCell.swift in Sources */,
+				34D1A01F1CDA6E040046B7CF /* MaterialIcons+UIImage.swift in Sources */,
+				34D1A0191CDA6DDB0046B7CF /* PunchTypeLabel.swift in Sources */,
+				34D1A0011CDA6D480046B7CF /* PunchModel+CoreDataProperties.swift in Sources */,
+				34D1A0131CDA6DDB0046B7CF /* SelectMomentTableViewCell.swift in Sources */,
+				34D1A0111CDA6DDB0046B7CF /* FormPunchDataSource.swift in Sources */,
+				34D1A0141CDA6DDB0046B7CF /* SelectTypeTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		349D9B211CC2E9710088DE5E /* PBXTargetDependency */ = {
+		34D19FF61CDA6CBA0046B7CF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 3435FF711CC2E7640076AF42 /* MarcoPonto */;
-			targetProxy = 349D9B201CC2E9710088DE5E /* PBXContainerItemProxy */;
+			targetProxy = 34D19FF51CDA6CBA0046B7CF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1047,10 +755,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -1086,9 +795,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -1101,6 +811,10 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/MarcoPonto/ApplicationBase/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.ronanrodrigo.MarcoPonto;
@@ -1117,6 +831,10 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/MarcoPonto/ApplicationBase/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.ronanrodrigo.MarcoPonto;
@@ -1125,25 +843,29 @@
 			};
 			name = Release;
 		};
-		349D9B231CC2E9710088DE5E /* Debug */ = {
+		34D19FF81CDA6CBA0046B7CF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0CD9B753DE20D277AB40E730 /* Pods-CoreTests.debug.xcconfig */;
+			baseConfigurationReference = 4C2122291BCE37225881FFDB /* Pods-MarcoPontoTests.debug.xcconfig */;
 			buildSettings = {
-				INFOPLIST_FILE = CoreTests/Info.plist;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MarcoPontoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.github.ronanrodrigo.MarcoPontoUnitTests;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.meuspedidos.MarcoPontoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MarcoPonto.app/MarcoPonto";
 			};
 			name = Debug;
 		};
-		349D9B241CC2E9710088DE5E /* Release */ = {
+		34D19FF91CDA6CBA0046B7CF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2EAFEBAAC1641E6E1F5C1135 /* Pods-CoreTests.release.xcconfig */;
+			baseConfigurationReference = F7DA404762FD932DD27BF1D8 /* Pods-MarcoPontoTests.release.xcconfig */;
 			buildSettings = {
-				INFOPLIST_FILE = CoreTests/Info.plist;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MarcoPontoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.github.ronanrodrigo.MarcoPontoUnitTests;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.meuspedidos.MarcoPontoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MarcoPonto.app/MarcoPonto";
 			};
 			name = Release;
 		};
@@ -1168,11 +890,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		349D9B221CC2E9710088DE5E /* Build configuration list for PBXNativeTarget "CoreTests" */ = {
+		34D19FF71CDA6CBA0046B7CF /* Build configuration list for PBXNativeTarget "MarcoPontoTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				349D9B231CC2E9710088DE5E /* Debug */,
-				349D9B241CC2E9710088DE5E /* Release */,
+				34D19FF81CDA6CBA0046B7CF /* Debug */,
+				34D19FF91CDA6CBA0046B7CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

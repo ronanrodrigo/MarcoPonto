@@ -1,4 +1,5 @@
 import UIKit
+import MarcoPontoCore
 
 class ListPunchsTableViewCell: UITableViewCell {
 

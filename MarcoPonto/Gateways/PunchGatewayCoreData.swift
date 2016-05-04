@@ -2,6 +2,7 @@ import Foundation
 import UIKit
 import CoreData
 import SwiftDate
+import MarcoPontoCore
 
 class PunchGatewayCoreData: PunchGateway {
     var entityName = String(PunchModel)

@@ -1,4 +1,5 @@
 import UIKit
+import MarcoPontoCore
 
 protocol EditTableViewDelegate {
     func confirmDelete(punch: Punch, at indexPath: NSIndexPath)
