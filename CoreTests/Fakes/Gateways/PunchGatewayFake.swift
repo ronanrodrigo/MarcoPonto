@@ -3,6 +3,7 @@ import SwiftDate
 
 class PunchGatewayFake: PunchGateway {
     var punchs: [Punch] = []
+    var listSpied = false
 
     func create(punch: Punch) {
         punchs.append(punch)
@@ -17,6 +18,7 @@ class PunchGatewayFake: PunchGateway {
     }
 
     func list(type: PunchType, dateRange: (firstDate: NSDate, lastDate: NSDate)) -> [Punch] {
+        listSpied = true
         return punchs.filter { (punch) -> Bool in
             punch.type == type && punch.moment >= dateRange.firstDate && punch.moment <= dateRange.lastDate
         }

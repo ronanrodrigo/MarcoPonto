@@ -4,10 +4,10 @@ import XCTest
 class WorkedHoursUsecaseTests: XCTestCase {
     var usecase: WorkedHoursUsecase!
     var presenter: WorkedHoursPresenterFake!
-    var gateway: PunchGatewaySpy!
+    var gateway: PunchGatewayFake!
 
     override func setUp() {
-        gateway = PunchGatewaySpy()
+        gateway = PunchGatewayFake()
         presenter = WorkedHoursPresenterFake()
         usecase = WorkedHoursUsecase(gateway: gateway, presenter: presenter)
     }
