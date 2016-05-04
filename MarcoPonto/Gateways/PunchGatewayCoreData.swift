@@ -87,13 +87,13 @@ class PunchGatewayCoreData: PunchGateway {
     }
 
     func punchList(results: [AnyObject]) -> [Punch] {
-        return results.map({ (punch: AnyObject) -> Punch in
+        var punchs: [Punch] = []
+        for punch in results {
             if let _punch = punch as? PunchModel {
-                return _punch
-            } else {
-                return PunchModel()
+                punchs.append(_punch)
             }
-        })
+        }
+        return punchs
     }
 
     func getLastId() -> Int {
