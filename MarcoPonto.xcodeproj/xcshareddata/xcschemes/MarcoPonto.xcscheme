@@ -25,7 +25,8 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES">
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      codeCoverageEnabled = "YES">
       <Testables>
          <TestableReference
             skipped = "NO">
@@ -35,6 +36,16 @@
                BuildableName = "MarcoPontoTests.xctest"
                BlueprintName = "MarcoPontoTests"
                ReferencedContainer = "container:MarcoPonto.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "34D19F5C1CDA66130046B7CF"
+               BuildableName = "MarcoPontoCoreTests.xctest"
+               BlueprintName = "MarcoPontoCoreTests"
+               ReferencedContainer = "container:MarcoPontoCore/MarcoPontoCore.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
