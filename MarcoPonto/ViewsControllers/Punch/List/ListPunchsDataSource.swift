@@ -1,5 +1,6 @@
 import Foundation
 import UIKit
+import MarcoPontoCore
 
 protocol RRNListDataSource: UITableViewDataSource {
     func removePunch(at indexPath: NSIndexPath)

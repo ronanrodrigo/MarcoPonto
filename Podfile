@@ -9,6 +9,6 @@ target 'MarcoPonto' do
   shared_pods
 end
 
-target 'CoreTests' do
+target 'MarcoPontoTests' do
   shared_pods
 end

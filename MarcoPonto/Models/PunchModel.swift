@@ -1,6 +1,6 @@
 import Foundation
 import CoreData
-
+import MarcoPontoCore
 
 class PunchModel: NSManagedObject, Punch {
 
