@@ -25,6 +25,6 @@ class WorkedHoursUsecaseTests: XCTestCase {
         usecase.workedHours()
 
         XCTAssertEqual(5, presenter.workHours.count)
-        XCTAssertTrue(gateway.listBySpied)
+        XCTAssertTrue(gateway.listSpied)
     }
 }
