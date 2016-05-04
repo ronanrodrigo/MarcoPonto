@@ -4,6 +4,7 @@ class PunchGatewaySpy: PunchGateway {
     var createSpied = false
     var updateSpied = false
     var listSpied = false
+    var listBySpied = false
     var listSpieds: [Bool] = []
 
     func create(punch: Punch) {
@@ -23,7 +24,7 @@ class PunchGatewaySpy: PunchGateway {
     }
 
     func list(type: PunchType, dateRange: (firstDate: NSDate, lastDate: NSDate)) -> [Punch] {
-        listSpied = true
+        listBySpied = true
         listSpieds.append(listSpied)
         return []
     }

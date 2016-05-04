@@ -17,4 +17,14 @@ class WorkedHoursUsecaseTests: XCTestCase {
 
         XCTAssertEqual(5, presenter.workHours.count)
     }
+
+    func testShouldGetFirstPunchWhenIsForAllWorkHourType() {
+        let punch = PunchStruct(id: nil, type: PunchType.Input, moment: NSDate())
+        gateway.create(punch)
+
+        usecase.workedHours()
+
+        XCTAssertEqual(5, presenter.workHours.count)
+        XCTAssertTrue(gateway.listBySpied)
+    }
 }
