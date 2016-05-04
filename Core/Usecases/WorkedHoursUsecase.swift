@@ -12,10 +12,25 @@ struct WorkedHoursUsecase {
     private func calculateHours(type: WorkHourType) -> WorkHour {
         let inputPunchs = gateway.list(.Input, dateRange: type.dateRange)
         let outputPunchs = gateway.list(.Output, dateRange: type.dateRange)
-        let total = TotalWorkedHoursEntity(inputPunchs: inputPunchs, outputPunchs: outputPunchs).calculate()
-        let mandatoryHours = 0.0
-        let balance = BalanceWorkedHoursEntity(totalHours: total, mandatoryHours: mandatoryHours).calculate()
+
+        let total = TotalWorkedHoursEntity(
+            inputPunchs: inputPunchs, outputPunchs: outputPunchs).calculate()
+
+        let mandatoryHours = MandatoryWorkloadEntity(
+            referenceDate: type.dateRange.firstDate,
+            beginningDate: beginningDate()).mandatoryHours(type)
+
+        let balance = BalanceWorkedHoursEntity(
+            totalHours: total, mandatoryHours: mandatoryHours).calculate()
 
         return WorkHourStruct(type: type, total: total, balance: balance)
     }
+
+    private func beginningDate() -> NSDate {
+        if let punch = gateway.list().first {
+            return punch.moment
+        }
+        return NSDate()
+    }
+
 }
