@@ -2,6 +2,7 @@ import UIKit
 
 class TotalsViewController: UIViewController {
     private var dataSource: TotalsDataSource!
+    private let cellNameAndIdentifier = String(WorkHoursTableViewCell)
 
     @IBOutlet weak var tableView: UITableView!
 
@@ -16,6 +17,10 @@ class TotalsViewController: UIViewController {
     private func configureTableView() {
         dataSource = TotalsDataSource()
         tableView.dataSource = dataSource
+
+        tableView.registerNib(
+            UINib(nibName: cellNameAndIdentifier, bundle: nil),
+            forCellReuseIdentifier: cellNameAndIdentifier)
         tableView.tableFooterView = UIView(frame: CGRect.zero)
     }
 
