@@ -1,6 +1,7 @@
 line_length: 120
 excluded:
   - Pods
+  - MarcoPontoCore/Carthage
 variable_name:
   excluded:
     - id

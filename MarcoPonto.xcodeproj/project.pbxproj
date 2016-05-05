@@ -13,6 +13,7 @@
 		340BD7381CC3409600AB860B /* ListPunchsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340BD7371CC3409600AB860B /* ListPunchsViewController.swift */; };
 		340BD7441CC3462B00AB860B /* ListPunchsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340BD7431CC3462B00AB860B /* ListPunchsDataSource.swift */; };
 		340BD7471CC346D600AB860B /* ListPunchsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340BD7451CC346D600AB860B /* ListPunchsTableViewCell.swift */; };
+		340C51941CDACDF1001ED6D5 /* MarcoPontoCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 340C51931CDACDF1001ED6D5 /* MarcoPontoCore.framework */; };
 		3418772D1CC6E4B3002A4B59 /* TotalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3418772B1CC6E4B3002A4B59 /* TotalsViewController.swift */; };
 		341877311CC6E552002A4B59 /* ReportsNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341877301CC6E552002A4B59 /* ReportsNavigationController.swift */; };
 		3435FF761CC2E7640076AF42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3435FF751CC2E7640076AF42 /* AppDelegate.swift */; };
@@ -26,7 +27,6 @@
 		349D9B321CC2F7960088DE5E /* FormPunchDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349D9B311CC2F7960088DE5E /* FormPunchDataSource.swift */; };
 		34BD8F961CC5BA3500607BA6 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BD8F951CC5BA3500607BA6 /* TabBarController.swift */; };
 		34BD8F991CC6628E00607BA6 /* MaterialIcons+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BD8F981CC6628E00607BA6 /* MaterialIcons+UIImage.swift */; };
-		34D19FEB1CDA6C780046B7CF /* MarcoPontoCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34D19FD51CDA66F10046B7CF /* MarcoPontoCore.framework */; };
 		34D19FF31CDA6CBA0046B7CF /* PunchGatewayCoreDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D19FF21CDA6CBA0046B7CF /* PunchGatewayCoreDataTests.swift */; };
 		34D19FFF1CDA6D440046B7CF /* MarcoPonto.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3435FF7C1CC2E7640076AF42 /* MarcoPonto.xcdatamodeld */; };
 		34D1A0001CDA6D460046B7CF /* PunchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3472A9ED1CC6F3E100CEF1D1 /* PunchModel.swift */; };
@@ -55,6 +55,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		349AFB661CDACD6B003D2279 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 349AFB611CDACD6B003D2279 /* MarcoPontoCore.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 34D19F531CDA66130046B7CF;
+			remoteInfo = MarcoPontoCore;
+		};
+		349AFB681CDACD6B003D2279 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 349AFB611CDACD6B003D2279 /* MarcoPontoCore.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 34D19F5D1CDA66130046B7CF;
+			remoteInfo = MarcoPontoCoreTests;
+		};
 		34D19FF51CDA6CBA0046B7CF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3435FF6A1CC2E7640076AF42 /* Project object */;
@@ -74,6 +88,7 @@
 		340BD7371CC3409600AB860B /* ListPunchsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPunchsViewController.swift; sourceTree = "<group>"; };
 		340BD7431CC3462B00AB860B /* ListPunchsDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPunchsDataSource.swift; sourceTree = "<group>"; };
 		340BD7451CC346D600AB860B /* ListPunchsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPunchsTableViewCell.swift; sourceTree = "<group>"; };
+		340C51931CDACDF1001ED6D5 /* MarcoPontoCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MarcoPontoCore.framework; path = "../../Library/Developer/Xcode/DerivedData/MarcoPontoCore-acsbswynyxcaeraiosoobuargltj/Build/Products/Debug-iphonesimulator/MarcoPontoCore.framework"; sourceTree = "<group>"; };
 		3418772B1CC6E4B3002A4B59 /* TotalsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TotalsViewController.swift; sourceTree = "<group>"; };
 		341877301CC6E552002A4B59 /* ReportsNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportsNavigationController.swift; sourceTree = "<group>"; };
 		3435FF721CC2E7640076AF42 /* MarcoPonto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarcoPonto.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -84,6 +99,7 @@
 		3435FF841CC2E7640076AF42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3472A9EC1CC6F3E100CEF1D1 /* PunchModel+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PunchModel+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		3472A9ED1CC6F3E100CEF1D1 /* PunchModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PunchModel.swift; sourceTree = "<group>"; };
+		349AFB611CDACD6B003D2279 /* MarcoPontoCore.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MarcoPontoCore.xcodeproj; path = MarcoPontoCore/MarcoPontoCore.xcodeproj; sourceTree = "<group>"; };
 		349D9B291CC2ECD20088DE5E /* FormPunchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FormPunchViewController.swift; path = Punch/Form/FormPunchViewController.swift; sourceTree = "<group>"; };
 		349D9B2D1CC2F68B0088DE5E /* SelectMomentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SelectMomentTableViewCell.swift; path = Punch/Form/SelectMomentTableViewCell.swift; sourceTree = "<group>"; };
 		349D9B311CC2F7960088DE5E /* FormPunchDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FormPunchDataSource.swift; path = Punch/Form/FormPunchDataSource.swift; sourceTree = "<group>"; };
@@ -117,8 +133,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				34D19FEB1CDA6C780046B7CF /* MarcoPontoCore.framework in Frameworks */,
 				A05A95DEEDAA4608E99F9C4B /* Pods_MarcoPonto.framework in Frameworks */,
+				340C51941CDACDF1001ED6D5 /* MarcoPontoCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,6 +226,15 @@
 				349D9B261CC2EBA40088DE5E /* ViewsControllers */,
 			);
 			path = MarcoPonto;
+			sourceTree = "<group>";
+		};
+		349AFB621CDACD6B003D2279 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				349AFB671CDACD6B003D2279 /* MarcoPontoCore.framework */,
+				349AFB691CDACD6B003D2279 /* MarcoPontoCoreTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		349D9B151CC2E82E0088DE5E /* ApplicationBase */ = {
@@ -342,6 +367,8 @@
 		93DB51290E3CD3B719837D29 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				340C51931CDACDF1001ED6D5 /* MarcoPontoCore.framework */,
+				349AFB611CDACD6B003D2279 /* MarcoPontoCore.xcodeproj */,
 				34D19FD51CDA66F10046B7CF /* MarcoPontoCore.framework */,
 				34D19F3E1CDA653D0046B7CF /* MarcoPontoCore.framework */,
 				81C82F974AC11FC5E456E76F /* Pods_MarcoPonto.framework */,
@@ -443,6 +470,12 @@
 			mainGroup = 3435FF691CC2E7640076AF42;
 			productRefGroup = 3435FF731CC2E7640076AF42 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 349AFB621CDACD6B003D2279 /* Products */;
+					ProjectRef = 349AFB611CDACD6B003D2279 /* MarcoPontoCore.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				3435FF711CC2E7640076AF42 /* MarcoPonto */,
@@ -450,6 +483,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		349AFB671CDACD6B003D2279 /* MarcoPontoCore.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = MarcoPontoCore.framework;
+			remoteRef = 349AFB661CDACD6B003D2279 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		349AFB691CDACD6B003D2279 /* MarcoPontoCoreTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = MarcoPontoCoreTests.xctest;
+			remoteRef = 349AFB681CDACD6B003D2279 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		3435FF701CC2E7640076AF42 /* Resources */ = {
