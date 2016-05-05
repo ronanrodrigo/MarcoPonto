@@ -14,6 +14,8 @@
 		340BD7441CC3462B00AB860B /* ListPunchsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340BD7431CC3462B00AB860B /* ListPunchsDataSource.swift */; };
 		340BD7471CC346D600AB860B /* ListPunchsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340BD7451CC346D600AB860B /* ListPunchsTableViewCell.swift */; };
 		340C51941CDACDF1001ED6D5 /* MarcoPontoCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 340C51931CDACDF1001ED6D5 /* MarcoPontoCore.framework */; };
+		340C51991CDACF71001ED6D5 /* WorkHoursTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340C51971CDACF71001ED6D5 /* WorkHoursTableViewCell.swift */; };
+		340C519A1CDACF71001ED6D5 /* WorkHoursTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 340C51981CDACF71001ED6D5 /* WorkHoursTableViewCell.xib */; };
 		3418772D1CC6E4B3002A4B59 /* TotalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3418772B1CC6E4B3002A4B59 /* TotalsViewController.swift */; };
 		341877311CC6E552002A4B59 /* ReportsNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341877301CC6E552002A4B59 /* ReportsNavigationController.swift */; };
 		3435FF761CC2E7640076AF42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3435FF751CC2E7640076AF42 /* AppDelegate.swift */; };
@@ -89,6 +91,9 @@
 		340BD7431CC3462B00AB860B /* ListPunchsDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPunchsDataSource.swift; sourceTree = "<group>"; };
 		340BD7451CC346D600AB860B /* ListPunchsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPunchsTableViewCell.swift; sourceTree = "<group>"; };
 		340C51931CDACDF1001ED6D5 /* MarcoPontoCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MarcoPontoCore.framework; path = "../../Library/Developer/Xcode/DerivedData/MarcoPontoCore-acsbswynyxcaeraiosoobuargltj/Build/Products/Debug-iphonesimulator/MarcoPontoCore.framework"; sourceTree = "<group>"; };
+		340C51971CDACF71001ED6D5 /* WorkHoursTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkHoursTableViewCell.swift; sourceTree = "<group>"; };
+		340C51981CDACF71001ED6D5 /* WorkHoursTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WorkHoursTableViewCell.xib; sourceTree = "<group>"; };
+		340C519B1CDAD369001ED6D5 /* Marco Ponto.clr */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Marco Ponto.clr"; sourceTree = "<group>"; };
 		3418772B1CC6E4B3002A4B59 /* TotalsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TotalsViewController.swift; sourceTree = "<group>"; };
 		341877301CC6E552002A4B59 /* ReportsNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportsNavigationController.swift; sourceTree = "<group>"; };
 		3435FF721CC2E7640076AF42 /* MarcoPonto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarcoPonto.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -273,6 +278,7 @@
 		34BD8F971CC6623B00607BA6 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				340C519B1CDAD369001ED6D5 /* Marco Ponto.clr */,
 				3435FF7F1CC2E7640076AF42 /* Assets.xcassets */,
 				34BD8F981CC6628E00607BA6 /* MaterialIcons+UIImage.swift */,
 			);
@@ -341,6 +347,8 @@
 			isa = PBXGroup;
 			children = (
 				4B7A581DCA5399934C5D8F40 /* TotalsViewController.xib */,
+				340C51971CDACF71001ED6D5 /* WorkHoursTableViewCell.swift */,
+				340C51981CDACF71001ED6D5 /* WorkHoursTableViewCell.xib */,
 			);
 			path = Reports;
 			sourceTree = "<group>";
@@ -506,6 +514,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				340C519A1CDACF71001ED6D5 /* WorkHoursTableViewCell.xib in Resources */,
 				3435FF831CC2E7640076AF42 /* LaunchScreen.storyboard in Resources */,
 				3435FF801CC2E7640076AF42 /* Assets.xcassets in Resources */,
 				4B7A51761AFE51EF9211C877 /* FormPunchViewController.xib in Resources */,
@@ -750,6 +759,7 @@
 				34E9B3ED1CC360060017A083 /* PunchGatewayCoreData.swift in Sources */,
 				3472A9EE1CC6F3E100CEF1D1 /* PunchModel+CoreDataProperties.swift in Sources */,
 				349D9B321CC2F7960088DE5E /* FormPunchDataSource.swift in Sources */,
+				340C51991CDACF71001ED6D5 /* WorkHoursTableViewCell.swift in Sources */,
 				3405D98D1CCA74F600616382 /* TotalsDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
