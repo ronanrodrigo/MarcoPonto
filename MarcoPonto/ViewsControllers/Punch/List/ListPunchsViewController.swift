@@ -37,6 +37,8 @@ class ListPunchsViewController: UIViewController, EditTableViewDelegate {
         tableView.registerNib(
             UINib(nibName: cellNameAndIdentifier, bundle: nil), forCellReuseIdentifier: cellNameAndIdentifier)
         tableView.allowsSelectionDuringEditing = false
+
+        tableView.tableFooterView = UIView(frame: CGRect.zero)
     }
 
     func confirmDelete(punch: Punch, at indexPath: NSIndexPath) {

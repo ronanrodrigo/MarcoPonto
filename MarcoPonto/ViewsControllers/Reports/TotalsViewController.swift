@@ -16,6 +16,7 @@ class TotalsViewController: UIViewController {
     private func configureTableView() {
         dataSource = TotalsDataSource()
         tableView.dataSource = dataSource
+        tableView.tableFooterView = UIView(frame: CGRect.zero)
     }
 
 }
