@@ -1,9 +1,9 @@
 import UIKit
 
 class TotalsViewController: UIViewController {
+    private var dataSource: TotalsDataSource!
 
     @IBOutlet weak var tableView: UITableView!
-    private var dataSource: TotalsDataSource!
 
     override func viewDidLoad() {
         super.viewDidLoad()
