@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="WorkHoursTableViewCell" rowHeight="75" id="KGk-i7-Jjw" customClass="WorkHoursTableViewCell" customModule="MarcoPonto" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="75"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="74.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Semana atual" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nKA-cw-5OX">
+                        <rect key="frame" x="15" y="27" width="104" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+01:00:00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QMk-Aa-HlG">
+                        <rect key="frame" x="222.5" y="18" width="82" height="21"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                        <color key="textColor" red="0.22352941179999999" green="0.85882352939999995" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="41:00:00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IHg-Yr-vSM">
+                        <rect key="frame" x="243" y="38.5" width="61.5" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="nKA-cw-5OX" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="2SK-c9-Yf4"/>
+                    <constraint firstItem="QMk-Aa-HlG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="E0N-wP-ehm"/>
+                    <constraint firstItem="QMk-Aa-HlG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="15" id="HFQ-Xy-nLd"/>
+                    <constraint firstItem="nKA-cw-5OX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="KGT-Pz-rTL"/>
+                    <constraint firstItem="QMk-Aa-HlG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="UQo-Q8-uac"/>
+                    <constraint firstAttribute="trailing" secondItem="QMk-Aa-HlG" secondAttribute="trailing" constant="15" id="Vxa-Ey-dgP"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="IHg-Yr-vSM" secondAttribute="bottom" constant="10" id="YRG-ZZ-80V"/>
+                    <constraint firstAttribute="trailing" secondItem="IHg-Yr-vSM" secondAttribute="trailing" constant="15" id="owf-lL-EA0"/>
+                    <constraint firstAttribute="bottom" secondItem="IHg-Yr-vSM" secondAttribute="bottom" constant="8" id="sBZ-Fa-wRr"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="HFQ-Xy-nLd"/>
+                        <exclude reference="UQo-Q8-uac"/>
+                        <exclude reference="sBZ-Fa-wRr"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="balance" destination="QMk-Aa-HlG" id="dyr-uj-m4D"/>
+                <outlet property="title" destination="nKA-cw-5OX" id="3YA-9h-NZy"/>
+                <outlet property="total" destination="IHg-Yr-vSM" id="PBH-qm-rBD"/>
+            </connections>
+            <point key="canvasLocation" x="300" y="260.5"/>
+        </tableViewCell>
+    </objects>
+</document>
