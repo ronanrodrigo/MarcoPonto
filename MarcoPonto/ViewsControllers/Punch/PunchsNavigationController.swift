@@ -12,6 +12,8 @@ class PunchsNavigationController: UINavigationController, SavePunchPresenter, IN
         super.viewDidLoad()
         listPunchsViewController = ListPunchsViewController(navigationDelegate: self)
         openListPunchsViewController()
+
+        navigationBar.tintColor = UIColor.primary
     }
 
     func openListPunchsViewController() {

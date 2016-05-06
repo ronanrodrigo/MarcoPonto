@@ -8,6 +8,8 @@ class ReportsNavigationController: UINavigationController {
         super.viewDidLoad()
         totalsViewController = TotalsViewController()
         openListPunchsViewController()
+
+        navigationBar.tintColor = UIColor.primary
     }
 
     func openListPunchsViewController() {
