@@ -19,7 +19,7 @@ class CalculateWorkedHoursEntityTests: XCTestCase {
 
         let totalTimeInterval = entity.calculate()
 
-        XCTAssertEqual("24:00:00", totalTimeInterval.toTimeString())
+        XCTAssertEqual("24h 00m", totalTimeInterval.toTimeString())
     }
 
     func testShouldNotCalculatePunchWithoutOutput() {
@@ -30,7 +30,7 @@ class CalculateWorkedHoursEntityTests: XCTestCase {
 
         let totalTimeInterval = entity.calculate()
 
-        XCTAssertEqual("24:00:00", totalTimeInterval.toTimeString())
+        XCTAssertEqual("24h 00m", totalTimeInterval.toTimeString())
     }
 
     func testShouldNotCalculatePunchWithoutInput() {
@@ -41,7 +41,7 @@ class CalculateWorkedHoursEntityTests: XCTestCase {
 
         let totalTimeInterval = entity.calculate()
 
-        XCTAssertEqual("24:00:00", totalTimeInterval.toTimeString())
+        XCTAssertEqual("24h 00m", totalTimeInterval.toTimeString())
     }
 
     func testShouldNotCalculateWhenOutputPunchIsLowerThanInputPunch() {
@@ -51,7 +51,7 @@ class CalculateWorkedHoursEntityTests: XCTestCase {
 
         let totalTimeInterval = entity.calculate()
 
-        XCTAssertEqual("00:00:00", totalTimeInterval.toTimeString())
+        XCTAssertEqual("00h 00m", totalTimeInterval.toTimeString())
     }
 
 }

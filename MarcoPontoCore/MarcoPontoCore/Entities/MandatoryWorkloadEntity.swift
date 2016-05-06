@@ -6,7 +6,7 @@ public class MandatoryWorkloadEntity {
     var now: NSDate
     var referenceDate: NSDate
     var beginningDate: NSDate
-    var dailyHours: NSTimeInterval = 8.0.hoursToSeconds()
+    var dailyHours: NSTimeInterval = 8.67.hoursToSeconds()
 
     public init(referenceDate: NSDate, beginningDate: NSDate, now: NSDate = NSDate()) {
         self.now = now
