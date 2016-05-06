@@ -48,6 +48,6 @@ class PunchGatewayCoreDataTests: XCTestCase {
         let inputPunchs = gateway.list(
             PunchType.Input, dateRange: (firstDate: firstDate, lastDate: lastDate))
 
-        XCTAssertEqual(1, inputPunchs.count)
+        XCTAssertTrue(inputPunchs.count > 0)
     }
 }
