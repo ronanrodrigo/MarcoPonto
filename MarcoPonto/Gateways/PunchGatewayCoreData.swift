@@ -20,7 +20,7 @@ class PunchGatewayCoreData: PunchGateway {
         nextId = getLastId() + 1
     }
 
-    func create(punch: Punch) {
+    func create(punch: Punch) -> Punch {
         let entity = NSEntityDescription.entityForName(entityName, inManagedObjectContext: context)!
         let punchModel = PunchModel(entity: entity, insertIntoManagedObjectContext: context)
         punchModel.type = punch.type
@@ -33,9 +33,10 @@ class PunchGatewayCoreData: PunchGateway {
         } catch {
             print("Could not create \(entityName)")
         }
+        return punchModel
     }
 
-    func update(punch: Punch) {
+    func update(punch: Punch) -> Punch {
         let fetchRequest = NSFetchRequest(entityName: entityName)
         fetchRequest.predicate =  NSPredicate(format: "punchId = %d", punch.id!)
         do {
@@ -44,10 +45,12 @@ class PunchGatewayCoreData: PunchGateway {
                 _punch.moment = NSDate(fromDate: punch.moment, second: 0, nanosecond: 0)
                 _punch.type = punch.type
                 try context.save()
+                return _punch
             }
         } catch {
             print("Could not update \(entityName)")
         }
+        return punch
     }
 
     func delete(punch: Punch) {

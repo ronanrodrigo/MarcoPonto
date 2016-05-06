@@ -4,13 +4,17 @@ class PunchGatewayFake: PunchGateway {
     var punchs: [Punch] = []
     var listSpied = false
 
-    func create(punch: Punch) {
+    func create(punch: Punch) -> Punch {
         punchs.append(punch)
+        return punch
     }
 
-    func update(punch: Punch) { }
+    func update(punch: Punch) -> Punch {
+        return punch
+    }
 
-    func delete(punch: Punch) { }
+    func delete(punch: Punch) {
+    }
 
     func list() -> [Punch] {
         return punchs

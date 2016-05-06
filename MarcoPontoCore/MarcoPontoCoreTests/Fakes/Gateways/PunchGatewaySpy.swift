@@ -7,12 +7,14 @@ class PunchGatewaySpy: PunchGateway {
     var listBySpied = false
     var listSpieds: [Bool] = []
 
-    func create(punch: Punch) {
+    func create(punch: Punch) -> Punch {
         createSpied = true
+        return punch
     }
 
-    func update(punch: Punch) {
+    func update(punch: Punch) -> Punch {
         updateSpied = true
+        return punch
     }
 
     func delete(punch: Punch) { }
