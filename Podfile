@@ -12,3 +12,11 @@ end
 target 'MarcoPontoTests' do
   shared_pods
 end
+
+target 'MarcoPontoCore' do
+  shared_pods
+end
+
+target 'MarcoPontoCoreTests' do
+  shared_pods
+end

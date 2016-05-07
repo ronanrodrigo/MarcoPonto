@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		236678E80E852C78C7D096CE /* Pods_MarcoPontoCoreTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA404A759F1E16BC4DE18C80 /* Pods_MarcoPontoCoreTests.framework */; };
 		3405D9881CCA51E700616382 /* CurrentWeekHoursUsecaseFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3405D9871CCA51E700616382 /* CurrentWeekHoursUsecaseFactory.swift */; };
 		3405D98D1CCA74F600616382 /* TotalsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3405D98C1CCA74F600616382 /* TotalsDataSource.swift */; };
 		340BD72B1CC33D8100AB860B /* PunchsNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340BD72A1CC33D8100AB860B /* PunchsNavigationController.swift */; };
@@ -28,21 +29,60 @@
 		349D9B321CC2F7960088DE5E /* FormPunchDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349D9B311CC2F7960088DE5E /* FormPunchDataSource.swift */; };
 		34BD8F961CC5BA3500607BA6 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BD8F951CC5BA3500607BA6 /* TabBarController.swift */; };
 		34BD8F991CC6628E00607BA6 /* MaterialIcons+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BD8F981CC6628E00607BA6 /* MaterialIcons+UIImage.swift */; };
-		34D19FF31CDA6CBA0046B7CF /* PunchGatewayCoreDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D19FF21CDA6CBA0046B7CF /* PunchGatewayCoreDataTests.swift */; };
-		34D19FFF1CDA6D440046B7CF /* MarcoPonto.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3435FF7C1CC2E7640076AF42 /* MarcoPonto.xcdatamodeld */; };
-		34D1A0001CDA6D460046B7CF /* PunchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3472A9ED1CC6F3E100CEF1D1 /* PunchModel.swift */; };
-		34D1A0011CDA6D480046B7CF /* PunchModel+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3472A9EC1CC6F3E100CEF1D1 /* PunchModel+CoreDataProperties.swift */; };
-		34D1A0111CDA6DDB0046B7CF /* FormPunchDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349D9B311CC2F7960088DE5E /* FormPunchDataSource.swift */; };
-		34D1A0131CDA6DDB0046B7CF /* SelectMomentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349D9B2D1CC2F68B0088DE5E /* SelectMomentTableViewCell.swift */; };
-		34D1A0141CDA6DDB0046B7CF /* SelectTypeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E9B3F71CC3C66B0017A083 /* SelectTypeTableViewCell.swift */; };
-		34D1A0171CDA6DDB0046B7CF /* ListPunchsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340BD7451CC346D600AB860B /* ListPunchsTableViewCell.swift */; };
-		34D1A0191CDA6DDB0046B7CF /* PunchTypeLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E9B4021CC419090017A083 /* PunchTypeLabel.swift */; };
-		34D1A01F1CDA6E040046B7CF /* MaterialIcons+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BD8F981CC6628E00607BA6 /* MaterialIcons+UIImage.swift */; };
 		34D779E91CDC3F8100B13169 /* UIColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D779E81CDC3F8100B13169 /* UIColors.swift */; };
-		34D779EC1CDC3FCA00B13169 /* UIColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D779E81CDC3F8100B13169 /* UIColors.swift */; };
-		34D779ED1CDC40CE00B13169 /* MarcoPontoCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 349AFB671CDACD6B003D2279 /* MarcoPontoCore.framework */; };
-		34D779EE1CDC414600B13169 /* MarcoPontoCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 349AFB671CDACD6B003D2279 /* MarcoPontoCore.framework */; };
-		34D779EF1CDC414600B13169 /* MarcoPontoCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 349AFB671CDACD6B003D2279 /* MarcoPontoCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		34DF300A1CDD6EF3003E6A85 /* MarcoPontoCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 34DF30091CDD6EF3003E6A85 /* MarcoPontoCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		34DF30111CDD6EF3003E6A85 /* MarcoPontoCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34DF30071CDD6EF3003E6A85 /* MarcoPontoCore.framework */; };
+		34DF301C1CDD6EF3003E6A85 /* MarcoPontoCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34DF30071CDD6EF3003E6A85 /* MarcoPontoCore.framework */; };
+		34DF301D1CDD6EF3003E6A85 /* MarcoPontoCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 34DF30071CDD6EF3003E6A85 /* MarcoPontoCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		34DF303E1CDD6F6D003E6A85 /* BalanceWorkedHoursEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DF30251CDD6F6D003E6A85 /* BalanceWorkedHoursEntity.swift */; };
+		34DF303F1CDD6F6D003E6A85 /* BalanceWorkedHoursEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DF30251CDD6F6D003E6A85 /* BalanceWorkedHoursEntity.swift */; };
+		34DF30421CDD6F6D003E6A85 /* MandatoryWorkloadEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DF30261CDD6F6D003E6A85 /* MandatoryWorkloadEntity.swift */; };
+		34DF30431CDD6F6D003E6A85 /* MandatoryWorkloadEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DF30261CDD6F6D003E6A85 /* MandatoryWorkloadEntity.swift */; };
+		34DF30461CDD6F6D003E6A85 /* TotalWorkedHoursEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DF30271CDD6F6D003E6A85 /* TotalWorkedHoursEntity.swift */; };
+		34DF30471CDD6F6D003E6A85 /* TotalWorkedHoursEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DF30271CDD6F6D003E6A85 /* TotalWorkedHoursEntity.swift */; };
+		34DF304A1CDD6F6D003E6A85 /* PunchType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DF30291CDD6F6D003E6A85 /* PunchType.swift */; };
+		34DF304B1CDD6F6D003E6A85 /* PunchType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DF30291CDD6F6D003E6A85 /* PunchType.swift */; };
+		34DF304E1CDD6F6D003E6A85 /* WorkHourType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DF302A1CDD6F6D003E6A85 /* WorkHourType.swift */; };
+		34DF304F1CDD6F6D003E6A85 /* WorkHourType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DF302A1CDD6F6D003E6A85 /* WorkHourType.swift */; };
+		34DF30521CDD6F6D003E6A85 /* Double+ToSeconds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DF302C1CDD6F6D003E6A85 /* Double+ToSeconds.swift */; };
+		34DF30531CDD6F6D003E6A85 /* Double+ToSeconds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DF302C1CDD6F6D003E6A85 /* Double+ToSeconds.swift */; };
+		34DF30561CDD6F6D003E6A85 /* NSDate+DateRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DF302D1CDD6F6D003E6A85 /* NSDate+DateRange.swift */; };
+		34DF30571CDD6F6D003E6A85 /* NSDate+DateRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DF302D1CDD6F6D003E6A85 /* NSDate+DateRange.swift */; };
+		34DF305A1CDD6F6D003E6A85 /* NSTimeInterval+ToTimeString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DF302E1CDD6F6D003E6A85 /* NSTimeInterval+ToTimeString.swift */; };
+		34DF305B1CDD6F6D003E6A85 /* NSTimeInterval+ToTimeString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DF302E1CDD6F6D003E6A85 /* NSTimeInterval+ToTimeString.swift */; };
+		34DF305E1CDD6F6D003E6A85 /* PunchGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DF30301CDD6F6D003E6A85 /* PunchGateway.swift */; };
+		34DF305F1CDD6F6D003E6A85 /* PunchGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DF30301CDD6F6D003E6A85 /* PunchGateway.swift */; };
+		34DF30621CDD6F6D003E6A85 /* ListPunchsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DF30321CDD6F6D003E6A85 /* ListPunchsPresenter.swift */; };
+		34DF30631CDD6F6D003E6A85 /* ListPunchsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DF30321CDD6F6D003E6A85 /* ListPunchsPresenter.swift */; };
+		34DF30661CDD6F6D003E6A85 /* SavePunchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DF30331CDD6F6D003E6A85 /* SavePunchPresenter.swift */; };
+		34DF30671CDD6F6D003E6A85 /* SavePunchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DF30331CDD6F6D003E6A85 /* SavePunchPresenter.swift */; };
+		34DF306A1CDD6F6D003E6A85 /* WorkedHoursPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DF30341CDD6F6D003E6A85 /* WorkedHoursPresenter.swift */; };
+		34DF306B1CDD6F6D003E6A85 /* WorkedHoursPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DF30341CDD6F6D003E6A85 /* WorkedHoursPresenter.swift */; };
+		34DF306E1CDD6F6D003E6A85 /* Punch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DF30361CDD6F6D003E6A85 /* Punch.swift */; };
+		34DF306F1CDD6F6D003E6A85 /* Punch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DF30361CDD6F6D003E6A85 /* Punch.swift */; };
+		34DF30721CDD6F6D003E6A85 /* WorkHour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DF30371CDD6F6D003E6A85 /* WorkHour.swift */; };
+		34DF30731CDD6F6D003E6A85 /* WorkHour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DF30371CDD6F6D003E6A85 /* WorkHour.swift */; };
+		34DF30761CDD6F6D003E6A85 /* ListPunchsUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DF30391CDD6F6D003E6A85 /* ListPunchsUsecase.swift */; };
+		34DF30771CDD6F6D003E6A85 /* ListPunchsUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DF30391CDD6F6D003E6A85 /* ListPunchsUsecase.swift */; };
+		34DF307A1CDD6F6D003E6A85 /* SavePunchUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DF303A1CDD6F6D003E6A85 /* SavePunchUsecase.swift */; };
+		34DF307B1CDD6F6D003E6A85 /* SavePunchUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DF303A1CDD6F6D003E6A85 /* SavePunchUsecase.swift */; };
+		34DF307E1CDD6F6D003E6A85 /* WorkedHoursUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DF303B1CDD6F6D003E6A85 /* WorkedHoursUsecase.swift */; };
+		34DF307F1CDD6F6D003E6A85 /* WorkedHoursUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DF303B1CDD6F6D003E6A85 /* WorkedHoursUsecase.swift */; };
+		34DF30931CDD6F81003E6A85 /* BalanceWorkedHoursEntityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DF30811CDD6F81003E6A85 /* BalanceWorkedHoursEntityTests.swift */; };
+		34DF30941CDD6F81003E6A85 /* CalculateWorkedHoursEntityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DF30821CDD6F81003E6A85 /* CalculateWorkedHoursEntityTests.swift */; };
+		34DF30951CDD6F81003E6A85 /* MandatoryWorkloadEntityHoursTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DF30831CDD6F81003E6A85 /* MandatoryWorkloadEntityHoursTests.swift */; };
+		34DF30961CDD6F81003E6A85 /* PunchTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DF30851CDD6F81003E6A85 /* PunchTypeTests.swift */; };
+		34DF30971CDD6F81003E6A85 /* WorkHourTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DF30861CDD6F81003E6A85 /* WorkHourTypeTests.swift */; };
+		34DF30981CDD6F81003E6A85 /* PunchGatewayFake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DF30891CDD6F81003E6A85 /* PunchGatewayFake.swift */; };
+		34DF30991CDD6F81003E6A85 /* PunchGatewaySpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DF308A1CDD6F81003E6A85 /* PunchGatewaySpy.swift */; };
+		34DF309A1CDD6F81003E6A85 /* ListPunchsPresenterSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DF308C1CDD6F81003E6A85 /* ListPunchsPresenterSpy.swift */; };
+		34DF309B1CDD6F81003E6A85 /* SavePunchPresenterSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DF308D1CDD6F81003E6A85 /* SavePunchPresenterSpy.swift */; };
+		34DF309C1CDD6F81003E6A85 /* WorkedHoursPresenterFake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DF308E1CDD6F81003E6A85 /* WorkedHoursPresenterFake.swift */; };
+		34DF309D1CDD6F81003E6A85 /* ListPunchsUsecaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DF30901CDD6F81003E6A85 /* ListPunchsUsecaseTests.swift */; };
+		34DF309E1CDD6F81003E6A85 /* SavePunchUsecaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DF30911CDD6F81003E6A85 /* SavePunchUsecaseTests.swift */; };
+		34DF309F1CDD6F81003E6A85 /* WorkedHoursUsecaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DF30921CDD6F81003E6A85 /* WorkedHoursUsecaseTests.swift */; };
+		34DF30A21CDD717C003E6A85 /* MarcoPontoCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34DF30071CDD6EF3003E6A85 /* MarcoPontoCore.framework */; };
+		34E4892C1CDD73500033E5A3 /* PunchGatewayCoreDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D19FF21CDA6CBA0046B7CF /* PunchGatewayCoreDataTests.swift */; };
 		34E9B3ED1CC360060017A083 /* PunchGatewayCoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E9B3EC1CC360060017A083 /* PunchGatewayCoreData.swift */; };
 		34E9B3F01CC3B72E0017A083 /* ListPunchUsecaseFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E9B3EF1CC3B72E0017A083 /* ListPunchUsecaseFactory.swift */; };
 		34E9B3F81CC3C66B0017A083 /* SelectTypeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E9B3F71CC3C66B0017A083 /* SelectTypeTableViewCell.swift */; };
@@ -50,6 +90,7 @@
 		34E9B3FC1CC3DA1A0017A083 /* PunchGatewayCoreDataFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E9B3FB1CC3DA1A0017A083 /* PunchGatewayCoreDataFactory.swift */; };
 		34E9B4031CC419090017A083 /* PunchTypeLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E9B4021CC419090017A083 /* PunchTypeLabel.swift */; };
 		34E9B4051CC42C360017A083 /* ListPunchsDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E9B4041CC42C360017A083 /* ListPunchsDelegate.swift */; };
+		38A1D5DDE9A008BB75B85D2B /* Pods_MarcoPontoCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F861B409D24DF34CD93ACF13 /* Pods_MarcoPontoCore.framework */; };
 		4B7A51761AFE51EF9211C877 /* FormPunchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B7A54C26B2939F7ECFE71B2 /* FormPunchViewController.xib */; };
 		4B7A532ACFCC5B48106CE51E /* ListPunchsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B7A5CAA1E540DD091D0E91E /* ListPunchsTableViewCell.xib */; };
 		4B7A5985BF6003BB6C46E01A /* TotalsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B7A581DCA5399934C5D8F40 /* TotalsViewController.xib */; };
@@ -61,20 +102,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		349AFB661CDACD6B003D2279 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 349AFB611CDACD6B003D2279 /* MarcoPontoCore.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 34D19F531CDA66130046B7CF;
-			remoteInfo = MarcoPontoCore;
-		};
-		349AFB681CDACD6B003D2279 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 349AFB611CDACD6B003D2279 /* MarcoPontoCore.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 34D19F5D1CDA66130046B7CF;
-			remoteInfo = MarcoPontoCoreTests;
-		};
 		34D19FF51CDA6CBA0046B7CF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3435FF6A1CC2E7640076AF42 /* Project object */;
@@ -82,23 +109,37 @@
 			remoteGlobalIDString = 3435FF711CC2E7640076AF42;
 			remoteInfo = MarcoPonto;
 		};
-		34D779F01CDC414600B13169 /* PBXContainerItemProxy */ = {
+		34DF30121CDD6EF3003E6A85 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 349AFB611CDACD6B003D2279 /* MarcoPontoCore.xcodeproj */;
+			containerPortal = 3435FF6A1CC2E7640076AF42 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 34D19F521CDA66130046B7CF;
+			remoteGlobalIDString = 34DF30061CDD6EF3003E6A85;
+			remoteInfo = MarcoPontoCore;
+		};
+		34DF30141CDD6EF3003E6A85 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3435FF6A1CC2E7640076AF42 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3435FF711CC2E7640076AF42;
+			remoteInfo = MarcoPonto;
+		};
+		34DF301A1CDD6EF3003E6A85 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3435FF6A1CC2E7640076AF42 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 34DF30061CDD6EF3003E6A85;
 			remoteInfo = MarcoPontoCore;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		34D779F21CDC414600B13169 /* Embed Frameworks */ = {
+		347332B01CDD6E13005DF2F2 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				34D779EF1CDC414600B13169 /* MarcoPontoCore.framework in Embed Frameworks */,
+				34DF301D1CDD6EF3003E6A85 /* MarcoPontoCore.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -106,7 +147,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0493B32030BF09FF5B6C926A /* Pods-MarcoPontoCoreTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarcoPontoCoreTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MarcoPontoCoreTests/Pods-MarcoPontoCoreTests.debug.xcconfig"; sourceTree = "<group>"; };
+		07096AE6A23F3B47B8F63050 /* Pods_MarocPontoCoreTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MarocPontoCoreTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0796B546D9AF6FFFE578D654 /* Pods-MarcoPonto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarcoPonto.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MarcoPonto/Pods-MarcoPonto.debug.xcconfig"; sourceTree = "<group>"; };
+		12576A62F5476852BAD76768 /* Pods-MarocPontoCore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarocPontoCore.release.xcconfig"; path = "Pods/Target Support Files/Pods-MarocPontoCore/Pods-MarocPontoCore.release.xcconfig"; sourceTree = "<group>"; };
 		26D7D264C5E50B35AFF83555 /* Pods-MarcoPontoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarcoPontoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MarcoPontoTests/Pods-MarcoPontoTests.release.xcconfig"; sourceTree = "<group>"; };
 		311B7F720514199B960B6235 /* Pods-MarcoPontoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarcoPontoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MarcoPontoTests/Pods-MarcoPontoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		3405D9871CCA51E700616382 /* CurrentWeekHoursUsecaseFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentWeekHoursUsecaseFactory.swift; sourceTree = "<group>"; };
@@ -115,7 +159,6 @@
 		340BD7371CC3409600AB860B /* ListPunchsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPunchsViewController.swift; sourceTree = "<group>"; };
 		340BD7431CC3462B00AB860B /* ListPunchsDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPunchsDataSource.swift; sourceTree = "<group>"; };
 		340BD7451CC346D600AB860B /* ListPunchsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPunchsTableViewCell.swift; sourceTree = "<group>"; };
-		340C51931CDACDF1001ED6D5 /* MarcoPontoCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MarcoPontoCore.framework; path = "../../Library/Developer/Xcode/DerivedData/MarcoPontoCore-acsbswynyxcaeraiosoobuargltj/Build/Products/Debug-iphonesimulator/MarcoPontoCore.framework"; sourceTree = "<group>"; };
 		340C51971CDACF71001ED6D5 /* WorkHoursTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkHoursTableViewCell.swift; sourceTree = "<group>"; };
 		340C51981CDACF71001ED6D5 /* WorkHoursTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WorkHoursTableViewCell.xib; sourceTree = "<group>"; };
 		340C519B1CDAD369001ED6D5 /* Marco Ponto.clr */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Marco Ponto.clr"; sourceTree = "<group>"; };
@@ -129,18 +172,50 @@
 		3435FF841CC2E7640076AF42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3472A9EC1CC6F3E100CEF1D1 /* PunchModel+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PunchModel+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		3472A9ED1CC6F3E100CEF1D1 /* PunchModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PunchModel.swift; sourceTree = "<group>"; };
-		349AFB611CDACD6B003D2279 /* MarcoPontoCore.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MarcoPontoCore.xcodeproj; path = MarcoPontoCore/MarcoPontoCore.xcodeproj; sourceTree = "<group>"; };
 		349D9B291CC2ECD20088DE5E /* FormPunchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FormPunchViewController.swift; path = Punch/Form/FormPunchViewController.swift; sourceTree = "<group>"; };
 		349D9B2D1CC2F68B0088DE5E /* SelectMomentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SelectMomentTableViewCell.swift; path = Punch/Form/SelectMomentTableViewCell.swift; sourceTree = "<group>"; };
 		349D9B311CC2F7960088DE5E /* FormPunchDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FormPunchDataSource.swift; path = Punch/Form/FormPunchDataSource.swift; sourceTree = "<group>"; };
 		34BD8F951CC5BA3500607BA6 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		34BD8F981CC6628E00607BA6 /* MaterialIcons+UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MaterialIcons+UIImage.swift"; sourceTree = "<group>"; };
-		34D19F3E1CDA653D0046B7CF /* MarcoPontoCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MarcoPontoCore.framework; path = "../../Library/Developer/Xcode/DerivedData/MarcoPonto-eiznvikmlytuckdbbpqmttnvlgdy/Build/Products/Debug-iphonesimulator/MarcoPontoCore.framework"; sourceTree = "<group>"; };
-		34D19FD51CDA66F10046B7CF /* MarcoPontoCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MarcoPontoCore.framework; path = "../../Library/Developer/Xcode/DerivedData/MarcoPonto-eiznvikmlytuckdbbpqmttnvlgdy/Build/Products/Debug-iphoneos/MarcoPontoCore.framework"; sourceTree = "<group>"; };
 		34D19FF01CDA6CBA0046B7CF /* MarcoPontoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarcoPontoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		34D19FF21CDA6CBA0046B7CF /* PunchGatewayCoreDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PunchGatewayCoreDataTests.swift; sourceTree = "<group>"; };
 		34D19FF41CDA6CBA0046B7CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		34D779E81CDC3F8100B13169 /* UIColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColors.swift; sourceTree = "<group>"; };
+		34DF30071CDD6EF3003E6A85 /* MarcoPontoCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MarcoPontoCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		34DF30091CDD6EF3003E6A85 /* MarcoPontoCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MarcoPontoCore.h; sourceTree = "<group>"; };
+		34DF300B1CDD6EF3003E6A85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34DF30101CDD6EF3003E6A85 /* MarcoPontoCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarcoPontoCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		34DF30191CDD6EF3003E6A85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34DF30251CDD6F6D003E6A85 /* BalanceWorkedHoursEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BalanceWorkedHoursEntity.swift; sourceTree = "<group>"; };
+		34DF30261CDD6F6D003E6A85 /* MandatoryWorkloadEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MandatoryWorkloadEntity.swift; sourceTree = "<group>"; };
+		34DF30271CDD6F6D003E6A85 /* TotalWorkedHoursEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TotalWorkedHoursEntity.swift; sourceTree = "<group>"; };
+		34DF30291CDD6F6D003E6A85 /* PunchType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PunchType.swift; sourceTree = "<group>"; };
+		34DF302A1CDD6F6D003E6A85 /* WorkHourType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkHourType.swift; sourceTree = "<group>"; };
+		34DF302C1CDD6F6D003E6A85 /* Double+ToSeconds.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Double+ToSeconds.swift"; sourceTree = "<group>"; };
+		34DF302D1CDD6F6D003E6A85 /* NSDate+DateRange.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+DateRange.swift"; sourceTree = "<group>"; };
+		34DF302E1CDD6F6D003E6A85 /* NSTimeInterval+ToTimeString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSTimeInterval+ToTimeString.swift"; sourceTree = "<group>"; };
+		34DF30301CDD6F6D003E6A85 /* PunchGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PunchGateway.swift; sourceTree = "<group>"; };
+		34DF30321CDD6F6D003E6A85 /* ListPunchsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPunchsPresenter.swift; sourceTree = "<group>"; };
+		34DF30331CDD6F6D003E6A85 /* SavePunchPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavePunchPresenter.swift; sourceTree = "<group>"; };
+		34DF30341CDD6F6D003E6A85 /* WorkedHoursPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkedHoursPresenter.swift; sourceTree = "<group>"; };
+		34DF30361CDD6F6D003E6A85 /* Punch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Punch.swift; sourceTree = "<group>"; };
+		34DF30371CDD6F6D003E6A85 /* WorkHour.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkHour.swift; sourceTree = "<group>"; };
+		34DF30391CDD6F6D003E6A85 /* ListPunchsUsecase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPunchsUsecase.swift; sourceTree = "<group>"; };
+		34DF303A1CDD6F6D003E6A85 /* SavePunchUsecase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavePunchUsecase.swift; sourceTree = "<group>"; };
+		34DF303B1CDD6F6D003E6A85 /* WorkedHoursUsecase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkedHoursUsecase.swift; sourceTree = "<group>"; };
+		34DF30811CDD6F81003E6A85 /* BalanceWorkedHoursEntityTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BalanceWorkedHoursEntityTests.swift; sourceTree = "<group>"; };
+		34DF30821CDD6F81003E6A85 /* CalculateWorkedHoursEntityTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculateWorkedHoursEntityTests.swift; sourceTree = "<group>"; };
+		34DF30831CDD6F81003E6A85 /* MandatoryWorkloadEntityHoursTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MandatoryWorkloadEntityHoursTests.swift; sourceTree = "<group>"; };
+		34DF30851CDD6F81003E6A85 /* PunchTypeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PunchTypeTests.swift; sourceTree = "<group>"; };
+		34DF30861CDD6F81003E6A85 /* WorkHourTypeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkHourTypeTests.swift; sourceTree = "<group>"; };
+		34DF30891CDD6F81003E6A85 /* PunchGatewayFake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PunchGatewayFake.swift; sourceTree = "<group>"; };
+		34DF308A1CDD6F81003E6A85 /* PunchGatewaySpy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PunchGatewaySpy.swift; sourceTree = "<group>"; };
+		34DF308C1CDD6F81003E6A85 /* ListPunchsPresenterSpy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPunchsPresenterSpy.swift; sourceTree = "<group>"; };
+		34DF308D1CDD6F81003E6A85 /* SavePunchPresenterSpy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavePunchPresenterSpy.swift; sourceTree = "<group>"; };
+		34DF308E1CDD6F81003E6A85 /* WorkedHoursPresenterFake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkedHoursPresenterFake.swift; sourceTree = "<group>"; };
+		34DF30901CDD6F81003E6A85 /* ListPunchsUsecaseTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPunchsUsecaseTests.swift; sourceTree = "<group>"; };
+		34DF30911CDD6F81003E6A85 /* SavePunchUsecaseTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavePunchUsecaseTests.swift; sourceTree = "<group>"; };
+		34DF30921CDD6F81003E6A85 /* WorkedHoursUsecaseTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkedHoursUsecaseTests.swift; sourceTree = "<group>"; };
 		34E9B3EC1CC360060017A083 /* PunchGatewayCoreData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PunchGatewayCoreData.swift; sourceTree = "<group>"; };
 		34E9B3EF1CC3B72E0017A083 /* ListPunchUsecaseFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPunchUsecaseFactory.swift; sourceTree = "<group>"; };
 		34E9B3F71CC3C66B0017A083 /* SelectTypeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SelectTypeTableViewCell.swift; path = Punch/Form/SelectTypeTableViewCell.swift; sourceTree = "<group>"; };
@@ -148,6 +223,7 @@
 		34E9B3FB1CC3DA1A0017A083 /* PunchGatewayCoreDataFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PunchGatewayCoreDataFactory.swift; sourceTree = "<group>"; };
 		34E9B4021CC419090017A083 /* PunchTypeLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PunchTypeLabel.swift; sourceTree = "<group>"; };
 		34E9B4041CC42C360017A083 /* ListPunchsDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPunchsDelegate.swift; sourceTree = "<group>"; };
+		404EC8D24C423383DEB49E1D /* Pods_MarocPontoCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MarocPontoCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B7A521BCF886584E14BC9C7 /* ListPunchsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListPunchsViewController.xib; sourceTree = "<group>"; };
 		4B7A54C26B2939F7ECFE71B2 /* FormPunchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FormPunchViewController.xib; sourceTree = "<group>"; };
 		4B7A56FDBC391BDD47B73BEA /* SelectTypeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectTypeTableViewCell.xib; sourceTree = "<group>"; };
@@ -155,8 +231,16 @@
 		4B7A5C3920C3D4812223D3F0 /* SelectMomentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectMomentTableViewCell.xib; sourceTree = "<group>"; };
 		4B7A5CAA1E540DD091D0E91E /* ListPunchsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListPunchsTableViewCell.xib; sourceTree = "<group>"; };
 		56484213089692FF111507C5 /* Pods-MarcoPonto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarcoPonto.release.xcconfig"; path = "Pods/Target Support Files/Pods-MarcoPonto/Pods-MarcoPonto.release.xcconfig"; sourceTree = "<group>"; };
+		5979D1F66EDD9035050D4202 /* Pods-MarocPontoCoreTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarocPontoCoreTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MarocPontoCoreTests/Pods-MarocPontoCoreTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7100F9B6EF09CA2075256FF1 /* Pods-MarcoPontoCoreTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarcoPontoCoreTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MarcoPontoCoreTests/Pods-MarcoPontoCoreTests.release.xcconfig"; sourceTree = "<group>"; };
 		81C82F974AC11FC5E456E76F /* Pods_MarcoPonto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MarcoPonto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		87A104FEB40DC9B5C4A8A423 /* Pods-MarcoPontoCore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarcoPontoCore.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MarcoPontoCore/Pods-MarcoPontoCore.debug.xcconfig"; sourceTree = "<group>"; };
+		90B1380CF2AEDB9431B80BE6 /* Pods-MarocPontoCoreTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarocPontoCoreTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MarocPontoCoreTests/Pods-MarocPontoCoreTests.release.xcconfig"; sourceTree = "<group>"; };
+		9D3EA37CC3D6B97EBE343852 /* Pods-MarocPontoCore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarocPontoCore.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MarocPontoCore/Pods-MarocPontoCore.debug.xcconfig"; sourceTree = "<group>"; };
+		CA445732E92464A3A26102C5 /* Pods-MarcoPontoCore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarcoPontoCore.release.xcconfig"; path = "Pods/Target Support Files/Pods-MarcoPontoCore/Pods-MarcoPontoCore.release.xcconfig"; sourceTree = "<group>"; };
+		DA404A759F1E16BC4DE18C80 /* Pods_MarcoPontoCoreTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MarcoPontoCoreTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1856DDB607C20C59F7245D8 /* Pods_MarcoPontoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MarcoPontoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F861B409D24DF34CD93ACF13 /* Pods_MarcoPontoCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MarcoPontoCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,9 +248,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				34D779EE1CDC414600B13169 /* MarcoPontoCore.framework in Frameworks */,
 				A05A95DEEDAA4608E99F9C4B /* Pods_MarcoPonto.framework in Frameworks */,
-				34D779ED1CDC40CE00B13169 /* MarcoPontoCore.framework in Frameworks */,
+				34DF301C1CDD6EF3003E6A85 /* MarcoPontoCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,7 +257,25 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34DF30A21CDD717C003E6A85 /* MarcoPontoCore.framework in Frameworks */,
 				D918C225466D4C610081981A /* Pods_MarcoPontoTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34DF30031CDD6EF3003E6A85 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38A1D5DDE9A008BB75B85D2B /* Pods_MarcoPontoCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34DF300D1CDD6EF3003E6A85 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34DF30111CDD6EF3003E6A85 /* MarcoPontoCore.framework in Frameworks */,
+				236678E80E852C78C7D096CE /* Pods_MarcoPontoCoreTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,6 +332,8 @@
 			children = (
 				3435FF741CC2E7640076AF42 /* MarcoPonto */,
 				34D19FF11CDA6CBA0046B7CF /* MarcoPontoTests */,
+				34DF30081CDD6EF3003E6A85 /* MarcoPontoCore */,
+				34DF30161CDD6EF3003E6A85 /* MarcoPontoCoreTests */,
 				3435FF731CC2E7640076AF42 /* Products */,
 				93DB51290E3CD3B719837D29 /* Frameworks */,
 				D1706638DC8C714FE9ADE031 /* Pods */,
@@ -242,6 +345,8 @@
 			children = (
 				3435FF721CC2E7640076AF42 /* MarcoPonto.app */,
 				34D19FF01CDA6CBA0046B7CF /* MarcoPontoTests.xctest */,
+				34DF30071CDD6EF3003E6A85 /* MarcoPontoCore.framework */,
+				34DF30101CDD6EF3003E6A85 /* MarcoPontoCoreTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -258,15 +363,6 @@
 				349D9B261CC2EBA40088DE5E /* ViewsControllers */,
 			);
 			path = MarcoPonto;
-			sourceTree = "<group>";
-		};
-		349AFB621CDACD6B003D2279 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				349AFB671CDACD6B003D2279 /* MarcoPontoCore.framework */,
-				349AFB691CDACD6B003D2279 /* MarcoPontoCoreTests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		349D9B151CC2E82E0088DE5E /* ApplicationBase */ = {
@@ -329,6 +425,157 @@
 				34D19FF21CDA6CBA0046B7CF /* PunchGatewayCoreDataTests.swift */,
 			);
 			path = Gateways;
+			sourceTree = "<group>";
+		};
+		34DF30081CDD6EF3003E6A85 /* MarcoPontoCore */ = {
+			isa = PBXGroup;
+			children = (
+				34DF30241CDD6F6D003E6A85 /* Entities */,
+				34DF30281CDD6F6D003E6A85 /* Enums */,
+				34DF302B1CDD6F6D003E6A85 /* Extensions */,
+				34DF302F1CDD6F6D003E6A85 /* Gateways */,
+				34DF30311CDD6F6D003E6A85 /* Presenters */,
+				34DF30351CDD6F6D003E6A85 /* Structs */,
+				34DF30381CDD6F6D003E6A85 /* Usecases */,
+				34DF30091CDD6EF3003E6A85 /* MarcoPontoCore.h */,
+				34DF300B1CDD6EF3003E6A85 /* Info.plist */,
+			);
+			path = MarcoPontoCore;
+			sourceTree = "<group>";
+		};
+		34DF30161CDD6EF3003E6A85 /* MarcoPontoCoreTests */ = {
+			isa = PBXGroup;
+			children = (
+				34DF30801CDD6F81003E6A85 /* Entities */,
+				34DF30841CDD6F81003E6A85 /* Enums */,
+				34DF30871CDD6F81003E6A85 /* Fakes */,
+				34DF308F1CDD6F81003E6A85 /* Usecases */,
+				34DF30191CDD6EF3003E6A85 /* Info.plist */,
+			);
+			path = MarcoPontoCoreTests;
+			sourceTree = "<group>";
+		};
+		34DF30241CDD6F6D003E6A85 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				34DF30251CDD6F6D003E6A85 /* BalanceWorkedHoursEntity.swift */,
+				34DF30261CDD6F6D003E6A85 /* MandatoryWorkloadEntity.swift */,
+				34DF30271CDD6F6D003E6A85 /* TotalWorkedHoursEntity.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		34DF30281CDD6F6D003E6A85 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				34DF30291CDD6F6D003E6A85 /* PunchType.swift */,
+				34DF302A1CDD6F6D003E6A85 /* WorkHourType.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		34DF302B1CDD6F6D003E6A85 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				34DF302C1CDD6F6D003E6A85 /* Double+ToSeconds.swift */,
+				34DF302D1CDD6F6D003E6A85 /* NSDate+DateRange.swift */,
+				34DF302E1CDD6F6D003E6A85 /* NSTimeInterval+ToTimeString.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		34DF302F1CDD6F6D003E6A85 /* Gateways */ = {
+			isa = PBXGroup;
+			children = (
+				34DF30301CDD6F6D003E6A85 /* PunchGateway.swift */,
+			);
+			path = Gateways;
+			sourceTree = "<group>";
+		};
+		34DF30311CDD6F6D003E6A85 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				34DF30321CDD6F6D003E6A85 /* ListPunchsPresenter.swift */,
+				34DF30331CDD6F6D003E6A85 /* SavePunchPresenter.swift */,
+				34DF30341CDD6F6D003E6A85 /* WorkedHoursPresenter.swift */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		34DF30351CDD6F6D003E6A85 /* Structs */ = {
+			isa = PBXGroup;
+			children = (
+				34DF30361CDD6F6D003E6A85 /* Punch.swift */,
+				34DF30371CDD6F6D003E6A85 /* WorkHour.swift */,
+			);
+			path = Structs;
+			sourceTree = "<group>";
+		};
+		34DF30381CDD6F6D003E6A85 /* Usecases */ = {
+			isa = PBXGroup;
+			children = (
+				34DF30391CDD6F6D003E6A85 /* ListPunchsUsecase.swift */,
+				34DF303A1CDD6F6D003E6A85 /* SavePunchUsecase.swift */,
+				34DF303B1CDD6F6D003E6A85 /* WorkedHoursUsecase.swift */,
+			);
+			path = Usecases;
+			sourceTree = "<group>";
+		};
+		34DF30801CDD6F81003E6A85 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				34DF30811CDD6F81003E6A85 /* BalanceWorkedHoursEntityTests.swift */,
+				34DF30821CDD6F81003E6A85 /* CalculateWorkedHoursEntityTests.swift */,
+				34DF30831CDD6F81003E6A85 /* MandatoryWorkloadEntityHoursTests.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		34DF30841CDD6F81003E6A85 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				34DF30851CDD6F81003E6A85 /* PunchTypeTests.swift */,
+				34DF30861CDD6F81003E6A85 /* WorkHourTypeTests.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		34DF30871CDD6F81003E6A85 /* Fakes */ = {
+			isa = PBXGroup;
+			children = (
+				34DF30881CDD6F81003E6A85 /* Gateways */,
+				34DF308B1CDD6F81003E6A85 /* Presenters */,
+			);
+			path = Fakes;
+			sourceTree = "<group>";
+		};
+		34DF30881CDD6F81003E6A85 /* Gateways */ = {
+			isa = PBXGroup;
+			children = (
+				34DF30891CDD6F81003E6A85 /* PunchGatewayFake.swift */,
+				34DF308A1CDD6F81003E6A85 /* PunchGatewaySpy.swift */,
+			);
+			path = Gateways;
+			sourceTree = "<group>";
+		};
+		34DF308B1CDD6F81003E6A85 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				34DF308C1CDD6F81003E6A85 /* ListPunchsPresenterSpy.swift */,
+				34DF308D1CDD6F81003E6A85 /* SavePunchPresenterSpy.swift */,
+				34DF308E1CDD6F81003E6A85 /* WorkedHoursPresenterFake.swift */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		34DF308F1CDD6F81003E6A85 /* Usecases */ = {
+			isa = PBXGroup;
+			children = (
+				34DF30901CDD6F81003E6A85 /* ListPunchsUsecaseTests.swift */,
+				34DF30911CDD6F81003E6A85 /* SavePunchUsecaseTests.swift */,
+				34DF30921CDD6F81003E6A85 /* WorkedHoursUsecaseTests.swift */,
+			);
+			path = Usecases;
 			sourceTree = "<group>";
 		};
 		34E9B3E71CC35AF50017A083 /* Gateways */ = {
@@ -403,12 +650,12 @@
 		93DB51290E3CD3B719837D29 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				340C51931CDACDF1001ED6D5 /* MarcoPontoCore.framework */,
-				349AFB611CDACD6B003D2279 /* MarcoPontoCore.xcodeproj */,
-				34D19FD51CDA66F10046B7CF /* MarcoPontoCore.framework */,
-				34D19F3E1CDA653D0046B7CF /* MarcoPontoCore.framework */,
 				81C82F974AC11FC5E456E76F /* Pods_MarcoPonto.framework */,
 				E1856DDB607C20C59F7245D8 /* Pods_MarcoPontoTests.framework */,
+				404EC8D24C423383DEB49E1D /* Pods_MarocPontoCore.framework */,
+				07096AE6A23F3B47B8F63050 /* Pods_MarocPontoCoreTests.framework */,
+				F861B409D24DF34CD93ACF13 /* Pods_MarcoPontoCore.framework */,
+				DA404A759F1E16BC4DE18C80 /* Pods_MarcoPontoCoreTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -420,37 +667,49 @@
 				56484213089692FF111507C5 /* Pods-MarcoPonto.release.xcconfig */,
 				311B7F720514199B960B6235 /* Pods-MarcoPontoTests.debug.xcconfig */,
 				26D7D264C5E50B35AFF83555 /* Pods-MarcoPontoTests.release.xcconfig */,
+				9D3EA37CC3D6B97EBE343852 /* Pods-MarocPontoCore.debug.xcconfig */,
+				12576A62F5476852BAD76768 /* Pods-MarocPontoCore.release.xcconfig */,
+				5979D1F66EDD9035050D4202 /* Pods-MarocPontoCoreTests.debug.xcconfig */,
+				90B1380CF2AEDB9431B80BE6 /* Pods-MarocPontoCoreTests.release.xcconfig */,
+				87A104FEB40DC9B5C4A8A423 /* Pods-MarcoPontoCore.debug.xcconfig */,
+				CA445732E92464A3A26102C5 /* Pods-MarcoPontoCore.release.xcconfig */,
+				0493B32030BF09FF5B6C926A /* Pods-MarcoPontoCoreTests.debug.xcconfig */,
+				7100F9B6EF09CA2075256FF1 /* Pods-MarcoPontoCoreTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		34DF30041CDD6EF3003E6A85 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34DF300A1CDD6EF3003E6A85 /* MarcoPontoCore.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		3435FF711CC2E7640076AF42 /* MarcoPonto */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3435FF921CC2E7650076AF42 /* Build configuration list for PBXNativeTarget "MarcoPonto" */;
 			buildPhases = (
-				D4ECF43CE1F3C5E7DBB2B281 /* 📦 Check Pods Manifest.lock */,
-				1C6281074BD2235DFCB22050 /* uD83DuDCE6 Check Pods Manifest.lock */,
-				8B9278F5C8551EE313688846 /* uD83DuDCE6 Check Pods Manifest.lock */,
+				8B9278F5C8551EE313688846 /* 📦 Check Pods Manifest.lock */,
 				3435FF6E1CC2E7640076AF42 /* Sources */,
 				3435FF6F1CC2E7640076AF42 /* Frameworks */,
 				3435FF701CC2E7640076AF42 /* Resources */,
-				0ADA01CF5601B71329B1DA18 /* uD83DuDCE6 Embed Pods Frameworks */,
-				1831955320E526753BF22D63 /* uD83DuDCE6 Copy Pods Resources */,
+				0ADA01CF5601B71329B1DA18 /* 📦 Embed Pods Frameworks */,
+				1831955320E526753BF22D63 /* 📦 Copy Pods Resources */,
 				34965A921CD3A9B600901A28 /* ShellScript */,
-				D1646CE997112B75210ED8CC /* uD83DuDCE6 Embed Pods Frameworks */,
-				8B458856D942F2A4AF5584CC /* uD83DuDCE6 Copy Pods Resources */,
-				8C6BDA4389CDF2FA92AEB492 /* 📦 Embed Pods Frameworks */,
-				DFA7E4B57DBA00D0D9273750 /* 📦 Copy Pods Resources */,
-				85C8162BBDD0FDD546DD101C /* Embed Pods Frameworks */,
-				34D779F21CDC414600B13169 /* Embed Frameworks */,
+				347332B01CDD6E13005DF2F2 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				34D779F11CDC414600B13169 /* PBXTargetDependency */,
+				34DF301B1CDD6EF3003E6A85 /* PBXTargetDependency */,
 			);
 			name = MarcoPonto;
 			productName = MarcoPonto;
@@ -467,7 +726,6 @@
 				34D19FEE1CDA6CBA0046B7CF /* Resources */,
 				1CF0E2962DEE9FA14F64D166 /* 📦 Embed Pods Frameworks */,
 				1EF26C34E265AECEBFF257C0 /* 📦 Copy Pods Resources */,
-				831EB28B5028E98C99F0D2E2 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -477,6 +735,48 @@
 			name = MarcoPontoTests;
 			productName = MarcoPontoTests;
 			productReference = 34D19FF01CDA6CBA0046B7CF /* MarcoPontoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		34DF30061CDD6EF3003E6A85 /* MarcoPontoCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 34DF30221CDD6EF3003E6A85 /* Build configuration list for PBXNativeTarget "MarcoPontoCore" */;
+			buildPhases = (
+				BA659E78AA12EB83E58FB194 /* 📦 Check Pods Manifest.lock */,
+				34DF30021CDD6EF3003E6A85 /* Sources */,
+				34DF30031CDD6EF3003E6A85 /* Frameworks */,
+				34DF30041CDD6EF3003E6A85 /* Headers */,
+				34DF30051CDD6EF3003E6A85 /* Resources */,
+				82CEB58C4E98A8468634BEBA /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MarcoPontoCore;
+			productName = MarcoPontoCore;
+			productReference = 34DF30071CDD6EF3003E6A85 /* MarcoPontoCore.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		34DF300F1CDD6EF3003E6A85 /* MarcoPontoCoreTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 34DF30231CDD6EF3003E6A85 /* Build configuration list for PBXNativeTarget "MarcoPontoCoreTests" */;
+			buildPhases = (
+				51160C4E09F4CE5E974758FC /* 📦 Check Pods Manifest.lock */,
+				34DF300C1CDD6EF3003E6A85 /* Sources */,
+				34DF300D1CDD6EF3003E6A85 /* Frameworks */,
+				34DF300E1CDD6EF3003E6A85 /* Resources */,
+				B2823F0B85F399C7B50019ED /* 📦 Embed Pods Frameworks */,
+				C83759EF000416E6518365F6 /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				34DF30131CDD6EF3003E6A85 /* PBXTargetDependency */,
+				34DF30151CDD6EF3003E6A85 /* PBXTargetDependency */,
+			);
+			name = MarcoPontoCoreTests;
+			productName = MarcoPontoCoreTests;
+			productReference = 34DF30101CDD6EF3003E6A85 /* MarcoPontoCoreTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -497,6 +797,14 @@
 						CreatedOnToolsVersion = 7.3;
 						TestTargetID = 3435FF711CC2E7640076AF42;
 					};
+					34DF30061CDD6EF3003E6A85 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 2729VXDM4D;
+					};
+					34DF300F1CDD6EF3003E6A85 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 3435FF711CC2E7640076AF42;
+					};
 				};
 			};
 			buildConfigurationList = 3435FF6D1CC2E7640076AF42 /* Build configuration list for PBXProject "MarcoPonto" */;
@@ -510,36 +818,15 @@
 			mainGroup = 3435FF691CC2E7640076AF42;
 			productRefGroup = 3435FF731CC2E7640076AF42 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 349AFB621CDACD6B003D2279 /* Products */;
-					ProjectRef = 349AFB611CDACD6B003D2279 /* MarcoPontoCore.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				3435FF711CC2E7640076AF42 /* MarcoPonto */,
 				34D19FEF1CDA6CBA0046B7CF /* MarcoPontoTests */,
+				34DF30061CDD6EF3003E6A85 /* MarcoPontoCore */,
+				34DF300F1CDD6EF3003E6A85 /* MarcoPontoCoreTests */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		349AFB671CDACD6B003D2279 /* MarcoPontoCore.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = MarcoPontoCore.framework;
-			remoteRef = 349AFB661CDACD6B003D2279 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		349AFB691CDACD6B003D2279 /* MarcoPontoCoreTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = MarcoPontoCoreTests.xctest;
-			remoteRef = 349AFB681CDACD6B003D2279 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		3435FF701CC2E7640076AF42 /* Resources */ = {
@@ -565,17 +852,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		34DF30051CDD6EF3003E6A85 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34DF300E1CDD6EF3003E6A85 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0ADA01CF5601B71329B1DA18 /* uD83DuDCE6 Embed Pods Frameworks */ = {
+		0ADA01CF5601B71329B1DA18 /* 📦 Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "uD83DuDCE6 Embed Pods Frameworks";
+			name = "📦 Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -583,34 +884,19 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MarcoPonto/Pods-MarcoPonto-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		1831955320E526753BF22D63 /* uD83DuDCE6 Copy Pods Resources */ = {
+		1831955320E526753BF22D63 /* 📦 Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "uD83DuDCE6 Copy Pods Resources";
+			name = "📦 Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MarcoPonto/Pods-MarcoPonto-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		1C6281074BD2235DFCB22050 /* uD83DuDCE6 Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "uD83DuDCE6 Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		1CF0E2962DEE9FA14F64D166 /* 📦 Embed Pods Frameworks */ = {
@@ -656,59 +942,14 @@
 			shellPath = /bin/sh;
 			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
 		};
-		831EB28B5028E98C99F0D2E2 /* Embed Pods Frameworks */ = {
+		51160C4E09F4CE5E974758FC /* 📦 Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MarcoPontoTests/Pods-MarcoPontoTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		85C8162BBDD0FDD546DD101C /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MarcoPonto/Pods-MarcoPonto-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8B458856D942F2A4AF5584CC /* uD83DuDCE6 Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "uD83DuDCE6 Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MarcoPonto/Pods-MarcoPonto-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8B9278F5C8551EE313688846 /* uD83DuDCE6 Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "uD83DuDCE6 Check Pods Manifest.lock";
+			name = "📦 Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -716,19 +957,34 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		8C6BDA4389CDF2FA92AEB492 /* 📦 Embed Pods Frameworks */ = {
+		82CEB58C4E98A8468634BEBA /* 📦 Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "📦 Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MarcoPonto/Pods-MarcoPonto-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MarcoPontoCore/Pods-MarcoPontoCore-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B9278F5C8551EE313688846 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		9A426588C777DCBB60A0DCFC /* 📦 Check Pods Manifest.lock */ = {
@@ -746,22 +1002,22 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		D1646CE997112B75210ED8CC /* uD83DuDCE6 Embed Pods Frameworks */ = {
+		B2823F0B85F399C7B50019ED /* 📦 Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "uD83DuDCE6 Embed Pods Frameworks";
+			name = "📦 Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MarcoPonto/Pods-MarcoPonto-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MarcoPontoCoreTests/Pods-MarcoPontoCoreTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D4ECF43CE1F3C5E7DBB2B281 /* 📦 Check Pods Manifest.lock */ = {
+		BA659E78AA12EB83E58FB194 /* 📦 Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -776,7 +1032,7 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		DFA7E4B57DBA00D0D9273750 /* 📦 Copy Pods Resources */ = {
+		C83759EF000416E6518365F6 /* 📦 Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -788,7 +1044,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MarcoPonto/Pods-MarcoPonto-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MarcoPontoCoreTests/Pods-MarcoPontoCoreTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -831,17 +1087,68 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				34D779EC1CDC3FCA00B13169 /* UIColors.swift in Sources */,
-				34D19FF31CDA6CBA0046B7CF /* PunchGatewayCoreDataTests.swift in Sources */,
-				34D1A0001CDA6D460046B7CF /* PunchModel.swift in Sources */,
-				34D19FFF1CDA6D440046B7CF /* MarcoPonto.xcdatamodeld in Sources */,
-				34D1A0171CDA6DDB0046B7CF /* ListPunchsTableViewCell.swift in Sources */,
-				34D1A01F1CDA6E040046B7CF /* MaterialIcons+UIImage.swift in Sources */,
-				34D1A0191CDA6DDB0046B7CF /* PunchTypeLabel.swift in Sources */,
-				34D1A0011CDA6D480046B7CF /* PunchModel+CoreDataProperties.swift in Sources */,
-				34D1A0131CDA6DDB0046B7CF /* SelectMomentTableViewCell.swift in Sources */,
-				34D1A0111CDA6DDB0046B7CF /* FormPunchDataSource.swift in Sources */,
-				34D1A0141CDA6DDB0046B7CF /* SelectTypeTableViewCell.swift in Sources */,
+				34E4892C1CDD73500033E5A3 /* PunchGatewayCoreDataTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34DF30021CDD6EF3003E6A85 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34DF303E1CDD6F6D003E6A85 /* BalanceWorkedHoursEntity.swift in Sources */,
+				34DF30761CDD6F6D003E6A85 /* ListPunchsUsecase.swift in Sources */,
+				34DF304E1CDD6F6D003E6A85 /* WorkHourType.swift in Sources */,
+				34DF306A1CDD6F6D003E6A85 /* WorkedHoursPresenter.swift in Sources */,
+				34DF307E1CDD6F6D003E6A85 /* WorkedHoursUsecase.swift in Sources */,
+				34DF30421CDD6F6D003E6A85 /* MandatoryWorkloadEntity.swift in Sources */,
+				34DF30521CDD6F6D003E6A85 /* Double+ToSeconds.swift in Sources */,
+				34DF306E1CDD6F6D003E6A85 /* Punch.swift in Sources */,
+				34DF307A1CDD6F6D003E6A85 /* SavePunchUsecase.swift in Sources */,
+				34DF30661CDD6F6D003E6A85 /* SavePunchPresenter.swift in Sources */,
+				34DF304A1CDD6F6D003E6A85 /* PunchType.swift in Sources */,
+				34DF30461CDD6F6D003E6A85 /* TotalWorkedHoursEntity.swift in Sources */,
+				34DF305E1CDD6F6D003E6A85 /* PunchGateway.swift in Sources */,
+				34DF30721CDD6F6D003E6A85 /* WorkHour.swift in Sources */,
+				34DF30621CDD6F6D003E6A85 /* ListPunchsPresenter.swift in Sources */,
+				34DF30561CDD6F6D003E6A85 /* NSDate+DateRange.swift in Sources */,
+				34DF305A1CDD6F6D003E6A85 /* NSTimeInterval+ToTimeString.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34DF300C1CDD6EF3003E6A85 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34DF30671CDD6F6D003E6A85 /* SavePunchPresenter.swift in Sources */,
+				34DF307F1CDD6F6D003E6A85 /* WorkedHoursUsecase.swift in Sources */,
+				34DF30961CDD6F81003E6A85 /* PunchTypeTests.swift in Sources */,
+				34DF305F1CDD6F6D003E6A85 /* PunchGateway.swift in Sources */,
+				34DF30991CDD6F81003E6A85 /* PunchGatewaySpy.swift in Sources */,
+				34DF30971CDD6F81003E6A85 /* WorkHourTypeTests.swift in Sources */,
+				34DF30471CDD6F6D003E6A85 /* TotalWorkedHoursEntity.swift in Sources */,
+				34DF30531CDD6F6D003E6A85 /* Double+ToSeconds.swift in Sources */,
+				34DF309A1CDD6F81003E6A85 /* ListPunchsPresenterSpy.swift in Sources */,
+				34DF30731CDD6F6D003E6A85 /* WorkHour.swift in Sources */,
+				34DF30631CDD6F6D003E6A85 /* ListPunchsPresenter.swift in Sources */,
+				34DF304B1CDD6F6D003E6A85 /* PunchType.swift in Sources */,
+				34DF30941CDD6F81003E6A85 /* CalculateWorkedHoursEntityTests.swift in Sources */,
+				34DF309B1CDD6F81003E6A85 /* SavePunchPresenterSpy.swift in Sources */,
+				34DF30771CDD6F6D003E6A85 /* ListPunchsUsecase.swift in Sources */,
+				34DF309C1CDD6F81003E6A85 /* WorkedHoursPresenterFake.swift in Sources */,
+				34DF30931CDD6F81003E6A85 /* BalanceWorkedHoursEntityTests.swift in Sources */,
+				34DF303F1CDD6F6D003E6A85 /* BalanceWorkedHoursEntity.swift in Sources */,
+				34DF306F1CDD6F6D003E6A85 /* Punch.swift in Sources */,
+				34DF30951CDD6F81003E6A85 /* MandatoryWorkloadEntityHoursTests.swift in Sources */,
+				34DF304F1CDD6F6D003E6A85 /* WorkHourType.swift in Sources */,
+				34DF30981CDD6F81003E6A85 /* PunchGatewayFake.swift in Sources */,
+				34DF305B1CDD6F6D003E6A85 /* NSTimeInterval+ToTimeString.swift in Sources */,
+				34DF306B1CDD6F6D003E6A85 /* WorkedHoursPresenter.swift in Sources */,
+				34DF309E1CDD6F81003E6A85 /* SavePunchUsecaseTests.swift in Sources */,
+				34DF309D1CDD6F81003E6A85 /* ListPunchsUsecaseTests.swift in Sources */,
+				34DF30571CDD6F6D003E6A85 /* NSDate+DateRange.swift in Sources */,
+				34DF307B1CDD6F6D003E6A85 /* SavePunchUsecase.swift in Sources */,
+				34DF30431CDD6F6D003E6A85 /* MandatoryWorkloadEntity.swift in Sources */,
+				34DF309F1CDD6F81003E6A85 /* WorkedHoursUsecaseTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -853,10 +1160,20 @@
 			target = 3435FF711CC2E7640076AF42 /* MarcoPonto */;
 			targetProxy = 34D19FF51CDA6CBA0046B7CF /* PBXContainerItemProxy */;
 		};
-		34D779F11CDC414600B13169 /* PBXTargetDependency */ = {
+		34DF30131CDD6EF3003E6A85 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = MarcoPontoCore;
-			targetProxy = 34D779F01CDC414600B13169 /* PBXContainerItemProxy */;
+			target = 34DF30061CDD6EF3003E6A85 /* MarcoPontoCore */;
+			targetProxy = 34DF30121CDD6EF3003E6A85 /* PBXContainerItemProxy */;
+		};
+		34DF30151CDD6EF3003E6A85 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3435FF711CC2E7640076AF42 /* MarcoPonto */;
+			targetProxy = 34DF30141CDD6EF3003E6A85 /* PBXContainerItemProxy */;
+		};
+		34DF301B1CDD6EF3003E6A85 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 34DF30061CDD6EF3003E6A85 /* MarcoPontoCore */;
+			targetProxy = 34DF301A1CDD6EF3003E6A85 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1005,6 +1322,10 @@
 			baseConfigurationReference = 311B7F720514199B960B6235 /* Pods-MarcoPontoTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = MarcoPontoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.meuspedidos.MarcoPontoTests;
@@ -1018,9 +1339,83 @@
 			baseConfigurationReference = 26D7D264C5E50B35AFF83555 /* Pods-MarcoPontoTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = MarcoPontoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.meuspedidos.MarcoPontoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MarcoPonto.app/MarcoPonto";
+			};
+			name = Release;
+		};
+		34DF301E1CDD6EF3003E6A85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87A104FEB40DC9B5C4A8A423 /* Pods-MarcoPontoCore.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = MarcoPontoCore/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.ronanrodrigo.MarcoPontoCore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		34DF301F1CDD6EF3003E6A85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA445732E92464A3A26102C5 /* Pods-MarcoPontoCore.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = MarcoPontoCore/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.ronanrodrigo.MarcoPontoCore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		34DF30201CDD6EF3003E6A85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0493B32030BF09FF5B6C926A /* Pods-MarcoPontoCoreTests.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = MarcoPontoCoreTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.ronanrodrigo.MarcoPontoCoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MarcoPonto.app/MarcoPonto";
+			};
+			name = Debug;
+		};
+		34DF30211CDD6EF3003E6A85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7100F9B6EF09CA2075256FF1 /* Pods-MarcoPontoCoreTests.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = MarcoPontoCoreTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.ronanrodrigo.MarcoPontoCoreTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MarcoPonto.app/MarcoPonto";
 			};
@@ -1052,6 +1447,24 @@
 			buildConfigurations = (
 				34D19FF81CDA6CBA0046B7CF /* Debug */,
 				34D19FF91CDA6CBA0046B7CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		34DF30221CDD6EF3003E6A85 /* Build configuration list for PBXNativeTarget "MarcoPontoCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34DF301E1CDD6EF3003E6A85 /* Debug */,
+				34DF301F1CDD6EF3003E6A85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		34DF30231CDD6EF3003E6A85 /* Build configuration list for PBXNativeTarget "MarcoPontoCoreTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34DF30201CDD6EF3003E6A85 /* Debug */,
+				34DF30211CDD6EF3003E6A85 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

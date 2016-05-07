@@ -11,7 +11,7 @@ class PunchGatewayCoreDataTests: XCTestCase {
     }
 
     func testShouldCreatePunch() {
-        let punch = PunchStruct(id: nil, type: PunchType.Input, moment: NSDate())
+        let punch = PunchStruct(id: nil, type: .Input, moment: NSDate())
 
         let createdPunch = gateway.create(punch)
 
@@ -19,7 +19,7 @@ class PunchGatewayCoreDataTests: XCTestCase {
     }
 
     func testShouldUpdatePunch() {
-        let punch = PunchStruct(id: nil, type: PunchType.Input, moment: NSDate())
+        let punch = PunchStruct(id: nil, type: .Input, moment: NSDate())
         var createdPunch = gateway.create(punch)
         createdPunch.type = .Output
 
@@ -30,7 +30,7 @@ class PunchGatewayCoreDataTests: XCTestCase {
     }
 
     func testShouldListPunchs() {
-        let punch = PunchStruct(id: nil, type: PunchType.Input, moment: NSDate())
+        let punch = PunchStruct(id: nil, type: .Input, moment: NSDate())
         gateway.create(punch)
 
         let punchs = gateway.list()
@@ -42,7 +42,7 @@ class PunchGatewayCoreDataTests: XCTestCase {
         let firstDate = NSDate(fromDate: NSDate(), year: 1970, month: 1)
         let moment = NSDate(fromDate: NSDate(), year: 1970, month: 2)
         let lastDate = NSDate(fromDate: NSDate(), year: 1970, month: 3)
-        let punch = PunchStruct(id: nil, type: PunchType.Input, moment: moment)
+        let punch = PunchStruct(id: nil, type: .Input, moment: moment)
         gateway.create(punch)
 
         let inputPunchs = gateway.list(
