@@ -55,7 +55,9 @@ class PunchGatewayCoreData: PunchGateway {
 
     func delete(punch: Punch) {
         let fetchRequest = NSFetchRequest(entityName: entityName)
-        fetchRequest.predicate =  NSPredicate(format: "punchId = %d", punch.id!)
+        guard let punchId = punch.id
+            else { return }
+        fetchRequest.predicate =  NSPredicate(format: "punchId = %d", punchId)
         do {
             let results = try context.executeFetchRequest(fetchRequest)
             if let _punch = results.first as? PunchModel {

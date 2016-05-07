@@ -50,4 +50,24 @@ class PunchGatewayCoreDataTests: XCTestCase {
 
         XCTAssertTrue(inputPunchs.count > 0)
     }
+
+    func testShouldDeltePunch() {
+        let punch = PunchStruct(id: nil, type: .Input, moment: NSDate())
+        let createdPunch = gateway.create(punch)
+
+        gateway.delete(createdPunch)
+
+        let punchs = gateway.list()
+        XCTAssertEqual(0, punchs.filter({$0.id == createdPunch.id}).count)
+    }
+
+    func testShouldNotDeleteAnyPunchWhenIDWasNil() {
+        let punch = PunchStruct(id: nil, type: .Input, moment: NSDate())
+        let beforeDeleteQuantity = gateway.list().count
+
+        gateway.delete(punch)
+
+        let afterDelteQuantity = gateway.list().count
+        XCTAssertEqual(beforeDeleteQuantity, afterDelteQuantity)
+    }
 }
