@@ -27,6 +27,7 @@
 		349D9B2B1CC2ECD20088DE5E /* FormPunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349D9B291CC2ECD20088DE5E /* FormPunchViewController.swift */; };
 		349D9B2F1CC2F68B0088DE5E /* SelectMomentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349D9B2D1CC2F68B0088DE5E /* SelectMomentTableViewCell.swift */; };
 		349D9B321CC2F7960088DE5E /* FormPunchDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349D9B311CC2F7960088DE5E /* FormPunchDataSource.swift */; };
+		349EDD081CE0A97D0005AC01 /* Double+ToDays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349EDD071CE0A97D0005AC01 /* Double+ToDays.swift */; };
 		34BD8F961CC5BA3500607BA6 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BD8F951CC5BA3500607BA6 /* TabBarController.swift */; };
 		34BD8F991CC6628E00607BA6 /* MaterialIcons+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BD8F981CC6628E00607BA6 /* MaterialIcons+UIImage.swift */; };
 		34D779E91CDC3F8100B13169 /* UIColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D779E81CDC3F8100B13169 /* UIColors.swift */; };
@@ -175,6 +176,7 @@
 		349D9B291CC2ECD20088DE5E /* FormPunchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FormPunchViewController.swift; path = Punch/Form/FormPunchViewController.swift; sourceTree = "<group>"; };
 		349D9B2D1CC2F68B0088DE5E /* SelectMomentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SelectMomentTableViewCell.swift; path = Punch/Form/SelectMomentTableViewCell.swift; sourceTree = "<group>"; };
 		349D9B311CC2F7960088DE5E /* FormPunchDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FormPunchDataSource.swift; path = Punch/Form/FormPunchDataSource.swift; sourceTree = "<group>"; };
+		349EDD071CE0A97D0005AC01 /* Double+ToDays.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Double+ToDays.swift"; sourceTree = "<group>"; };
 		34BD8F951CC5BA3500607BA6 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		34BD8F981CC6628E00607BA6 /* MaterialIcons+UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MaterialIcons+UIImage.swift"; sourceTree = "<group>"; };
 		34D19FF01CDA6CBA0046B7CF /* MarcoPontoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarcoPontoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -477,6 +479,7 @@
 		34DF302B1CDD6F6D003E6A85 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				349EDD071CE0A97D0005AC01 /* Double+ToDays.swift */,
 				34DF302C1CDD6F6D003E6A85 /* Double+ToSeconds.swift */,
 				34DF302D1CDD6F6D003E6A85 /* NSDate+DateRange.swift */,
 				34DF302E1CDD6F6D003E6A85 /* NSTimeInterval+ToTimeString.swift */,
@@ -1111,6 +1114,7 @@
 				34DF30721CDD6F6D003E6A85 /* WorkHour.swift in Sources */,
 				34DF30621CDD6F6D003E6A85 /* ListPunchsPresenter.swift in Sources */,
 				34DF30561CDD6F6D003E6A85 /* NSDate+DateRange.swift in Sources */,
+				349EDD081CE0A97D0005AC01 /* Double+ToDays.swift in Sources */,
 				34DF305A1CDD6F6D003E6A85 /* NSTimeInterval+ToTimeString.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
