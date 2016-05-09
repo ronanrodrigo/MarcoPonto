@@ -14,8 +14,11 @@ public class TotalWorkedHoursEntity {
 
         for (index, inputPunch) in inputPunchs.enumerate() {
             if existPunch(at: index, on: outputPunchs) {
-                let ouputPunch = outputPunchs[index]
-                totalInterval += ouputPunch.moment.timeIntervalSinceDate(inputPunch.moment)
+                let outputPunch = outputPunchs[index]
+                totalInterval += outputPunch.moment.timeIntervalSinceDate(inputPunch.moment)
+                if outputPunch.moment.isSunday() {
+                    totalInterval *= 1.5
+                }
                 if isOutputPunchGreatherThanInputPunch(totalInterval) {
                     totalInterval = 0.0
                 }
