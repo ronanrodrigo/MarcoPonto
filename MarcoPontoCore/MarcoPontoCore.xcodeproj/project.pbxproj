@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		349AFB5D1CDACBAC003D2279 /* SwiftDate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 349AFB5C1CDACBAC003D2279 /* SwiftDate.framework */; };
 		349AFB5F1CDACCEF003D2279 /* SwiftDate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 349AFB5C1CDACBAC003D2279 /* SwiftDate.framework */; };
+		34B6849C1CDCC44600A6E1F4 /* Double+ToDays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B6849B1CDCC44600A6E1F4 /* Double+ToDays.swift */; };
+		34B6849D1CDCC44600A6E1F4 /* Double+ToDays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B6849B1CDCC44600A6E1F4 /* Double+ToDays.swift */; };
 		34D19F571CDA66130046B7CF /* MarcoPontoCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 34D19F561CDA66130046B7CF /* MarcoPontoCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		34D19F5E1CDA66130046B7CF /* MarcoPontoCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34D19F531CDA66130046B7CF /* MarcoPontoCore.framework */; };
 		34D19F851CDA66250046B7CF /* BalanceWorkedHoursEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D19F6E1CDA66250046B7CF /* BalanceWorkedHoursEntity.swift */; };
@@ -72,6 +74,7 @@
 
 /* Begin PBXFileReference section */
 		349AFB5C1CDACBAC003D2279 /* SwiftDate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftDate.framework; path = Carthage/Build/iOS/SwiftDate.framework; sourceTree = "<group>"; };
+		34B6849B1CDCC44600A6E1F4 /* Double+ToDays.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Double+ToDays.swift"; sourceTree = "<group>"; };
 		34D19F531CDA66130046B7CF /* MarcoPontoCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MarcoPontoCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		34D19F561CDA66130046B7CF /* MarcoPontoCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MarcoPontoCore.h; sourceTree = "<group>"; };
 		34D19F581CDA66130046B7CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -202,6 +205,7 @@
 				34D19F751CDA66250046B7CF /* Double+ToSeconds.swift */,
 				34D19F761CDA66250046B7CF /* NSDate+DateRange.swift */,
 				34D19F771CDA66250046B7CF /* NSTimeInterval+ToTimeString.swift */,
+				34B6849B1CDCC44600A6E1F4 /* Double+ToDays.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -457,6 +461,7 @@
 				34D19F9F1CDA66250046B7CF /* WorkHour.swift in Sources */,
 				34D19F971CDA66250046B7CF /* ListPunchsPresenter.swift in Sources */,
 				34D19F911CDA66250046B7CF /* NSDate+DateRange.swift in Sources */,
+				34B6849C1CDCC44600A6E1F4 /* Double+ToDays.swift in Sources */,
 				34D19F931CDA66250046B7CF /* NSTimeInterval+ToTimeString.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -481,6 +486,7 @@
 				34D19F8C1CDA66250046B7CF /* PunchType.swift in Sources */,
 				34D19FCA1CDA66300046B7CF /* SavePunchPresenterSpy.swift in Sources */,
 				34D19FBC1CDA66300046B7CF /* BalanceWorkedHoursEntityTests.swift in Sources */,
+				34B6849D1CDCC44600A6E1F4 /* Double+ToDays.swift in Sources */,
 				34D19FCC1CDA66300046B7CF /* WorkedHoursPresenterFake.swift in Sources */,
 				34D19FD21CDA66300046B7CF /* SavePunchUsecaseTests.swift in Sources */,
 				34D19FA21CDA66250046B7CF /* ListPunchsUsecase.swift in Sources */,
