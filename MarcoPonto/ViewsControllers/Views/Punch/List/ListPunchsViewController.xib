@@ -9,8 +9,9 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ListPunchsViewController" customModule="MarcoPonto" customModuleProvider="target">
             <connections>
                 <outlet property="datePickerBottomConstraints" destination="Zts-1J-Bc0" id="4qe-uv-v5b"/>
+                <outlet property="datePickerFilter" destination="XI4-hW-r0k" id="W5L-gs-hUU"/>
                 <outlet property="tableView" destination="Xuy-b8-rhA" id="0vA-HA-HhF"/>
-                <outlet property="toggleDatePickerButtonTopConstraints" destination="EIl-2a-POb" id="Hb7-nI-PXV"/>
+                <outlet property="toggleDatePickerFilter" destination="mjR-Ab-8Pg" id="RAn-0R-Nxc"/>
                 <outlet property="view" destination="iN0-l3-epB" id="Kzm-tR-Y8s"/>
             </connections>
         </placeholder>
@@ -25,24 +26,27 @@
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="zaz-2X-h0b"/>
                     </constraints>
-                    <state key="normal" title="10 de Maio de 2016">
+                    <state key="normal" title="10 de maio de 2016">
                         <color key="titleColor" white="1" alpha="1" colorSpace="deviceWhite"/>
                     </state>
                     <connections>
-                        <action selector="toggleDatePicker:" destination="-1" eventType="touchUpInside" id="7gR-Uz-xrh"/>
+                        <action selector="didTappedAtToggleDatePicker:" destination="-1" eventType="touchUpInside" id="aW4-Gt-qch"/>
                     </connections>
                 </button>
                 <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="XI4-hW-r0k">
-                    <rect key="frame" x="0.0" y="104" width="320" height="120"/>
+                    <rect key="frame" x="0.0" y="104" width="320" height="115"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="120" id="NbG-1X-g5w"/>
+                        <constraint firstAttribute="height" constant="115" id="NbG-1X-g5w"/>
                     </constraints>
                     <date key="date" timeIntervalSinceReferenceDate="484590177.11678398">
                         <!--2016-05-10 16:22:57 +0000-->
                     </date>
+                    <connections>
+                        <action selector="didChangedDateFilter:" destination="-1" eventType="valueChanged" id="MvT-p8-DuP"/>
+                    </connections>
                 </datePicker>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cg8-Kp-G0i">
-                    <rect key="frame" x="0.0" y="221" width="320" height="1"/>
+                    <rect key="frame" x="0.0" y="216" width="320" height="1"/>
                     <color key="backgroundColor" red="0.7843137255" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="0.5" id="cZC-Ap-hyF"/>
@@ -63,7 +67,7 @@
                 <constraint firstItem="Xuy-b8-rhA" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="MWq-26-VY8"/>
                 <constraint firstAttribute="trailing" secondItem="Xuy-b8-rhA" secondAttribute="trailing" id="Qba-05-JAf"/>
                 <constraint firstItem="XI4-hW-r0k" firstAttribute="top" secondItem="mjR-Ab-8Pg" secondAttribute="bottom" id="SZv-u7-QuQ"/>
-                <constraint firstItem="Xuy-b8-rhA" firstAttribute="top" secondItem="XI4-hW-r0k" secondAttribute="bottom" constant="-120" id="Zts-1J-Bc0"/>
+                <constraint firstItem="Xuy-b8-rhA" firstAttribute="top" secondItem="XI4-hW-r0k" secondAttribute="bottom" constant="-115" id="Zts-1J-Bc0"/>
                 <constraint firstAttribute="trailing" secondItem="XI4-hW-r0k" secondAttribute="trailing" id="emx-X5-naE"/>
                 <constraint firstAttribute="trailing" secondItem="cg8-Kp-G0i" secondAttribute="trailing" id="rM1-xb-9xj"/>
                 <constraint firstItem="cg8-Kp-G0i" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="tHA-ag-gJf"/>

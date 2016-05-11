@@ -7,18 +7,21 @@ protocol EditTableViewDelegate {
 
 class ListPunchsViewController: UIViewController, EditTableViewDelegate {
 
+    @IBOutlet weak var toggleDatePickerFilter: UIButton!
     @IBOutlet weak var datePickerBottomConstraints: NSLayoutConstraint!
     @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var toggleDatePickerButtonTopConstraints: NSLayoutConstraint!
+    @IBOutlet weak var datePickerFilter: UIDatePicker!
 
     private let cellNameAndIdentifier = String(ListPunchsTableViewCell)
     private var dataSource: RRNListDataSource!
     private var delegate: ListPunchsDelegate!
     private var deletePunchPath: NSIndexPath?
     private var navigationDelegate: INavigationDelgate!
+    private let dateFormatter = NSDateFormatter()
 
     init (navigationDelegate: INavigationDelgate) {
         self.navigationDelegate = navigationDelegate
+        self.dateFormatter.dateStyle = .LongStyle
         super.init(nibName: nil, bundle: nil)
     }
 
@@ -27,6 +30,7 @@ class ListPunchsViewController: UIViewController, EditTableViewDelegate {
     }
 
     override func viewWillAppear(animated: Bool) {
+        updateToggleDatePickerFilterTitle()
         configureTableView()
     }
 
@@ -76,15 +80,31 @@ class ListPunchsViewController: UIViewController, EditTableViewDelegate {
         deletePunchPath = nil
     }
 
-    @IBAction func toggleDatePicker(sender: AnyObject) {
-        if datePickerBottomConstraints.constant == -120 {
-            datePickerBottomConstraints.constant = 0
+    private func updateToggleDatePickerFilterTitle(date: NSDate = NSDate()) {
+        let formattedDate = dateFormatter.stringFromDate(date)
+        toggleDatePickerFilter.setTitle(formattedDate, forState: UIControlState.Normal)
+    }
+
+    @IBAction func didChangedDateFilter(sender: UIDatePicker) {
+        updateToggleDatePickerFilterTitle(sender.date)
+    }
+
+    @IBAction func didTappedAtToggleDatePicker(sender: AnyObject) {
+        let hideDatePickerPosition = -(datePickerFilter.frame.height)
+        let displayDatePickerPosition: CGFloat = 0.0
+
+        if datePickerBottomConstraints.constant == displayDatePickerPosition {
+            datePickerBottomConstraints.constant = hideDatePickerPosition
         } else {
-            datePickerBottomConstraints.constant = -120
+            datePickerBottomConstraints.constant = displayDatePickerPosition
         }
 
-        UIView.animateWithDuration(0.2, delay: 0.0, options: UIViewAnimationOptions.CurveLinear, animations: {
-                self.view.layoutIfNeeded()
-            }, completion: nil)
+        UIView.animateWithDuration(
+            0.2,
+            delay: 0.0,
+            options: UIViewAnimationOptions.CurveLinear,
+            animations: { self.view.layoutIfNeeded() },
+            completion: nil
+        )
     }
 }
