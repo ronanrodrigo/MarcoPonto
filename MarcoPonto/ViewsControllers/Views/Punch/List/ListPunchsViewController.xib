@@ -1,33 +1,77 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ListPunchsViewController" customModule="MarcoPonto" customModuleProvider="target">
             <connections>
+                <outlet property="datePickerBottomConstraints" destination="Zts-1J-Bc0" id="4qe-uv-v5b"/>
                 <outlet property="tableView" destination="Xuy-b8-rhA" id="0vA-HA-HhF"/>
+                <outlet property="toggleDatePickerButtonTopConstraints" destination="EIl-2a-POb" id="Hb7-nI-PXV"/>
                 <outlet property="view" destination="iN0-l3-epB" id="Kzm-tR-Y8s"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mjR-Ab-8Pg">
+                    <rect key="frame" x="0.0" y="64" width="320" height="40"/>
+                    <color key="backgroundColor" red="0.89327836039999997" green="0.0" blue="0.35767716170000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="zaz-2X-h0b"/>
+                    </constraints>
+                    <state key="normal" title="10 de Maio de 2016">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="deviceWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="toggleDatePicker:" destination="-1" eventType="touchUpInside" id="7gR-Uz-xrh"/>
+                    </connections>
+                </button>
+                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="XI4-hW-r0k">
+                    <rect key="frame" x="0.0" y="104" width="320" height="120"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="120" id="NbG-1X-g5w"/>
+                    </constraints>
+                    <date key="date" timeIntervalSinceReferenceDate="484590177.11678398">
+                        <!--2016-05-10 16:22:57 +0000-->
+                    </date>
+                </datePicker>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cg8-Kp-G0i">
+                    <rect key="frame" x="0.0" y="221" width="320" height="1"/>
+                    <color key="backgroundColor" red="0.7843137255" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="cZC-Ap-hyF"/>
+                    </constraints>
+                </view>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="75" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Xuy-b8-rhA">
-                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <rect key="frame" x="0.0" y="104" width="320" height="464"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </tableView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="Xuy-b8-rhA" secondAttribute="bottom" id="2JB-9O-Dvq"/>
-                <constraint firstAttribute="trailing" secondItem="Xuy-b8-rhA" secondAttribute="trailing" id="mhB-V4-a3D"/>
-                <constraint firstItem="Xuy-b8-rhA" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="wc7-f9-jFL"/>
-                <constraint firstItem="Xuy-b8-rhA" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="yc1-Yk-JmA"/>
+                <constraint firstAttribute="trailing" secondItem="mjR-Ab-8Pg" secondAttribute="trailing" id="CvA-6E-4o3"/>
+                <constraint firstItem="XI4-hW-r0k" firstAttribute="bottom" secondItem="cg8-Kp-G0i" secondAttribute="bottom" multiplier="1.01" id="DQs-n8-FfV"/>
+                <constraint firstItem="mjR-Ab-8Pg" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Dhm-eM-aU1"/>
+                <constraint firstItem="mjR-Ab-8Pg" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="64" id="EIl-2a-POb"/>
+                <constraint firstAttribute="bottom" secondItem="Xuy-b8-rhA" secondAttribute="bottom" id="GXx-13-bbH"/>
+                <constraint firstItem="Xuy-b8-rhA" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="MWq-26-VY8"/>
+                <constraint firstAttribute="trailing" secondItem="Xuy-b8-rhA" secondAttribute="trailing" id="Qba-05-JAf"/>
+                <constraint firstItem="XI4-hW-r0k" firstAttribute="top" secondItem="mjR-Ab-8Pg" secondAttribute="bottom" id="SZv-u7-QuQ"/>
+                <constraint firstItem="Xuy-b8-rhA" firstAttribute="top" secondItem="XI4-hW-r0k" secondAttribute="bottom" constant="-120" id="Zts-1J-Bc0"/>
+                <constraint firstAttribute="trailing" secondItem="XI4-hW-r0k" secondAttribute="trailing" id="emx-X5-naE"/>
+                <constraint firstAttribute="trailing" secondItem="cg8-Kp-G0i" secondAttribute="trailing" id="rM1-xb-9xj"/>
+                <constraint firstItem="cg8-Kp-G0i" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="tHA-ag-gJf"/>
+                <constraint firstItem="XI4-hW-r0k" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="tvU-GX-t8z"/>
             </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
         </view>
     </objects>
 </document>

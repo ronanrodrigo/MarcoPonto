@@ -7,7 +7,10 @@ protocol EditTableViewDelegate {
 
 class ListPunchsViewController: UIViewController, EditTableViewDelegate {
 
+    @IBOutlet weak var datePickerBottomConstraints: NSLayoutConstraint!
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var toggleDatePickerButtonTopConstraints: NSLayoutConstraint!
+
     private let cellNameAndIdentifier = String(ListPunchsTableViewCell)
     private var dataSource: RRNListDataSource!
     private var delegate: ListPunchsDelegate!
@@ -73,4 +76,15 @@ class ListPunchsViewController: UIViewController, EditTableViewDelegate {
         deletePunchPath = nil
     }
 
+    @IBAction func toggleDatePicker(sender: AnyObject) {
+        if datePickerBottomConstraints.constant == -120 {
+            datePickerBottomConstraints.constant = 0
+        } else {
+            datePickerBottomConstraints.constant = -120
+        }
+
+        UIView.animateWithDuration(0.2, delay: 0.0, options: UIViewAnimationOptions.CurveLinear, animations: {
+                self.view.layoutIfNeeded()
+            }, completion: nil)
+    }
 }
