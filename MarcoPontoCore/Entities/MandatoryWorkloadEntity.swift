@@ -42,9 +42,7 @@ public class MandatoryWorkloadEntity {
     }
 
     private func fromBeginningHours(beginningDate: NSDate) -> NSTimeInterval {
-        let timeInterval = now.timeIntervalSinceDate(beginningDate)
-        let hoursInDay = 24.0, minutesInHour = 60.0, secondsInMinutes = 60.0
-        let timeIntervalInDays = Int(timeInterval/hoursInDay/minutesInHour/secondsInMinutes)
+        let timeIntervalInDays = now.timeIntervalSinceDate(beginningDate).toDays()
         var totalHours = 0.0
         if timeIntervalInDays > 0 {
             for day in 0...timeIntervalInDays-1 {

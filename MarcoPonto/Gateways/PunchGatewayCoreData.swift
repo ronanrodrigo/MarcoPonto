@@ -8,16 +8,16 @@ class PunchGatewayCoreData: PunchGateway {
     var entityName = String(PunchModel)
     var app: AppDelegate
     var context: NSManagedObjectContext
-    var nextId: Int = 1
     var momentSortDescriptor: NSSortDescriptor
     var typeSortDescriptor: NSSortDescriptor
+    var idSortDescriptor: NSSortDescriptor
 
     init(appDelegate: AppDelegate) {
         app = appDelegate
         context = app.managedObjectContext
         momentSortDescriptor = NSSortDescriptor(key: "punchMoment", ascending: true)
         typeSortDescriptor = NSSortDescriptor(key: "punchType", ascending: true)
-        nextId = getLastId() + 1
+        idSortDescriptor = NSSortDescriptor(key: "punchId", ascending: false)
     }
 
     func create(punch: Punch) -> Punch {
@@ -25,7 +25,7 @@ class PunchGatewayCoreData: PunchGateway {
         let punchModel = PunchModel(entity: entity, insertIntoManagedObjectContext: context)
         punchModel.type = punch.type
         punchModel.moment = NSDate(fromDate: punch.moment, second: 0, nanosecond: 0)
-        punchModel.id = nextId
+        punchModel.id = getLastId() + 1
         context.insertObject(punchModel)
 
         do {
@@ -104,10 +104,11 @@ class PunchGatewayCoreData: PunchGateway {
 
     func getLastId() -> Int {
         let fetchRequest  = NSFetchRequest(entityName: entityName)
+        fetchRequest.sortDescriptors = [idSortDescriptor]
         var lastId = 0
         do {
             let results = try context.executeFetchRequest(fetchRequest)
-            if let lastPunch = results.last as? Punch {
+            if let lastPunch = results.first as? Punch {
                 lastId = lastPunch.id ?? 0
             }
         } catch {
