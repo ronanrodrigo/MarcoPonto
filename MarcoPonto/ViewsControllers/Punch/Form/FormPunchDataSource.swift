@@ -13,10 +13,6 @@ class FormPunchDataSource: NSObject, UITableViewDataSource {
         self.punch = punch
     }
 
-    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return 1
-    }
-
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return formPunchFields.count
     }
@@ -27,14 +23,14 @@ class FormPunchDataSource: NSObject, UITableViewDataSource {
         let field = formPunchFields[indexPath.row]
         switch field {
         case String(SelectTypeTableViewCell):
-            guard let cell = tableView.dequeueReusableCellWithIdentifier(field) as? SelectTypeTableViewCell
-                else { return SelectTypeTableViewCell() }
+            guard let cell = tableView.dequeueReusableCellWithIdentifier(field) as? SelectTypeTableViewCell else {
+                return SelectTypeTableViewCell() }
             selectTypeTableViewCell = cell
             selectTypeTableViewCell.fillData(self.punch?.type)
             return selectTypeTableViewCell
         default:
-            guard let cell = tableView.dequeueReusableCellWithIdentifier(field) as? SelectMomentTableViewCell
-                else { return SelectMomentTableViewCell() }
+            guard let cell = tableView.dequeueReusableCellWithIdentifier(field) as? SelectMomentTableViewCell else {
+                return SelectMomentTableViewCell() }
             selectMomentTableViewCell = cell
             selectMomentTableViewCell.fillData(self.punch?.moment)
             return selectMomentTableViewCell
