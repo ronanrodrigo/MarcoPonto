@@ -18,6 +18,7 @@ class ListPunchsViewController: UIViewController, EditTableViewDelegate {
     private var deletePunchPath: NSIndexPath?
     private var navigationDelegate: INavigationDelgate!
     private let dateFormatter = NSDateFormatter()
+    private var selectedDate = NSDate()
 
     init (navigationDelegate: INavigationDelgate) {
         self.navigationDelegate = navigationDelegate
@@ -31,13 +32,11 @@ class ListPunchsViewController: UIViewController, EditTableViewDelegate {
 
     override func viewWillAppear(animated: Bool) {
         updateToggleDatePickerFilterTitle()
+        configureTableViewDataSource()
         configureTableView()
     }
 
     private func configureTableView() {
-        dataSource = ListPunchsDataSource(editTableViewDelegate: self)
-        tableView.dataSource = dataSource
-
         delegate = ListPunchsDelegate(navigationDelegate: navigationDelegate)
         tableView.delegate = delegate
 
@@ -46,6 +45,11 @@ class ListPunchsViewController: UIViewController, EditTableViewDelegate {
         tableView.allowsSelectionDuringEditing = false
 
         tableView.tableFooterView = UIView(frame: CGRect.zero)
+    }
+
+    private func configureTableViewDataSource() {
+        dataSource = ListPunchsDataSource(editTableViewDelegate: self, day: selectedDate)
+        tableView.dataSource = dataSource
     }
 
     func confirmDelete(punch: Punch, at indexPath: NSIndexPath) {
@@ -80,15 +84,15 @@ class ListPunchsViewController: UIViewController, EditTableViewDelegate {
         deletePunchPath = nil
     }
 
-    private func updateToggleDatePickerFilterTitle(date: NSDate = NSDate()) {
-        let formattedDate = dateFormatter.stringFromDate(date)
+    private func updateToggleDatePickerFilterTitle() {
+        let formattedDate = dateFormatter.stringFromDate(selectedDate)
         toggleDatePickerFilter.setTitle(formattedDate, forState: UIControlState.Normal)
     }
 
     @IBAction func didChangedDateFilter(sender: UIDatePicker) {
-        updateToggleDatePickerFilterTitle(sender.date)
-        dataSource = ListPunchsDataSource(editTableViewDelegate: self, day: sender.date)
-        tableView.dataSource = dataSource
+        selectedDate = sender.date
+        updateToggleDatePickerFilterTitle()
+        configureTableViewDataSource()
         tableView.reloadData()
     }
 
