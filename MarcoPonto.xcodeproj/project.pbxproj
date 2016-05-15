@@ -87,6 +87,10 @@
 		34E4892C1CDD73500033E5A3 /* PunchGatewayCoreDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D19FF21CDA6CBA0046B7CF /* PunchGatewayCoreDataTests.swift */; };
 		34E489381CDDA0690033E5A3 /* ImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E489361CDDA0690033E5A3 /* ImageTableViewCell.swift */; };
 		34E489391CDDA0690033E5A3 /* ImageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34E489371CDDA0690033E5A3 /* ImageTableViewCell.xib */; };
+		34E968911CE92EEB0084E1A7 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E9688F1CE92EEB0084E1A7 /* SettingsTableViewController.swift */; };
+		34E968921CE92EEB0084E1A7 /* SettingsTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34E968901CE92EEB0084E1A7 /* SettingsTableViewController.xib */; };
+		34E968951CE92F430084E1A7 /* FacebookTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E968931CE92F430084E1A7 /* FacebookTableViewCell.swift */; };
+		34E968961CE92F430084E1A7 /* FacebookTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34E968941CE92F430084E1A7 /* FacebookTableViewCell.xib */; };
 		34E9B3ED1CC360060017A083 /* PunchGatewayCoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E9B3EC1CC360060017A083 /* PunchGatewayCoreData.swift */; };
 		34E9B3F01CC3B72E0017A083 /* ListPunchUsecaseFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E9B3EF1CC3B72E0017A083 /* ListPunchUsecaseFactory.swift */; };
 		34E9B3FA1CC3D9C80017A083 /* SavePunchUsecaseFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E9B3F91CC3D9C80017A083 /* SavePunchUsecaseFactory.swift */; };
@@ -224,6 +228,10 @@
 		34DF30921CDD6F81003E6A85 /* WorkedHoursUsecaseTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkedHoursUsecaseTests.swift; sourceTree = "<group>"; };
 		34E489361CDDA0690033E5A3 /* ImageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageTableViewCell.swift; sourceTree = "<group>"; };
 		34E489371CDDA0690033E5A3 /* ImageTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageTableViewCell.xib; sourceTree = "<group>"; };
+		34E9688F1CE92EEB0084E1A7 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		34E968901CE92EEB0084E1A7 /* SettingsTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsTableViewController.xib; sourceTree = "<group>"; };
+		34E968931CE92F430084E1A7 /* FacebookTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookTableViewCell.swift; sourceTree = "<group>"; };
+		34E968941CE92F430084E1A7 /* FacebookTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FacebookTableViewCell.xib; sourceTree = "<group>"; };
 		34E9B3EC1CC360060017A083 /* PunchGatewayCoreData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PunchGatewayCoreData.swift; sourceTree = "<group>"; };
 		34E9B3EF1CC3B72E0017A083 /* ListPunchUsecaseFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPunchUsecaseFactory.swift; sourceTree = "<group>"; };
 		34E9B3F91CC3D9C80017A083 /* SavePunchUsecaseFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavePunchUsecaseFactory.swift; sourceTree = "<group>"; };
@@ -397,6 +405,7 @@
 		349D9B261CC2EBA40088DE5E /* ViewsControllers */ = {
 			isa = PBXGroup;
 			children = (
+				34E968971CE92F550084E1A7 /* Settings */,
 				340BD7321CC33FAB00AB860B /* Punch */,
 				341877291CC6E454002A4B59 /* Reports */,
 				34BD8F951CC5BA3500607BA6 /* TabBarController.swift */,
@@ -587,6 +596,24 @@
 			path = Usecases;
 			sourceTree = "<group>";
 		};
+		34E9688A1CE92D790084E1A7 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				34E968901CE92EEB0084E1A7 /* SettingsTableViewController.xib */,
+				34E968931CE92F430084E1A7 /* FacebookTableViewCell.swift */,
+				34E968941CE92F430084E1A7 /* FacebookTableViewCell.xib */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		34E968971CE92F550084E1A7 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				34E9688F1CE92EEB0084E1A7 /* SettingsTableViewController.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
 		34E9B3E71CC35AF50017A083 /* Gateways */ = {
 			isa = PBXGroup;
 			children = (
@@ -644,6 +671,7 @@
 		4B7A5C1023A6928A9A573DA8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				34E9688A1CE92D790084E1A7 /* Settings */,
 				4B7A50B67E7AAE2DDBCA1DC5 /* Punch */,
 				4B7A5B8DEA18DE867FAC3FA2 /* Reports */,
 			);
@@ -863,7 +891,9 @@
 				3435FF801CC2E7640076AF42 /* Assets.xcassets in Resources */,
 				4B7A51761AFE51EF9211C877 /* FormPunchViewController.xib in Resources */,
 				4B7A5E906F1DC11565C8E938 /* SelectMomentTableViewCell.xib in Resources */,
+				34E968921CE92EEB0084E1A7 /* SettingsTableViewController.xib in Resources */,
 				34E489391CDDA0690033E5A3 /* ImageTableViewCell.xib in Resources */,
+				34E968961CE92F430084E1A7 /* FacebookTableViewCell.xib in Resources */,
 				4B7A59FD587D2F8827D2AA64 /* SelectTypeTableViewCell.xib in Resources */,
 				4B7A532ACFCC5B48106CE51E /* ListPunchsTableViewCell.xib in Resources */,
 				4B7A5B0AA5D4A3B27F0B9142 /* ListPunchsViewController.xib in Resources */,
@@ -1262,9 +1292,11 @@
 				349D9B2B1CC2ECD20088DE5E /* FormPunchViewController.swift in Sources */,
 				34E9B4031CC419090017A083 /* PunchTypeLabel.swift in Sources */,
 				341877311CC6E552002A4B59 /* ReportsNavigationController.swift in Sources */,
+				34E968951CE92F430084E1A7 /* FacebookTableViewCell.swift in Sources */,
 				3472A9EF1CC6F3E100CEF1D1 /* PunchModel.swift in Sources */,
 				34E489381CDDA0690033E5A3 /* ImageTableViewCell.swift in Sources */,
 				34E9B3ED1CC360060017A083 /* PunchGatewayCoreData.swift in Sources */,
+				34E968911CE92EEB0084E1A7 /* SettingsTableViewController.swift in Sources */,
 				3472A9EE1CC6F3E100CEF1D1 /* PunchModel+CoreDataProperties.swift in Sources */,
 				349D9B321CC2F7960088DE5E /* FormPunchDataSource.swift in Sources */,
 				340C51991CDACF71001ED6D5 /* WorkHoursTableViewCell.swift in Sources */,
