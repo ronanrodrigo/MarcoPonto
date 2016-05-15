@@ -12,9 +12,9 @@ class ListPunchsUsecaseTests: XCTestCase {
     }
 
     func testShouldListPunchs() {
-        self.usecase.list()
+        self.usecase.list(NSDate())
 
-        XCTAssertTrue(self.gateway.listSpied)
+        XCTAssertTrue(self.gateway.listByDay)
         XCTAssertTrue(self.presenter.listSpied)
     }
 }

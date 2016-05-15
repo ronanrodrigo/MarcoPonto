@@ -11,10 +11,10 @@ class ListPunchsDataSource: NSObject, RRNListDataSource, ListPunchsPresenter {
     private var editTableViewDelegate: EditTableViewDelegate!
     private var punchs: [Punch] = []
 
-    init(editTableViewDelegate: EditTableViewDelegate) {
+    init(editTableViewDelegate: EditTableViewDelegate, day: NSDate = NSDate()) {
         super.init()
         self.editTableViewDelegate = editTableViewDelegate
-        ListPunchsUsecaseFactory.make(presenter: self).list()
+        ListPunchsUsecaseFactory.make(presenter: self).list(day)
     }
 
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {

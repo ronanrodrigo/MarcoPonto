@@ -87,6 +87,9 @@ class ListPunchsViewController: UIViewController, EditTableViewDelegate {
 
     @IBAction func didChangedDateFilter(sender: UIDatePicker) {
         updateToggleDatePickerFilterTitle(sender.date)
+        dataSource = ListPunchsDataSource(editTableViewDelegate: self, day: sender.date)
+        tableView.dataSource = dataSource
+        tableView.reloadData()
     }
 
     @IBAction func didTappedAtToggleDatePicker(sender: AnyObject) {

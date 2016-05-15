@@ -9,8 +9,8 @@ public class ListPunchsUsecase {
         self.presenter = presenter
     }
 
-    public func list() {
-        let punchs = self.gateway.list()
+    public func list(day: NSDate) {
+        let punchs = self.gateway.list(day)
         presenter.list(punchs)
     }
 }
