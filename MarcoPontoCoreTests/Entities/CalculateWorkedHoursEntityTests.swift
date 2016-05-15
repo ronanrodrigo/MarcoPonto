@@ -5,16 +5,17 @@ class CalculateWorkedHoursEntityTests: XCTestCase {
     var entity: TotalWorkedHoursEntity!
     var inputPunchs: [Punch]!
     var outputPunchs: [Punch]!
-    let today = NSDate()
-    var yesterday: NSDate!
+    var lastDate: NSDate!
+    var firstDate: NSDate!
 
     override func setUp() {
-        yesterday = today - 1.days
+        firstDate = NSDate(yearForWeekOfYear: 2016, weekOfYear: 1, weekday: 2)
+        lastDate = firstDate + 1.days
     }
 
     func testShouldCalculateTimeIntervalBetwenDateTimesInPunchLists() {
-        inputPunchs = [PunchStruct(id: nil, type: .Input, moment: yesterday)]
-        outputPunchs = [PunchStruct(id: nil, type: .Output, moment: today)]
+        inputPunchs = [PunchStruct(id: nil, type: .Input, moment: firstDate)]
+        outputPunchs = [PunchStruct(id: nil, type: .Output, moment: lastDate)]
         entity = TotalWorkedHoursEntity(inputPunchs: inputPunchs, outputPunchs: outputPunchs)
 
         let totalTimeInterval = entity.calculate()
@@ -23,9 +24,9 @@ class CalculateWorkedHoursEntityTests: XCTestCase {
     }
 
     func testShouldNotCalculatePunchWithoutOutput() {
-        inputPunchs = [PunchStruct(id: nil, type: .Input, moment: yesterday),
-                       PunchStruct(id: nil, type: .Input, moment: yesterday+1.hours)]
-        outputPunchs = [PunchStruct(id: nil, type: .Output, moment: today)]
+        inputPunchs = [PunchStruct(id: nil, type: .Input, moment: firstDate),
+                       PunchStruct(id: nil, type: .Input, moment: firstDate+1.hours)]
+        outputPunchs = [PunchStruct(id: nil, type: .Output, moment: lastDate)]
         entity = TotalWorkedHoursEntity(inputPunchs: inputPunchs, outputPunchs: outputPunchs)
 
         let totalTimeInterval = entity.calculate()
@@ -34,9 +35,9 @@ class CalculateWorkedHoursEntityTests: XCTestCase {
     }
 
     func testShouldNotCalculatePunchWithoutInput() {
-        inputPunchs = [PunchStruct(id: nil, type: .Input, moment: yesterday)]
-        outputPunchs = [PunchStruct(id: nil, type: .Output, moment: today),
-                        PunchStruct(id: nil, type: .Output, moment: today+1.hours)]
+        inputPunchs = [PunchStruct(id: nil, type: .Input, moment: firstDate)]
+        outputPunchs = [PunchStruct(id: nil, type: .Output, moment: lastDate),
+                        PunchStruct(id: nil, type: .Output, moment: lastDate+1.hours)]
         entity = TotalWorkedHoursEntity(inputPunchs: inputPunchs, outputPunchs: outputPunchs)
 
         let totalTimeInterval = entity.calculate()
@@ -45,8 +46,8 @@ class CalculateWorkedHoursEntityTests: XCTestCase {
     }
 
     func testShouldNotCalculateWhenOutputPunchIsLowerThanInputPunch() {
-        inputPunchs = [PunchStruct(id: nil, type: .Input, moment: today)]
-        outputPunchs = [PunchStruct(id: nil, type: .Output, moment: yesterday)]
+        inputPunchs = [PunchStruct(id: nil, type: .Input, moment: lastDate)]
+        outputPunchs = [PunchStruct(id: nil, type: .Output, moment: firstDate)]
         entity = TotalWorkedHoursEntity(inputPunchs: inputPunchs, outputPunchs: outputPunchs)
 
         let totalTimeInterval = entity.calculate()

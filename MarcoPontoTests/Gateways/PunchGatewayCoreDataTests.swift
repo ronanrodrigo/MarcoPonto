@@ -2,6 +2,7 @@ import XCTest
 
 @testable import MarcoPontoCore
 @testable import MarcoPonto
+import SwiftDate
 
 class PunchGatewayCoreDataTests: XCTestCase {
     var gateway: PunchGatewayCoreData!
@@ -39,9 +40,9 @@ class PunchGatewayCoreDataTests: XCTestCase {
     }
 
     func testShouldListPunchsByInputTypeAndDate() {
-        let firstDate = NSDate(fromDate: NSDate(), year: 1970, month: 1)
-        let moment = NSDate(fromDate: NSDate(), year: 1970, month: 2)
-        let lastDate = NSDate(fromDate: NSDate(), year: 1970, month: 3)
+        let firstDate = NSDate(fromDate: NSDate(), year: 2016, month: 1)
+        let moment = NSDate(fromDate: NSDate(), year: 2016, month: 2)
+        let lastDate = NSDate(fromDate: NSDate(), year: 2016, month: 3)
         let punch = PunchStruct(id: nil, type: .Input, moment: moment)
         gateway.create(punch)
 
@@ -69,5 +70,15 @@ class PunchGatewayCoreDataTests: XCTestCase {
 
         let afterDelteQuantity = gateway.list().count
         XCTAssertEqual(beforeDeleteQuantity, afterDelteQuantity)
+    }
+
+    func testShouldListPunchsByDateRange() {
+        let moment = NSDate(fromDate: NSDate(), year: 2016, month: 2)
+        let punch = PunchStruct(id: nil, type: .Input, moment: moment)
+        let createdPunch = gateway.create(punch)
+
+        let inputPunchs = gateway.list(moment)
+
+        XCTAssertTrue(inputPunchs.filter({$0.id == createdPunch.id}).count == 1)
     }
 }

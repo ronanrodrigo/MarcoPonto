@@ -20,6 +20,10 @@ class PunchGatewayFake: PunchGateway {
         return punchs
     }
 
+    func list(day: NSDate) -> [Punch] {
+        return punchs
+    }
+
     func list(type: PunchType, dateRange: (firstDate: NSDate, lastDate: NSDate)) -> [Punch] {
         listSpied = true
         return punchs.filter { (punch) -> Bool in

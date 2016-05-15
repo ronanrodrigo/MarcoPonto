@@ -92,6 +92,20 @@ class PunchGatewayCoreData: PunchGateway {
         }
     }
 
+    func list(day: NSDate) -> [Punch] {
+        let beginningOfDay = NSDate(fromDate: day, hour: 0, minute: 0, second: 1)
+        let endOfDay = NSDate(fromDate: day, hour: 23, minute: 59, second: 59)
+        let fetchRequest = NSFetchRequest(entityName: entityName)
+        fetchRequest.predicate =  NSPredicate(
+            format: "punchMoment >= %@ AND punchMoment <= %@", beginningOfDay, endOfDay)
+        do {
+            let results = try context.executeFetchRequest(fetchRequest)
+            return punchList(results)
+        } catch {
+            return []
+        }
+    }
+
     func punchList(results: [AnyObject]) -> [Punch] {
         var punchs: [Punch] = []
         for punch in results {
