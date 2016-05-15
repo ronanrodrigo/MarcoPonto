@@ -1,5 +1,7 @@
 import UIKit
 import CoreData
+import FBSDKCoreKit
+import FBSDKLoginKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,7 +18,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             _window.rootViewController = tabBarController
             _window.makeKeyAndVisible()
         }
-        return true
+
+        return FBSDKApplicationDelegate.sharedInstance()
+            .application(application, didFinishLaunchingWithOptions: launchOptions)
+    }
+
+    func applicationDidBecomeActive(application: UIApplication) {
+        FBSDKAppEvents.activateApp()
+    }
+
+    func application(application: UIApplication, openURL url: NSURL,
+                     sourceApplication: String?, annotation: AnyObject?) -> Bool {
+        return FBSDKApplicationDelegate.sharedInstance().application(application, openURL: url,
+                sourceApplication: sourceApplication, annotation: annotation)
     }
 
     // MARK: - Core Data stack

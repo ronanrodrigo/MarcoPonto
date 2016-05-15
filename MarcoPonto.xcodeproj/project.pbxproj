@@ -711,6 +711,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3435FF921CC2E7650076AF42 /* Build configuration list for PBXNativeTarget "MarcoPonto" */;
 			buildPhases = (
+				E820D01B5A50B13D180271A9 /* 📦 Check Pods Manifest.lock */,
 				8B9278F5C8551EE313688846 /* uD83DuDCE6 Check Pods Manifest.lock */,
 				3435FF6E1CC2E7640076AF42 /* Sources */,
 				3435FF6F1CC2E7640076AF42 /* Frameworks */,
@@ -719,6 +720,8 @@
 				1831955320E526753BF22D63 /* uD83DuDCE6 Copy Pods Resources */,
 				34965A921CD3A9B600901A28 /* ShellScript */,
 				347332B01CDD6E13005DF2F2 /* Embed Frameworks */,
+				8E4F034F22BDFA1C39AC1D22 /* 📦 Embed Pods Frameworks */,
+				FB82B2165C4760255A3A95CC /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -734,12 +737,15 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 34D19FF71CDA6CBA0046B7CF /* Build configuration list for PBXNativeTarget "MarcoPontoTests" */;
 			buildPhases = (
+				854B251D5DA4E36D34EAB51B /* 📦 Check Pods Manifest.lock */,
 				9A426588C777DCBB60A0DCFC /* uD83DuDCE6 Check Pods Manifest.lock */,
 				34D19FEC1CDA6CBA0046B7CF /* Sources */,
 				34D19FED1CDA6CBA0046B7CF /* Frameworks */,
 				34D19FEE1CDA6CBA0046B7CF /* Resources */,
 				1CF0E2962DEE9FA14F64D166 /* uD83DuDCE6 Embed Pods Frameworks */,
 				1EF26C34E265AECEBFF257C0 /* uD83DuDCE6 Copy Pods Resources */,
+				78946BA70B444E52D9155ABE /* 📦 Embed Pods Frameworks */,
+				E781EB78F96AC4CA5B1FA52B /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -755,12 +761,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 34DF30221CDD6EF3003E6A85 /* Build configuration list for PBXNativeTarget "MarcoPontoCore" */;
 			buildPhases = (
+				E32CDC0DB10820A8D5AE3B1F /* 📦 Check Pods Manifest.lock */,
 				BA659E78AA12EB83E58FB194 /* uD83DuDCE6 Check Pods Manifest.lock */,
 				34DF30021CDD6EF3003E6A85 /* Sources */,
 				34DF30031CDD6EF3003E6A85 /* Frameworks */,
 				34DF30041CDD6EF3003E6A85 /* Headers */,
 				34DF30051CDD6EF3003E6A85 /* Resources */,
 				82CEB58C4E98A8468634BEBA /* uD83DuDCE6 Copy Pods Resources */,
+				455A9BB127790D55720054E1 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -775,12 +783,15 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 34DF30231CDD6EF3003E6A85 /* Build configuration list for PBXNativeTarget "MarcoPontoCoreTests" */;
 			buildPhases = (
+				5017891A604FD36FE55B65C1 /* 📦 Check Pods Manifest.lock */,
 				51160C4E09F4CE5E974758FC /* uD83DuDCE6 Check Pods Manifest.lock */,
 				34DF300C1CDD6EF3003E6A85 /* Sources */,
 				34DF300D1CDD6EF3003E6A85 /* Frameworks */,
 				34DF300E1CDD6EF3003E6A85 /* Resources */,
 				B2823F0B85F399C7B50019ED /* uD83DuDCE6 Embed Pods Frameworks */,
 				C83759EF000416E6518365F6 /* uD83DuDCE6 Copy Pods Resources */,
+				D5659F6A0396C2923483C2AF /* 📦 Embed Pods Frameworks */,
+				357855CA8AEFE2C63EE681F3 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -957,6 +968,51 @@
 			shellPath = /bin/sh;
 			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
 		};
+		357855CA8AEFE2C63EE681F3 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MarcoPontoCoreTests/Pods-MarcoPontoCoreTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		455A9BB127790D55720054E1 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MarcoPontoCore/Pods-MarcoPontoCore-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5017891A604FD36FE55B65C1 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		51160C4E09F4CE5E974758FC /* uD83DuDCE6 Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -970,6 +1026,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		78946BA70B444E52D9155ABE /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MarcoPontoTests/Pods-MarcoPontoTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		82CEB58C4E98A8468634BEBA /* uD83DuDCE6 Copy Pods Resources */ = {
@@ -987,6 +1058,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MarcoPontoCore/Pods-MarcoPontoCore-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		854B251D5DA4E36D34EAB51B /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		8B9278F5C8551EE313688846 /* uD83DuDCE6 Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1000,6 +1086,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8E4F034F22BDFA1C39AC1D22 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MarcoPonto/Pods-MarcoPonto-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		9A426588C777DCBB60A0DCFC /* uD83DuDCE6 Check Pods Manifest.lock */ = {
@@ -1060,6 +1161,81 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MarcoPontoCoreTests/Pods-MarcoPontoCoreTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D5659F6A0396C2923483C2AF /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MarcoPontoCoreTests/Pods-MarcoPontoCoreTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E32CDC0DB10820A8D5AE3B1F /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E781EB78F96AC4CA5B1FA52B /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MarcoPontoTests/Pods-MarcoPontoTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E820D01B5A50B13D180271A9 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FB82B2165C4760255A3A95CC /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MarcoPonto/Pods-MarcoPonto-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
