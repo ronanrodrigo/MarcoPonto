@@ -101,11 +101,12 @@
 		4B7A50F38147735B7569AC17 /* SelectTypeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A5D6EBB90885177A24653 /* SelectTypeTableViewCell.swift */; };
 		4B7A5122E34FCF487F22AC23 /* FacebookLoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A52A26E1D1BC45143417F /* FacebookLoginPresenter.swift */; };
 		4B7A51761AFE51EF9211C877 /* FormPunchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B7A54C26B2939F7ECFE71B2 /* FormPunchViewController.xib */; };
-		4B7A5311379E4B648E4997E5 /* FacebookLoginusecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A5AC476235B118DF102FA /* FacebookLoginusecase.swift */; };
+		4B7A5311379E4B648E4997E5 /* FacebookLoginUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A5AC476235B118DF102FA /* FacebookLoginUsecase.swift */; };
 		4B7A532ACFCC5B48106CE51E /* ListPunchsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B7A5CAA1E540DD091D0E91E /* ListPunchsTableViewCell.xib */; };
-		4B7A54A17E7E4DDAA53D2139 /* FacebookLoginusecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A5AC476235B118DF102FA /* FacebookLoginusecase.swift */; };
+		4B7A54A17E7E4DDAA53D2139 /* FacebookLoginUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A5AC476235B118DF102FA /* FacebookLoginUsecase.swift */; };
 		4B7A5594073A91E6D767F923 /* ListPunchsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A510FF99EB4FD47D6A6E0 /* ListPunchsTableViewCell.swift */; };
 		4B7A55DE6A5F442516BC03B0 /* SettingsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A5B7190353643D16DC02A /* SettingsDataSource.swift */; };
+		4B7A5729C5E6B65709A22A1B /* FacebookLoginUsecaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A5AEF9E2E49713056B874 /* FacebookLoginUsecaseTests.swift */; };
 		4B7A58ADF880AFEFA53BD543 /* SettingsNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A50ABD95A2E993B2A5C1D /* SettingsNavigationController.swift */; };
 		4B7A58F7D13FDE21629150F9 /* FacebookLoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A52A26E1D1BC45143417F /* FacebookLoginPresenter.swift */; };
 		4B7A5985BF6003BB6C46E01A /* TotalsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B7A581DCA5399934C5D8F40 /* TotalsViewController.xib */; };
@@ -255,7 +256,8 @@
 		4B7A56FDBC391BDD47B73BEA /* SelectTypeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectTypeTableViewCell.xib; sourceTree = "<group>"; };
 		4B7A573D022134E77DF927F6 /* SelectMomentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectMomentTableViewCell.swift; sourceTree = "<group>"; };
 		4B7A581DCA5399934C5D8F40 /* TotalsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TotalsViewController.xib; sourceTree = "<group>"; };
-		4B7A5AC476235B118DF102FA /* FacebookLoginusecase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookLoginusecase.swift; sourceTree = "<group>"; };
+		4B7A5AC476235B118DF102FA /* FacebookLoginUsecase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookLoginUsecase.swift; sourceTree = "<group>"; };
+		4B7A5AEF9E2E49713056B874 /* FacebookLoginUsecaseTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookLoginUsecaseTests.swift; sourceTree = "<group>"; };
 		4B7A5B7190353643D16DC02A /* SettingsDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsDataSource.swift; sourceTree = "<group>"; };
 		4B7A5C2BEE766AD31B3C66D2 /* FacebookGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookGateway.swift; sourceTree = "<group>"; };
 		4B7A5C3920C3D4812223D3F0 /* SelectMomentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectMomentTableViewCell.xib; sourceTree = "<group>"; };
@@ -550,7 +552,7 @@
 				34DF30391CDD6F6D003E6A85 /* ListPunchsUsecase.swift */,
 				34DF303A1CDD6F6D003E6A85 /* SavePunchUsecase.swift */,
 				34DF303B1CDD6F6D003E6A85 /* WorkedHoursUsecase.swift */,
-				4B7A5AC476235B118DF102FA /* FacebookLoginusecase.swift */,
+				4B7A5AC476235B118DF102FA /* FacebookLoginUsecase.swift */,
 			);
 			path = Usecases;
 			sourceTree = "<group>";
@@ -608,6 +610,7 @@
 				34DF30901CDD6F81003E6A85 /* ListPunchsUsecaseTests.swift */,
 				34DF30911CDD6F81003E6A85 /* SavePunchUsecaseTests.swift */,
 				34DF30921CDD6F81003E6A85 /* WorkedHoursUsecaseTests.swift */,
+				4B7A5AEF9E2E49713056B874 /* FacebookLoginUsecaseTests.swift */,
 			);
 			path = Usecases;
 			sourceTree = "<group>";
@@ -975,7 +978,7 @@
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "\uD83D\uDCE6 Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1063,7 +1066,7 @@
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "\uD83D\uDCE6 Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1093,7 +1096,7 @@
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "\uD83D\uDCE6 Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1138,7 +1141,7 @@
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "\uD83D\uDCE6 Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1153,7 +1156,7 @@
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "\uD83D\uDCE6 Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1183,7 +1186,7 @@
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "\uD83D\uDCE6 Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1273,7 +1276,7 @@
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "\uD83D\uDCE6 Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1318,7 +1321,7 @@
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "\uD83D\uDCE6 Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1348,7 +1351,7 @@
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "\uD83D\uDCE6 Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1363,7 +1366,7 @@
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "\uD83D\uDCE6 Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1438,7 +1441,7 @@
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "\uD83D\uDCE6 Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1499,7 +1502,7 @@
 				4B7A5594073A91E6D767F923 /* ListPunchsTableViewCell.swift in Sources */,
 				4B7A58ADF880AFEFA53BD543 /* SettingsNavigationController.swift in Sources */,
 				4B7A55DE6A5F442516BC03B0 /* SettingsDataSource.swift in Sources */,
-				4B7A54A17E7E4DDAA53D2139 /* FacebookLoginusecase.swift in Sources */,
+				4B7A54A17E7E4DDAA53D2139 /* FacebookLoginUsecase.swift in Sources */,
 				4B7A5B3E2FD88CB828F88F0A /* FacebookGateway.swift in Sources */,
 				4B7A5122E34FCF487F22AC23 /* FacebookLoginPresenter.swift in Sources */,
 			);
@@ -1575,9 +1578,10 @@
 				34DF307B1CDD6F6D003E6A85 /* SavePunchUsecase.swift in Sources */,
 				34DF30431CDD6F6D003E6A85 /* MandatoryWorkloadEntity.swift in Sources */,
 				34DF309F1CDD6F81003E6A85 /* WorkedHoursUsecaseTests.swift in Sources */,
-				4B7A5311379E4B648E4997E5 /* FacebookLoginusecase.swift in Sources */,
+				4B7A5311379E4B648E4997E5 /* FacebookLoginUsecase.swift in Sources */,
 				4B7A5ACF4267004A3DA2A883 /* FacebookGateway.swift in Sources */,
 				4B7A58F7D13FDE21629150F9 /* FacebookLoginPresenter.swift in Sources */,
+				4B7A5729C5E6B65709A22A1B /* FacebookLoginUsecaseTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
