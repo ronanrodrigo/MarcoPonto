@@ -675,8 +675,7 @@
 				4B7A50B67E7AAE2DDBCA1DC5 /* Punch */,
 				4B7A5B8DEA18DE867FAC3FA2 /* Reports */,
 			);
-			name = Views;
-			path = ViewsControllers/Views;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		4B7A5D197C23326FBCD842C8 /* List */ = {
