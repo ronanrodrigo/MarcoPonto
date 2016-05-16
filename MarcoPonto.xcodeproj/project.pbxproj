@@ -17,6 +17,8 @@
 		340C519A1CDACF71001ED6D5 /* WorkHoursTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 340C51981CDACF71001ED6D5 /* WorkHoursTableViewCell.xib */; };
 		3418772D1CC6E4B3002A4B59 /* TotalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3418772B1CC6E4B3002A4B59 /* TotalsViewController.swift */; };
 		341877311CC6E552002A4B59 /* ReportsNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341877301CC6E552002A4B59 /* ReportsNavigationController.swift */; };
+		34218BEF1CEA1FD600BAE833 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34218BED1CEA1FD600BAE833 /* SettingsViewController.swift */; };
+		34218BF01CEA1FD600BAE833 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34218BEE1CEA1FD600BAE833 /* SettingsViewController.xib */; };
 		3435FF761CC2E7640076AF42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3435FF751CC2E7640076AF42 /* AppDelegate.swift */; };
 		3435FF7E1CC2E7640076AF42 /* MarcoPonto.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3435FF7C1CC2E7640076AF42 /* MarcoPonto.xcdatamodeld */; };
 		3435FF801CC2E7640076AF42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3435FF7F1CC2E7640076AF42 /* Assets.xcassets */; };
@@ -87,8 +89,6 @@
 		34E4892C1CDD73500033E5A3 /* PunchGatewayCoreDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D19FF21CDA6CBA0046B7CF /* PunchGatewayCoreDataTests.swift */; };
 		34E489381CDDA0690033E5A3 /* ImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E489361CDDA0690033E5A3 /* ImageTableViewCell.swift */; };
 		34E489391CDDA0690033E5A3 /* ImageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34E489371CDDA0690033E5A3 /* ImageTableViewCell.xib */; };
-		34E968911CE92EEB0084E1A7 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E9688F1CE92EEB0084E1A7 /* SettingsTableViewController.swift */; };
-		34E968921CE92EEB0084E1A7 /* SettingsTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34E968901CE92EEB0084E1A7 /* SettingsTableViewController.xib */; };
 		34E968951CE92F430084E1A7 /* FacebookTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E968931CE92F430084E1A7 /* FacebookTableViewCell.swift */; };
 		34E968961CE92F430084E1A7 /* FacebookTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34E968941CE92F430084E1A7 /* FacebookTableViewCell.xib */; };
 		34E9B3ED1CC360060017A083 /* PunchGatewayCoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E9B3EC1CC360060017A083 /* PunchGatewayCoreData.swift */; };
@@ -102,6 +102,8 @@
 		4B7A51761AFE51EF9211C877 /* FormPunchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B7A54C26B2939F7ECFE71B2 /* FormPunchViewController.xib */; };
 		4B7A532ACFCC5B48106CE51E /* ListPunchsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B7A5CAA1E540DD091D0E91E /* ListPunchsTableViewCell.xib */; };
 		4B7A5594073A91E6D767F923 /* ListPunchsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A510FF99EB4FD47D6A6E0 /* ListPunchsTableViewCell.swift */; };
+		4B7A55DE6A5F442516BC03B0 /* SettingsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A5B7190353643D16DC02A /* SettingsDataSource.swift */; };
+		4B7A58ADF880AFEFA53BD543 /* SettingsNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A50ABD95A2E993B2A5C1D /* SettingsNavigationController.swift */; };
 		4B7A5985BF6003BB6C46E01A /* TotalsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B7A581DCA5399934C5D8F40 /* TotalsViewController.xib */; };
 		4B7A59FD587D2F8827D2AA64 /* SelectTypeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B7A56FDBC391BDD47B73BEA /* SelectTypeTableViewCell.xib */; };
 		4B7A5A28EC4BD901E7618054 /* SelectMomentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A573D022134E77DF927F6 /* SelectMomentTableViewCell.swift */; };
@@ -173,6 +175,8 @@
 		340C519B1CDAD369001ED6D5 /* Marco Ponto.clr */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Marco Ponto.clr"; sourceTree = "<group>"; };
 		3418772B1CC6E4B3002A4B59 /* TotalsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TotalsViewController.swift; sourceTree = "<group>"; };
 		341877301CC6E552002A4B59 /* ReportsNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportsNavigationController.swift; sourceTree = "<group>"; };
+		34218BED1CEA1FD600BAE833 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		34218BEE1CEA1FD600BAE833 /* SettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
 		3435FF721CC2E7640076AF42 /* MarcoPonto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarcoPonto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3435FF751CC2E7640076AF42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3435FF7D1CC2E7640076AF42 /* MarcoPonto.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MarcoPonto.xcdatamodel; sourceTree = "<group>"; };
@@ -228,8 +232,6 @@
 		34DF30921CDD6F81003E6A85 /* WorkedHoursUsecaseTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkedHoursUsecaseTests.swift; sourceTree = "<group>"; };
 		34E489361CDDA0690033E5A3 /* ImageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageTableViewCell.swift; sourceTree = "<group>"; };
 		34E489371CDDA0690033E5A3 /* ImageTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageTableViewCell.xib; sourceTree = "<group>"; };
-		34E9688F1CE92EEB0084E1A7 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
-		34E968901CE92EEB0084E1A7 /* SettingsTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsTableViewController.xib; sourceTree = "<group>"; };
 		34E968931CE92F430084E1A7 /* FacebookTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookTableViewCell.swift; sourceTree = "<group>"; };
 		34E968941CE92F430084E1A7 /* FacebookTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FacebookTableViewCell.xib; sourceTree = "<group>"; };
 		34E9B3EC1CC360060017A083 /* PunchGatewayCoreData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PunchGatewayCoreData.swift; sourceTree = "<group>"; };
@@ -239,12 +241,14 @@
 		34E9B4021CC419090017A083 /* PunchTypeLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PunchTypeLabel.swift; sourceTree = "<group>"; };
 		34E9B4041CC42C360017A083 /* ListPunchsDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPunchsDelegate.swift; sourceTree = "<group>"; };
 		404EC8D24C423383DEB49E1D /* Pods_MarocPontoCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MarocPontoCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B7A50ABD95A2E993B2A5C1D /* SettingsNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsNavigationController.swift; sourceTree = "<group>"; };
 		4B7A510FF99EB4FD47D6A6E0 /* ListPunchsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPunchsTableViewCell.swift; sourceTree = "<group>"; };
 		4B7A521BCF886584E14BC9C7 /* ListPunchsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListPunchsViewController.xib; sourceTree = "<group>"; };
 		4B7A54C26B2939F7ECFE71B2 /* FormPunchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FormPunchViewController.xib; sourceTree = "<group>"; };
 		4B7A56FDBC391BDD47B73BEA /* SelectTypeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectTypeTableViewCell.xib; sourceTree = "<group>"; };
 		4B7A573D022134E77DF927F6 /* SelectMomentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectMomentTableViewCell.swift; sourceTree = "<group>"; };
 		4B7A581DCA5399934C5D8F40 /* TotalsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TotalsViewController.xib; sourceTree = "<group>"; };
+		4B7A5B7190353643D16DC02A /* SettingsDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsDataSource.swift; sourceTree = "<group>"; };
 		4B7A5C3920C3D4812223D3F0 /* SelectMomentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectMomentTableViewCell.xib; sourceTree = "<group>"; };
 		4B7A5CAA1E540DD091D0E91E /* ListPunchsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListPunchsTableViewCell.xib; sourceTree = "<group>"; };
 		4B7A5D6EBB90885177A24653 /* SelectTypeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectTypeTableViewCell.swift; sourceTree = "<group>"; };
@@ -599,9 +603,9 @@
 		34E9688A1CE92D790084E1A7 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
-				34E968901CE92EEB0084E1A7 /* SettingsTableViewController.xib */,
 				34E968931CE92F430084E1A7 /* FacebookTableViewCell.swift */,
 				34E968941CE92F430084E1A7 /* FacebookTableViewCell.xib */,
+				34218BEE1CEA1FD600BAE833 /* SettingsViewController.xib */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -609,7 +613,9 @@
 		34E968971CE92F550084E1A7 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
-				34E9688F1CE92EEB0084E1A7 /* SettingsTableViewController.swift */,
+				34218BED1CEA1FD600BAE833 /* SettingsViewController.swift */,
+				4B7A50ABD95A2E993B2A5C1D /* SettingsNavigationController.swift */,
+				4B7A5B7190353643D16DC02A /* SettingsDataSource.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -749,6 +755,7 @@
 				347332B01CDD6E13005DF2F2 /* Embed Frameworks */,
 				8E4F034F22BDFA1C39AC1D22 /* 📦 Embed Pods Frameworks */,
 				FB82B2165C4760255A3A95CC /* 📦 Copy Pods Resources */,
+				702ED464DAFB111286E2CADC /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -773,6 +780,7 @@
 				1EF26C34E265AECEBFF257C0 /* uD83DuDCE6 Copy Pods Resources */,
 				78946BA70B444E52D9155ABE /* 📦 Embed Pods Frameworks */,
 				E781EB78F96AC4CA5B1FA52B /* 📦 Copy Pods Resources */,
+				9FFBFB20904A838F01BD138A /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -819,6 +827,7 @@
 				C83759EF000416E6518365F6 /* uD83DuDCE6 Copy Pods Resources */,
 				D5659F6A0396C2923483C2AF /* 📦 Embed Pods Frameworks */,
 				357855CA8AEFE2C63EE681F3 /* 📦 Copy Pods Resources */,
+				F9BF378AE38E986C0362D09D /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -870,6 +879,8 @@
 			mainGroup = 3435FF691CC2E7640076AF42;
 			productRefGroup = 3435FF731CC2E7640076AF42 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+			);
 			projectRoot = "";
 			targets = (
 				3435FF711CC2E7640076AF42 /* MarcoPonto */,
@@ -890,9 +901,9 @@
 				3435FF801CC2E7640076AF42 /* Assets.xcassets in Resources */,
 				4B7A51761AFE51EF9211C877 /* FormPunchViewController.xib in Resources */,
 				4B7A5E906F1DC11565C8E938 /* SelectMomentTableViewCell.xib in Resources */,
-				34E968921CE92EEB0084E1A7 /* SettingsTableViewController.xib in Resources */,
 				34E489391CDDA0690033E5A3 /* ImageTableViewCell.xib in Resources */,
 				34E968961CE92F430084E1A7 /* FacebookTableViewCell.xib in Resources */,
+				34218BF01CEA1FD600BAE833 /* SettingsViewController.xib in Resources */,
 				4B7A59FD587D2F8827D2AA64 /* SelectTypeTableViewCell.xib in Resources */,
 				4B7A532ACFCC5B48106CE51E /* ListPunchsTableViewCell.xib in Resources */,
 				4B7A5B0AA5D4A3B27F0B9142 /* ListPunchsViewController.xib in Resources */,
@@ -1004,7 +1015,7 @@
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "\uD83D\uDCE6 Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1019,7 +1030,7 @@
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "\uD83D\uDCE6 Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1034,7 +1045,7 @@
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "\uD83D\uDCE6 Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1057,6 +1068,21 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		702ED464DAFB111286E2CADC /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MarcoPonto/Pods-MarcoPonto-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		78946BA70B444E52D9155ABE /* 📦 Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1064,7 +1090,7 @@
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "\uD83D\uDCE6 Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1094,7 +1120,7 @@
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "\uD83D\uDCE6 Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1124,7 +1150,7 @@
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "\uD83D\uDCE6 Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1145,6 +1171,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9FFBFB20904A838F01BD138A /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MarcoPontoTests/Pods-MarcoPontoTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B2823F0B85F399C7B50019ED /* uD83DuDCE6 Embed Pods Frameworks */ = {
@@ -1199,7 +1240,7 @@
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "\uD83D\uDCE6 Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1214,7 +1255,7 @@
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "\uD83D\uDCE6 Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1229,7 +1270,7 @@
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "\uD83D\uDCE6 Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1244,12 +1285,27 @@
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "\uD83D\uDCE6 Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F9BF378AE38E986C0362D09D /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MarcoPontoCoreTests/Pods-MarcoPontoCoreTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FB82B2165C4760255A3A95CC /* 📦 Copy Pods Resources */ = {
@@ -1259,7 +1315,7 @@
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "\uD83D\uDCE6 Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1295,14 +1351,16 @@
 				3472A9EF1CC6F3E100CEF1D1 /* PunchModel.swift in Sources */,
 				34E489381CDDA0690033E5A3 /* ImageTableViewCell.swift in Sources */,
 				34E9B3ED1CC360060017A083 /* PunchGatewayCoreData.swift in Sources */,
-				34E968911CE92EEB0084E1A7 /* SettingsTableViewController.swift in Sources */,
 				3472A9EE1CC6F3E100CEF1D1 /* PunchModel+CoreDataProperties.swift in Sources */,
 				349D9B321CC2F7960088DE5E /* FormPunchDataSource.swift in Sources */,
+				34218BEF1CEA1FD600BAE833 /* SettingsViewController.swift in Sources */,
 				340C51991CDACF71001ED6D5 /* WorkHoursTableViewCell.swift in Sources */,
 				3405D98D1CCA74F600616382 /* TotalsDataSource.swift in Sources */,
 				4B7A5A28EC4BD901E7618054 /* SelectMomentTableViewCell.swift in Sources */,
 				4B7A50F38147735B7569AC17 /* SelectTypeTableViewCell.swift in Sources */,
 				4B7A5594073A91E6D767F923 /* ListPunchsTableViewCell.swift in Sources */,
+				4B7A58ADF880AFEFA53BD543 /* SettingsNavigationController.swift in Sources */,
+				4B7A55DE6A5F442516BC03B0 /* SettingsDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

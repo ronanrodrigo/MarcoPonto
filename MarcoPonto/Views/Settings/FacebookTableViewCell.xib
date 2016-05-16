@@ -11,12 +11,15 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fch-Nu-3V7">
-                        <rect key="frame" x="15" y="0.0" width="305" height="43.5"/>
+                        <rect key="frame" x="15" y="0.0" width="305" height="43"/>
                         <state key="normal" title="Entrar com Facebook"/>
+                        <connections>
+                            <action selector="didTappedAtFacebookSign:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="gdC-hJ-1u1"/>
+                        </connections>
                     </button>
                 </subviews>
                 <constraints>
@@ -26,6 +29,9 @@
                     <constraint firstAttribute="bottom" secondItem="Fch-Nu-3V7" secondAttribute="bottom" id="ywX-wj-W5A"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="facebookSignButton" destination="Fch-Nu-3V7" id="EjM-hQ-dgt"/>
+            </connections>
         </tableViewCell>
     </objects>
 </document>
