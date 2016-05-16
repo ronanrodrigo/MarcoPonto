@@ -10,17 +10,16 @@ class PunchsNavigationController: UINavigationController, SavePunchPresenter, IN
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        listPunchsViewController = ListPunchsViewController(navigationDelegate: self)
         openListPunchsViewController()
-
-        navigationBar.tintColor = UIColor.primary
     }
 
     func openListPunchsViewController() {
+        listPunchsViewController = ListPunchsViewController(navigationDelegate: self)
         listPunchsViewController.navigationItem.title = "Pontos batidos"
         let addButton = UIBarButtonItem(
             barButtonSystemItem: .Add, target: self, action: #selector(newPunchFormViewController))
         listPunchsViewController.navigationItem.rightBarButtonItem = addButton
+        navigationBar.tintColor = UIColor.primary
         setViewControllers([listPunchsViewController], animated: true)
     }
 

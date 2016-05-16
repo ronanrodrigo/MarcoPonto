@@ -6,14 +6,13 @@ class ReportsNavigationController: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        totalsViewController = TotalsViewController()
         openListPunchsViewController()
-
-        navigationBar.tintColor = UIColor.primary
     }
 
     func openListPunchsViewController() {
+        totalsViewController = TotalsViewController()
         totalsViewController.navigationItem.title = "Relatório"
+        navigationBar.tintColor = UIColor.primary
         setViewControllers([totalsViewController], animated: true)
     }
 }
