@@ -96,6 +96,7 @@ class PunchGatewayCoreData: PunchGateway {
         let beginningOfDay = NSDate(fromDate: day, hour: 0, minute: 0, second: 1)
         let endOfDay = NSDate(fromDate: day, hour: 23, minute: 59, second: 59)
         let fetchRequest = NSFetchRequest(entityName: entityName)
+        fetchRequest.sortDescriptors = [momentSortDescriptor, typeSortDescriptor]
         fetchRequest.predicate =  NSPredicate(
             format: "punchMoment >= %@ AND punchMoment <= %@", beginningOfDay, endOfDay)
         do {
