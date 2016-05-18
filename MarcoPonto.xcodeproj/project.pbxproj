@@ -100,6 +100,7 @@
 		38A1D5DDE9A008BB75B85D2B /* Pods_MarcoPontoCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F861B409D24DF34CD93ACF13 /* Pods_MarcoPontoCore.framework */; };
 		4B7A50F38147735B7569AC17 /* SelectTypeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A5D6EBB90885177A24653 /* SelectTypeTableViewCell.swift */; };
 		4B7A5122E34FCF487F22AC23 /* FacebookLoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A52A26E1D1BC45143417F /* FacebookLoginPresenter.swift */; };
+		4B7A513E4D38DF297118C612 /* FacebookGatewaySpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A5E5112B7708CC98506E2 /* FacebookGatewaySpy.swift */; };
 		4B7A51761AFE51EF9211C877 /* FormPunchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B7A54C26B2939F7ECFE71B2 /* FormPunchViewController.xib */; };
 		4B7A5311379E4B648E4997E5 /* FacebookLoginUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A5AC476235B118DF102FA /* FacebookLoginUsecase.swift */; };
 		4B7A532ACFCC5B48106CE51E /* ListPunchsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B7A5CAA1E540DD091D0E91E /* ListPunchsTableViewCell.xib */; };
@@ -115,6 +116,7 @@
 		4B7A5ACF4267004A3DA2A883 /* FacebookGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A5C2BEE766AD31B3C66D2 /* FacebookGateway.swift */; };
 		4B7A5B0AA5D4A3B27F0B9142 /* ListPunchsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B7A521BCF886584E14BC9C7 /* ListPunchsViewController.xib */; };
 		4B7A5B3E2FD88CB828F88F0A /* FacebookGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A5C2BEE766AD31B3C66D2 /* FacebookGateway.swift */; };
+		4B7A5C83E4F9DB9AEDF1C28F /* FacebookLoginPresenterSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A50B387723A4C155DF319 /* FacebookLoginPresenterSpy.swift */; };
 		4B7A5E906F1DC11565C8E938 /* SelectMomentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B7A5C3920C3D4812223D3F0 /* SelectMomentTableViewCell.xib */; };
 		A05A95DEEDAA4608E99F9C4B /* Pods_MarcoPonto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81C82F974AC11FC5E456E76F /* Pods_MarcoPonto.framework */; };
 		D918C225466D4C610081981A /* Pods_MarcoPontoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1856DDB607C20C59F7245D8 /* Pods_MarcoPontoTests.framework */; };
@@ -249,6 +251,7 @@
 		34E9B4041CC42C360017A083 /* ListPunchsDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPunchsDelegate.swift; sourceTree = "<group>"; };
 		404EC8D24C423383DEB49E1D /* Pods_MarocPontoCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MarocPontoCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B7A50ABD95A2E993B2A5C1D /* SettingsNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsNavigationController.swift; sourceTree = "<group>"; };
+		4B7A50B387723A4C155DF319 /* FacebookLoginPresenterSpy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookLoginPresenterSpy.swift; sourceTree = "<group>"; };
 		4B7A510FF99EB4FD47D6A6E0 /* ListPunchsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPunchsTableViewCell.swift; sourceTree = "<group>"; };
 		4B7A521BCF886584E14BC9C7 /* ListPunchsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListPunchsViewController.xib; sourceTree = "<group>"; };
 		4B7A52A26E1D1BC45143417F /* FacebookLoginPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookLoginPresenter.swift; sourceTree = "<group>"; };
@@ -263,6 +266,7 @@
 		4B7A5C3920C3D4812223D3F0 /* SelectMomentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectMomentTableViewCell.xib; sourceTree = "<group>"; };
 		4B7A5CAA1E540DD091D0E91E /* ListPunchsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListPunchsTableViewCell.xib; sourceTree = "<group>"; };
 		4B7A5D6EBB90885177A24653 /* SelectTypeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectTypeTableViewCell.swift; sourceTree = "<group>"; };
+		4B7A5E5112B7708CC98506E2 /* FacebookGatewaySpy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookGatewaySpy.swift; sourceTree = "<group>"; };
 		56484213089692FF111507C5 /* Pods-MarcoPonto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarcoPonto.release.xcconfig"; path = "Pods/Target Support Files/Pods-MarcoPonto/Pods-MarcoPonto.release.xcconfig"; sourceTree = "<group>"; };
 		5979D1F66EDD9035050D4202 /* Pods-MarocPontoCoreTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarocPontoCoreTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MarocPontoCoreTests/Pods-MarocPontoCoreTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7100F9B6EF09CA2075256FF1 /* Pods-MarcoPontoCoreTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarcoPontoCoreTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MarcoPontoCoreTests/Pods-MarcoPontoCoreTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -590,6 +594,7 @@
 			children = (
 				34DF30891CDD6F81003E6A85 /* PunchGatewayFake.swift */,
 				34DF308A1CDD6F81003E6A85 /* PunchGatewaySpy.swift */,
+				4B7A5E5112B7708CC98506E2 /* FacebookGatewaySpy.swift */,
 			);
 			path = Gateways;
 			sourceTree = "<group>";
@@ -600,6 +605,7 @@
 				34DF308C1CDD6F81003E6A85 /* ListPunchsPresenterSpy.swift */,
 				34DF308D1CDD6F81003E6A85 /* SavePunchPresenterSpy.swift */,
 				34DF308E1CDD6F81003E6A85 /* WorkedHoursPresenterFake.swift */,
+				4B7A50B387723A4C155DF319 /* FacebookLoginPresenterSpy.swift */,
 			);
 			path = Presenters;
 			sourceTree = "<group>";
@@ -1049,7 +1055,7 @@
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "\uD83D\uDCE6 Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1092,7 +1098,7 @@
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "\uD83D\uDCE6 Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1137,7 +1143,7 @@
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "\uD83D\uDCE6 Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1197,7 +1203,7 @@
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "\uD83D\uDCE6 Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1302,7 +1308,7 @@
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "\uD83D\uDCE6 Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1362,7 +1368,7 @@
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "\uD83D\uDCE6 Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1407,7 +1413,7 @@
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "\uD83D\uDCE6 Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1452,7 +1458,7 @@
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "\uD83D\uDCE6 Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1482,7 +1488,7 @@
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "\uD83D\uDCE6 Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1587,7 +1593,7 @@
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "\uD83D\uDCE6 Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1617,7 +1623,7 @@
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "\uD83D\uDCE6 Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1758,6 +1764,8 @@
 				4B7A5ACF4267004A3DA2A883 /* FacebookGateway.swift in Sources */,
 				4B7A58F7D13FDE21629150F9 /* FacebookLoginPresenter.swift in Sources */,
 				4B7A5729C5E6B65709A22A1B /* FacebookLoginUsecaseTests.swift in Sources */,
+				4B7A513E4D38DF297118C612 /* FacebookGatewaySpy.swift in Sources */,
+				4B7A5C83E4F9DB9AEDF1C28F /* FacebookLoginPresenterSpy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
