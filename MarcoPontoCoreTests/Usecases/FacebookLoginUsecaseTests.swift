@@ -5,5 +5,4 @@ class FacebookLoginUsecaseTests: XCTestCase {
     var usecase: FacebookLoginUsecase!
     var facebookGateway: FacebookGateway!
     var facebookLoginPresenter: FacebookLoginPresenter!
-
 }
