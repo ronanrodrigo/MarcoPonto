@@ -3,13 +3,13 @@ use_frameworks!
 
 def shared_pods
   pod "SwiftDate"
-  pod 'Firebase', '>= 2.5.1'
-  pod 'FBSDKCoreKit'
-  pod 'FBSDKLoginKit'
 end
 
 target 'MarcoPonto' do
   shared_pods
+  pod 'Firebase'
+  pod 'FBSDKCoreKit'
+  pod 'FBSDKLoginKit'
 end
 
 target 'MarcoPontoTests' do
