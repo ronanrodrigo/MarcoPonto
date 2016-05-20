@@ -63,6 +63,7 @@ class PunchGatewayCoreData: PunchGateway {
             if let _punch = results.first as? PunchModel {
                 context.deleteObject(_punch)
             }
+            try context.save()
         } catch {
             print("Could not update \(entityName)")
         }
