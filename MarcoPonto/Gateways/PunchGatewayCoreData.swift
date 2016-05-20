@@ -82,6 +82,7 @@ class PunchGatewayCoreData: PunchGateway {
 
     func list(type: PunchType, dateRange: (firstDate: NSDate, lastDate: NSDate)) -> [Punch] {
         let fetchRequest = NSFetchRequest(entityName: entityName)
+        fetchRequest.sortDescriptors = [momentSortDescriptor]
         fetchRequest.predicate =  NSPredicate(
             format: "punchType = %@ AND punchMoment >= %@ AND punchMoment <= %@",
             type.rawValue, dateRange.firstDate, dateRange.lastDate)
