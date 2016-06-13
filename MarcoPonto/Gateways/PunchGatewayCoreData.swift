@@ -63,6 +63,7 @@ class PunchGatewayCoreData: PunchGateway {
             if let _punch = results.first as? PunchModel {
                 context.deleteObject(_punch)
             }
+            try context.save()
         } catch {
             print("Could not update \(entityName)")
         }
@@ -81,6 +82,7 @@ class PunchGatewayCoreData: PunchGateway {
 
     func list(type: PunchType, dateRange: (firstDate: NSDate, lastDate: NSDate)) -> [Punch] {
         let fetchRequest = NSFetchRequest(entityName: entityName)
+        fetchRequest.sortDescriptors = [momentSortDescriptor]
         fetchRequest.predicate =  NSPredicate(
             format: "punchType = %@ AND punchMoment >= %@ AND punchMoment <= %@",
             type.rawValue, dateRange.firstDate, dateRange.lastDate)
