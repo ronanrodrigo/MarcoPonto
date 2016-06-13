@@ -17,18 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             _window.makeKeyAndVisible()
         }
 
-        return FBSDKApplicationDelegate.sharedInstance()
-            .application(application, didFinishLaunchingWithOptions: launchOptions)
-    }
-
-    func applicationDidBecomeActive(application: UIApplication) {
-        FBSDKAppEvents.activateApp()
-    }
-
-    func application(application: UIApplication, openURL url: NSURL,
-                     sourceApplication: String?, annotation: AnyObject) -> Bool {
-        return FBSDKApplicationDelegate.sharedInstance().application(application, openURL: url,
-                sourceApplication: sourceApplication, annotation: annotation)
+        return true
     }
 
     // MARK: - Core Data stack
