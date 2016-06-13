@@ -7,9 +7,6 @@ end
 
 target 'MarcoPonto' do
   shared_pods
-  pod 'Firebase'
-  pod 'FBSDKCoreKit'
-  pod 'FBSDKLoginKit'
 end
 
 target 'MarcoPontoTests' do

@@ -1,7 +1,5 @@
 import UIKit
 import CoreData
-import FBSDKCoreKit
-import FBSDKLoginKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
